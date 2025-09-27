@@ -2,7 +2,6 @@
 
 Project that contains a tutorial and a first approximation to use machine learning on FPGA
 
-
 ## Vidado_HOG_example
 
 Proyecto temporal para mirar la integracion con HOG
@@ -40,3 +39,24 @@ Luego crearemos el proyecto con la linea:
 ```
 
 `project_hog` es el nombre que le dimos al proyecto inicialmente, entonces ahi se pone el nombre del proyecto que se este creando
+
+
+### Agregar submodulos de Hog, comblock y de udma
+
+submodulo de hog
+
+```
+git submodule add https://gitlab.com/hog-cern/Hog.git
+```
+
+Submodulo de udma
+
+```
+git submodule add https://gitlab.com/ictp-mlab/udma
+```
+
+Submodulo de comblock
+
+```
+git submodule add https://gitlab.com/ictp-mlab/core-comblock
+```
