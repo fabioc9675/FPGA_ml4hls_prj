@@ -724,7 +724,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\myproject.cpp'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2286118
+        Offset:          2286286
         Length:          0
         ReplacementText: 'VITIS_LOOP_58_1: '
 ...

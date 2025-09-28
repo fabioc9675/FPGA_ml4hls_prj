@@ -54649,6 +54649,10 @@ __attribute__((sdx_kernel("GN_inference", 0))) void GN_inference(
 #pragma HLSDIRECTIVE TOP name=GN_inference
 # 23 "firmware/myproject.cpp"
 
+#line 6 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/myproject_prj/solution1/directives.tcl"
+#pragma HLSDIRECTIVE TOP name=GN_inference
+# 23 "firmware/myproject.cpp"
+
 #pragma HLS INTERFACE mode=ap_ctrl_hs port=return
 #pragma HLS INTERFACE axis register both port=input
 #pragma HLS INTERFACE ap_vld port=result

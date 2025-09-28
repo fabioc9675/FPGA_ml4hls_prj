@@ -45,7 +45,7 @@ set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../../firmware/myproject.cpp}
 set SourceFlags {sc {} c -std=c++0x}
 set DirectiveFile C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/myproject_prj/solution1/solution1.directive
-set TBFiles {verilog {../../firmware/weights ../../tb_data ../../myproject_test.cpp} bc {../../firmware/weights ../../tb_data ../../myproject_test.cpp} vhdl {../../firmware/weights ../../tb_data ../../myproject_test.cpp} sc {../../firmware/weights ../../tb_data ../../myproject_test.cpp} cas {../../firmware/weights ../../tb_data ../../myproject_test.cpp} c {}}
+set TBFiles {verilog {../../myproject_test.cpp ../../tb_data ../../firmware/weights} bc {../../myproject_test.cpp ../../tb_data ../../firmware/weights} vhdl {../../myproject_test.cpp ../../tb_data ../../firmware/weights} sc {../../myproject_test.cpp ../../tb_data ../../firmware/weights} cas {../../myproject_test.cpp ../../tb_data ../../firmware/weights} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
