@@ -166,7 +166,9 @@ Once the code modifications are complete, it is time to analyze how the IP core 
 
 With the generated IP core, it is time to test the inference process in the SoC platform.
 
-### Congratulations! You have completed the Project - Stage 2!
+
+![Implementation Dialog](uploads/Lab_5/part2/bd_gn_inference.png)
+
 
 ## References
 
