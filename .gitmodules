@@ -1,0 +1,9 @@
+[submodule "Vivado/Hog"]
+	path = Vivado/Hog
+	url = https://gitlab.com/hog-cern/Hog.git
+[submodule "submodules/udma"]
+	path = submodules/udma
+	url = https://gitlab.com/ictp-mlab/udma
+[submodule "submodules/core-comblock"]
+	path = submodules/core-comblock
+	url = https://gitlab.com/ictp-mlab/core-comblock

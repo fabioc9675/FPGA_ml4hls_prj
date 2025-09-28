@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="weights" path="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\weights"/>
+    <originFiles name="tb_data" path="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\tb_data"/>
+    <originFiles name="myproject_test.cpp" path="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

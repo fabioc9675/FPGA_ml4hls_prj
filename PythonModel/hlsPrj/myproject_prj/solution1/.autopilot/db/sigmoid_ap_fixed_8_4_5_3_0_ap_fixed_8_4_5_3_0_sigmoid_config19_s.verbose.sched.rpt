@@ -1,0 +1,129 @@
+
+
+================================================================
+== Vitis HLS Report for 'sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s'
+================================================================
+* Date:           Sat Sep 27 23:31:36 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.244 ns|     1.25 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.24>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%p_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read"   --->   Operation 3 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%data_round = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i8.i2, i8 %p_read_1, i2 0"   --->   Operation 4 'bitconcatenate' 'data_round' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.99ns)   --->   "%index = xor i10 %data_round, i10 512" [firmware/nnet_utils/nnet_activation.h:116]   --->   Operation 5 'xor' 'index' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln121 = zext i10 %index" [firmware/nnet_utils/nnet_activation.h:121]   --->   Operation 6 'zext' 'zext_ln121' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sigmoid_table_addr = getelementptr i10 %sigmoid_table, i64 0, i64 %zext_ln121"   --->   Operation 7 'getelementptr' 'sigmoid_table_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (3.25ns)   --->   "%sigmoid_table_load = load i10 %sigmoid_table_addr"   --->   Operation 8 'load' 'sigmoid_table_load' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specpipeline_ln109 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [firmware/nnet_utils/nnet_activation.h:109]   --->   Operation 9 'specpipeline' 'specpipeline_ln109' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (3.25ns)   --->   "%sigmoid_table_load = load i10 %sigmoid_table_addr"   --->   Operation 10 'load' 'sigmoid_table_load' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i4 @_ssdm_op_PartSelect.i4.i10.i32.i32, i10 %sigmoid_table_load, i32 6, i32 9"   --->   Operation 11 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%ret_ln818 = ret i4 %trunc_ln"   --->   Operation 12 'ret' 'ret_ln818' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4.24ns
+The critical path consists of the following:
+	wire read operation ('p_read_1') on port 'p_read' [4]  (0 ns)
+	'xor' operation ('index', firmware/nnet_utils/nnet_activation.h:116) [6]  (0.99 ns)
+	'getelementptr' operation ('sigmoid_table_addr') [8]  (0 ns)
+	'load' operation ('sigmoid_table_load') on array 'sigmoid_table' [9]  (3.25 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('sigmoid_table_load') on array 'sigmoid_table' [9]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
