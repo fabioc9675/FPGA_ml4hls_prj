@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "myproject",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/GitHub\/FPGA_ml4hls_prj\/PythonModel\/hlsPrj\/build_prj.tcl",
+          "sourceLine": "184",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "myproject"
+              }]
+          }
+        }]
+    }]}
