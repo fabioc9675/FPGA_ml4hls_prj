@@ -56,7 +56,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
-IFLAG += -Wno-unknown-pragmas -std=c++0x 
+IFLAG += -Wno-unknown-pragmas -std=c++0x -DRTL_SIM 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -75,7 +75,7 @@ all: $(TARGET)
 
 $(ObjDir)/myproject_test.o: ../../../../myproject_test.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../myproject_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++0x -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++0x -DRTL_SIM -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/myproject_test.d
 

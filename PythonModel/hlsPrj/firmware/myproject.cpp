@@ -4,16 +4,29 @@
 #include "parameters.h"
 
 
-void myproject(
-    input_t inputLayer[N_INPUT_1_1],
-    result_t layer19_out[N_LAYER_17]
-) {
+//void myproject(
+//    input_t inputLayer[N_INPUT_1_1],
+//    result_t layer19_out[N_LAYER_17]
+//) {
+//
+//    // hls-fpga-machine-learning insert IO
+//    #pragma HLS ARRAY_RESHAPE variable=inputLayer complete dim=0
+//    #pragma HLS ARRAY_PARTITION variable=layer19_out complete dim=0
+//    #pragma HLS INTERFACE ap_vld port=inputLayer,layer19_out
+//    #pragma HLS PIPELINE
 
-    // hls-fpga-machine-learning insert IO
-    #pragma HLS ARRAY_RESHAPE variable=inputLayer complete dim=0
-    #pragma HLS ARRAY_PARTITION variable=layer19_out complete dim=0
-    #pragma HLS INTERFACE ap_vld port=inputLayer,layer19_out 
+void GN_inference(
+
+	hls::stream<AXI_VALUE_IN> &input,
+	int *result
+
+) {
+    #pragma HLS INTERFACE mode=ap_ctrl_hs port=return
+    #pragma HLS INTERFACE axis register both port=input
+    #pragma HLS INTERFACE ap_vld port=result
     #pragma HLS PIPELINE
+
+
 
     // hls-fpga-machine-learning insert load weights
 #ifndef __SYNTHESIS__
@@ -33,6 +46,23 @@ void myproject(
         nnet::load_weights_from_txt<bias17_t, 2>(b17, "b17.txt");
         loaded_weights = true;    }
 #endif
+
+    AXI_VALUE_IN valIn;
+
+    input_t inputLayer[N_INPUT_1_1];
+    result_t layer19_out[N_LAYER_17];
+
+    #pragma HLS ARRAY_RESHAPE variable=inputLayer complete dim=0
+    #pragma HLS ARRAY_PARTITION variable=layer19_out complete dim=0
+
+    for(int h=0; h<N_INPUT_1_1; h++){
+    #pragma HLS PIPELINE
+    	// Read and cache value
+    	valIn = input.read();
+    	inputLayer[h] = valIn.data;
+    }
+
+
     // ****************************************
     // NETWORK INSTANTIATION
     // ****************************************
@@ -65,5 +95,17 @@ void myproject(
 
     nnet::sigmoid<layer17_t, result_t, sigmoid_config19>(layer17_out, layer19_out); // outputActivation
 
-}
+    int tmpVal = 0;
+    if(layer19_out[0] > 0.5){
+    	// Value 2 corresponds to class 0 gamma
+    	tmpVal = 5;
+    	*result = tmpVal;
+    }
+    else {
+    	// Value 3 corresponds to class 1 neutron
+    	tmpVal = 3;
+    	*result = tmpVal;
 
+    }
+
+}

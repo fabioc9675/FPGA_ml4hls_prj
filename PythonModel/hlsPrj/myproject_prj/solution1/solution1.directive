@@ -1,8 +1,8 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
     <sourceFile name="">
-        <directive functionName="myproject" label="" functionLabel="">
+        <directive functionName="GN_inference" label="" functionLabel="">
             <pragma name="TOP">
-                <option name="name" value="myproject"/>
+                <option name="name" value="GN_inference"/>
             </pragma>
         </directive>
     </sourceFile>

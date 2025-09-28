@@ -1,16 +1,13 @@
 <root versionMajor = "1" versionMinor = "5">
-  <kernel src_name="myproject" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+  <kernel src_name="GN_inference" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="inputLayer" src_type="ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="Register" hw_name="inputLayer" hw_bitwidth="2576" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+      <arg id="0" access_type="r" src_name="input" src_type="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2, 5, 6&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="input_r" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>
       </arg>
-      <arg id="1" access_type="w" src_name="layer19_out" src_type="ap_fixed&lt;8, 4, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="8" src_size_or_depth="2">
-        <hw hw_usage="data" hw_interface="Register" hw_name="layer19_out_0" hw_bitwidth="8" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
-        </hw>
-        <hw hw_usage="data" hw_interface="Register" hw_name="layer19_out_1" hw_bitwidth="8" hw_size_or_depth="1" hw_kernel_support="false">
+      <arg id="1" access_type="w" src_name="result" src_type="int*" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="result" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>

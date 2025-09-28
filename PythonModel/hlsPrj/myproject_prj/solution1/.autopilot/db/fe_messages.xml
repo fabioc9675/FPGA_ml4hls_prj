@@ -8,6 +8,12 @@
     <msg msg_groups="PRAGMA_INVALID" msg_id="207-5527" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_resource.h:189:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
         <args ClangWarningOption="ignored-hls-pragmas"/>
     </msg>
+    <msg msg_groups="" msg_id="207-4074" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:51:45" msg_body="variable templates are a C++14 extension">
+        <args ClangWarningOption="c++14-extensions"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4074" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:61:23" msg_body="variable templates are a C++14 extension">
+        <args ClangWarningOption="c++14-extensions"/>
+    </msg>
     <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_helpers.h:285:99" msg_body="unused parameter 'keep'">
         <args ClangWarningOption="unused-parameter"/>
     </msg>
@@ -88,6 +94,108 @@
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_types.h:28:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:132:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:136:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:145:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:171:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:181:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:185:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:235:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:245:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:324:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:342:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:353:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:379:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_mult.h:25:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="product" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
@@ -686,38 +794,47 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:91:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=res complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/build_prj.tcl:184:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=myproject" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/myproject_prj/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=GN_inference" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:13:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=inputLayer complete dim=0" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:14:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer19_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=input" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:15:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_vld port=inputLayer,layer19_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_vld port=result" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:16:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:43:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer2_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:47:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer5_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:51:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer8_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:55:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer11_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=inputLayer complete dim=0" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer19_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:59:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer14_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:63:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer17_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer2_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer5_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer8_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer11_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer14_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GN_inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=layer17_out complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:216:68" msg_body="Inlining function 'ssdm_int&lt;64, true&gt;::ssdm_int(long)' into 'ap_int_base&lt;64, true&gt;::ap_int_base(long)'">
         <args Callee="ssdm_int&lt;64, true&gt;::ssdm_int(long)" Caller="ap_int_base&lt;64, true&gt;::ap_int_base(long)"/>
@@ -802,6 +919,36 @@
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:552:19" msg_body="Inlining function 'ap_int_base&lt;11, false&gt;::RType&lt;($_0)64, true&gt;::minus operator-&lt;11, false&gt;(ap_int_base&lt;11, false&gt; const&amp;, long)' into 'ap_fixed_base&lt;16, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(double)'">
         <args Callee="ap_int_base&lt;11, false&gt;::RType&lt;($_0)64, true&gt;::minus operator-&lt;11, false&gt;(ap_int_base&lt;11, false&gt; const&amp;, long)" Caller="ap_fixed_base&lt;16, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(double)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:247:50" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:250:25" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:249:67" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:249:36" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:248:39" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h:248:23" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9" msg_body="Inlining function 'ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const' into 'ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)'">
+        <args Callee="ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const" Caller="ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:419:114" msg_body="Inlining function 'ssdm_int&lt;16, true&gt;::ssdm_int(short)' into 'ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ssdm_int&lt;16, true&gt;::ssdm_int(short)" Caller="ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:423:5" msg_body="Inlining function 'ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:420:43" msg_body="Inlining function 'ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)' into 'ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)" Caller="ap_fixed_base&lt;16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9" msg_body="Inlining function 'ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const' into 'ap_fixed_base&lt;24, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;24, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)'">
         <args Callee="ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const" Caller="ap_fixed_base&lt;24, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;24, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)"/>
@@ -1070,40 +1217,76 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation.h:115:54" msg_body="Inlining function 'ap_fixed_base&lt;40, 36, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;($_0)32, ($_0)32, true&gt;::div operator/&lt;40, 36, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;40, 36, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, int)' into 'void nnet::sigmoid&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, sigmoid_config19&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
         <args Callee="ap_fixed_base&lt;40, 36, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;($_0)32, ($_0)32, true&gt;::div operator/&lt;40, 36, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;40, 36, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, int)" Caller="void nnet::sigmoid&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, sigmoid_config19&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:44:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)' into 'myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="void nnet::dense&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)" Caller="myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function 'ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)' into 'ap_int_base&lt;8, false&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)" Caller="ap_int_base&lt;8, false&gt;::ap_int_base(int)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:48:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config5&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config5::weight_t*, config5::bias_t*)' into 'myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config5&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config5::weight_t*, config5::bias_t*)" Caller="myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:217:77" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(unsigned long)'">
+        <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(unsigned long)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:52:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)' into 'myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)" Caller="myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1196:30" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base(unsigned long)' into 'ap_int_base&lt;8, false&gt;::countLeadingZeros() const'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base(unsigned long)" Caller="ap_int_base&lt;8, false&gt;::countLeadingZeros() const"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:56:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config11&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config11::weight_t*, config11::bias_t*)' into 'myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config11&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config11::weight_t*, config11::bias_t*)" Caller="myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1042:31" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::ap_int_base(int)' into 'ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const'">
+        <args Callee="ap_int_base&lt;8, false&gt;::ap_int_base(int)" Caller="ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:60:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config14&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config14::weight_t*, config14::bias_t*)' into 'myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config14&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config14::weight_t*, config14::bias_t*)" Caller="myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1079:12" msg_body="Inlining function 'rawBitsToDouble(unsigned long long)' into 'ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const'">
+        <args Callee="rawBitsToDouble(unsigned long long)" Caller="ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:64:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config17::weight_t*, config17::bias_t*)' into 'myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
-        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config17::weight_t*, config17::bias_t*)" Caller="myproject(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1047:17" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::countLeadingZeros() const' into 'ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const'">
+        <args Callee="ap_int_base&lt;8, false&gt;::countLeadingZeros() const" Caller="ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:62:15" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1660:82" msg_body="Inlining function 'ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const' into 'ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;(double) const'">
+        <args Callee="ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_double() const" Caller="ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;(double) const"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:61:16" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;::read()" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:99:23" msg_body="Inlining function 'ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;(double) const' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="ap_fixed_base&lt;8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;(double) const" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:94:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config17::weight_t*, config17::bias_t*)' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config17::weight_t*, config17::bias_t*)" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:74:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="void nnet::dense&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config2&gt;(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config2::weight_t*, config2::bias_t*)" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:78:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config5&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config5::weight_t*, config5::bias_t*)' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config5&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config5::weight_t*, config5::bias_t*)" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:82:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config8&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config8::weight_t*, config8::bias_t*)" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:86:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config11&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config11::weight_t*, config11::bias_t*)' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config11&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config11::weight_t*, config11::bias_t*)" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="firmware/myproject.cpp:90:2" msg_body="Inlining function 'void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config14&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config14::weight_t*, config14::bias_t*)' into 'GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)'">
+        <args Callee="void nnet::dense&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config14&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config14::weight_t*, config14::bias_t*)" Caller="GN_inference(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 2ul, 5ul, 6ul&gt;, 0&gt;&amp;, int*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:92:15" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:58:15" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:88:15" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:54:15" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:84:15" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:50:14" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:80:14" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:46:14" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:76:14" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:42:11" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:72:14" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:58:19" msg_body="Loop 'VITIS_LOOP_58_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_58_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:53:14" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/myproject.cpp:52:13" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation.h:114:23" msg_body="Loop 'VITIS_LOOP_114_1' is marked as complete unroll implied by the pipeline pragma">
@@ -1136,23 +1319,35 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:17:32" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:62:15) in function 'myproject' completely with a factor of 2">
-        <args Factor="2" LoopLoc="firmware/myproject.cpp:62:15" LoopName="anonymous"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:92:15) in function 'GN_inference' completely with a factor of 2">
+        <args Factor="2" LoopLoc="firmware/myproject.cpp:92:15" LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:58:15) in function 'myproject' completely with a factor of 3">
-        <args Factor="3" LoopLoc="firmware/myproject.cpp:58:15" LoopName="anonymous"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:88:15) in function 'GN_inference' completely with a factor of 3">
+        <args Factor="3" LoopLoc="firmware/myproject.cpp:88:15" LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:54:15) in function 'myproject' completely with a factor of 4">
-        <args Factor="4" LoopLoc="firmware/myproject.cpp:54:15" LoopName="anonymous"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:84:15) in function 'GN_inference' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/myproject.cpp:84:15" LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:50:14) in function 'myproject' completely with a factor of 2">
-        <args Factor="2" LoopLoc="firmware/myproject.cpp:50:14" LoopName="anonymous"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:80:14) in function 'GN_inference' completely with a factor of 2">
+        <args Factor="2" LoopLoc="firmware/myproject.cpp:80:14" LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:46:14) in function 'myproject' completely with a factor of 4">
-        <args Factor="4" LoopLoc="firmware/myproject.cpp:46:14" LoopName="anonymous"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:76:14) in function 'GN_inference' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/myproject.cpp:76:14" LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:42:11) in function 'myproject' completely with a factor of 6">
-        <args Factor="6" LoopLoc="firmware/myproject.cpp:42:11" LoopName="anonymous"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:72:14) in function 'GN_inference' completely with a factor of 6">
+        <args Factor="6" LoopLoc="firmware/myproject.cpp:72:14" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'VITIS_LOOP_58_1' (firmware/myproject.cpp:58:19) in function 'GN_inference' completely with a factor of 161">
+        <args Factor="161" LoopLoc="firmware/myproject.cpp:58:19" LoopName="VITIS_LOOP_58_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:23:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_58_1' (firmware/myproject.cpp:58:19) in function 'GN_inference' has been removed because the loop is unrolled completely">
+        <args LoopLoc="firmware/myproject.cpp:58:19" LoopName="VITIS_LOOP_58_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:53:14) in function 'GN_inference' completely with a factor of 2">
+        <args Factor="2" LoopLoc="firmware/myproject.cpp:53:14" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject.cpp:23:0" msg_body="Unrolling loop 'anonymous' (firmware/myproject.cpp:52:13) in function 'GN_inference' completely with a factor of 161">
+        <args Factor="161" LoopLoc="firmware/myproject.cpp:52:13" LoopName="anonymous"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_activation.h:95:0" msg_body="Unrolling loop 'VITIS_LOOP_114_1' (firmware/nnet_utils/nnet_activation.h:114:23) in function 'nnet::sigmoid&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, sigmoid_config19&gt;' completely with a factor of 2">
         <args Factor="2" LoopLoc="firmware/nnet_utils/nnet_activation.h:114:23" LoopName="VITIS_LOOP_114_1"/>
@@ -1322,49 +1517,49 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:15:0" msg_body="Inlining function 'std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(config17::accum_t)' into 'void nnet::dense_latency&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config17::weight_t*, config17::bias_t*)'">
         <args Callee="std::enable_if&lt;!(std::is_same&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;1&gt; &gt;::value), ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::type nnet::cast&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(config17::accum_t)" Caller="void nnet::dense_latency&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config17&gt;(ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, config17::weight_t*, config17::bias_t*)"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b17.h:12:0" msg_body="Applying array_partition to 'b17': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="b17"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b14.h:12:0" msg_body="Applying array_partition to 'b14': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="b14"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b11.h:12:0" msg_body="Applying array_partition to 'b11': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="b11"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b8.h:12:0" msg_body="Applying array_partition to 'b8': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="b8"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b2.h:12:0" msg_body="Applying array_partition to 'b2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b2"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b5.h:12:0" msg_body="Applying array_partition to 'b5': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="b5"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b2.h:12:0" msg_body="Applying array_partition to 'b2': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="b2"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b8.h:12:0" msg_body="Applying array_partition to 'b8': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b11.h:12:0" msg_body="Applying array_partition to 'b11': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b14.h:12:0" msg_body="Applying array_partition to 'b14': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/weights/b17.h:12:0" msg_body="Applying array_partition to 'b17': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b17"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/nnet_utils/nnet_dense_latency.h:17:32" msg_body="Applying array_partition to 'mult': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="mult"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:42:11" msg_body="Applying array_partition to 'layer2_out': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="layer2_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:46:14" msg_body="Applying array_partition to 'layer5_out': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="layer5_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:50:14" msg_body="Applying array_partition to 'layer8_out': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="layer8_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:54:15" msg_body="Applying array_partition to 'layer11_out': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="layer11_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:58:15" msg_body="Applying array_partition to 'layer14_out': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="layer14_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:62:15" msg_body="Applying array_partition to 'layer17_out': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="layer17_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Applying array_partition to 'layer19_out': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:53:14" msg_body="Applying array_partition to 'layer19_out': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="layer19_out"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:10:0" msg_body="Applying array_reshape to 'inputLayer': Complete reshaping on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:72:14" msg_body="Applying array_partition to 'layer2_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="layer2_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:76:14" msg_body="Applying array_partition to 'layer5_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="layer5_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:80:14" msg_body="Applying array_partition to 'layer8_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="layer8_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:84:15" msg_body="Applying array_partition to 'layer11_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="layer11_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:88:15" msg_body="Applying array_partition to 'layer14_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="layer14_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:92:15" msg_body="Applying array_partition to 'layer17_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="layer17_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject.cpp:52:13" msg_body="Applying array_reshape to 'inputLayer': Complete reshaping on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="inputLayer"/>
     </msg>
 </xilinx:hls_fe_msgs>

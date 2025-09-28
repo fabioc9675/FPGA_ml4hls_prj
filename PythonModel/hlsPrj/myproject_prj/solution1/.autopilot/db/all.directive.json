@@ -1,17 +1,17 @@
 {"sourceFile": [{
       "name": "",
       "directive": [{
-          "functionName": "myproject",
+          "functionName": "GN_inference",
           "label": "",
           "functionLabel": "",
           "id": "1",
-          "sourceFile": "C:\/GitHub\/FPGA_ml4hls_prj\/PythonModel\/hlsPrj\/build_prj.tcl",
-          "sourceLine": "184",
+          "sourceFile": "C:\/GitHub\/FPGA_ml4hls_prj\/PythonModel\/hlsPrj\/myproject_prj\/solution1\/csynth.tcl",
+          "sourceLine": "18",
           "pragma": {
             "name": "TOP",
             "option": [{
                 "name": "name",
-                "value": "myproject"
+                "value": "GN_inference"
               }]
           }
         }]

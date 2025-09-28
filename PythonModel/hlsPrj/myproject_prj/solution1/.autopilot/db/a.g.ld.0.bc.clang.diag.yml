@@ -477,6 +477,189 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                   Line: 247, Column: 50 }
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EE4readEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 2ul, 5ul, 6ul>::get_user_ptr()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 75, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>::read()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 244, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                   Line: 250, Column: 25 }
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EE4readEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 2ul, 5ul, 6ul>::get_dest_ptr()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>::read()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 244, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                   Line: 249, Column: 67 }
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EE4readEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 2ul, 5ul, 6ul>::get_id_ptr()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 79, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>::read()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 244, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                   Line: 249, Column: 36 }
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EE4readEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 2ul, 5ul, 6ul>::get_user_ptr()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 75, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>::read()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 244, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                   Line: 248, Column: 39 }
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EE4readEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 2ul, 5ul, 6ul>::get_dest_ptr()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>::read()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 244, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                   Line: 248, Column: 23 }
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EE4readEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 2ul, 5ul, 6ul>::get_id_ptr()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 79, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>::read()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 244, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 808, Column: 9 }
+Function:        _ZN13ap_fixed_baseILi16ELi6ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSILi32ELi32ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1420, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 419, Column: 114 }
+Function:        _ZN13ap_fixed_baseILi16ELi6ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi32ELb1EEERK11ap_int_baseIXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ssdm_int<16, true>::ssdm_int(short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 419, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 423, Column: 5 }
+Function:        _ZN13ap_fixed_baseILi16ELi6ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi32ELb1EEERK11ap_int_baseIXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 419, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 420, Column: 43 }
+Function:        _ZN13ap_fixed_baseILi16ELi6ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi32ELb1EEERK11ap_int_baseIXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 530, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 419, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi32ELb1EEERK11ap_int_baseIXT_EXT0_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, true>(ap_int_base<32, true> const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 419, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<32, true>(ap_int_base<32, true> const&)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
 DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
                    Line: 808, Column: 9 }
 Function:        _ZN13ap_fixed_baseILi24ELi11ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSILi32ELi32ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
@@ -2059,98 +2242,247 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/myproject.cpp, Line: 44, Column: 2 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 214, Column: 67 }
+Function:        _ZN11ap_int_baseILi8ELb0EEC2Ei
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
-                       Column: 0 }
+  - Callee:          'ssdm_int<8, false>::ssdm_int(unsigned char)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 523, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
+  - Caller:          'ap_int_base<8, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/myproject.cpp, Line: 48, Column: 2 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 217, Column: 77 }
+Function:        _ZN11ap_int_baseILi32ELb0EEC2Em
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config5>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config5::weight_t*, config5::bias_t*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
-                       Column: 0 }
+  - Callee:          'ssdm_int<32, false>::ssdm_int(unsigned int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 523, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
+  - Caller:          'ap_int_base<32, false>::ap_int_base(unsigned long)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 217, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/myproject.cpp, Line: 52, Column: 2 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                   Line: 1196, Column: 30 }
+Function:        _ZNK11ap_int_baseILi8ELb0EE17countLeadingZerosEv
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config8::weight_t*, config8::bias_t*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
-                       Column: 0 }
+  - Callee:          'ap_int_base<32, false>::ap_int_base(unsigned long)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 217, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
+  - Caller:          'ap_int_base<8, false>::countLeadingZeros() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1193, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/myproject.cpp, Line: 56, Column: 2 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1042, Column: 31 }
+Function:        _ZNK13ap_fixed_baseILi8ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE9to_doubleEv
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config11::weight_t*, config11::bias_t*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
-                       Column: 0 }
+  - Callee:          'ap_int_base<8, false>::ap_int_base(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 214, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
+  - Caller:          'ap_fixed_base<8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1034, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/myproject.cpp, Line: 60, Column: 2 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1079, Column: 12 }
+Function:        _ZNK13ap_fixed_baseILi8ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE9to_doubleEv
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config14>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config14::weight_t*, config14::bias_t*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
-                       Column: 0 }
+  - Callee:          'rawBitsToDouble(unsigned long long)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 750, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
+  - Caller:          'ap_fixed_base<8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1034, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/myproject.cpp, Line: 64, Column: 2 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1047, Column: 17 }
+Function:        _ZNK13ap_fixed_baseILi8ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE9to_doubleEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int_base<8, false>::countLeadingZeros() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h', 
+                       Line: 1193, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1034, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1660, Column: 82 }
+Function:        _ZNK13ap_fixed_baseILi8ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEgtEd
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1034, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>(double) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1660, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 61, Column: 16 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>::read()'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 244, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 99, Column: 23 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<8, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>(double) const'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1660, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 94, Column: 2 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config17>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config17::weight_t*, config17::bias_t*)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
                        Column: 0 }
   - String:          ''' into '''
-  - Caller:          'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 74, Column: 2 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config2::weight_t*, config2::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 78, Column: 2 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config5>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config5::weight_t*, config5::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 82, Column: 2 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config8::weight_t*, config8::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 86, Column: 2 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config11::weight_t*, config11::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: firmware/myproject.cpp, Line: 90, Column: 2 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void nnet::dense<ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, config14>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, config14::weight_t*, config14::bias_t*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_dense.h, Line: 43, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GN_inference(hls::stream<hls::axis<ap_int<32>, 2ul, 5ul, 6ul>, 0>&, int*)'
+    DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 62, Column: 15 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 92, Column: 15 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -2159,8 +2491,8 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 58, Column: 15 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 88, Column: 15 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -2169,8 +2501,8 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 54, Column: 15 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 84, Column: 15 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -2179,8 +2511,8 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 50, Column: 14 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 80, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -2189,8 +2521,8 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 46, Column: 14 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 76, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -2199,8 +2531,38 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 42, Column: 11 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 72, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/myproject.cpp, Line: 58, Column: 19 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_58_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/myproject.cpp, Line: 53, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: firmware/myproject.cpp, Line: 52, Column: 13 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -2759,98 +3121,161 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
   - String:          ''' ('
-  - LoopLoc:         'firmware/myproject.cpp:62:15'
+  - LoopLoc:         'firmware/myproject.cpp:92:15'
   - String:          ') '
   - String:          'in function '''
-  - String:          myproject
+  - String:          GN_inference
   - String:          ''' completely with a factor of '
   - Factor:          '2'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
   - String:          ''' ('
-  - LoopLoc:         'firmware/myproject.cpp:58:15'
+  - LoopLoc:         'firmware/myproject.cpp:88:15'
   - String:          ') '
   - String:          'in function '''
-  - String:          myproject
+  - String:          GN_inference
   - String:          ''' completely with a factor of '
   - Factor:          '3'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
   - String:          ''' ('
-  - LoopLoc:         'firmware/myproject.cpp:54:15'
+  - LoopLoc:         'firmware/myproject.cpp:84:15'
   - String:          ') '
   - String:          'in function '''
-  - String:          myproject
+  - String:          GN_inference
   - String:          ''' completely with a factor of '
   - Factor:          '4'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
   - String:          ''' ('
-  - LoopLoc:         'firmware/myproject.cpp:50:14'
+  - LoopLoc:         'firmware/myproject.cpp:80:14'
   - String:          ') '
   - String:          'in function '''
-  - String:          myproject
+  - String:          GN_inference
   - String:          ''' completely with a factor of '
   - Factor:          '2'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
   - String:          ''' ('
-  - LoopLoc:         'firmware/myproject.cpp:46:14'
+  - LoopLoc:         'firmware/myproject.cpp:76:14'
   - String:          ') '
   - String:          'in function '''
-  - String:          myproject
+  - String:          GN_inference
   - String:          ''' completely with a factor of '
   - Factor:          '4'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
   - String:          ''' ('
-  - LoopLoc:         'firmware/myproject.cpp:42:11'
+  - LoopLoc:         'firmware/myproject.cpp:72:14'
   - String:          ') '
   - String:          'in function '''
-  - String:          myproject
+  - String:          GN_inference
   - String:          ''' completely with a factor of '
   - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_58_1
+  - String:          ''' ('
+  - LoopLoc:         'firmware/myproject.cpp:58:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          GN_inference
+  - String:          ''' completely with a factor of '
+  - Factor:          '161'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        VITIS_LOOP_58_1
+  - String:          ''' ('
+  - LoopLoc:         'firmware/myproject.cpp:58:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          GN_inference
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         'firmware/myproject.cpp:53:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          GN_inference
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/myproject.cpp, Line: 23, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         'firmware/myproject.cpp:52:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          GN_inference
+  - String:          ''' completely with a factor of '
+  - Factor:          '161'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -9723,67 +10148,13 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/weights/b17.h, Line: 12, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/weights/b2.h, Line: 12, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          b17
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: firmware/weights/b14.h, Line: 12, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          b14
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: firmware/weights/b11.h, Line: 12, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          b11
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: firmware/weights/b8.h, Line: 12, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          b8
+  - UOName:          b2
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -9796,7 +10167,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: firmware/weights/b5.h, Line: 12, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -9813,13 +10184,67 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/weights/b2.h, Line: 12, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/weights/b8.h, Line: 12, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          b2
+  - UOName:          b8
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/b11.h, Line: 12, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b11
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/b14.h, Line: 12, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b14
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/weights/b17.h, Line: 12, Column: 0 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b17
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -9850,8 +10275,26 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 42, Column: 11 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 53, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          layer19_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: firmware/myproject.cpp, Line: 72, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -9868,8 +10311,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 46, Column: 14 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 76, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -9886,8 +10329,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 50, Column: 14 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 80, Column: 14 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -9904,8 +10347,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 54, Column: 15 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 84, Column: 15 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -9922,8 +10365,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 58, Column: 15 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 88, Column: 15 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -9940,8 +10383,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 62, Column: 15 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 92, Column: 15 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -9956,28 +10399,10 @@ Args:
   - String:          .
 ...
 --- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          layer19_out
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
 Pass:            reflow-array-reshape
 Name:            ArrayXform
-DebugLoc:        { File: firmware/myproject.cpp, Line: 10, Column: 0 }
-Function:        _Z9myprojectP8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi8ELi4ELS0_5ELS1_3ELi0EE
+DebugLoc:        { File: firmware/myproject.cpp, Line: 52, Column: 13 }
+Function:        _Z12GN_inferenceRN3hls6streamINS_4axisI6ap_intILi32EELm2ELm5ELm6EEELi0EEEPi
 Args:            
   - String:          'Applying '
   - String:          array_reshape

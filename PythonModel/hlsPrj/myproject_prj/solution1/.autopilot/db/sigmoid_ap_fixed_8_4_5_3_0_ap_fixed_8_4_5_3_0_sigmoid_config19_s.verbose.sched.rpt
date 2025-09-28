@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s'
 ================================================================
-* Date:           Sat Sep 27 22:09:48 2025
+* Date:           Sat Sep 27 23:07:27 2025
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        myproject_prj
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+---------+----------+------------+
-    |  Clock |  Target | Estimated| Uncertainty|
-    +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  3.254 ns|     1.35 ns|
-    +--------+---------+----------+------------+
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.244 ns|     1.25 ns|
+    +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
     |   min   |   max   |    min    |    max    | min | max |   Type  |
     +---------+---------+-----------+-----------+-----+-----+---------+
-    |        2|        2|  10.000 ns|  10.000 ns|    1|    1|      yes|
+    |        1|        1|  10.000 ns|  10.000 ns|    1|    1|      yes|
     +---------+---------+-----------+-----------+-----+-----+---------+
 
     + Detail: 
@@ -62,71 +62,53 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 3
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 3
+* Number of FSM states : 2
 * Pipeline : 1
-  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
-2 --> 3 
-3 --> 
+2 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.99>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read1"   --->   Operation 4 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_read_2 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read"   --->   Operation 5 'read' 'p_read_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%data_round = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i8.i2, i8 %p_read_2, i2 0"   --->   Operation 6 'bitconcatenate' 'data_round' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.99ns)   --->   "%index = xor i10 %data_round, i10 512" [firmware/nnet_utils/nnet_activation.h:116]   --->   Operation 7 'xor' 'index' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%data_round_1 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i8.i2, i8 %p_read_1, i2 0"   --->   Operation 8 'bitconcatenate' 'data_round_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.99ns)   --->   "%index_1 = xor i10 %data_round_1, i10 512" [firmware/nnet_utils/nnet_activation.h:116]   --->   Operation 9 'xor' 'index_1' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+State 1 <SV = 0> <Delay = 4.24>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%p_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read"   --->   Operation 3 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%data_round = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i8.i2, i8 %p_read_1, i2 0"   --->   Operation 4 'bitconcatenate' 'data_round' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.99ns)   --->   "%index = xor i10 %data_round, i10 512" [firmware/nnet_utils/nnet_activation.h:116]   --->   Operation 5 'xor' 'index' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln121 = zext i10 %index" [firmware/nnet_utils/nnet_activation.h:121]   --->   Operation 6 'zext' 'zext_ln121' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sigmoid_table_addr = getelementptr i10 %sigmoid_table, i64 0, i64 %zext_ln121"   --->   Operation 7 'getelementptr' 'sigmoid_table_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (3.25ns)   --->   "%sigmoid_table_load = load i10 %sigmoid_table_addr"   --->   Operation 8 'load' 'sigmoid_table_load' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
 
 State 2 <SV = 1> <Delay = 3.25>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln121 = zext i10 %index" [firmware/nnet_utils/nnet_activation.h:121]   --->   Operation 10 'zext' 'zext_ln121' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%sigmoid_table_addr = getelementptr i10 %sigmoid_table, i64 0, i64 %zext_ln121"   --->   Operation 11 'getelementptr' 'sigmoid_table_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [2/2] (3.25ns)   --->   "%sigmoid_table_load = load i10 %sigmoid_table_addr"   --->   Operation 12 'load' 'sigmoid_table_load' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln121_1 = zext i10 %index_1" [firmware/nnet_utils/nnet_activation.h:121]   --->   Operation 13 'zext' 'zext_ln121_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%sigmoid_table_addr_1 = getelementptr i10 %sigmoid_table, i64 0, i64 %zext_ln121_1"   --->   Operation 14 'getelementptr' 'sigmoid_table_addr_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [2/2] (3.25ns)   --->   "%sigmoid_table_load_1 = load i10 %sigmoid_table_addr_1"   --->   Operation 15 'load' 'sigmoid_table_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
-
-State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln109 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [firmware/nnet_utils/nnet_activation.h:109]   --->   Operation 16 'specpipeline' 'specpipeline_ln109' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 17 [1/2] (3.25ns)   --->   "%sigmoid_table_load = load i10 %sigmoid_table_addr"   --->   Operation 17 'load' 'sigmoid_table_load' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
-ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%tmp = partselect i4 @_ssdm_op_PartSelect.i4.i10.i32.i32, i10 %sigmoid_table_load, i32 6, i32 9"   --->   Operation 18 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln818 = zext i4 %tmp"   --->   Operation 19 'zext' 'zext_ln818' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 20 [1/2] (3.25ns)   --->   "%sigmoid_table_load_1 = load i10 %sigmoid_table_addr_1"   --->   Operation 20 'load' 'sigmoid_table_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
-ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i4 @_ssdm_op_PartSelect.i4.i10.i32.i32, i10 %sigmoid_table_load_1, i32 6, i32 9"   --->   Operation 21 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln818_1 = zext i4 %tmp_1"   --->   Operation 22 'zext' 'zext_ln818_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%mrv = insertvalue i16 <undef>, i8 %zext_ln818" [firmware/nnet_utils/nnet_activation.h:123]   --->   Operation 23 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i16 %mrv, i8 %zext_ln818_1" [firmware/nnet_utils/nnet_activation.h:123]   --->   Operation 24 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%ret_ln123 = ret i16 %mrv_1" [firmware/nnet_utils/nnet_activation.h:123]   --->   Operation 25 'ret' 'ret_ln123' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specpipeline_ln109 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [firmware/nnet_utils/nnet_activation.h:109]   --->   Operation 9 'specpipeline' 'specpipeline_ln109' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (3.25ns)   --->   "%sigmoid_table_load = load i10 %sigmoid_table_addr"   --->   Operation 10 'load' 'sigmoid_table_load' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1024> <ROM>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i4 @_ssdm_op_PartSelect.i4.i10.i32.i32, i10 %sigmoid_table_load, i32 6, i32 9"   --->   Operation 11 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%ret_ln818 = ret i4 %trunc_ln"   --->   Operation 12 'ret' 'ret_ln818' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 5ns, clock uncertainty: 1.35ns.
+Target clock period: 10ns, clock uncertainty: 1.25ns.
 
- <State 1>: 0.99ns
+ <State 1>: 4.24ns
 The critical path consists of the following:
-	wire read operation ('p_read_2') on port 'p_read' [6]  (0 ns)
-	'xor' operation ('index', firmware/nnet_utils/nnet_activation.h:116) [8]  (0.99 ns)
+	wire read operation ('p_read_1') on port 'p_read' [4]  (0 ns)
+	'xor' operation ('index', firmware/nnet_utils/nnet_activation.h:116) [6]  (0.99 ns)
+	'getelementptr' operation ('sigmoid_table_addr') [8]  (0 ns)
+	'load' operation ('sigmoid_table_load') on array 'sigmoid_table' [9]  (3.25 ns)
 
  <State 2>: 3.25ns
 The critical path consists of the following:
-	'getelementptr' operation ('sigmoid_table_addr') [10]  (0 ns)
-	'load' operation ('sigmoid_table_load') on array 'sigmoid_table' [11]  (3.25 ns)
-
- <State 3>: 3.25ns
-The critical path consists of the following:
-	'load' operation ('sigmoid_table_load') on array 'sigmoid_table' [11]  (3.25 ns)
+	'load' operation ('sigmoid_table_load') on array 'sigmoid_table' [9]  (3.25 ns)
 
 
 ============================================================
@@ -139,7 +121,6 @@ N/A
   - Chain level:
 	State 1
 	State 2
-	State 3
 
 
 ============================================================
