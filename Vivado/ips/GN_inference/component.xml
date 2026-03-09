@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:vendor>Fabian</spirit:vendor>
   <spirit:library>hls</spirit:library>
   <spirit:name>GN_inference</spirit:name>
   <spirit:version>1.0</spirit:version>
@@ -229,7 +229,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>17fec619</spirit:value>
+            <spirit:value>e5cbb7a2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -248,7 +248,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5ca1727d</spirit:value>
+            <spirit:value>bffe2b87</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -267,7 +267,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5adb6c48</spirit:value>
+            <spirit:value>2931d872</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -286,7 +286,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4b9a23f8</spirit:value>
+            <spirit:value>6307883a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -664,15 +664,39 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/GN_inference_mul_8s_5ns_11_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_6ns_11_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/GN_inference_mul_8s_5s_11_1_0.v</spirit:name>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_6s_11_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_7ns_11_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/GN_inference_mul_8s_11s_17_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_12s_17_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_5ns_17_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_5s_17_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_6ns_17_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_6s_17_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -754,17 +778,47 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/GN_inference_mul_8s_5ns_11_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_6ns_11_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/GN_inference_mul_8s_5s_11_1_0.v</spirit:name>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_6s_11_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_7ns_11_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/GN_inference_mul_8s_11s_17_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_8s_12s_17_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_5ns_17_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_5s_17_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_6ns_17_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/GN_inference_mul_16s_6s_17_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -848,15 +902,39 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/GN_inference_mul_8s_5ns_11_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_6ns_11_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/GN_inference_mul_8s_5s_11_1_0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_6s_11_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_7ns_11_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/GN_inference_mul_8s_11s_17_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_12s_17_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_5ns_17_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_5s_17_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_6ns_17_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_6s_17_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -874,7 +952,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/GN_inference.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_da69b15a</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_a419a261</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -925,17 +1003,47 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/GN_inference_mul_8s_5ns_11_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_6ns_11_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/GN_inference_mul_8s_5s_11_1_0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_6s_11_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_7ns_11_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/GN_inference_mul_8s_11s_17_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_8s_12s_17_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_5ns_17_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_5s_17_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_6ns_17_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/GN_inference_mul_16s_6s_17_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1027,7 +1135,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">176</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">177</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -1044,8 +1152,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>GN_inference</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114279374</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-09-28T04:34:36Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114513606</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-09T20:27:07Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1054,9 +1162,9 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="818d228d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6c5ee1f8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f517ab4c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="4c81bcb1"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="7329ae2d"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="19031448"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -63,7 +63,7 @@
   <Machine>64</Machine>
   <modelParameters>
     <combinational>0</combinational>
-    <latency>176</latency>
+    <latency>177</latency>
     <II>161</II>
   </modelParameters>
 </AdditionalInfo>

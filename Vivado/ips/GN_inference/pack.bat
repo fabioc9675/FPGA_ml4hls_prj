@@ -6,4 +6,4 @@
 
 @echo off
 
-D:/Xilinx/Vivado/2022.2/bin/vivado  -notrace -mode batch -source run_ippack.tcl
+C:/Xilinx/Vivado/2022.2/bin/vivado  -notrace -mode batch -source run_ippack.tcl

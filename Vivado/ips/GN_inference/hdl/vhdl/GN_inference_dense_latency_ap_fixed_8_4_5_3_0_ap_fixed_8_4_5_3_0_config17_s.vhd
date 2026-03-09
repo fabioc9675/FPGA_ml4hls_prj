@@ -12,7 +12,8 @@ use IEEE.numeric_std.all;
 entity GN_inference_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s is
 port (
     ap_ready : OUT STD_LOGIC;
-    p_read2 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_read : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_read1 : IN STD_LOGIC_VECTOR (7 downto 0);
     ap_return : OUT STD_LOGIC_VECTOR (7 downto 0) );
 end;
 
@@ -20,16 +21,19 @@ end;
 architecture behav of GN_inference_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s is 
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_boolean_1 : BOOLEAN := true;
-    constant ap_const_lv17_1FD47 : STD_LOGIC_VECTOR (16 downto 0) := "11111110101000111";
+    constant ap_const_lv17_1FCBB : STD_LOGIC_VECTOR (16 downto 0) := "11111110010111011";
+    constant ap_const_lv17_1FB18 : STD_LOGIC_VECTOR (16 downto 0) := "11111101100011000";
     constant ap_const_lv32_9 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001001";
     constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
-    constant ap_const_lv8_FF : STD_LOGIC_VECTOR (7 downto 0) := "11111111";
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
 attribute shreg_extract : string;
-    signal mul_ln1270_fu_34_p1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal mul_ln1270_fu_34_p2 : STD_LOGIC_VECTOR (16 downto 0);
-    signal trunc_ln_fu_62_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal mul_ln1270_3_fu_42_p1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal mul_ln1270_fu_44_p1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal mul_ln1270_fu_44_p2 : STD_LOGIC_VECTOR (16 downto 0);
+    signal mul_ln1270_3_fu_42_p2 : STD_LOGIC_VECTOR (16 downto 0);
+    signal trunc_ln818_s_fu_104_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln_fu_89_p4 : STD_LOGIC_VECTOR (7 downto 0);
 
     component GN_inference_mul_8s_11s_17_1_1 IS
     generic (
@@ -45,9 +49,23 @@ attribute shreg_extract : string;
     end component;
 
 
+    component GN_inference_mul_8s_12s_17_1_1 IS
+    generic (
+        ID : INTEGER;
+        NUM_STAGE : INTEGER;
+        din0_WIDTH : INTEGER;
+        din1_WIDTH : INTEGER;
+        dout_WIDTH : INTEGER );
+    port (
+        din0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (11 downto 0);
+        dout : OUT STD_LOGIC_VECTOR (16 downto 0) );
+    end component;
+
+
 
 begin
-    mul_8s_11s_17_1_1_U18 : component GN_inference_mul_8s_11s_17_1_1
+    mul_8s_11s_17_1_1_U75 : component GN_inference_mul_8s_11s_17_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -55,15 +73,29 @@ begin
         din1_WIDTH => 11,
         dout_WIDTH => 17)
     port map (
-        din0 => p_read2,
-        din1 => mul_ln1270_fu_34_p1,
-        dout => mul_ln1270_fu_34_p2);
+        din0 => p_read1,
+        din1 => mul_ln1270_3_fu_42_p1,
+        dout => mul_ln1270_3_fu_42_p2);
+
+    mul_8s_12s_17_1_1_U76 : component GN_inference_mul_8s_12s_17_1_1
+    generic map (
+        ID => 1,
+        NUM_STAGE => 1,
+        din0_WIDTH => 8,
+        din1_WIDTH => 12,
+        dout_WIDTH => 17)
+    port map (
+        din0 => p_read,
+        din1 => mul_ln1270_fu_44_p1,
+        dout => mul_ln1270_fu_44_p2);
 
 
 
 
     ap_ready <= ap_const_logic_1;
-    ap_return <= std_logic_vector(unsigned(trunc_ln_fu_62_p4) + unsigned(ap_const_lv8_FF));
-    mul_ln1270_fu_34_p1 <= ap_const_lv17_1FD47(11 - 1 downto 0);
-    trunc_ln_fu_62_p4 <= mul_ln1270_fu_34_p2(16 downto 9);
+    ap_return <= std_logic_vector(unsigned(trunc_ln818_s_fu_104_p4) + unsigned(trunc_ln_fu_89_p4));
+    mul_ln1270_3_fu_42_p1 <= ap_const_lv17_1FCBB(11 - 1 downto 0);
+    mul_ln1270_fu_44_p1 <= ap_const_lv17_1FB18(12 - 1 downto 0);
+    trunc_ln818_s_fu_104_p4 <= mul_ln1270_3_fu_42_p2(16 downto 9);
+    trunc_ln_fu_89_p4 <= mul_ln1270_fu_44_p2(16 downto 9);
 end behav;

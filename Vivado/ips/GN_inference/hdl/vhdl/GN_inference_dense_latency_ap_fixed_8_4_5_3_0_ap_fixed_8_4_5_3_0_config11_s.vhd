@@ -14,55 +14,97 @@ port (
     ap_ready : OUT STD_LOGIC;
     p_read : IN STD_LOGIC_VECTOR (7 downto 0);
     p_read1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    ap_return : OUT STD_LOGIC_VECTOR (7 downto 0) );
+    ap_return_0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    ap_return_1 : OUT STD_LOGIC_VECTOR (7 downto 0) );
 end;
 
 
 architecture behav of GN_inference_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s is 
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_boolean_1 : BOOLEAN := true;
-    constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
-    constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    constant ap_const_lv11_16 : STD_LOGIC_VECTOR (10 downto 0) := "00000010110";
+    constant ap_const_lv11_7E6 : STD_LOGIC_VECTOR (10 downto 0) := "11111100110";
+    constant ap_const_lv8_1 : STD_LOGIC_VECTOR (7 downto 0) := "00000001";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant ap_const_lv32_A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001010";
-    constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
-    constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv8_FA : STD_LOGIC_VECTOR (7 downto 0) := "11111010";
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
 attribute shreg_extract : string;
-    signal trunc_ln1273_fu_56_p1 : STD_LOGIC_VECTOR (6 downto 0);
-    signal shl_ln1273_s_fu_68_p3 : STD_LOGIC_VECTOR (9 downto 0);
-    signal shl_ln_fu_60_p3 : STD_LOGIC_VECTOR (10 downto 0);
-    signal sext_ln1273_fu_76_p1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal r_V_fu_80_p2 : STD_LOGIC_VECTOR (10 downto 0);
-    signal shl_ln1273_5_fu_104_p3 : STD_LOGIC_VECTOR (8 downto 0);
-    signal shl_ln1273_4_fu_96_p3 : STD_LOGIC_VECTOR (10 downto 0);
-    signal sext_ln1273_8_fu_112_p1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal r_V_11_fu_116_p2 : STD_LOGIC_VECTOR (10 downto 0);
-    signal trunc_ln818_s_fu_122_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal add_ln813_fu_132_p2 : STD_LOGIC_VECTOR (7 downto 0);
-    signal trunc_ln_fu_86_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal mul_ln1270_fu_46_p1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal mul_ln1270_4_fu_49_p1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal shl_ln818_fu_97_p0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal mul_ln1270_fu_46_p2 : STD_LOGIC_VECTOR (10 downto 0);
+    signal mul_ln1270_4_fu_49_p2 : STD_LOGIC_VECTOR (10 downto 0);
+    signal trunc_ln818_s_fu_123_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal trunc_ln_fu_108_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal shl_ln818_fu_97_p2 : STD_LOGIC_VECTOR (7 downto 0);
+    signal add_ln813_fu_133_p2 : STD_LOGIC_VECTOR (7 downto 0);
+
+    component GN_inference_mul_8s_6ns_11_1_0 IS
+    generic (
+        ID : INTEGER;
+        NUM_STAGE : INTEGER;
+        din0_WIDTH : INTEGER;
+        din1_WIDTH : INTEGER;
+        dout_WIDTH : INTEGER );
+    port (
+        din0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (5 downto 0);
+        dout : OUT STD_LOGIC_VECTOR (10 downto 0) );
+    end component;
+
+
+    component GN_inference_mul_8s_6s_11_1_0 IS
+    generic (
+        ID : INTEGER;
+        NUM_STAGE : INTEGER;
+        din0_WIDTH : INTEGER;
+        din1_WIDTH : INTEGER;
+        dout_WIDTH : INTEGER );
+    port (
+        din0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (5 downto 0);
+        dout : OUT STD_LOGIC_VECTOR (10 downto 0) );
+    end component;
+
 
 
 begin
+    mul_8s_6ns_11_1_0_U69 : component GN_inference_mul_8s_6ns_11_1_0
+    generic map (
+        ID => 1,
+        NUM_STAGE => 1,
+        din0_WIDTH => 8,
+        din1_WIDTH => 6,
+        dout_WIDTH => 11)
+    port map (
+        din0 => p_read,
+        din1 => mul_ln1270_fu_46_p1,
+        dout => mul_ln1270_fu_46_p2);
+
+    mul_8s_6s_11_1_0_U70 : component GN_inference_mul_8s_6s_11_1_0
+    generic map (
+        ID => 1,
+        NUM_STAGE => 1,
+        din0_WIDTH => 8,
+        din1_WIDTH => 6,
+        dout_WIDTH => 11)
+    port map (
+        din0 => p_read1,
+        din1 => mul_ln1270_4_fu_49_p1,
+        dout => mul_ln1270_4_fu_49_p2);
 
 
 
-    add_ln813_fu_132_p2 <= std_logic_vector(unsigned(trunc_ln818_s_fu_122_p4) + unsigned(ap_const_lv8_FA));
+
+    add_ln813_fu_133_p2 <= std_logic_vector(unsigned(trunc_ln818_s_fu_123_p4) + unsigned(trunc_ln_fu_108_p4));
     ap_ready <= ap_const_logic_1;
-    ap_return <= std_logic_vector(unsigned(add_ln813_fu_132_p2) + unsigned(trunc_ln_fu_86_p4));
-    r_V_11_fu_116_p2 <= std_logic_vector(unsigned(shl_ln1273_4_fu_96_p3) + unsigned(sext_ln1273_8_fu_112_p1));
-    r_V_fu_80_p2 <= std_logic_vector(unsigned(shl_ln_fu_60_p3) - unsigned(sext_ln1273_fu_76_p1));
-        sext_ln1273_8_fu_112_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(shl_ln1273_5_fu_104_p3),11));
-
-        sext_ln1273_fu_76_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(shl_ln1273_s_fu_68_p3),11));
-
-    shl_ln1273_4_fu_96_p3 <= (p_read1 & ap_const_lv3_0);
-    shl_ln1273_5_fu_104_p3 <= (p_read1 & ap_const_lv1_0);
-    shl_ln1273_s_fu_68_p3 <= (p_read & ap_const_lv2_0);
-    shl_ln_fu_60_p3 <= (trunc_ln1273_fu_56_p1 & ap_const_lv4_0);
-    trunc_ln1273_fu_56_p1 <= p_read(7 - 1 downto 0);
-    trunc_ln818_s_fu_122_p4 <= r_V_11_fu_116_p2(10 downto 3);
-    trunc_ln_fu_86_p4 <= r_V_fu_80_p2(10 downto 3);
+    ap_return_0 <= shl_ln818_fu_97_p2;
+    ap_return_1 <= add_ln813_fu_133_p2;
+    mul_ln1270_4_fu_49_p1 <= ap_const_lv11_7E6(6 - 1 downto 0);
+    mul_ln1270_fu_46_p1 <= ap_const_lv11_16(6 - 1 downto 0);
+    shl_ln818_fu_97_p0 <= p_read;
+    shl_ln818_fu_97_p2 <= std_logic_vector(shift_left(unsigned(shl_ln818_fu_97_p0),to_integer(unsigned('0' & ap_const_lv8_1(8-1 downto 0)))));
+    trunc_ln818_s_fu_123_p4 <= mul_ln1270_4_fu_49_p2(10 downto 3);
+    trunc_ln_fu_108_p4 <= mul_ln1270_fu_46_p2(10 downto 3);
 end behav;

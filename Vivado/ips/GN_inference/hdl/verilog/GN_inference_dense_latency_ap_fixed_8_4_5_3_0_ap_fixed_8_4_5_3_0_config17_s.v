@@ -9,18 +9,23 @@
 
 module GN_inference_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s (
         ap_ready,
-        p_read2,
+        p_read,
+        p_read1,
         ap_return
 );
 
 
 output   ap_ready;
-input  [7:0] p_read2;
+input  [7:0] p_read;
+input  [7:0] p_read1;
 output  [7:0] ap_return;
 
-wire  signed [10:0] mul_ln1270_fu_34_p1;
-wire   [16:0] mul_ln1270_fu_34_p2;
-wire   [7:0] trunc_ln_fu_62_p4;
+wire  signed [10:0] mul_ln1270_3_fu_42_p1;
+wire  signed [11:0] mul_ln1270_fu_44_p1;
+wire   [16:0] mul_ln1270_fu_44_p2;
+wire   [16:0] mul_ln1270_3_fu_42_p2;
+wire   [7:0] trunc_ln818_s_fu_104_p4;
+wire   [7:0] trunc_ln_fu_89_p4;
 
 GN_inference_mul_8s_11s_17_1_1 #(
     .ID( 1 ),
@@ -28,18 +33,34 @@ GN_inference_mul_8s_11s_17_1_1 #(
     .din0_WIDTH( 8 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 17 ))
-mul_8s_11s_17_1_1_U18(
-    .din0(p_read2),
-    .din1(mul_ln1270_fu_34_p1),
-    .dout(mul_ln1270_fu_34_p2)
+mul_8s_11s_17_1_1_U75(
+    .din0(p_read1),
+    .din1(mul_ln1270_3_fu_42_p1),
+    .dout(mul_ln1270_3_fu_42_p2)
+);
+
+GN_inference_mul_8s_12s_17_1_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 1 ),
+    .din0_WIDTH( 8 ),
+    .din1_WIDTH( 12 ),
+    .dout_WIDTH( 17 ))
+mul_8s_12s_17_1_1_U76(
+    .din0(p_read),
+    .din1(mul_ln1270_fu_44_p1),
+    .dout(mul_ln1270_fu_44_p2)
 );
 
 assign ap_ready = 1'b1;
 
-assign trunc_ln_fu_62_p4 = {{mul_ln1270_fu_34_p2[16:9]}};
+assign trunc_ln818_s_fu_104_p4 = {{mul_ln1270_3_fu_42_p2[16:9]}};
 
-assign ap_return = ($signed(trunc_ln_fu_62_p4) + $signed(8'd255));
+assign trunc_ln_fu_89_p4 = {{mul_ln1270_fu_44_p2[16:9]}};
 
-assign mul_ln1270_fu_34_p1 = 17'd130375;
+assign ap_return = (trunc_ln818_s_fu_104_p4 + trunc_ln_fu_89_p4);
+
+assign mul_ln1270_3_fu_42_p1 = 17'd130235;
+
+assign mul_ln1270_fu_44_p1 = 17'd129816;
 
 endmodule //GN_inference_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s

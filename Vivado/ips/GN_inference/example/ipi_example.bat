@@ -6,4 +6,4 @@
 
 @echo off
 
-D:/Xilinx/Vivado/2022.2/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xc7z020-clg484-1 ../xilinx_com_hls_GN_inference_1_0.zip
+C:/Xilinx/Vivado/2022.2/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xc7z020-clg484-1 ../Fabian_hls_GN_inference_1_0.zip
