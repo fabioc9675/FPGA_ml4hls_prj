@@ -42,23 +42,20 @@ The verification of the IP's functionality is performed using the Vitis HLS tool
 
 2. Open the project in the folder **part_2 -> hlsPrj -> myproject_prj**, which was generated in the Jupyter notebook. In this way, the project created with **hls4ml** will be loaded into the Vitis HLS.
 3. Perform the following configurations in the project:
-
    - In the menu, go to **Project -> Project Settings**. Click on **Synthesis**.
    - In the _Synthesis settings_, change the name of the **top function** by **GN_inference**.
 
      > **Note**: The **top function** acts as the entry point for the Vitis HLS design, linking all input and output ports of the hardware module. It is responsible for setting up the required input values and triggering the hardware module. Once the computation is complete, the **top function** gathers the output values and returns them to the software application.
-     >
 
-<!-- - In _Synthesis C/C++ Source files_ part, in the table click in the entry **myproject.cpp** and click in Edit CFLAGS. Replace the text by: **-std=c++14**.  
-  
-    - Click **OK**. 
+<!-- - In _Synthesis C/C++ Source files_ part, in the table click in the entry **myproject.cpp** and click in Edit CFLAGS. Replace the text by: **-std=c++14**.
 
-<!-- The configuration should look like the image below. 
+    - Click **OK**.
+
+<!-- The configuration should look like the image below.
 
 ![HLS project settings](../uploads/Lab_5/part2/prjSettings.png){width=70%} -->
 
 4. Check the following configurations related to the solution.
-
    - In the menu, go to **Solution -> Solution Settings**. Click on **Synthesis**.
    - Set the **Clock** in **10**, with an **uncertainty** value of **12.5%**.
    - Select the corresponding part: **xc7z020clg484-1**.
@@ -83,7 +80,7 @@ The configuration should be as shown in the image below.
    	hls::stream<AXI_VALUE_IN> &input,
    	int *result
 
-   ) {  
+   ) {
        #pragma HLS INTERFACE mode=ap_ctrl_hs port=return
        #pragma HLS INTERFACE axis register both port=input
        #pragma HLS INTERFACE ap_vld port=result
@@ -96,8 +93,9 @@ The configuration should be as shown in the image below.
    ![alt text](uploads//Lab_5/part2/HLS_change1.png)
 
    <!-- ![alt text](../uploads/Lab_5/part2/HLS_code1.png) -->
+
 6. Go to the folder **/home/student/workshop/mylabs/Lab5_HLS4ML/part_2/src_hls** and copy the file **myproject_test.cpp** in the folder **/home/student/workshop/mylabs/Lab5_HLS4ML/part_2/hlsPrj/**. This action will replace the old file.
-7. Go to the folder **/home/student/workshop/mylabs/Lab5_HLS4ML/part_2/src_hls** and copy the file **myproject_.h** in the folder **/home/student/workshop/mylabs/Lab5_HLS4ML/part_2/hlsPrj/firmware**. This action will replace the old file.
+7. Go to the folder **/home/student/workshop/mylabs/Lab5_HLS4ML/part_2/src_hls** and copy the file **myproject\_.h** in the folder **/home/student/workshop/mylabs/Lab5_HLS4ML/part_2/hlsPrj/firmware**. This action will replace the old file.
 
 <!-- 8. Go to the folder **/home/student/workshop/mylabs/Project_ML/part_2/src_hls** and copy the file **defines.h** in the folder **/home/smr4078/workshop/mylabs/Project_ML/part_2/hlsPrj/firmware**. This action will replace the old file.  -->
 
@@ -145,30 +143,31 @@ The configuration should be as shown in the image below.
     }
    ```
 
-   Add the previous code before the last **\}** in  **myproject.cpp** file. Use the following image as reference.
+   Add the previous code before the last **\}** in **myproject.cpp** file. Use the following image as reference.
 
    ![alt text](uploads/Lab_5/part2/HLS_change3.png)
 
 Once the code modifications are complete, it is time to analyze how the IP core behaves when gamma or neutron signals are used as inputs.
 
-9. Go to the flow navigator pane (left bottom corner).  Under **C SIMULATION**, click on **Run C Simulation**.
+9. Go to the flow navigator pane (left bottom corner). Under **C SIMULATION**, click on **Run C Simulation**.
 
    ![Flow Navigator HLS](uploads/Lab_5/part2/flowNavigator_hls.png)
+
 10. A _C Simulation Dialog_ will appear. Click **OK**. The simulation will start. Wait for the results.
 
     ![C Simulation Dialog](uploads/Lab_5/part2/popUp_simulation.png)
+
 11. After the simulation, in the Flow Navigator pane, under **C SYNTHESIS**, click on **Run C Synthesis**. A pop-up window will appear with configurations for the active solution, displaying the values for the clock, FPGA part, and flow target. Leave these settings as they are and click the **OK** button. Wait for the synthesis report.
 
     ![Synthesis Dialog](uploads/Lab_5/part2/popUp_synth.png)
+
 12. The final step is generate the IP core. In the flow navigator pane (left bottom corner), under **IMPLEMENTATION**, click on **Export RTL**. In the **Display Name** option, add the name **GN_inference**. Click the **OK** button. Wait until the export process is completed.
 
     ![Implementation Dialog](uploads/Lab_5/part2/popUp_impl.png)
 
 With the generated IP core, it is time to test the inference process in the SoC platform.
 
-
 ![Implementation Dialog](uploads/Lab_5/part2/bd_gn_inference.png)
-
 
 ## References
 

@@ -21,14 +21,14 @@ HLS_SOURCES = ../../../../myproject_test.cpp ../../../../firmware/myproject.cpp
 
 override TARGET := csim.exe
 
-AUTOPILOT_ROOT := D:/Xilinx/Vitis_HLS/2022.2
+AUTOPILOT_ROOT := C:/Xilinx/Vitis_HLS/2022.2
 AUTOPILOT_MACH := win64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
   IFLAG += -m32
 endif
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := D:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin
+  AP_GCC_PATH := C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AP_CLANG_PATH := ${AUTOPILOT_ROOT}/tps/win64/msys64/mingw64/bin
@@ -56,7 +56,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
-IFLAG += -Wno-unknown-pragmas -std=c++0x 
+IFLAG += -Wno-unknown-pragmas -std=c++0x -DRTL_SIM 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -75,7 +75,7 @@ all: $(TARGET)
 
 $(ObjDir)/myproject_test.o: ../../../../myproject_test.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../myproject_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++0x -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -std=c++0x -DRTL_SIM -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/myproject_test.d
 
