@@ -1,0 +1,1527 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Mon Mar  9 23:08:46 2026
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.554 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       35|       35|  0.175 us|  0.175 us|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------------------+------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                                             |                                                                  |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                                   Instance                                  |                              Module                              |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +-----------------------------------------------------------------------------+------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_4_5_3_0_config2_s_fu_67     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_4_5_3_0_config2_s    |        8|        8|  40.000 ns|  40.000 ns|    1|    1|      yes|
+        |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config5_s_fu_73      |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config5_s     |        5|        5|  25.000 ns|  25.000 ns|    1|    1|      yes|
+        |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config8_s_fu_83      |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config8_s     |        3|        3|  15.000 ns|  15.000 ns|    1|    1|      yes|
+        |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s_fu_90     |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s    |        1|        1|   5.000 ns|   5.000 ns|    1|    1|      yes|
+        |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config14_s_fu_96     |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config14_s    |        3|        3|  15.000 ns|  15.000 ns|    1|    1|      yes|
+        |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s_fu_103    |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s    |        3|        3|  15.000 ns|  15.000 ns|    1|    1|      yes|
+        |grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110  |sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s  |        2|        2|  10.000 ns|  10.000 ns|    1|    1|      yes|
+        +-----------------------------------------------------------------------------+------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        1|   71|   18052|  16358|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     36|    -|
+|Register         |        -|    -|    2750|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        1|   71|   20802|  16398|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|   32|      19|     30|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+-------+-------+-----+
+    |                                   Instance                                  |                              Module                              | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +-----------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+-------+-------+-----+
+    |grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_4_5_3_0_config2_s_fu_67     |dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_4_5_3_0_config2_s    |        0|  56|  16950|  15550|    0|
+    |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s_fu_90     |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s    |        0|   0|     57|    129|    0|
+    |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config14_s_fu_96     |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config14_s    |        0|   2|    208|    148|    0|
+    |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s_fu_103    |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s    |        0|   3|    218|     65|    0|
+    |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config5_s_fu_73      |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config5_s     |        0|   8|    477|    366|    0|
+    |grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config8_s_fu_83      |dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config8_s     |        0|   2|    129|     87|    0|
+    |grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110  |sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s  |        1|   0|     13|     13|    0|
+    +-----------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+-------+-------+-----+
+    |Total                                                                        |                                                                  |        1|  71|  18052|  16358|    0|
+    +-----------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |ap_block_pp0_stage0_01001  |       and|   0|  0|   2|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|   4|           2|           3|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+------+-----------+
+    |           Name           | LUT| Input Size| Bits | Total Bits|
+    +--------------------------+----+-----------+------+-----------+
+    |inputLayer_ap_vld_in_sig  |   9|          2|     1|          2|
+    |inputLayer_ap_vld_preg    |   9|          2|     1|          2|
+    |inputLayer_blk_n          |   9|          2|     1|          2|
+    |inputLayer_in_sig         |   9|          2|  2576|       5152|
+    +--------------------------+----+-----------+------+-----------+
+    |Total                     |  36|          8|  2579|       5158|
+    +--------------------------+----+-----------+------+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------------------+------+----+------+-----------+
+    |                                           Name                                           |  FF  | LUT| Bits | Const Bits|
+    +------------------------------------------------------------------------------------------+------+----+------+-----------+
+    |ap_CS_fsm                                                                                 |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter1                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter10                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter11                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter12                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter13                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter14                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter15                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter16                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter17                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter18                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter19                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter2                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter20                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter21                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter22                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter23                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter24                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter25                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter26                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter27                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter28                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter29                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter3                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter30                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter31                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter32                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter33                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter34                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter35                                                                  |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter4                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter5                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter6                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter7                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter8                                                                   |     1|   0|     1|          0|
+    |ap_enable_reg_pp0_iter9                                                                   |     1|   0|     1|          0|
+    |grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110_ap_start_reg  |     1|   0|     1|          0|
+    |inputLayer_ap_vld_preg                                                                    |     1|   0|     1|          0|
+    |inputLayer_preg                                                                           |  2576|   0|  2576|          0|
+    |layer11_out_V_1_reg_256                                                                   |     8|   0|     8|          0|
+    |layer11_out_V_2_reg_261                                                                   |     8|   0|     8|          0|
+    |layer11_out_V_reg_251                                                                     |     8|   0|     8|          0|
+    |layer14_out_V_1_reg_271                                                                   |     8|   0|     8|          0|
+    |layer14_out_V_2_reg_276                                                                   |     8|   0|     8|          0|
+    |layer14_out_V_reg_266                                                                     |     8|   0|     8|          0|
+    |layer2_out_V_1_reg_201                                                                    |     8|   0|     8|          0|
+    |layer2_out_V_2_reg_206                                                                    |     8|   0|     8|          0|
+    |layer2_out_V_3_reg_211                                                                    |     8|   0|     8|          0|
+    |layer2_out_V_4_reg_216                                                                    |     8|   0|     8|          0|
+    |layer2_out_V_5_reg_221                                                                    |     8|   0|     8|          0|
+    |layer2_out_V_reg_196                                                                      |     8|   0|     8|          0|
+    |layer5_out_V_1_reg_231                                                                    |     8|   0|     8|          0|
+    |layer5_out_V_2_reg_236                                                                    |     8|   0|     8|          0|
+    |layer5_out_V_reg_226                                                                      |     8|   0|     8|          0|
+    |layer8_out_V_1_reg_246                                                                    |     8|   0|     8|          0|
+    |layer8_out_V_reg_241                                                                      |     8|   0|     8|          0|
+    +------------------------------------------------------------------------------------------+------+----+------+-----------+
+    |Total                                                                                     |  2750|   0|  2750|          0|
+    +------------------------------------------------------------------------------------------+------+----+------+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+------+------------+---------------+--------------+
+|       RTL Ports      | Dir | Bits |  Protocol  | Source Object |    C Type    |
++----------------------+-----+------+------------+---------------+--------------+
+|ap_clk                |   in|     1|  ap_ctrl_hs|      myproject|  return value|
+|ap_rst                |   in|     1|  ap_ctrl_hs|      myproject|  return value|
+|ap_start              |   in|     1|  ap_ctrl_hs|      myproject|  return value|
+|ap_done               |  out|     1|  ap_ctrl_hs|      myproject|  return value|
+|ap_idle               |  out|     1|  ap_ctrl_hs|      myproject|  return value|
+|ap_ready              |  out|     1|  ap_ctrl_hs|      myproject|  return value|
+|inputLayer_ap_vld     |   in|     1|      ap_vld|     inputLayer|       pointer|
+|inputLayer            |   in|  2576|      ap_vld|     inputLayer|       pointer|
+|layer19_out_0         |  out|     8|      ap_vld|  layer19_out_0|       pointer|
+|layer19_out_0_ap_vld  |  out|     1|      ap_vld|  layer19_out_0|       pointer|
+|layer19_out_1         |  out|     8|      ap_vld|  layer19_out_1|       pointer|
+|layer19_out_1_ap_vld  |  out|     1|      ap_vld|  layer19_out_1|       pointer|
++----------------------+-----+------+------------+---------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 36
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 36
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 36, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.34>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%inputLayer_read = read i2576 @_ssdm_op_Read.ap_vld.i2576P0A, i2576 %inputLayer" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 37 'read' 'inputLayer_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [10/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 38 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 3.34>
+ST_2 : Operation 39 [9/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 39 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 3.34>
+ST_3 : Operation 40 [8/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 40 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 3.34>
+ST_4 : Operation 41 [7/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 41 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 3.34>
+ST_5 : Operation 42 [6/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 42 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 3.34>
+ST_6 : Operation 43 [5/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 43 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 3.34>
+ST_7 : Operation 44 [4/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 44 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 3.34>
+ST_8 : Operation 45 [3/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 45 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 3.34>
+ST_9 : Operation 46 [2/10] (3.34ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 46 'call' 'call_ret1' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 1.91>
+ST_10 : Operation 47 [1/10] (1.91ns)   --->   "%call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 47 'call' 'call_ret1' <Predicate = true> <Delay = 1.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 48 [1/1] (0.00ns)   --->   "%layer2_out_V = extractvalue i48 %call_ret1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 48 'extractvalue' 'layer2_out_V' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 49 [1/1] (0.00ns)   --->   "%layer2_out_V_1 = extractvalue i48 %call_ret1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 49 'extractvalue' 'layer2_out_V_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 50 [1/1] (0.00ns)   --->   "%layer2_out_V_2 = extractvalue i48 %call_ret1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 50 'extractvalue' 'layer2_out_V_2' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 51 [1/1] (0.00ns)   --->   "%layer2_out_V_3 = extractvalue i48 %call_ret1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 51 'extractvalue' 'layer2_out_V_3' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 52 [1/1] (0.00ns)   --->   "%layer2_out_V_4 = extractvalue i48 %call_ret1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 52 'extractvalue' 'layer2_out_V_4' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 53 [1/1] (0.00ns)   --->   "%layer2_out_V_5 = extractvalue i48 %call_ret1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 53 'extractvalue' 'layer2_out_V_5' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 2.93>
+ST_11 : Operation 54 [7/7] (2.93ns)   --->   "%call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 54 'call' 'call_ret2' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 3.55>
+ST_12 : Operation 55 [6/7] (3.55ns)   --->   "%call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 55 'call' 'call_ret2' <Predicate = true> <Delay = 3.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 3.55>
+ST_13 : Operation 56 [5/7] (3.55ns)   --->   "%call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 56 'call' 'call_ret2' <Predicate = true> <Delay = 3.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 3.55>
+ST_14 : Operation 57 [4/7] (3.55ns)   --->   "%call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 57 'call' 'call_ret2' <Predicate = true> <Delay = 3.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 3.55>
+ST_15 : Operation 58 [3/7] (3.55ns)   --->   "%call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 58 'call' 'call_ret2' <Predicate = true> <Delay = 3.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 3.55>
+ST_16 : Operation 59 [2/7] (3.55ns)   --->   "%call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 59 'call' 'call_ret2' <Predicate = true> <Delay = 3.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 1.91>
+ST_17 : Operation 60 [1/7] (1.91ns)   --->   "%call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 60 'call' 'call_ret2' <Predicate = true> <Delay = 1.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 61 [1/1] (0.00ns)   --->   "%layer5_out_V = extractvalue i24 %call_ret2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 61 'extractvalue' 'layer5_out_V' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 62 [1/1] (0.00ns)   --->   "%layer5_out_V_1 = extractvalue i24 %call_ret2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 62 'extractvalue' 'layer5_out_V_1' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 63 [1/1] (0.00ns)   --->   "%layer5_out_V_2 = extractvalue i24 %call_ret2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 63 'extractvalue' 'layer5_out_V_2' <Predicate = true> <Delay = 0.00>
+
+State 18 <SV = 17> <Delay = 2.93>
+ST_18 : Operation 64 [5/5] (2.93ns)   --->   "%call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 64 'call' 'call_ret3' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 2.93>
+ST_19 : Operation 65 [4/5] (2.93ns)   --->   "%call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 65 'call' 'call_ret3' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 2.93>
+ST_20 : Operation 66 [3/5] (2.93ns)   --->   "%call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 66 'call' 'call_ret3' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 2.93>
+ST_21 : Operation 67 [2/5] (2.93ns)   --->   "%call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 67 'call' 'call_ret3' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 2.93>
+ST_22 : Operation 68 [1/5] (2.93ns)   --->   "%call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 68 'call' 'call_ret3' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 69 [1/1] (0.00ns)   --->   "%layer8_out_V = extractvalue i16 %call_ret3" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 69 'extractvalue' 'layer8_out_V' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 70 [1/1] (0.00ns)   --->   "%layer8_out_V_1 = extractvalue i16 %call_ret3" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 70 'extractvalue' 'layer8_out_V_1' <Predicate = true> <Delay = 0.00>
+
+State 23 <SV = 22> <Delay = 3.27>
+ST_23 : Operation 71 [2/2] (3.27ns)   --->   "%call_ret4 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config11>, i8 %layer8_out_V, i8 %layer8_out_V_1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 71 'call' 'call_ret4' <Predicate = true> <Delay = 3.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 1.91>
+ST_24 : Operation 72 [1/2] (1.91ns)   --->   "%call_ret4 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config11>, i8 %layer8_out_V, i8 %layer8_out_V_1" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 72 'call' 'call_ret4' <Predicate = true> <Delay = 1.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 73 [1/1] (0.00ns)   --->   "%layer11_out_V = extractvalue i24 %call_ret4" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 73 'extractvalue' 'layer11_out_V' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 74 [1/1] (0.00ns)   --->   "%layer11_out_V_1 = extractvalue i24 %call_ret4" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 74 'extractvalue' 'layer11_out_V_1' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 75 [1/1] (0.00ns)   --->   "%layer11_out_V_2 = extractvalue i24 %call_ret4" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 75 'extractvalue' 'layer11_out_V_2' <Predicate = true> <Delay = 0.00>
+
+State 25 <SV = 24> <Delay = 2.93>
+ST_25 : Operation 76 [5/5] (2.93ns)   --->   "%call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 76 'call' 'call_ret5' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 2.93>
+ST_26 : Operation 77 [4/5] (2.93ns)   --->   "%call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 77 'call' 'call_ret5' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 2.93>
+ST_27 : Operation 78 [3/5] (2.93ns)   --->   "%call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 78 'call' 'call_ret5' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 2.93>
+ST_28 : Operation 79 [2/5] (2.93ns)   --->   "%call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 79 'call' 'call_ret5' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 1.91>
+ST_29 : Operation 80 [1/5] (1.91ns)   --->   "%call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 80 'call' 'call_ret5' <Predicate = true> <Delay = 1.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 81 [1/1] (0.00ns)   --->   "%layer14_out_V = extractvalue i24 %call_ret5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 81 'extractvalue' 'layer14_out_V' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 82 [1/1] (0.00ns)   --->   "%layer14_out_V_1 = extractvalue i24 %call_ret5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 82 'extractvalue' 'layer14_out_V_1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 83 [1/1] (0.00ns)   --->   "%layer14_out_V_2 = extractvalue i24 %call_ret5" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 83 'extractvalue' 'layer14_out_V_2' <Predicate = true> <Delay = 0.00>
+
+State 30 <SV = 29> <Delay = 3.34>
+ST_30 : Operation 84 [5/5] (3.34ns)   --->   "%layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 84 'call' 'layer17_out_V' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 3.34>
+ST_31 : Operation 85 [4/5] (3.34ns)   --->   "%layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 85 'call' 'layer17_out_V' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 3.34>
+ST_32 : Operation 86 [3/5] (3.34ns)   --->   "%layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 86 'call' 'layer17_out_V' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 32> <Delay = 3.34>
+ST_33 : Operation 87 [2/5] (3.34ns)   --->   "%layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 87 'call' 'layer17_out_V' <Predicate = true> <Delay = 3.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 34 <SV = 33> <Delay = 2.90>
+ST_34 : Operation 88 [1/5] (1.91ns)   --->   "%layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2" [firmware/nnet_utils/nnet_dense.h:54]   --->   Operation 88 'call' 'layer17_out_V' <Predicate = true> <Delay = 1.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_34 : Operation 89 [3/3] (0.99ns)   --->   "%call_ret = call i4 @sigmoid<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, sigmoid_config19>, i8 %layer17_out_V, i10 %sigmoid_table" [firmware/myproject.cpp:66]   --->   Operation 89 'call' 'call_ret' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 35 <SV = 34> <Delay = 3.25>
+ST_35 : Operation 90 [2/3] (3.25ns)   --->   "%call_ret = call i4 @sigmoid<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, sigmoid_config19>, i8 %layer17_out_V, i10 %sigmoid_table" [firmware/myproject.cpp:66]   --->   Operation 90 'call' 'call_ret' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 36 <SV = 35> <Delay = 3.25>
+ST_36 : Operation 91 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0"   --->   Operation 91 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 92 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2"   --->   Operation 92 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 93 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2576 %inputLayer"   --->   Operation 93 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 94 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2576 %inputLayer, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 94 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 95 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %layer19_out_0"   --->   Operation 95 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 96 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %layer19_out_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 96 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 97 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %layer19_out_1"   --->   Operation 97 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 98 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %layer19_out_1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 98 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 99 [1/3] (3.25ns)   --->   "%call_ret = call i4 @sigmoid<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, sigmoid_config19>, i8 %layer17_out_V, i10 %sigmoid_table" [firmware/myproject.cpp:66]   --->   Operation 99 'call' 'call_ret' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_36 : Operation 100 [1/1] (0.00ns)   --->   "%zext_ln66 = zext i4 %call_ret" [firmware/myproject.cpp:66]   --->   Operation 100 'zext' 'zext_ln66' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 101 [1/1] (0.00ns)   --->   "%write_ln66 = write void @_ssdm_op_Write.ap_vld.i8P0A, i8 %layer19_out_0, i8 8" [firmware/myproject.cpp:66]   --->   Operation 101 'write' 'write_ln66' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 102 [1/1] (0.00ns)   --->   "%write_ln66 = write void @_ssdm_op_Write.ap_vld.i8P0A, i8 %layer19_out_1, i8 %zext_ln66" [firmware/myproject.cpp:66]   --->   Operation 102 'write' 'write_ln66' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 103 [1/1] (0.00ns)   --->   "%ret_ln68 = ret" [firmware/myproject.cpp:68]   --->   Operation 103 'ret' 'ret_ln68' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 1
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ inputLayer]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer19_out_0]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ layer19_out_1]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ sigmoid_table]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+inputLayer_read   (read         ) [ 0111111111100000000000000000000000000]
+call_ret1         (call         ) [ 0000000000000000000000000000000000000]
+layer2_out_V      (extractvalue ) [ 0100000000011111110000000000000000000]
+layer2_out_V_1    (extractvalue ) [ 0100000000011111110000000000000000000]
+layer2_out_V_2    (extractvalue ) [ 0100000000011111110000000000000000000]
+layer2_out_V_3    (extractvalue ) [ 0100000000011111110000000000000000000]
+layer2_out_V_4    (extractvalue ) [ 0100000000011111110000000000000000000]
+layer2_out_V_5    (extractvalue ) [ 0100000000011111110000000000000000000]
+call_ret2         (call         ) [ 0000000000000000000000000000000000000]
+layer5_out_V      (extractvalue ) [ 0100000000000000001111100000000000000]
+layer5_out_V_1    (extractvalue ) [ 0100000000000000001111100000000000000]
+layer5_out_V_2    (extractvalue ) [ 0100000000000000001111100000000000000]
+call_ret3         (call         ) [ 0000000000000000000000000000000000000]
+layer8_out_V      (extractvalue ) [ 0100000000000000000000010000000000000]
+layer8_out_V_1    (extractvalue ) [ 0100000000000000000000010000000000000]
+call_ret4         (call         ) [ 0000000000000000000000000000000000000]
+layer11_out_V     (extractvalue ) [ 0100000000000000000000000111110000000]
+layer11_out_V_1   (extractvalue ) [ 0100000000000000000000000111110000000]
+layer11_out_V_2   (extractvalue ) [ 0100000000000000000000000111110000000]
+call_ret5         (call         ) [ 0000000000000000000000000000000000000]
+layer14_out_V     (extractvalue ) [ 0100000000000000000000000000001111100]
+layer14_out_V_1   (extractvalue ) [ 0100000000000000000000000000001111100]
+layer14_out_V_2   (extractvalue ) [ 0100000000000000000000000000001111100]
+layer17_out_V     (call         ) [ 0000000000000000000000000000000000000]
+specpipeline_ln0  (specpipeline ) [ 0000000000000000000000000000000000000]
+spectopmodule_ln0 (spectopmodule) [ 0000000000000000000000000000000000000]
+specbitsmap_ln0   (specbitsmap  ) [ 0000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000]
+specbitsmap_ln0   (specbitsmap  ) [ 0000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000]
+specbitsmap_ln0   (specbitsmap  ) [ 0000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000]
+call_ret          (call         ) [ 0000000000000000000000000000000000000]
+zext_ln66         (zext         ) [ 0000000000000000000000000000000000000]
+write_ln66        (write        ) [ 0000000000000000000000000000000000000]
+write_ln66        (write        ) [ 0000000000000000000000000000000000000]
+ret_ln68          (ret          ) [ 0000000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="inputLayer">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inputLayer"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="layer19_out_0">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer19_out_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="layer19_out_1">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="layer19_out_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="sigmoid_table">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sigmoid_table"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_vld.i2576P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config11>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sigmoid<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, sigmoid_config19>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_vld.i8P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="inputLayer_read_read_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="2576" slack="0"/>
+<pin id="48" dir="0" index="1" bw="2576" slack="0"/>
+<pin id="49" dir="1" index="2" bw="2576" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="inputLayer_read/1 "/>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="write_ln66_write_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="0" slack="0"/>
+<pin id="54" dir="0" index="1" bw="8" slack="0"/>
+<pin id="55" dir="0" index="2" bw="5" slack="0"/>
+<pin id="56" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln66/36 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1004" name="write_ln66_write_fu_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="0" slack="0"/>
+<pin id="62" dir="0" index="1" bw="8" slack="0"/>
+<pin id="63" dir="0" index="2" bw="4" slack="0"/>
+<pin id="64" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln66/36 "/>
+</bind>
+</comp>
+
+<comp id="67" class="1004" name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_4_5_3_0_config2_s_fu_67">
+<pin_list>
+<pin id="68" dir="0" index="0" bw="48" slack="0"/>
+<pin id="69" dir="0" index="1" bw="2576" slack="0"/>
+<pin id="70" dir="1" index="2" bw="48" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret1/1 "/>
+</bind>
+</comp>
+
+<comp id="73" class="1004" name="grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config5_s_fu_73">
+<pin_list>
+<pin id="74" dir="0" index="0" bw="24" slack="0"/>
+<pin id="75" dir="0" index="1" bw="8" slack="1"/>
+<pin id="76" dir="0" index="2" bw="8" slack="1"/>
+<pin id="77" dir="0" index="3" bw="8" slack="1"/>
+<pin id="78" dir="0" index="4" bw="8" slack="1"/>
+<pin id="79" dir="0" index="5" bw="8" slack="1"/>
+<pin id="80" dir="0" index="6" bw="8" slack="1"/>
+<pin id="81" dir="1" index="7" bw="24" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret2/11 "/>
+</bind>
+</comp>
+
+<comp id="83" class="1004" name="grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config8_s_fu_83">
+<pin_list>
+<pin id="84" dir="0" index="0" bw="16" slack="0"/>
+<pin id="85" dir="0" index="1" bw="8" slack="1"/>
+<pin id="86" dir="0" index="2" bw="8" slack="1"/>
+<pin id="87" dir="0" index="3" bw="8" slack="1"/>
+<pin id="88" dir="1" index="4" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret3/18 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="24" slack="0"/>
+<pin id="92" dir="0" index="1" bw="8" slack="1"/>
+<pin id="93" dir="0" index="2" bw="8" slack="1"/>
+<pin id="94" dir="1" index="3" bw="24" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret4/23 "/>
+</bind>
+</comp>
+
+<comp id="96" class="1004" name="grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config14_s_fu_96">
+<pin_list>
+<pin id="97" dir="0" index="0" bw="24" slack="0"/>
+<pin id="98" dir="0" index="1" bw="8" slack="1"/>
+<pin id="99" dir="0" index="2" bw="8" slack="1"/>
+<pin id="100" dir="0" index="3" bw="8" slack="1"/>
+<pin id="101" dir="1" index="4" bw="24" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret5/25 "/>
+</bind>
+</comp>
+
+<comp id="103" class="1004" name="grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s_fu_103">
+<pin_list>
+<pin id="104" dir="0" index="0" bw="8" slack="0"/>
+<pin id="105" dir="0" index="1" bw="8" slack="1"/>
+<pin id="106" dir="0" index="2" bw="8" slack="1"/>
+<pin id="107" dir="0" index="3" bw="8" slack="1"/>
+<pin id="108" dir="1" index="4" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="layer17_out_V/30 "/>
+</bind>
+</comp>
+
+<comp id="110" class="1004" name="grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110">
+<pin_list>
+<pin id="111" dir="0" index="0" bw="4" slack="0"/>
+<pin id="112" dir="0" index="1" bw="8" slack="0"/>
+<pin id="113" dir="0" index="2" bw="10" slack="0"/>
+<pin id="114" dir="1" index="3" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret/34 "/>
+</bind>
+</comp>
+
+<comp id="118" class="1004" name="layer2_out_V_fu_118">
+<pin_list>
+<pin id="119" dir="0" index="0" bw="48" slack="0"/>
+<pin id="120" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer2_out_V/10 "/>
+</bind>
+</comp>
+
+<comp id="122" class="1004" name="layer2_out_V_1_fu_122">
+<pin_list>
+<pin id="123" dir="0" index="0" bw="48" slack="0"/>
+<pin id="124" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer2_out_V_1/10 "/>
+</bind>
+</comp>
+
+<comp id="126" class="1004" name="layer2_out_V_2_fu_126">
+<pin_list>
+<pin id="127" dir="0" index="0" bw="48" slack="0"/>
+<pin id="128" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer2_out_V_2/10 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1004" name="layer2_out_V_3_fu_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="48" slack="0"/>
+<pin id="132" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer2_out_V_3/10 "/>
+</bind>
+</comp>
+
+<comp id="134" class="1004" name="layer2_out_V_4_fu_134">
+<pin_list>
+<pin id="135" dir="0" index="0" bw="48" slack="0"/>
+<pin id="136" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer2_out_V_4/10 "/>
+</bind>
+</comp>
+
+<comp id="138" class="1004" name="layer2_out_V_5_fu_138">
+<pin_list>
+<pin id="139" dir="0" index="0" bw="48" slack="0"/>
+<pin id="140" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer2_out_V_5/10 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="layer5_out_V_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="24" slack="0"/>
+<pin id="144" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer5_out_V/17 "/>
+</bind>
+</comp>
+
+<comp id="146" class="1004" name="layer5_out_V_1_fu_146">
+<pin_list>
+<pin id="147" dir="0" index="0" bw="24" slack="0"/>
+<pin id="148" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer5_out_V_1/17 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1004" name="layer5_out_V_2_fu_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="24" slack="0"/>
+<pin id="152" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer5_out_V_2/17 "/>
+</bind>
+</comp>
+
+<comp id="154" class="1004" name="layer8_out_V_fu_154">
+<pin_list>
+<pin id="155" dir="0" index="0" bw="16" slack="0"/>
+<pin id="156" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer8_out_V/22 "/>
+</bind>
+</comp>
+
+<comp id="158" class="1004" name="layer8_out_V_1_fu_158">
+<pin_list>
+<pin id="159" dir="0" index="0" bw="16" slack="0"/>
+<pin id="160" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer8_out_V_1/22 "/>
+</bind>
+</comp>
+
+<comp id="162" class="1004" name="layer11_out_V_fu_162">
+<pin_list>
+<pin id="163" dir="0" index="0" bw="24" slack="0"/>
+<pin id="164" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer11_out_V/24 "/>
+</bind>
+</comp>
+
+<comp id="166" class="1004" name="layer11_out_V_1_fu_166">
+<pin_list>
+<pin id="167" dir="0" index="0" bw="24" slack="0"/>
+<pin id="168" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer11_out_V_1/24 "/>
+</bind>
+</comp>
+
+<comp id="170" class="1004" name="layer11_out_V_2_fu_170">
+<pin_list>
+<pin id="171" dir="0" index="0" bw="24" slack="0"/>
+<pin id="172" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer11_out_V_2/24 "/>
+</bind>
+</comp>
+
+<comp id="174" class="1004" name="layer14_out_V_fu_174">
+<pin_list>
+<pin id="175" dir="0" index="0" bw="24" slack="0"/>
+<pin id="176" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer14_out_V/29 "/>
+</bind>
+</comp>
+
+<comp id="178" class="1004" name="layer14_out_V_1_fu_178">
+<pin_list>
+<pin id="179" dir="0" index="0" bw="24" slack="0"/>
+<pin id="180" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer14_out_V_1/29 "/>
+</bind>
+</comp>
+
+<comp id="182" class="1004" name="layer14_out_V_2_fu_182">
+<pin_list>
+<pin id="183" dir="0" index="0" bw="24" slack="0"/>
+<pin id="184" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="layer14_out_V_2/29 "/>
+</bind>
+</comp>
+
+<comp id="186" class="1004" name="zext_ln66_fu_186">
+<pin_list>
+<pin id="187" dir="0" index="0" bw="4" slack="0"/>
+<pin id="188" dir="1" index="1" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln66/36 "/>
+</bind>
+</comp>
+
+<comp id="191" class="1005" name="inputLayer_read_reg_191">
+<pin_list>
+<pin id="192" dir="0" index="0" bw="2576" slack="1"/>
+<pin id="193" dir="1" index="1" bw="2576" slack="1"/>
+</pin_list>
+<bind>
+<opset="inputLayer_read "/>
+</bind>
+</comp>
+
+<comp id="196" class="1005" name="layer2_out_V_reg_196">
+<pin_list>
+<pin id="197" dir="0" index="0" bw="8" slack="1"/>
+<pin id="198" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer2_out_V "/>
+</bind>
+</comp>
+
+<comp id="201" class="1005" name="layer2_out_V_1_reg_201">
+<pin_list>
+<pin id="202" dir="0" index="0" bw="8" slack="1"/>
+<pin id="203" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer2_out_V_1 "/>
+</bind>
+</comp>
+
+<comp id="206" class="1005" name="layer2_out_V_2_reg_206">
+<pin_list>
+<pin id="207" dir="0" index="0" bw="8" slack="1"/>
+<pin id="208" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer2_out_V_2 "/>
+</bind>
+</comp>
+
+<comp id="211" class="1005" name="layer2_out_V_3_reg_211">
+<pin_list>
+<pin id="212" dir="0" index="0" bw="8" slack="1"/>
+<pin id="213" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer2_out_V_3 "/>
+</bind>
+</comp>
+
+<comp id="216" class="1005" name="layer2_out_V_4_reg_216">
+<pin_list>
+<pin id="217" dir="0" index="0" bw="8" slack="1"/>
+<pin id="218" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer2_out_V_4 "/>
+</bind>
+</comp>
+
+<comp id="221" class="1005" name="layer2_out_V_5_reg_221">
+<pin_list>
+<pin id="222" dir="0" index="0" bw="8" slack="1"/>
+<pin id="223" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer2_out_V_5 "/>
+</bind>
+</comp>
+
+<comp id="226" class="1005" name="layer5_out_V_reg_226">
+<pin_list>
+<pin id="227" dir="0" index="0" bw="8" slack="1"/>
+<pin id="228" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer5_out_V "/>
+</bind>
+</comp>
+
+<comp id="231" class="1005" name="layer5_out_V_1_reg_231">
+<pin_list>
+<pin id="232" dir="0" index="0" bw="8" slack="1"/>
+<pin id="233" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer5_out_V_1 "/>
+</bind>
+</comp>
+
+<comp id="236" class="1005" name="layer5_out_V_2_reg_236">
+<pin_list>
+<pin id="237" dir="0" index="0" bw="8" slack="1"/>
+<pin id="238" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer5_out_V_2 "/>
+</bind>
+</comp>
+
+<comp id="241" class="1005" name="layer8_out_V_reg_241">
+<pin_list>
+<pin id="242" dir="0" index="0" bw="8" slack="1"/>
+<pin id="243" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer8_out_V "/>
+</bind>
+</comp>
+
+<comp id="246" class="1005" name="layer8_out_V_1_reg_246">
+<pin_list>
+<pin id="247" dir="0" index="0" bw="8" slack="1"/>
+<pin id="248" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer8_out_V_1 "/>
+</bind>
+</comp>
+
+<comp id="251" class="1005" name="layer11_out_V_reg_251">
+<pin_list>
+<pin id="252" dir="0" index="0" bw="8" slack="1"/>
+<pin id="253" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer11_out_V "/>
+</bind>
+</comp>
+
+<comp id="256" class="1005" name="layer11_out_V_1_reg_256">
+<pin_list>
+<pin id="257" dir="0" index="0" bw="8" slack="1"/>
+<pin id="258" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer11_out_V_1 "/>
+</bind>
+</comp>
+
+<comp id="261" class="1005" name="layer11_out_V_2_reg_261">
+<pin_list>
+<pin id="262" dir="0" index="0" bw="8" slack="1"/>
+<pin id="263" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer11_out_V_2 "/>
+</bind>
+</comp>
+
+<comp id="266" class="1005" name="layer14_out_V_reg_266">
+<pin_list>
+<pin id="267" dir="0" index="0" bw="8" slack="1"/>
+<pin id="268" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer14_out_V "/>
+</bind>
+</comp>
+
+<comp id="271" class="1005" name="layer14_out_V_1_reg_271">
+<pin_list>
+<pin id="272" dir="0" index="0" bw="8" slack="1"/>
+<pin id="273" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer14_out_V_1 "/>
+</bind>
+</comp>
+
+<comp id="276" class="1005" name="layer14_out_V_2_reg_276">
+<pin_list>
+<pin id="277" dir="0" index="0" bw="8" slack="1"/>
+<pin id="278" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="layer14_out_V_2 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="50"><net_src comp="8" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="51"><net_src comp="0" pin="0"/><net_sink comp="46" pin=1"/></net>
+
+<net id="57"><net_src comp="42" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="58"><net_src comp="2" pin="0"/><net_sink comp="52" pin=1"/></net>
+
+<net id="59"><net_src comp="44" pin="0"/><net_sink comp="52" pin=2"/></net>
+
+<net id="65"><net_src comp="42" pin="0"/><net_sink comp="60" pin=0"/></net>
+
+<net id="66"><net_src comp="4" pin="0"/><net_sink comp="60" pin=1"/></net>
+
+<net id="71"><net_src comp="10" pin="0"/><net_sink comp="67" pin=0"/></net>
+
+<net id="72"><net_src comp="46" pin="2"/><net_sink comp="67" pin=1"/></net>
+
+<net id="82"><net_src comp="12" pin="0"/><net_sink comp="73" pin=0"/></net>
+
+<net id="89"><net_src comp="14" pin="0"/><net_sink comp="83" pin=0"/></net>
+
+<net id="95"><net_src comp="16" pin="0"/><net_sink comp="90" pin=0"/></net>
+
+<net id="102"><net_src comp="18" pin="0"/><net_sink comp="96" pin=0"/></net>
+
+<net id="109"><net_src comp="20" pin="0"/><net_sink comp="103" pin=0"/></net>
+
+<net id="115"><net_src comp="22" pin="0"/><net_sink comp="110" pin=0"/></net>
+
+<net id="116"><net_src comp="103" pin="4"/><net_sink comp="110" pin=1"/></net>
+
+<net id="117"><net_src comp="6" pin="0"/><net_sink comp="110" pin=2"/></net>
+
+<net id="121"><net_src comp="67" pin="2"/><net_sink comp="118" pin=0"/></net>
+
+<net id="125"><net_src comp="67" pin="2"/><net_sink comp="122" pin=0"/></net>
+
+<net id="129"><net_src comp="67" pin="2"/><net_sink comp="126" pin=0"/></net>
+
+<net id="133"><net_src comp="67" pin="2"/><net_sink comp="130" pin=0"/></net>
+
+<net id="137"><net_src comp="67" pin="2"/><net_sink comp="134" pin=0"/></net>
+
+<net id="141"><net_src comp="67" pin="2"/><net_sink comp="138" pin=0"/></net>
+
+<net id="145"><net_src comp="73" pin="7"/><net_sink comp="142" pin=0"/></net>
+
+<net id="149"><net_src comp="73" pin="7"/><net_sink comp="146" pin=0"/></net>
+
+<net id="153"><net_src comp="73" pin="7"/><net_sink comp="150" pin=0"/></net>
+
+<net id="157"><net_src comp="83" pin="4"/><net_sink comp="154" pin=0"/></net>
+
+<net id="161"><net_src comp="83" pin="4"/><net_sink comp="158" pin=0"/></net>
+
+<net id="165"><net_src comp="90" pin="3"/><net_sink comp="162" pin=0"/></net>
+
+<net id="169"><net_src comp="90" pin="3"/><net_sink comp="166" pin=0"/></net>
+
+<net id="173"><net_src comp="90" pin="3"/><net_sink comp="170" pin=0"/></net>
+
+<net id="177"><net_src comp="96" pin="4"/><net_sink comp="174" pin=0"/></net>
+
+<net id="181"><net_src comp="96" pin="4"/><net_sink comp="178" pin=0"/></net>
+
+<net id="185"><net_src comp="96" pin="4"/><net_sink comp="182" pin=0"/></net>
+
+<net id="189"><net_src comp="110" pin="3"/><net_sink comp="186" pin=0"/></net>
+
+<net id="190"><net_src comp="186" pin="1"/><net_sink comp="60" pin=2"/></net>
+
+<net id="194"><net_src comp="46" pin="2"/><net_sink comp="191" pin=0"/></net>
+
+<net id="195"><net_src comp="191" pin="1"/><net_sink comp="67" pin=1"/></net>
+
+<net id="199"><net_src comp="118" pin="1"/><net_sink comp="196" pin=0"/></net>
+
+<net id="200"><net_src comp="196" pin="1"/><net_sink comp="73" pin=1"/></net>
+
+<net id="204"><net_src comp="122" pin="1"/><net_sink comp="201" pin=0"/></net>
+
+<net id="205"><net_src comp="201" pin="1"/><net_sink comp="73" pin=2"/></net>
+
+<net id="209"><net_src comp="126" pin="1"/><net_sink comp="206" pin=0"/></net>
+
+<net id="210"><net_src comp="206" pin="1"/><net_sink comp="73" pin=3"/></net>
+
+<net id="214"><net_src comp="130" pin="1"/><net_sink comp="211" pin=0"/></net>
+
+<net id="215"><net_src comp="211" pin="1"/><net_sink comp="73" pin=4"/></net>
+
+<net id="219"><net_src comp="134" pin="1"/><net_sink comp="216" pin=0"/></net>
+
+<net id="220"><net_src comp="216" pin="1"/><net_sink comp="73" pin=5"/></net>
+
+<net id="224"><net_src comp="138" pin="1"/><net_sink comp="221" pin=0"/></net>
+
+<net id="225"><net_src comp="221" pin="1"/><net_sink comp="73" pin=6"/></net>
+
+<net id="229"><net_src comp="142" pin="1"/><net_sink comp="226" pin=0"/></net>
+
+<net id="230"><net_src comp="226" pin="1"/><net_sink comp="83" pin=1"/></net>
+
+<net id="234"><net_src comp="146" pin="1"/><net_sink comp="231" pin=0"/></net>
+
+<net id="235"><net_src comp="231" pin="1"/><net_sink comp="83" pin=2"/></net>
+
+<net id="239"><net_src comp="150" pin="1"/><net_sink comp="236" pin=0"/></net>
+
+<net id="240"><net_src comp="236" pin="1"/><net_sink comp="83" pin=3"/></net>
+
+<net id="244"><net_src comp="154" pin="1"/><net_sink comp="241" pin=0"/></net>
+
+<net id="245"><net_src comp="241" pin="1"/><net_sink comp="90" pin=1"/></net>
+
+<net id="249"><net_src comp="158" pin="1"/><net_sink comp="246" pin=0"/></net>
+
+<net id="250"><net_src comp="246" pin="1"/><net_sink comp="90" pin=2"/></net>
+
+<net id="254"><net_src comp="162" pin="1"/><net_sink comp="251" pin=0"/></net>
+
+<net id="255"><net_src comp="251" pin="1"/><net_sink comp="96" pin=1"/></net>
+
+<net id="259"><net_src comp="166" pin="1"/><net_sink comp="256" pin=0"/></net>
+
+<net id="260"><net_src comp="256" pin="1"/><net_sink comp="96" pin=2"/></net>
+
+<net id="264"><net_src comp="170" pin="1"/><net_sink comp="261" pin=0"/></net>
+
+<net id="265"><net_src comp="261" pin="1"/><net_sink comp="96" pin=3"/></net>
+
+<net id="269"><net_src comp="174" pin="1"/><net_sink comp="266" pin=0"/></net>
+
+<net id="270"><net_src comp="266" pin="1"/><net_sink comp="103" pin=1"/></net>
+
+<net id="274"><net_src comp="178" pin="1"/><net_sink comp="271" pin=0"/></net>
+
+<net id="275"><net_src comp="271" pin="1"/><net_sink comp="103" pin=2"/></net>
+
+<net id="279"><net_src comp="182" pin="1"/><net_sink comp="276" pin=0"/></net>
+
+<net id="280"><net_src comp="276" pin="1"/><net_sink comp="103" pin=3"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: layer19_out_0 | {36 }
+	Port: layer19_out_1 | {36 }
+ - Input state : 
+	Port: myproject : inputLayer | {1 }
+	Port: myproject : sigmoid_table | {35 36 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+		layer2_out_V : 1
+		layer2_out_V_1 : 1
+		layer2_out_V_2 : 1
+		layer2_out_V_3 : 1
+		layer2_out_V_4 : 1
+		layer2_out_V_5 : 1
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+		layer5_out_V : 1
+		layer5_out_V_1 : 1
+		layer5_out_V_2 : 1
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+		layer8_out_V : 1
+		layer8_out_V_1 : 1
+	State 23
+	State 24
+		layer11_out_V : 1
+		layer11_out_V_1 : 1
+		layer11_out_V_2 : 1
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+		layer14_out_V : 1
+		layer14_out_V_1 : 1
+		layer14_out_V_2 : 1
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+		call_ret : 1
+	State 35
+	State 36
+		zext_ln66 : 1
+		write_ln66 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+| Operation|                               Functional Unit                               |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+|          |   grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_4_5_3_0_config2_s_fu_67  |    56   |  88.928 |  12657  |  15581  |
+|          |   grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config5_s_fu_73   |    8    |  12.704 |   251   |   300   |
+|          |   grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config8_s_fu_83   |    2    |  3.176  |    46   |    45   |
+|   call   |   grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s_fu_90  |    0    |    0    |    32   |    87   |
+|          |   grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config14_s_fu_96  |    2    |  3.176  |    53   |    60   |
+|          |  grp_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s_fu_103  |    3    |  4.764  |   236   |    78   |
+|          | grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110 |    0    |  1.588  |    20   |    19   |
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+|   read   |                          inputLayer_read_read_fu_46                         |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+|   write  |                            write_ln66_write_fu_52                           |    0    |    0    |    0    |    0    |
+|          |                            write_ln66_write_fu_60                           |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+|          |                             layer2_out_V_fu_118                             |    0    |    0    |    0    |    0    |
+|          |                            layer2_out_V_1_fu_122                            |    0    |    0    |    0    |    0    |
+|          |                            layer2_out_V_2_fu_126                            |    0    |    0    |    0    |    0    |
+|          |                            layer2_out_V_3_fu_130                            |    0    |    0    |    0    |    0    |
+|          |                            layer2_out_V_4_fu_134                            |    0    |    0    |    0    |    0    |
+|          |                            layer2_out_V_5_fu_138                            |    0    |    0    |    0    |    0    |
+|          |                             layer5_out_V_fu_142                             |    0    |    0    |    0    |    0    |
+|          |                            layer5_out_V_1_fu_146                            |    0    |    0    |    0    |    0    |
+|extractvalue|                            layer5_out_V_2_fu_150                            |    0    |    0    |    0    |    0    |
+|          |                             layer8_out_V_fu_154                             |    0    |    0    |    0    |    0    |
+|          |                            layer8_out_V_1_fu_158                            |    0    |    0    |    0    |    0    |
+|          |                             layer11_out_V_fu_162                            |    0    |    0    |    0    |    0    |
+|          |                            layer11_out_V_1_fu_166                           |    0    |    0    |    0    |    0    |
+|          |                            layer11_out_V_2_fu_170                           |    0    |    0    |    0    |    0    |
+|          |                             layer14_out_V_fu_174                            |    0    |    0    |    0    |    0    |
+|          |                            layer14_out_V_1_fu_178                           |    0    |    0    |    0    |    0    |
+|          |                            layer14_out_V_2_fu_182                           |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+|   zext   |                               zext_ln66_fu_186                              |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+|   Total  |                                                                             |    71   | 114.336 |  13295  |  16170  |
+|----------|-----------------------------------------------------------------------------|---------|---------|---------|---------|
+
+Memories:
++-------------+--------+--------+--------+
+|             |  BRAM  |   FF   |   LUT  |
++-------------+--------+--------+--------+
+|sigmoid_table|    1   |    0   |    0   |
++-------------+--------+--------+--------+
+|    Total    |    1   |    0   |    0   |
++-------------+--------+--------+--------+
+
+* Register list:
++-----------------------+--------+
+|                       |   FF   |
++-----------------------+--------+
+|inputLayer_read_reg_191|  2576  |
+|layer11_out_V_1_reg_256|    8   |
+|layer11_out_V_2_reg_261|    8   |
+| layer11_out_V_reg_251 |    8   |
+|layer14_out_V_1_reg_271|    8   |
+|layer14_out_V_2_reg_276|    8   |
+| layer14_out_V_reg_266 |    8   |
+| layer2_out_V_1_reg_201|    8   |
+| layer2_out_V_2_reg_206|    8   |
+| layer2_out_V_3_reg_211|    8   |
+| layer2_out_V_4_reg_216|    8   |
+| layer2_out_V_5_reg_221|    8   |
+|  layer2_out_V_reg_196 |    8   |
+| layer5_out_V_1_reg_231|    8   |
+| layer5_out_V_2_reg_236|    8   |
+|  layer5_out_V_reg_226 |    8   |
+| layer8_out_V_1_reg_246|    8   |
+|  layer8_out_V_reg_241 |    8   |
++-----------------------+--------+
+|         Total         |  2712  |
++-----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                   Comp                                   |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|--------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+| grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_4_5_3_0_config2_s_fu_67 |  p1  |   2  | 2576 |  5152  ||    9    |
+|--------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                   Total                                  |      |      |      |  5152  ||  1.588  ||    9    |
+|--------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    -   |   71   |   114  |  13295 |  16170 |
+|   Memory  |    1   |    -   |    -   |    0   |    0   |
+|Multiplexer|    -   |    -   |    1   |    -   |    9   |
+|  Register |    -   |    -   |    -   |  2712  |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    1   |   71   |   115  |  16007 |  16179 |
++-----------+--------+--------+--------+--------+--------+

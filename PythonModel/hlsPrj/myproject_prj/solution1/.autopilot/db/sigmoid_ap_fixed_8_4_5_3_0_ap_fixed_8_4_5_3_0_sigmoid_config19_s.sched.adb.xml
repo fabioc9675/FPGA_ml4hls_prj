@@ -3,7 +3,13 @@
 
 <trans_list>
 
-<trans id="15" from="1" to="2">
+<trans id="17" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="18" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -16,7 +22,7 @@
 
 <state id="1" st_id="1">
 
-<operation id="3" st_id="1" stage="1" lat="1">
+<operation id="4" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -25,13 +31,13 @@
 
 <Node id="4" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-entry:1 %p_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read
+entry:1 %p_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read1
 
 ]]></Node>
-<StgValue><ssdm name="p_read_1"/></StgValue>
+<StgValue><ssdm name="p_read"/></StgValue>
 </operation>
 
-<operation id="4" st_id="1" stage="1" lat="1">
+<operation id="5" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -40,13 +46,13 @@ entry:1 %p_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read
 
 <Node id="5" bw="10" op_0_bw="10" op_1_bw="8" op_2_bw="2">
 <![CDATA[
-entry:2 %data_round = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i8.i2, i8 %p_read_1, i2 0
+entry:2 %data_round = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i8.i2, i8 %p_read, i2 0
 
 ]]></Node>
 <StgValue><ssdm name="data_round"/></StgValue>
 </operation>
 
-<operation id="5" st_id="1" stage="1" lat="1">
+<operation id="6" st_id="1" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -60,8 +66,11 @@ entry:3 %index = xor i10 %data_round, i10 512
 ]]></Node>
 <StgValue><ssdm name="index"/></StgValue>
 </operation>
+</state>
 
-<operation id="6" st_id="1" stage="1" lat="1">
+<state id="2" st_id="2">
+
+<operation id="7" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -76,7 +85,7 @@ entry:4 %zext_ln121 = zext i10 %index
 <StgValue><ssdm name="zext_ln121"/></StgValue>
 </operation>
 
-<operation id="7" st_id="1" stage="1" lat="1">
+<operation id="8" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -91,7 +100,7 @@ entry:5 %sigmoid_table_addr = getelementptr i10 %sigmoid_table, i64 0, i64 %zext
 <StgValue><ssdm name="sigmoid_table_addr"/></StgValue>
 </operation>
 
-<operation id="8" st_id="1" stage="2" lat="2">
+<operation id="9" st_id="2" stage="2" lat="2">
 <core>ROM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -107,9 +116,9 @@ entry:6 %sigmoid_table_load = load i10 %sigmoid_table_addr
 </operation>
 </state>
 
-<state id="2" st_id="2">
+<state id="3" st_id="3">
 
-<operation id="9" st_id="2" stage="1" lat="1">
+<operation id="10" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -118,13 +127,13 @@ entry:6 %sigmoid_table_load = load i10 %sigmoid_table_addr
 
 <Node id="3" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-entry:0 %specpipeline_ln109 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1
+entry:0 %specpipeline_ln109 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln109"/></StgValue>
 </operation>
 
-<operation id="10" st_id="2" stage="1" lat="2">
+<operation id="11" st_id="3" stage="1" lat="2">
 <core>ROM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -139,7 +148,7 @@ entry:6 %sigmoid_table_load = load i10 %sigmoid_table_addr
 <StgValue><ssdm name="sigmoid_table_load"/></StgValue>
 </operation>
 
-<operation id="11" st_id="2" stage="1" lat="1">
+<operation id="12" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -154,7 +163,7 @@ entry:7 %trunc_ln = partselect i4 @_ssdm_op_PartSelect.i4.i10.i32.i32, i10 %sigm
 <StgValue><ssdm name="trunc_ln"/></StgValue>
 </operation>
 
-<operation id="12" st_id="2" stage="1" lat="1">
+<operation id="13" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">

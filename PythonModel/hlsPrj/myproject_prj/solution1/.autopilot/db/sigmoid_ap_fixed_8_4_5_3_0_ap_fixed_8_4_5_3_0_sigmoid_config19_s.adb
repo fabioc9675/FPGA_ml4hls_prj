@@ -16,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>p_read</name>
+              <name>p_read1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -34,7 +34,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1162363731</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -56,7 +56,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>p_read_1</name>
+              <name>p_read</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>987</lineNumber>
@@ -88,7 +88,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1948265521</coreId>
+              <coreId>1902080097</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -145,7 +145,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3866943328</coreId>
+              <coreId>3621216858</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -260,7 +260,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3811745120</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -316,7 +316,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3694032218</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -430,7 +430,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1902080097</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -532,7 +532,7 @@
               <isStorage>1</isStorage>
               <storageDepth>1024</storageDepth>
               <coreId>95</coreId>
-              <rtlModuleName>GN_inference_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_sigmoid_tablbkb</rtlModuleName>
+              <rtlModuleName>myproject_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_sigmoid_tablbkb</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -576,7 +576,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>2</bitwidth>
@@ -607,7 +607,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -638,7 +638,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1969317477</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -669,7 +669,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -700,7 +700,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>9428</coreId>
+              <coreId>1969317477</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -872,23 +872,23 @@
           <item>12</item>
         </basic_blocks>
         <mII>1</mII>
-        <mDepth>2</mDepth>
+        <mDepth>3</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>1</mMinLatency>
-        <mMaxLatency>1</mMaxLatency>
+        <mMinLatency>2</mMinLatency>
+        <mMaxLatency>2</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
     </cdfg_regions>
     <fsm class_id="24" tracking_level="1" version="0" object_id="_32">
       <states class_id="25" tracking_level="0" version="0">
-        <count>2</count>
+        <count>3</count>
         <item_version>0</item_version>
         <item class_id="26" tracking_level="1" version="0" object_id="_33">
           <id>1</id>
           <operations class_id="27" tracking_level="0" version="0">
-            <count>6</count>
+            <count>3</count>
             <item_version>0</item_version>
             <item class_id="28" tracking_level="1" version="0" object_id="_34">
               <id>4</id>
@@ -905,44 +905,51 @@
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_37">
+          </operations>
+        </item>
+        <item class_id_reference="26" object_id="_37">
+          <id>2</id>
+          <operations>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_38">
               <id>7</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_38">
+            <item class_id_reference="28" object_id="_39">
               <id>8</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_39">
+            <item class_id_reference="28" object_id="_40">
               <id>9</id>
               <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_40">
-          <id>2</id>
+        <item class_id_reference="26" object_id="_41">
+          <id>3</id>
           <operations>
             <count>4</count>
             <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_41">
+            <item class_id_reference="28" object_id="_42">
               <id>3</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_42">
+            <item class_id_reference="28" object_id="_43">
               <id>9</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
-            <item class_id_reference="28" object_id="_43">
+            <item class_id_reference="28" object_id="_44">
               <id>10</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_44">
+            <item class_id_reference="28" object_id="_45">
               <id>11</id>
               <stage>1</stage>
               <latency>1</latency>
@@ -951,9 +958,9 @@
         </item>
       </states>
       <transitions class_id="29" tracking_level="0" version="0">
-        <count>1</count>
+        <count>2</count>
         <item_version>0</item_version>
-        <item class_id="30" tracking_level="1" version="0" object_id="_45">
+        <item class_id="30" tracking_level="1" version="0" object_id="_46">
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="31" tracking_level="0" version="0">
@@ -968,9 +975,24 @@
             </sop>
           </condition>
         </item>
+        <item class_id_reference="30" object_id="_47">
+          <inState>2</inState>
+          <outState>3</outState>
+          <condition>
+            <id>-1</id>
+            <sop>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>
+                <count>0</count>
+                <item_version>0</item_version>
+              </item>
+            </sop>
+          </condition>
+        </item>
       </transitions>
     </fsm>
-    <res class_id="34" tracking_level="1" version="0" object_id="_46">
+    <res class_id="34" tracking_level="1" version="0" object_id="_48">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
         <count>0</count>
         <item_version>0</item_version>
@@ -1073,7 +1095,7 @@
         <item_version>0</item_version>
       </dp_multiplexer_resource>
       <dp_register_resource>
-        <count>2</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item>
           <first>ap_CS_fsm</first>
@@ -1113,6 +1135,44 @@
             </item>
           </second>
         </item>
+        <item>
+          <first>ap_enable_reg_pp0_iter2</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>1</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>index_reg_75</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>10</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>10</second>
+            </item>
+          </second>
+        </item>
       </dp_register_resource>
       <dp_dsp_resource>
         <count>0</count>
@@ -1146,7 +1206,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>43</item>
+            <item>47</item>
           </second>
         </item>
       </dp_memory_map>
@@ -1178,35 +1238,35 @@
       <item>
         <first>7</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>8</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>9</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>1</second>
         </second>
       </item>
       <item>
         <first>10</first>
         <second>
-          <first>1</first>
+          <first>2</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>11</first>
         <second>
-          <first>1</first>
+          <first>2</first>
           <second>0</second>
         </second>
       </item>
@@ -1225,14 +1285,14 @@
         <first>12</first>
         <second class_id="46" tracking_level="0" version="0">
           <first>0</first>
-          <second>1</second>
+          <second>2</second>
         </second>
       </item>
     </bblk_ent_exit>
     <regions class_id="47" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="48" tracking_level="1" version="0" object_id="_47">
+      <item class_id="48" tracking_level="1" version="0" object_id="_49">
         <region_name>sigmoid&lt;ap_fixed&lt;8, 4, 5, 3, 0&gt;, ap_fixed&lt;8, 4, 5, 3, 0&gt;, sigmoid_config19&gt;</region_name>
         <basic_blocks>
           <count>1</count>
@@ -1246,7 +1306,7 @@
         <anchor_node>-1</anchor_node>
         <region_type>8</region_type>
         <interval>1</interval>
-        <pipe_depth>2</pipe_depth>
+        <pipe_depth>3</pipe_depth>
         <mDBIIViolationVec class_id="49" tracking_level="0" version="0">
           <count>0</count>
           <item_version>0</item_version>
@@ -1306,7 +1366,7 @@
         </second>
       </item>
       <item>
-        <first>66</first>
+        <first>65</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1342,7 +1402,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln_fu_66</first>
+        <first>trunc_ln_fu_65</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1366,7 +1426,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read_1_read_fu_28</first>
+        <first>p_read_read_fu_28</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1403,10 +1463,18 @@
       </item>
     </dp_mem_port_nodes>
     <dp_reg_nodes>
-      <count>1</count>
+      <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>76</first>
+        <first>75</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>6</item>
+        </second>
+      </item>
+      <item>
+        <first>80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1415,10 +1483,18 @@
       </item>
     </dp_reg_nodes>
     <dp_regname_nodes>
-      <count>1</count>
+      <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>sigmoid_table_addr_reg_76</first>
+        <first>index_reg_75</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>6</item>
+        </second>
+      </item>
+      <item>
+        <first>sigmoid_table_addr_reg_80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1438,7 +1514,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>p_read</first>
+        <first>p_read1</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

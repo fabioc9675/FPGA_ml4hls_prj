@@ -11,7 +11,7 @@ __SIM_DDS__ = 1
 
 override TARGET := $(if $(pc),cosim.pc.exe,cosim.tv.exe)
 
-AUTOPILOT_ROOT := D:/Xilinx/Vitis_HLS/2022.2
+AUTOPILOT_ROOT := C:/Xilinx/Vitis_HLS/2022.2
 AUTOPILOT_MACH := win64
 
 ifdef COSIM_M32
@@ -23,7 +23,7 @@ ifdef AP_GCC_M32
   IFLAG += -m32
 endif
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := D:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin
+  AP_GCC_PATH := C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology

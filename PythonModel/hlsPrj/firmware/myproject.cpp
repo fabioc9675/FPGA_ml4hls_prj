@@ -5,7 +5,7 @@
 
 void GN_inference(
     hls::stream<AXI_VALUE_IN> &input,
-    int *result)
+    int *result1, int *result2)
 {
 #pragma HLS INTERFACE mode = ap_ctrl_hs port = return
 #pragma HLS INTERFACE axis register both port = input
@@ -83,16 +83,18 @@ void GN_inference(
 
     // ****************************************
     int tmpVal = 0;
-    if (layer19_out[0] > 0.5)
+    if (layer19_out[0] > layer19_out[1])
     {
         // Value 2 corresponds to class 0 gamma
         tmpVal = 5;
-        *result = tmpVal;
+        *result1 = layer19_out[0]*1000;
+        *result2 = layer19_out[1]*1000;
     }
     else
     {
         // Value 3 corresponds to class 1 neutron
         tmpVal = 3;
-        *result = tmpVal;
+        *result1 = layer19_out[0]*1000;
+        *result2 = layer19_out[1]*1000;
     }
 }

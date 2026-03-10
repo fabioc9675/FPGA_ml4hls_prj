@@ -24589,8 +24589,15 @@ namespace std
 
 
 
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 1
-# 10 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h"
+# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed.h" 1
+
+
+
+
+
+
+
+
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_common.h" 1
 # 41 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_common.h"
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_decl.h" 1
@@ -24837,7 +24844,11 @@ inline __attribute__((always_inline)) half rawBitsToHalf(unsigned short pi) {
 
 
 }
-# 11 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 2
+# 10 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed.h" 2
+# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed_base.h" 1
+# 16 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed_base.h"
+# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 1
+# 11 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int_base.h" 1
 # 40 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int_base.h"
 template <int _AP_N, bool _AP_S>
@@ -27545,18 +27556,6 @@ inline bool operator!=(const ap_int<_AP_W> &__x, const complex<ap_int<_AP_W> > &
 
 }
 # 353 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 2
-
-
-
-
-
-
-
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed.h" 1
-# 10 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed.h"
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed_base.h" 1
-# 16 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed_base.h"
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 1
 # 17 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed_base.h" 2
 # 87 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed_base.h"
 template <int _AP_W2, int _AP_I2, bool _AP_S2>
@@ -30136,10 +30135,9 @@ inline __attribute__((nodebug)) bool operator!=(
 
 }
 # 366 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_fixed.h" 2
-# 361 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 2
 # 5 "firmware/myproject.h" 2
-
-
+# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 1
+# 6 "firmware/myproject.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\hls_stream.h" 1
 # 15 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\hls_stream.h"
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h" 1
@@ -30271,7 +30269,7 @@ class stream : public stream<__STREAM_T__, 0> {
 };
 }
 # 16 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\hls_stream.h" 2
-# 8 "firmware/myproject.h" 2
+# 7 "firmware/myproject.h" 2
 
 # 1 "firmware/defines.h" 1
 
@@ -30458,379 +30456,13 @@ typedef ap_fixed<16,7> bias17_t;
 typedef ap_uint<1> layer17_index;
 typedef ap_fixed<8,4> result_t;
 typedef ap_fixed<18,8> outputActivation_table_t;
-# 10 "firmware/myproject.h" 2
+# 9 "firmware/myproject.h" 2
 
 
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_axi_sdata.h" 1
-# 41 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_axi_sdata.h"
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\climits" 1 3
-# 40 "C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\climits" 3
-# 42 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_axi_sdata.h" 2
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int.h" 1
-# 43 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_axi_sdata.h" 2
 
-template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
-struct ap_fixed;
-template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
-struct ap_ufixed;
-
-namespace hls {
-
-template <typename T> constexpr std::size_t bitwidth = sizeof(T) * 8;
-
-template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
-template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
-template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
-constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> = _AP_W;
-template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
-constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> = _AP_W;
-
-template <typename T>
-constexpr std::size_t bytewidth = (bitwidth<T> + 8 - 1) / 8;
-
-template <typename T, std::size_t WUser, std::size_t WId, std::size_t WDest> struct axis {
-  static constexpr std::size_t NewWUser = (WUser == 0) ? 1 : WUser;
-  static constexpr std::size_t NewWId = (WId == 0) ? 1 : WId;
-  static constexpr std::size_t NewWDest = (WDest == 0) ? 1 : WDest;
-  T data;
-  ap_uint<bytewidth<T>> keep;
-  ap_uint<bytewidth<T>> strb;
-  ap_uint<NewWUser> user;
-  ap_uint<1> last;
-  ap_uint<NewWId> id;
-  ap_uint<NewWDest> dest;
-
-  ap_uint<NewWUser> *get_user_ptr() {
-#pragma HLS inline
- return (WUser == 0) ? nullptr : &user;
-  }
-  ap_uint<NewWId> *get_id_ptr() {
-#pragma HLS inline
- return (WId == 0) ? nullptr : &id;
-  }
-  ap_uint<NewWDest> *get_dest_ptr() {
-#pragma HLS inline
- return (WDest == 0) ? nullptr : &dest;
-  }
-};
-
-}
-
-template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
-using ap_axis = hls::axis<ap_int<WData>, WUser, WId, WDest>;
-
-template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
-using ap_axiu = hls::axis<ap_uint<WData>, WUser, WId, WDest>;
-
-
-template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
-struct qdma_axis;
-
-template <std::size_t WData> struct qdma_axis<WData, 0, 0, 0> {
-
-  static constexpr std::size_t kBytes = (WData + 7) / 8;
-
-  ap_uint<WData> data;
-  ap_uint<kBytes> keep;
-  ap_uint<1> strb;
-  ap_uint<1> user;
-  ap_uint<1> last;
-  ap_uint<1> id;
-  ap_uint<1> dest;
-
-  ap_uint<1> *get_strb_ptr() {
-#pragma HLS inline
- return nullptr;
-  }
-  ap_uint<1> *get_user_ptr() {
-#pragma HLS inline
- return nullptr;
-  }
-  ap_uint<1> *get_id_ptr() {
-#pragma HLS inline
- return nullptr;
-  }
-  ap_uint<1> *get_dest_ptr() {
-#pragma HLS inline
- return nullptr;
-  }
-
-
-  ap_uint<WData> get_data() const {
-#pragma HLS inline
- return data;
-  }
-  ap_uint<kBytes> get_keep() const {
-#pragma HLS inline
- return keep;
-  }
-  ap_uint<1> get_last() const {
-#pragma HLS inline
- return last;
-  }
-
-  void set_data(const ap_uint<WData> &d) {
-#pragma HLS inline
- data = d;
-  }
-  void set_keep(const ap_uint<kBytes> &k) {
-#pragma HLS inline
- keep = k;
-  }
-  void set_last(const ap_uint<1> &l) {
-#pragma HLS inline
- last = l;
-  }
-  void keep_all() {
-#pragma HLS inline
- ap_uint<kBytes> k = 0;
-    keep = ~k;
-  }
-
-  qdma_axis() {
-#pragma HLS inline
- ;
-  }
-  qdma_axis(ap_uint<WData> d) : data(d) {
-#pragma HLS inline
- ;
-  }
-  qdma_axis(ap_uint<WData> d, ap_uint<kBytes> k) : data(d), keep(k) {
-#pragma HLS inline
- ;
-  }
-  qdma_axis(ap_uint<WData> d, ap_uint<kBytes> k, ap_uint<1> l)
-      : data(d), keep(k), last(l) {
-#pragma HLS inline
- ;
-  }
-  qdma_axis(const qdma_axis<WData, 0, 0, 0> &d)
-      : data(d.data), keep(d.keep), last(d.last) {
-#pragma HLS inline
- ;
-  }
-  qdma_axis &operator=(const qdma_axis<WData, 0, 0, 0> &d) {
-#pragma HLS inline
- data = d.data;
-    keep = d.keep;
-    last = d.last;
-    return *this;
-  }
-};
-
-
-
-
-namespace hls {
-
-template <typename T, std::size_t WUser, std::size_t WId, std::size_t WDest>
-class stream<axis<T, WUser, WId, WDest>> final {
-  typedef axis<T, WUser, WId, WDest> __STREAM_T__;
-
-public:
-
-  inline __attribute__((always_inline)) stream() {}
-
-  inline __attribute__((always_inline)) stream(const char *name) { (void)name; }
-
-
-private:
-  inline __attribute__((always_inline)) stream(const stream<__STREAM_T__> &chn) : V(chn.V) {}
-
-public:
-
-  inline __attribute__((always_inline)) void operator>>(__STREAM_T__ &rdata) { read(rdata); }
-
-  inline __attribute__((always_inline)) void operator<<(const __STREAM_T__ &wdata) { write(wdata); }
-
-
-  bool empty() {
-#pragma HLS inline
- bool tmp = __fpga_axis_valid(&V.data, &V.keep, &V.strb, V.get_user_ptr(),
-                                 &V.last, V.get_id_ptr(), V.get_dest_ptr());
-    return !tmp;
-  }
-
-  bool full() {
-#pragma HLS inline
- bool tmp = __fpga_axis_ready(&V.data, &V.keep, &V.strb, V.get_user_ptr(),
-                                 &V.last, V.get_id_ptr(), V.get_dest_ptr());
-    return !tmp;
-  }
-
-
-  void read(__STREAM_T__ &dout) {
-#pragma HLS inline
- __STREAM_T__ tmp;
-    __fpga_axis_pop(&V.data, &V.keep, &V.strb, V.get_user_ptr(), &V.last,
-                    V.get_id_ptr(), V.get_dest_ptr(), &tmp.data, &tmp.keep,
-                    &tmp.strb, tmp.get_user_ptr(), &tmp.last, tmp.get_id_ptr(),
-                    tmp.get_dest_ptr());
-    dout = tmp;
-  }
-
-  __STREAM_T__ read() {
-#pragma HLS inline
- __STREAM_T__ tmp;
-    __fpga_axis_pop(&V.data, &V.keep, &V.strb, V.get_user_ptr(), &V.last,
-                    V.get_id_ptr(), V.get_dest_ptr(), &tmp.data, &tmp.keep,
-                    &tmp.strb, tmp.get_user_ptr(), &tmp.last, tmp.get_id_ptr(),
-                    tmp.get_dest_ptr());
-    return tmp;
-  }
-
-
-  void write(const __STREAM_T__ &din) {
-#pragma HLS inline
- __STREAM_T__ tmp = din;
-    __fpga_axis_push(&V.data, &V.keep, &V.strb, V.get_user_ptr(), &V.last,
-                     V.get_id_ptr(), V.get_dest_ptr(), &tmp.data, &tmp.keep,
-                     &tmp.strb, tmp.get_user_ptr(), &tmp.last, tmp.get_id_ptr(),
-                     tmp.get_dest_ptr());
-  }
-
-
-  bool read_nb(__STREAM_T__ &dout) {
-#pragma HLS inline
- __STREAM_T__ tmp;
-    if (__fpga_axis_nb_pop(&V.data, &V.keep, &V.strb, V.get_user_ptr(), &V.last,
-                           V.get_id_ptr(), V.get_dest_ptr(), &tmp.data,
-                           &tmp.keep, &tmp.strb, tmp.get_user_ptr(),
-                           &tmp.last, tmp.get_id_ptr(), tmp.get_dest_ptr())) {
-      dout = tmp;
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-
-  bool write_nb(const __STREAM_T__ &in) {
-#pragma HLS inline
- __STREAM_T__ tmp = in;
-    bool full_n = __fpga_axis_nb_push(
-        &V.data, &V.keep, &V.strb, V.get_user_ptr(), &V.last, V.get_id_ptr(),
-        V.get_dest_ptr(), &tmp.data, &tmp.keep, &tmp.strb, tmp.get_user_ptr(),
-        &tmp.last, tmp.get_id_ptr(), tmp.get_dest_ptr());
-    return full_n;
-  }
-
-private:
-  __STREAM_T__ V __attribute__((no_ctor));
-};
-
-
-template <std::size_t WData>
-class stream<qdma_axis<WData, 0, 0, 0>> {
-  typedef qdma_axis<WData, 0, 0, 0> __STREAM_T__;
-
-public:
-
-  inline __attribute__((always_inline)) stream() {}
-
-  inline __attribute__((always_inline)) stream(const char *name) { (void)name; }
-
-
-private:
-  inline __attribute__((always_inline)) stream(const stream<__STREAM_T__> &chn) : V(chn.V) {}
-
-public:
-
-  inline __attribute__((always_inline)) void operator>>(__STREAM_T__ &rdata) { read(rdata); }
-
-  inline __attribute__((always_inline)) void operator<<(const __STREAM_T__ &wdata) { write(wdata); }
-
-
-  bool empty() {
-#pragma HLS inline
- bool tmp = __fpga_axis_valid(&V.data, &V.keep, V.get_strb_ptr(), V.get_user_ptr(),
-                                 &V.last, V.get_id_ptr(), V.get_dest_ptr());
-    return !tmp;
-  }
-
-  bool full() {
-#pragma HLS inline
- bool tmp = __fpga_axis_ready(&V.data, &V.keep, V.get_strb_ptr(), V.get_user_ptr(),
-                                 &V.last, V.get_id_ptr(), V.get_dest_ptr());
-    return !tmp;
-  }
-
-
-  void read(__STREAM_T__ &dout) {
-#pragma HLS inline
- __STREAM_T__ tmp;
-    __fpga_axis_pop(&V.data, &V.keep, V.get_strb_ptr(), V.get_user_ptr(),
-                    &V.last, V.get_id_ptr(), V.get_dest_ptr(), &tmp.data,
-                    &tmp.keep, tmp.get_strb_ptr(), tmp.get_user_ptr(),
-                    &tmp.last, tmp.get_id_ptr(), tmp.get_dest_ptr());
-    dout = tmp;
-  }
-
-  __STREAM_T__ read() {
-#pragma HLS inline
- __STREAM_T__ tmp;
-    __fpga_axis_pop(&V.data, &V.keep, V.get_strb_ptr(), V.get_user_ptr(), &V.last,
-                    V.get_id_ptr(), V.get_dest_ptr(), &tmp.data, &tmp.keep,
-                    tmp.get_strb_ptr(), tmp.get_user_ptr(), &tmp.last, tmp.get_id_ptr(),
-                    tmp.get_dest_ptr());
-    return tmp;
-  }
-
-
-  void write(const __STREAM_T__ &din) {
-#pragma HLS inline
- __STREAM_T__ tmp = din;
-    __fpga_axis_push(&V.data, &V.keep, V.get_strb_ptr(), V.get_user_ptr(), &V.last,
-                     V.get_id_ptr(), V.get_dest_ptr(), &tmp.data, &tmp.keep,
-                     tmp.get_strb_ptr(), tmp.get_user_ptr(), &tmp.last, tmp.get_id_ptr(),
-                     tmp.get_dest_ptr());
-  }
-
-
-  bool read_nb(__STREAM_T__ &dout) {
-#pragma HLS inline
- __STREAM_T__ tmp;
-
-    if (__fpga_axis_nb_pop(&V.data, &V.keep, &V.strb, V.get_user_ptr(), &V.last,
-                           V.get_id_ptr(), V.get_dest_ptr(), &tmp.data,
-                           &tmp.keep, &tmp.strb, tmp.get_user_ptr(),
-                           &tmp.last, tmp.get_id_ptr(), tmp.get_dest_ptr())) {
-      dout = tmp;
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-
-  bool write_nb(const __STREAM_T__ &in) {
-#pragma HLS inline
- __STREAM_T__ tmp = in;
-    bool full_n = __fpga_axis_nb_push(
-        &V.data, &V.keep, V.get_strb_ptr(), V.get_user_ptr(), &V.last, V.get_id_ptr(),
-        V.get_dest_ptr(), &tmp.data, &tmp.keep, tmp.get_strb_ptr(), tmp.get_user_ptr(),
-        &tmp.last, tmp.get_id_ptr(), tmp.get_dest_ptr());
-    return full_n;
-  }
-
-private:
-  __STREAM_T__ V __attribute__((no_ctor));
-};
-
-}
-# 13 "firmware/myproject.h" 2
-
-
-
-typedef ap_axis<32, 2, 5, 6> AXI_VALUE_IN;
-typedef ap_axis<32, 2, 5, 6> AXI_VALUE_OUT;
-
-
-__attribute__((sdx_kernel("GN_inference", 0))) void GN_inference(
-    hls::stream<AXI_VALUE_IN> &input,
-
-    int *result
-
+__attribute__((sdx_kernel("myproject", 0))) void myproject(
+    input_t inputLayer[161],
+    result_t layer19_out[2]
 );
 # 4 "firmware/myproject.cpp" 2
 # 1 "firmware/parameters.h" 1
@@ -30838,7 +30470,7 @@ __attribute__((sdx_kernel("GN_inference", 0))) void GN_inference(
 
 
 
-# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int.h" 1
+# 1 "C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\\ap_int.h" 1
 # 6 "firmware/parameters.h" 2
 
 # 1 "firmware/nnet_utils/nnet_code_gen.h" 1
@@ -54452,31 +54084,31 @@ void dense(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream,
 
 # 1 "firmware/weights/w2.h" 1
 # 12 "firmware/weights/w2.h"
-weight2_t w2[966] = {-0.875, 0.875, -0.875, 0.875, 1.125, 0.875, 0.000, 0.000, -0.875, 0.000, 0.000, 1.000, -0.875, 0.000, 0.000, 0.000, 0.000, 0.000, -0.750, 0.000, 0.000, 0.875, 0.000, 0.000, 0.000, 0.000, 0.125, 0.000, 0.000, 0.000, 0.875, 0.000, 1.000, -1.125, 0.000, -1.125, 1.750, -2.000, 0.000, -1.875, -1.875, 0.000, 2.375, -2.500, 2.500, -2.500, -2.500, -2.625, 0.000, -3.000, 2.875, 0.000, -3.000, -3.000, 3.000, 0.000, 3.250, -3.375, -3.375, 0.000, 3.250, -3.625, 3.500, -3.375, 0.000, -3.500, 3.375, -3.750, 3.625, 0.000, -3.750, -3.625, 3.375, 0.000, 3.500, 0.000, -3.750, -3.750, 3.250, -3.750, 3.625, -3.750, -3.625, -3.750, 3.250, -3.750, 3.750, 0.000, -3.625, -3.625, 0.000, -3.750, 3.500, 0.000, -3.750, -3.500, 3.125, -3.375, 0.000, -3.625, -3.500, -3.500, 3.125, 0.000, 3.375, -3.500, 0.000, -3.375, 0.000, -3.375, 3.125, -3.375, -3.375, -3.375, 2.875, -3.250, 0.000, -3.125, -3.250, -3.125, 0.000, 0.000, 0.000, -3.125, 0.000, -3.125, 2.625, -2.875, 2.875, -2.875, -2.750, -2.875, 2.375, -2.875, 0.000, -2.875, -2.625, 0.000, 0.000, -2.625, 2.625, 0.000, -2.625, -2.750, 0.000, -2.500, 0.000, -2.625, 0.000, -2.500, 2.125, -2.375, 0.000, -2.375, -2.375, -2.375, 0.000, -2.375, 2.250, -2.250, 0.000, -2.250, 2.000, 0.000, 2.125, 0.000, -2.000, 0.000, 1.750, -2.000, 0.000, 0.000, -2.000, -2.000, 0.000, -2.000, 0.000, 0.000, 0.000, 0.000, 1.625, 0.000, 1.750, 0.000, -1.625, -1.750, 0.000, -1.625, 0.000, 0.000, 0.000, 0.000, 1.250, 0.000, 0.000, 0.000, 0.000, -1.500, 1.250, -1.375, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -1.250, 0.000, 0.000, -1.375, 0.000, -1.375, -1.250, 0.000, 0.000, -1.125, 1.250, -1.125, 0.000, -1.125, 1.000, 0.000, 1.125, -1.125, 0.000, 0.000, 0.000, -1.000, 0.000, -1.000, 0.000, -1.000, 0.000, 0.000, 1.000, 0.000, 0.000, -1.000, 0.750, -0.875, 1.000, 0.000, 0.000, 0.000, 0.000, -0.750, 0.000, 0.000, -0.750, -0.750, 0.000, -0.750, 0.000, 0.000, -0.625, -0.625, 0.000, 0.000, 0.000, -0.750, 0.000, -0.625, 0.500, 0.000, 0.000, -0.750, 0.000, -0.625, 0.000, 0.000, 0.625, 0.000, -0.500, 0.000, 0.000, 0.000, 0.000, -0.625, -0.500, 0.000, 0.000, -0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.500, 0.000, 0.000, 0.000, -0.375, 0.375, 0.000, 0.000, 0.000, 0.250, 0.000, 0.000, -0.375, 0.000, 0.000, 0.000, -0.250, 0.250, -0.250, -0.250, 0.000, 0.250, 0.000, 0.000, 0.000, -0.250, -0.250, 0.125, -0.250, 0.250, -0.250, -0.125, -0.250, 0.125, 0.000, 0.000, -0.250, -0.125, -0.250, 0.000, -0.125, 0.000, 0.000, 0.000, -0.125, 0.000, 0.125, 0.000, -0.250, 0.000, 0.000, 0.125, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.125, 0.250, 0.000, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, -0.250, 0.250, 0.000, 0.125, 0.000, 0.000, 0.000, 0.375, 0.000, 0.000, 0.125, 0.000, 0.000, 0.000, -0.250, 0.000, 0.375, 0.000, 0.000, 0.250, -0.250, 0.250, 0.000, 0.000, -0.375, 0.000, 0.000, 0.000, 0.000, 0.250, 0.000, 0.000, 0.000, 0.000, 0.375, 0.125, -0.125, 0.250, -0.125, 0.125, 0.500, 0.375, 0.000, 0.000, 0.000, 0.125, 0.000, 0.000, -0.375, 0.000, 0.000, 0.375, 0.500, 0.250, -0.125, 0.250, 0.000, 0.000, 0.500, 0.375, 0.000, 0.000, -0.125, 0.125, 0.000, 0.250, 0.000, 0.000, 0.000, 0.000, 0.500, 0.500, 0.000, 0.500, -0.375, 0.000, 0.000, 0.000, -0.250, 0.000, -0.375, 0.000, 0.000, 0.000, 0.000, 0.000, -0.375, 0.000, 0.000, 0.000, -0.500, 0.000, -0.375, 0.500, 0.500, 0.500, -0.375, 0.500, 0.000, 0.500, 0.000, 0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.625, 0.000, 0.500, 0.000, 0.625, 0.000, 0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.625, 0.000, 0.500, 0.000, 0.625, -0.500, 0.000, -0.500, 0.000, 0.625, 0.500, 0.000, 0.000, 0.000, 0.000, 0.625, 0.000, 0.000, 0.000, 0.000, 0.500, 0.625, 0.625, 0.000, 0.625, -0.500, 0.000, 0.000, 0.625, -0.500, 0.000, -0.625, 0.500, 0.000, 0.625, 0.000, 0.000, 0.000, 0.625, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.625, -0.500, 0.625, 0.000, 0.625, 0.750, 0.750, 0.000, 0.000, -0.500, 0.000, 0.750, 0.625, -0.625, 0.000, -0.625, 0.000, 0.000, 0.625, 0.000, 0.000, -0.625, 0.000, 0.000, 0.000, -0.625, 0.000, -0.500, 0.625, 0.000, 0.000, -0.625, 0.750, 0.000, 0.625, 0.750, 0.750, -0.625, 0.000, 0.000, 0.625, 0.000, 0.000, -0.625, 0.750, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.625, 0.000, 0.750, 0.000, 0.000, 0.750, 0.000, 0.000, 0.875, 0.000, -0.625, 0.750, 0.000, 0.750, 0.000, 0.000, 0.000, 0.750, -0.750, 0.750, 0.750, 0.750, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.625, 0.750, 0.000, 0.625, 0.000, 0.750, 0.000, 0.750, 0.000, 0.750, 0.000, 0.750, 0.000, 0.875, 0.000, 0.625, 0.875, 0.750, -0.625, 0.875, -0.625, 0.000, 0.000, 0.000, -0.750, 0.000, -0.750, 0.000, 0.000, 0.750, 0.000, 0.750, -0.750, 0.625, 0.000, 0.000, 0.000, 0.000, 0.000, 0.750, 0.875, 0.000, -0.625, 0.875, -0.750, 0.000, 1.000, 0.000, 0.000, 0.750, -0.625, 0.000, 0.000, 0.000, -0.750, 0.000, -0.750, 0.750, 0.000, 0.750, 0.000, 0.000, 0.000, 0.000, 0.875, 0.000, 0.000, 0.000, -0.750, 0.000, 0.000, 0.750, 0.000, 0.875, -0.750, 0.750, 0.875, 0.000, -0.750, 0.000, 0.000, 0.000, 1.000, 0.875, 0.000, 0.000, -0.750, 0.750, 0.000, 0.000, -0.750, 0.000, 0.000, 0.875, 0.000, 0.750, 0.000, 0.000, -0.750, 0.000, 0.000, 0.750, -0.750, 0.875, -0.750, 0.750, 0.875, 0.000, 0.000, 0.875, 0.000, 0.875, 0.875, 0.875, 0.000, 1.000, -0.750, 0.750, 1.000, 0.750, 0.000, 0.875, 0.000, 0.750, 0.000, 0.875, 0.000, 0.875, 0.000, 0.000, 0.000, 0.000, -0.750, 1.000, -0.875, 0.875, 0.000, 0.000, -0.875, 0.875, 0.000, 0.000, 1.000, 0.000, -0.750, 1.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.875, 0.000, 0.750, 1.000, 0.875, 0.000, 0.000, 0.000, 0.875, 0.000, 0.875, 0.000, 1.000, -0.750, 0.000, 0.000, 0.875, -0.875, 0.875, -0.875, 0.000, 0.000, 0.875, 0.000, 0.875, -0.750, 0.000, 0.875, 0.000, 0.000, 0.000, -0.750, 0.000, 0.000, 0.875, 0.000, 0.875, -0.750, 0.875, 0.875, 0.875, -0.750, 0.000, 0.000, 0.875, 0.000, 0.000, -0.875, 0.875, 0.000, 0.000, 0.875, 0.875, 0.000, 0.000, -0.875, 0.875, 1.000, 0.000, 0.000, 0.875, -0.875, 0.875, 0.000, 0.000, 0.000, 1.000, -0.875, 0.875, 0.000, 0.000, -0.750, 0.000, 0.000, 0.000, 1.000, 1.000, 0.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 0.875, 0.000, 0.000, -0.875, 0.000, -0.750, 0.000, 1.000, 0.000, -0.750, 0.000, -0.875, 0.000, 0.000, 1.000, -0.750, 0.000, -0.875, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, -0.875, 0.875, -0.875, 0.875, 0.000, 0.000, -0.875, 0.000, -0.875, 0.000, 1.000, 0.000, 0.000, 0.000, 0.000, 0.875, 1.000, 0.000, 0.000, 1.000, -0.875, 0.000, 1.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000, 0.875, 0.000, 1.000, -0.875, 0.000, 0.000, 0.000, -0.875, 1.000, -0.875, 1.000, 0.000, 1.000, -0.750, 0.000, 0.000, 0.875, 0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 0.000, -0.875, 0.000, -0.875, 0.875, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.875, 0.000, 1.000, 0.000, 0.875, 1.125, 1.000, 0.000, 1.000, 0.000, 0.875, 0.000, 0.000, -0.875, 0.000, 0.000, 1.000, 1.125, 1.000};
+weight2_t w2[966] = {0.000, 0.000, 1.250, 1.125, 0.000, 1.250, 0.000, -1.000, 0.000, 0.000, -1.250, 0.000, -1.125, 0.000, 1.250, 0.000, -1.250, 0.000, 0.000, -0.875, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.875, 0.000, 0.000, -1.000, 0.000, -1.125, 1.750, 0.000, 0.000, 0.000, 2.125, -2.250, 2.375, 2.375, -3.000, 0.000, 2.750, -2.875, 2.750, 2.625, -3.250, 0.000, 3.000, -3.375, 0.000, 3.000, -3.625, -3.375, 3.500, 0.000, 3.250, 3.250, -3.875, -3.625, 3.625, -3.750, 3.250, 0.000, 0.000, -3.875, 3.875, -4.000, 3.250, 0.000, -4.000, -3.875, 3.875, -4.000, 3.500, 0.000, -4.125, -3.625, 3.875, -3.875, 3.250, 3.375, -4.000, -3.750, 0.000, -4.000, 0.000, 3.250, -4.000, -3.750, 3.875, -4.125, 3.125, 3.250, -3.875, 0.000, 3.625, -3.750, 3.000, 3.125, 0.000, -3.500, 3.500, -3.750, 3.000, 2.875, 0.000, -3.375, 3.500, -3.625, 2.750, 2.875, 0.000, -3.125, 3.250, -3.500, 0.000, 0.000, 0.000, -3.250, 0.000, -3.500, 2.750, 2.750, -3.375, -3.125, 3.000, -3.125, 2.500, 2.625, -3.125, -2.875, 2.750, -3.125, 0.000, 2.500, -3.000, -2.750, 2.750, -2.875, 2.250, 2.375, -2.875, 0.000, 2.625, -2.875, 2.000, 0.000, -2.625, -2.625, 2.500, -2.500, 1.875, 0.000, -2.625, -2.250, 2.250, -2.500, 0.000, 2.000, -2.375, -2.250, 2.125, -2.250, 0.000, 1.875, -2.375, 0.000, 2.125, -2.250, 1.625, 0.000, -2.125, 0.000, 2.000, -2.125, 1.500, 1.625, -2.125, -1.750, 1.750, -2.000, 0.000, 0.000, 0.000, -1.750, 0.000, 0.000, 0.000, 1.500, -1.625, -1.750, 1.625, -1.750, 1.250, 0.000, -1.750, -1.375, 1.375, -1.625, 0.000, 0.000, 0.000, 0.000, 1.250, -1.500, 1.000, 0.000, -1.375, -1.375, 0.000, -1.250, 0.000, 1.125, 0.000, -1.375, 0.000, -1.375, 1.000, 1.000, -1.250, 0.000, 1.125, -1.250, 0.875, 0.000, -1.125, -1.000, 1.000, -1.125, 0.000, 0.000, -1.125, -1.000, 0.000, -1.000, 0.000, 0.750, -1.000, -0.875, 0.750, 0.000, 0.625, 0.000, -0.875, -0.875, 0.750, 0.000, 0.000, 0.000, -0.875, -0.875, 0.000, -0.875, 0.375, 0.000, -0.750, 0.000, 0.625, -0.750, 0.500, 0.000, -0.625, -0.750, 0.000, 0.000, 0.375, 0.500, 0.000, 0.000, 0.000, 0.000, 0.250, 0.000, -0.625, 0.000, 0.500, -0.500, 0.000, 0.000, -0.500, -0.500, 0.375, -0.500, 0.250, 0.375, -0.500, -0.500, 0.375, 0.000, 0.000, 0.250, -0.500, -0.375, 0.000, 0.000, 0.250, 0.000, 0.000, 0.000, 0.250, 0.000, 0.125, 0.250, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.250, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, -0.250, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.625, 0.000, 0.000, -0.500, 0.000, 0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.625, 0.500, -0.750, 0.625, -0.750, -0.500, 0.625, 0.000, 0.000, 0.000, 0.000, -0.625, 0.625, 0.625, 0.000, 0.625, 0.000, -0.500, 0.000, 0.625, 0.000, 0.625, -0.750, -0.500, 0.000, 0.000, 0.000, 0.750, -0.750, 0.000, 0.000, 0.625, 0.000, 0.625, 0.000, -0.625, 0.000, 0.625, -0.750, 0.750, -0.750, 0.000, 0.625, 0.000, 0.000, 0.000, -0.750, 0.000, 0.000, 0.625, -0.875, 0.750, -0.750, 0.000, 0.750, 0.000, 0.000, 0.000, -0.750, -0.625, 0.000, 0.625, 0.000, 0.750, 0.000, 0.000, 0.750, 0.000, 0.000, 0.000, 0.000, -0.625, 0.750, 0.750, 0.000, 0.000, -0.875, 0.000, 0.750, 0.750, 0.000, 0.750, 0.000, -0.625, 0.000, 0.000, 0.000, 0.750, 0.000, -0.750, 0.000, 0.625, -0.750, 0.750, 0.000, -0.625, 0.000, 0.750, 0.000, 0.000, -0.875, 0.000, 0.750, 0.000, 0.000, 0.875, -0.750, 0.000, 0.750, 0.750, -0.875, 0.875, 0.000, -0.750, 0.875, 0.000, 0.000, 0.875, -0.875, 0.000, 0.000, 0.000, -0.875, 0.000, -0.875, -0.625, 0.750, 0.000, -1.000, 0.750, 0.000, -0.750, 0.000, 0.000, 0.000, 0.875, 0.000, -0.750, 0.875, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 0.750, -0.875, 0.875, -1.000, 0.000, 0.875, 0.750, -0.875, 0.000, 0.000, 0.000, 0.875, 0.875, 0.000, 0.875, -1.000, -0.750, 0.875, 0.875, 0.000, 0.000, 0.000, -0.750, 0.875, 0.875, -1.000, 0.875, 0.000, 0.000, 0.000, 0.000, -1.000, 1.000, 0.000, 0.000, 0.875, 0.750, -1.000, 0.875, -1.000, 0.000, 1.000, 0.875, 0.000, 1.000, -0.875, 0.000, 0.875, 0.875, 0.000, 1.000, -1.000, 0.000, 1.000, 0.875, 0.000, 0.000, 0.000, 0.000, 1.000, 0.875, -1.125, 0.000, -1.000, -0.750, 1.000, 0.000, -1.000, 0.000, -0.875, 0.000, 1.000, 0.875, -1.000, 1.000, 0.000, 0.000, 0.000, 0.000, -1.000, 0.000, -1.000, 0.000, 0.875, 0.875, -1.000, 0.875, 0.000, 0.000, 0.000, 0.875, 0.000, 0.000, -1.000, 0.000, 0.000, 1.000, 0.000, 1.000, 0.000, 0.000, 0.000, 0.875, -1.000, 0.000, 0.000, -0.750, 0.000, 0.000, -1.125, 1.125, -1.000, 0.000, 0.000, 0.000, 0.000, 0.000, -1.000, -0.750, 1.000, 1.000, -1.000, 0.000, -1.000, 0.000, 0.000, 0.000, 0.000, 0.000, -1.000, -0.875, 0.000, 0.000, -1.125, 1.000, 0.000, 0.000, 1.125, 0.000, 0.000, 0.000, -1.000, 0.000, 0.000, 0.000, -1.000, 1.125, 0.000, 0.000, 1.000, 1.000, -1.000, 1.125, -1.000, -0.875, 0.000, 0.000, -1.125, 1.125, -1.000, -0.875, 1.000, 1.000, 0.000, 0.000, 0.000, 0.000, 1.125, 1.000, -1.125, 1.000, -1.000, -0.875, 0.000, 0.000, -1.125, 0.000, -1.000, 0.000, 1.125, 1.000, 0.000, 1.125, -1.000, 0.000, 0.000, 0.000, -1.125, 1.125, 0.000, 0.000, 0.000, 1.000, 0.000, 1.125, -1.125, 0.000, 1.000, 1.000, -1.125, 1.000, -1.000, -0.875, 1.125, 0.000, -1.125, 0.000, 0.000, 0.000, 1.125, 1.000, -1.125, 0.000, 0.000, 0.000, 1.125, 0.000, 0.000, 1.125, 0.000, 0.000, 1.125, 1.000, -1.125, 0.000, 0.000, -0.875, 1.125, 1.125, 0.000, 1.000, 0.000, -0.875, 1.125, 1.000, 0.000, 0.000, 0.000, -0.875, 0.000, 0.000, -1.125, 1.000, -1.125, 0.000, 0.000, 1.000, -1.125, 0.000, 0.000, -0.875, 0.000, 1.125, -1.125, 0.000, 0.000, -1.000, 0.000, 0.000, 0.000, 0.000, -1.125, 0.000, 1.125, 1.000, 0.000, 0.000, 0.000, -0.875, 1.125, 1.000, -1.125, 1.125, -1.125, 0.000, 0.000, 1.000, 0.000, 1.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, -0.875, 1.125, 1.000, -1.125, 0.000, 0.000, 0.000, 1.125, 1.125, -1.125, 1.250, -1.125, -0.875, 1.125, 1.000, 0.000, 0.000, 0.000, 0.000, 0.000, 1.125, 0.000, 1.125, -1.125, 0.000, 0.000, 0.000, -1.125, 1.125, 0.000, -1.000, 0.000, 0.000, 0.000, 0.000, -1.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.875, 1.125, 1.125, 0.000, 1.125, 0.000, 0.000, 0.000, 0.000, 0.000, 1.125, 0.000, 0.000, 1.125, 1.125, -1.250, 1.125, -1.000, -0.875, 0.000, 1.000, -1.250, 0.000};
 # 18 "firmware/parameters.h" 2
 # 1 "firmware/weights/b2.h" 1
 # 12 "firmware/weights/b2.h"
-bias2_t b2[6] = {-0.750, 0.875, -0.750, 0.750, 0.875, 0.875};
+bias2_t b2[6] = {-1.000, -0.750, 1.000, 0.875, -1.000, 1.000};
 # 19 "firmware/parameters.h" 2
 # 1 "firmware/weights/w5.h" 1
 # 12 "firmware/weights/w5.h"
-weight5_t w5[24] = {0.000, 0.000, 0.000, -3.375, 4.500, 0.000, 4.250, 0.000, 0.000, 0.000, -3.625, -3.625, 4.375, 0.000, 4.125, 0.000, 3.750, 0.000, 4.000, 0.000, 4.250, 0.750, 0.000, 4.250};
+weight5_t w5[24] = {0.000, 0.000, -4.625, 0.000, 0.000, 0.000, 0.000, 3.250, 5.000, 0.000, 3.875, 0.000, 4.750, 0.000, 3.625, -3.375, -5.125, 0.000, -3.625, 3.875, 5.750, 0.000, 5.000, 0.000};
 # 20 "firmware/parameters.h" 2
 # 1 "firmware/weights/b5.h" 1
 # 12 "firmware/weights/b5.h"
-bias5_t b5[4] = {0.750, 0.000, 0.625, 0.625};
+bias5_t b5[4] = {0.625, 0.000, 1.000, -0.875};
 # 21 "firmware/parameters.h" 2
 # 1 "firmware/weights/w8.h" 1
 # 12 "firmware/weights/w8.h"
-weight8_t w8[8] = {3.500, -3.750, 0.000, 0.000, 3.750, 0.000, 3.625, 0.000};
+weight8_t w8[8] = {0.000, 4.750, 0.625, 0.000, 3.000, 0.000, -3.125, 0.000};
 # 22 "firmware/parameters.h" 2
 # 1 "firmware/weights/b8.h" 1
 # 12 "firmware/weights/b8.h"
-bias8_t b8[2] = {0.250, 0.000};
+bias8_t b8[2] = {0.000, 0.000};
 # 23 "firmware/parameters.h" 2
 # 1 "firmware/weights/w11.h" 1
 # 12 "firmware/weights/w11.h"
-weight11_t w11[8] = {2.000, 2.750, 0.000, 0.000, 0.000, -3.250, -0.875, 0.000};
+weight11_t w11[8] = {0.000, -2.500, -1.875, 4.250, 0.000, -4.500, 0.000, 0.000};
 # 24 "firmware/parameters.h" 2
 # 1 "firmware/weights/b11.h" 1
 # 12 "firmware/weights/b11.h"
@@ -54484,7 +54116,7 @@ bias11_t b11[4] = {0.000, 0.000, 0.000, 0.000};
 # 25 "firmware/parameters.h" 2
 # 1 "firmware/weights/w14.h" 1
 # 12 "firmware/weights/w14.h"
-weight14_t w14[12] = {0.000, 1.875, -1.000, 3.500, 0.500, 0.000, 0.000, 0.000, 0.875, -0.750, 0.000, 0.000};
+weight14_t w14[12] = {0.750, 0.000, 0.000, 0.000, 3.625, 0.000, 1.375, 0.500, 1.375, -3.000, 0.000, 0.000};
 # 26 "firmware/parameters.h" 2
 # 1 "firmware/weights/b14.h" 1
 # 12 "firmware/weights/b14.h"
@@ -54492,11 +54124,11 @@ bias14_t b14[3] = {0.000, 0.000, 0.000};
 # 27 "firmware/parameters.h" 2
 # 1 "firmware/weights/w17.h" 1
 # 12 "firmware/weights/w17.h"
-weight17_t w17[6] = {-2.453125000, 0.000000000, -1.634765625, 1.462890625, 0.000000000, 0.000000000};
+weight17_t w17[6] = {0.000000000, -1.986328125, 0.000000000, -2.472656250, 0.000000000, -1.509765625};
 # 28 "firmware/parameters.h" 2
 # 1 "firmware/weights/b17.h" 1
 # 12 "firmware/weights/b17.h"
-bias17_t b17[2] = {0.005859375, -0.005859375};
+bias17_t b17[2] = {0.025390625, -0.021484375};
 # 29 "firmware/parameters.h" 2
 
 
@@ -54508,8 +54140,8 @@ struct config2 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 495;
-    static const unsigned n_nonzeros = 471;
+    static const unsigned n_zeros = 490;
+    static const unsigned n_nonzeros = 476;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc1_accum_t accum_t;
@@ -54637,79 +54269,46 @@ struct sigmoid_config19 : nnet::activ_config {
 };
 # 5 "firmware/myproject.cpp" 2
 
-__attribute__((sdx_kernel("GN_inference", 0))) void GN_inference(
-    hls::stream<AXI_VALUE_IN> &input,
-    int *result)
-{
-#line 18 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/myproject_prj/solution1/csynth.tcl"
-#pragma HLSDIRECTIVE TOP name=GN_inference
-# 9 "firmware/myproject.cpp"
 
-#pragma HLS INTERFACE mode = ap_ctrl_hs port = return
-#pragma HLS INTERFACE axis register both port = input
-#pragma HLS INTERFACE ap_vld port = return
+__attribute__((sdx_kernel("myproject", 0))) void myproject(
+    input_t inputLayer[161],
+    result_t layer19_out[2]
+) {
+#line 184 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/build_prj.tcl"
+#pragma HLSDIRECTIVE TOP name=myproject
+# 10 "firmware/myproject.cpp"
+
+
+
+#pragma HLS ARRAY_RESHAPE variable=inputLayer complete dim=0
+#pragma HLS ARRAY_PARTITION variable=layer19_out complete dim=0
+#pragma HLS INTERFACE ap_vld port=inputLayer,layer19_out
 #pragma HLS PIPELINE
-# 36 "firmware/myproject.cpp"
- AXI_VALUE_IN valIn;
-
-    input_t inputLayer[161];
-    result_t layer19_out[2];
-
-#pragma HLS ARRAY_RESHAPE variable = inputLayer complete dim = 0
-#pragma HLS ARRAY_PARTITION variable = layer19_out complete dim = 0
-
- VITIS_LOOP_44_1: for (int h = 0; h < 161; h++)
-    {
-#pragma HLS PIPELINE
-
- valIn = input.read();
-        inputLayer[h] = valIn.data;
-    }
-
-
-
-
-
-
-
-    layer2_t layer2_out[6];
-#pragma HLS ARRAY_PARTITION variable = layer2_out complete dim = 0
+# 42 "firmware/myproject.cpp"
+ layer2_t layer2_out[6];
+#pragma HLS ARRAY_PARTITION variable=layer2_out complete dim=0
  nnet::dense<input_t, layer2_t, config2>(inputLayer, layer2_out, w2, b2);
 
     layer5_t layer5_out[4];
-#pragma HLS ARRAY_PARTITION variable = layer5_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer5_out complete dim=0
  nnet::dense<layer2_t, layer5_t, config5>(layer2_out, layer5_out, w5, b5);
 
     layer8_t layer8_out[2];
-#pragma HLS ARRAY_PARTITION variable = layer8_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer8_out complete dim=0
  nnet::dense<layer5_t, layer8_t, config8>(layer5_out, layer8_out, w8, b8);
 
     layer11_t layer11_out[4];
-#pragma HLS ARRAY_PARTITION variable = layer11_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer11_out complete dim=0
  nnet::dense<layer8_t, layer11_t, config11>(layer8_out, layer11_out, w11, b11);
 
     layer14_t layer14_out[3];
-#pragma HLS ARRAY_PARTITION variable = layer14_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer14_out complete dim=0
  nnet::dense<layer11_t, layer14_t, config14>(layer11_out, layer14_out, w14, b14);
 
     layer17_t layer17_out[2];
-#pragma HLS ARRAY_PARTITION variable = layer17_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer17_out complete dim=0
  nnet::dense<layer14_t, layer17_t, config17>(layer14_out, layer17_out, w17, b17);
 
     nnet::sigmoid<layer17_t, result_t, sigmoid_config19>(layer17_out, layer19_out);
 
-
-    int tmpVal = 0;
-    if (layer19_out[0] > 0.5)
-    {
-
-        tmpVal = 5;
-        *result = tmpVal;
-    }
-    else
-    {
-
-        tmpVal = 3;
-        *result = tmpVal;
-    }
 }
