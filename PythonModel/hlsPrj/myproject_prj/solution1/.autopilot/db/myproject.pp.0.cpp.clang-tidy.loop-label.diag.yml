@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          769367
+        Offset:          769611
         Length:          0
         ReplacementText: 'VITIS_LOOP_1211_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -16,7 +16,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          976803
+        Offset:          977047
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -25,7 +25,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          977246
+        Offset:          977490
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -34,7 +34,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          977690
+        Offset:          977934
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -43,7 +43,7 @@ Diagnostics:
     FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          1239983
+        Offset:          1239839
         Length:          0
         ReplacementText: 'VITIS_LOOP_1245_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -52,7 +52,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_types.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          1590998
+        Offset:          1590879
         Length:          0
         ReplacementText: 'VITIS_LOOP_27_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -61,7 +61,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_types.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          1591373
+        Offset:          1591254
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -70,7 +70,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2185948
+        Offset:          2175301
         Length:          0
         ReplacementText: 'VITIS_LOOP_265_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -79,7 +79,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2186335
+        Offset:          2175688
         Length:          0
         ReplacementText: 'VITIS_LOOP_275_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -88,7 +88,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2186670
+        Offset:          2176023
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -97,7 +97,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2186893
+        Offset:          2176246
         Length:          0
         ReplacementText: 'VITIS_LOOP_293_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -106,7 +106,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2186988
+        Offset:          2176341
         Length:          0
         ReplacementText: 'VITIS_LOOP_295_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -115,7 +115,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2187352
+        Offset:          2176705
         Length:          0
         ReplacementText: 'VITIS_LOOP_307_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -124,7 +124,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2187434
+        Offset:          2176787
         Length:          0
         ReplacementText: 'VITIS_LOOP_309_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -133,7 +133,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2187777
+        Offset:          2177130
         Length:          0
         ReplacementText: 'VITIS_LOOP_324_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -142,7 +142,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2188230
+        Offset:          2177583
         Length:          0
         ReplacementText: 'VITIS_LOOP_344_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -151,7 +151,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2188275
+        Offset:          2177628
         Length:          0
         ReplacementText: 'VITIS_LOOP_345_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -160,7 +160,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2188684
+        Offset:          2178037
         Length:          0
         ReplacementText: 'VITIS_LOOP_360_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -169,7 +169,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_helpers.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2188897
+        Offset:          2178250
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -178,7 +178,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_conv1d_latency.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2198440
+        Offset:          2187793
         Length:          0
         ReplacementText: 'VITIS_LOOP_136_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -187,7 +187,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_conv1d_latency.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2198524
+        Offset:          2187877
         Length:          0
         ReplacementText: 'VITIS_LOOP_137_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -196,7 +196,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_conv1d_latency.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2199066
+        Offset:          2188419
         Length:          0
         ReplacementText: 'VITIS_LOOP_158_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -205,7 +205,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_conv1d_latency.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2199150
+        Offset:          2188503
         Length:          0
         ReplacementText: 'VITIS_LOOP_159_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -214,7 +214,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2202592
+        Offset:          2191945
         Length:          0
         ReplacementText: 'VITIS_LOOP_31_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -223,7 +223,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2202845
+        Offset:          2192198
         Length:          0
         ReplacementText: 'VITIS_LOOP_43_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -232,7 +232,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2203206
+        Offset:          2192559
         Length:          0
         ReplacementText: 'VITIS_LOOP_57_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -241,7 +241,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2204022
+        Offset:          2193375
         Length:          0
         ReplacementText: 'VITIS_LOOP_84_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -250,7 +250,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2204683
+        Offset:          2194036
         Length:          0
         ReplacementText: 'VITIS_LOOP_114_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -259,7 +259,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2205817
+        Offset:          2195170
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -268,7 +268,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2206179
+        Offset:          2195532
         Length:          0
         ReplacementText: 'VITIS_LOOP_162_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -277,7 +277,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2207082
+        Offset:          2196435
         Length:          0
         ReplacementText: 'VITIS_LOOP_195_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -286,7 +286,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2207601
+        Offset:          2196954
         Length:          0
         ReplacementText: 'VITIS_LOOP_209_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -295,7 +295,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2208441
+        Offset:          2197794
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -304,7 +304,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2208711
+        Offset:          2198064
         Length:          0
         ReplacementText: 'VITIS_LOOP_252_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -313,7 +313,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2209235
+        Offset:          2198588
         Length:          0
         ReplacementText: 'VITIS_LOOP_266_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -322,7 +322,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2209469
+        Offset:          2198822
         Length:          0
         ReplacementText: 'VITIS_LOOP_273_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -331,7 +331,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2209829
+        Offset:          2199182
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -340,7 +340,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2210758
+        Offset:          2200111
         Length:          0
         ReplacementText: 'VITIS_LOOP_323_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -349,7 +349,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2210875
+        Offset:          2200228
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -358,7 +358,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2210929
+        Offset:          2200282
         Length:          0
         ReplacementText: 'VITIS_LOOP_329_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -367,7 +367,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2211510
+        Offset:          2200863
         Length:          0
         ReplacementText: 'VITIS_LOOP_346_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -376,7 +376,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2211997
+        Offset:          2201350
         Length:          0
         ReplacementText: 'VITIS_LOOP_359_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -385,7 +385,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2212138
+        Offset:          2201491
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -394,7 +394,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2213103
+        Offset:          2202456
         Length:          0
         ReplacementText: 'VITIS_LOOP_402_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -403,7 +403,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2213740
+        Offset:          2203093
         Length:          0
         ReplacementText: 'VITIS_LOOP_432_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -412,7 +412,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2214576
+        Offset:          2203929
         Length:          0
         ReplacementText: 'VITIS_LOOP_459_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -421,7 +421,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2214918
+        Offset:          2204271
         Length:          0
         ReplacementText: 'VITIS_LOOP_473_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -430,7 +430,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2215376
+        Offset:          2204729
         Length:          0
         ReplacementText: 'VITIS_LOOP_489_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -439,7 +439,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2215846
+        Offset:          2205199
         Length:          0
         ReplacementText: 'VITIS_LOOP_507_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -448,7 +448,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2216249
+        Offset:          2205602
         Length:          0
         ReplacementText: 'VITIS_LOOP_524_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -457,7 +457,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2216644
+        Offset:          2205997
         Length:          0
         ReplacementText: 'VITIS_LOOP_541_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -466,7 +466,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2217310
+        Offset:          2206663
         Length:          0
         ReplacementText: 'VITIS_LOOP_571_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -475,7 +475,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2217884
+        Offset:          2207237
         Length:          0
         ReplacementText: 'VITIS_LOOP_590_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -484,7 +484,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2218550
+        Offset:          2207903
         Length:          0
         ReplacementText: 'VITIS_LOOP_620_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -493,7 +493,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2219104
+        Offset:          2208457
         Length:          0
         ReplacementText: 'VITIS_LOOP_639_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -502,7 +502,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2219753
+        Offset:          2209106
         Length:          0
         ReplacementText: 'VITIS_LOOP_669_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -511,7 +511,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2220591
+        Offset:          2209944
         Length:          0
         ReplacementText: 'VITIS_LOOP_696_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -520,7 +520,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2221209
+        Offset:          2210562
         Length:          0
         ReplacementText: 'VITIS_LOOP_725_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -529,7 +529,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2221836
+        Offset:          2211189
         Length:          0
         ReplacementText: 'VITIS_LOOP_746_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -538,7 +538,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2222225
+        Offset:          2211578
         Length:          0
         ReplacementText: 'VITIS_LOOP_764_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -547,7 +547,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2222621
+        Offset:          2211974
         Length:          0
         ReplacementText: 'VITIS_LOOP_784_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -556,7 +556,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2224697
+        Offset:          2214050
         Length:          0
         ReplacementText: 'VITIS_LOOP_73_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -565,7 +565,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2224837
+        Offset:          2214190
         Length:          0
         ReplacementText: 'VITIS_LOOP_80_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -574,7 +574,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2225102
+        Offset:          2214455
         Length:          0
         ReplacementText: 'VITIS_LOOP_89_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -583,7 +583,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2225296
+        Offset:          2214649
         Length:          0
         ReplacementText: 'VITIS_LOOP_98_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -592,7 +592,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2225389
+        Offset:          2214742
         Length:          0
         ReplacementText: 'VITIS_LOOP_102_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -601,7 +601,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2225715
+        Offset:          2215068
         Length:          0
         ReplacementText: 'VITIS_LOOP_113_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -610,7 +610,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2225825
+        Offset:          2215178
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -619,7 +619,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2226902
+        Offset:          2216255
         Length:          0
         ReplacementText: 'VITIS_LOOP_141_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -628,7 +628,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2226988
+        Offset:          2216341
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -637,7 +637,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2227795
+        Offset:          2217148
         Length:          0
         ReplacementText: 'VITIS_LOOP_164_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -646,7 +646,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2234110
+        Offset:          2223463
         Length:          0
         ReplacementText: 'VITIS_LOOP_213_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -655,7 +655,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2234394
+        Offset:          2223747
         Length:          0
         ReplacementText: 'VITIS_LOOP_222_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -664,7 +664,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2237607
+        Offset:          2226960
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -673,7 +673,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2237749
+        Offset:          2227102
         Length:          0
         ReplacementText: 'VITIS_LOOP_333_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -682,7 +682,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_activation_stream.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2237953
+        Offset:          2227306
         Length:          0
         ReplacementText: 'VITIS_LOOP_341_3: '
   - DiagnosticName:  clang-diagnostic-error
@@ -706,7 +706,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_dense_compressed.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2265002
+        Offset:          2254355
         Length:          0
         ReplacementText: 'VITIS_LOOP_14_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -715,16 +715,7 @@ Diagnostics:
     FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\nnet_utils\nnet_dense_compressed.h'
     Replacements:    
       - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2266873
+        Offset:          2256226
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_44_1:  '
-    FileOffset:      44
-    FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\firmware\myproject.cpp'
-    Replacements:    
-      - FilePath:        'C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj\myproject_prj\solution1\.autopilot\db\myproject.pp.0.cpp'
-        Offset:          2286118
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_44_1: '
 ...

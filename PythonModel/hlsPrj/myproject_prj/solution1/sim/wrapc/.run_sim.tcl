@@ -3,10 +3,10 @@
 # Tool Version Limit: 2019.12
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
-set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2022.2/win64/tools/fpo_v7_1"
-set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2022.2/win64/tools/fft_v9_1"
-set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2022.2/win64/tools/fir_v7_0"
-set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2022.2/win64/tools/dds_v6_0"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2022.2/win64/tools/fpo_v7_1"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2022.2/win64/tools/fft_v9_1"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2022.2/win64/tools/fir_v7_0"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2022.2/win64/tools/dds_v6_0"
 
 proc cpvcdfromsctortl {} {
 	#copy *.vcd from sc to verilog/vhdl dir

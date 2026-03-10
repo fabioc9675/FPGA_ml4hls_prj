@@ -59,6 +59,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/win64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/include"/>
                                     								
                                 </option>
@@ -92,6 +94,8 @@
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/include"/>
                                     								
@@ -291,6 +295,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/win64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/include"/>
                                     								
                                 </option>
@@ -314,6 +320,8 @@
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2022.2/include"/>
                                     								
