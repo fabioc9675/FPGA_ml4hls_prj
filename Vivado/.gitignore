@@ -21,8 +21,10 @@
 IP/*/*
 !IP/*/*.xci*
 
-BD/*
-!BD/*.bd
+BD/pynq_bd/*
+!bd/pynq_bd/hdl
+#!BD/*.bd
+!bd/pynq_bd/pynq_bd.bd
 
 ## OS
 .DS_Store
