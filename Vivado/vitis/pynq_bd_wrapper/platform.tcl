@@ -20,3 +20,5 @@ domain active {zynq_fsbl}
 domain active {freertos10_xilinx_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform config -updatehw {C:/GitHub/FPGA_ml4hls_prj/Vivado/outputs/pynq_bd_wrapper.xsa}
+platform generate -domains 

@@ -5,3 +5,6 @@ timestamp=[2026-03-09 19:13:22], mode=APP_CREATION, duration=0:00:35.036, durati
 timestamp=[2026-03-09 19:14:39], mode=PLATFORM_GENERATION, duration=0:00:44.529, duration_ms=44529, data={name=pynq_bd_wrapper}
 timestamp=[2026-03-09 19:14:46], mode=BUILD, duration=0:00:06.737, duration_ms=6737, data={name=gn_inference_app, configuration=Debug, clean_build=false}
 timestamp=[2026-03-09 19:15:07], mode=BUILD, duration=0:00:00.485, duration_ms=485, data={name=gn_inference_app, configuration=Debug, clean_build=false}
+timestamp=[2026-03-10 23:36:16], mode=PLATFORM_GENERATION, duration=0:00:47.932, duration_ms=47932, data={name=pynq_bd_wrapper}
+timestamp=[2026-03-10 23:37:22], mode=BUILD, duration=0:00:03.115, duration_ms=3115, data={name=gn_inference_app, configuration=Debug, clean_build=false}
+timestamp=[2026-03-10 23:37:44], mode=BUILD, duration=0:00:10.228, duration_ms=10228, data={name=gn_inference_app_system, configuration=Hardware, clean_build=false}
