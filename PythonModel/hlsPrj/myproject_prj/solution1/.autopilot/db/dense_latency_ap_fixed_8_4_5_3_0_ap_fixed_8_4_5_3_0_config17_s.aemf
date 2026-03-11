@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1773184655074">
-  <ports id="1" name="p_read" type="PortType" originalName="a.V" coreId="1601200424" bitwidth="8">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1773189607934">
+  <ports id="1" name="p_read" type="PortType" originalName="a.V" coreId="1852142702" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="p_read1" type="PortType" originalName="a.V" coreId="1601200424" bitwidth="8">
+  <ports id="2" name="p_read1" type="PortType" originalName="a.V" coreId="1852142702" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="p_read2" type="PortType" originalName="a.V" coreId="1601200424" bitwidth="8">
+  <ports id="3" name="p_read2" type="PortType" originalName="a.V" coreId="4294967295" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="13" name="ap_return_0" direction="DirOut">
@@ -15,185 +15,230 @@
   <ports id="14" name="ap_return_1" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <edges id="35" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="37" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
-  <edges id="39" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
-  <edges id="40" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="41" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
-  <edges id="46" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
-  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
-  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
-  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
-  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
-  <edges id="63" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
-  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
-  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
-  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
-  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
-  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
-  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
-  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
-  <edges id="85" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="86" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="87" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
-  <edges id="90" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
-  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
-  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
-  <edges id="95" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
-  <edges id="96" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
-  <edges id="99" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
-  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
-  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
-  <edges id="102" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@ports.3"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@ports.4"/>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="138" pipe_depth="5" RegionName="dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0>, ap_fixed&lt;8, 4, 5, 3, 0>, config17>">
-    <basic_blocks id="32" name="dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0>, ap_fixed&lt;8, 4, 5, 3, 0>, config17>" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="p_read25" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="741487420" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+  <edges id="41" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="43" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="45" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@ports.3"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@ports.4"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="165" pipe_depth="5" RegionName="dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0>, ap_fixed&lt;8, 4, 5, 3, 0>, config17>">
+    <basic_blocks id="38" name="dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0>, ap_fixed&lt;8, 4, 5, 3, 0>, config17>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="p_read25" lineNumber="70" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory=".." coreId="1869438831" contextFuncName="product" bitwidth="8" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="70" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="product"/>
         <dataInputObjs>p_read2</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
-        <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="p_read14" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1885415456" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="p_read14" lineNumber="70" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory=".." coreId="1702129263" contextFuncName="product" bitwidth="8" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="70" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="product"/>
         <dataInputObjs>p_read1</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="p_read_16" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="741487420" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="p_read_11" lineNumber="70" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory=".." coreId="28" contextFuncName="product" bitwidth="8" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="70" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="product"/>
         <dataInputObjs>p_read</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="sext_ln1270" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1885415456" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="sext_ln1270" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln1270_fu_220_p1" coreId="1601134448" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="mul_ln1270" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_11ns_17_2_0_U37" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="r_V" lineNumber="1273" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_9s_17_3_0_U19" coreName="Mul_DSP" implIndex="dsp" control="no" opType="mul" coreId="5" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLatency="2" m_display="0" m_delay="2.95" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="trunc_ln" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln_reg_330" coreId="741487420" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="trunc_ln" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln_reg_401" coreId="825911342" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="sext_ln1270_1" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln1270_1_fu_191_p1" coreId="1885415456" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-        <dataInputObjs>read</dataInputObjs>
-        <dataOutputObjs>mul</dataOutputObjs>
-        <dataOutputObjs>mul</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="r_V" lineNumber="1273" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_9ns_17_3_0_U41" coreName="Mul_DSP" implIndex="dsp" control="no" opType="mul" coreId="5" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLatency="2" m_display="0" m_delay="2.95" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-        <dataInputObjs>sext</dataInputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="trunc_ln818_s" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_s_reg_335" coreId="741487420" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-        <dataInputObjs>mul</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="mul_ln1270_2" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_11s_17_2_0_U39" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="mul_ln1270" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_11s_17_2_0_U22" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="trunc_ln818_17" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_17_reg_325" coreId="1885415456" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="trunc_ln818_s" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_s_reg_386" coreId="1601200416" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sext_ln1273_15" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="741487420" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="sext_ln1270_1" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="975664236" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="sext_ln1273" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1885415456" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="sext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="shl_ln" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="shl_ln_fu_246_p3" coreId="2699322" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="13" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
-        <dataOutputObjs>mul</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="r_V_17" lineNumber="1273" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_8s_16_3_0_U40" coreName="Mul_DSP" implIndex="dsp" control="no" opType="mul" coreId="5" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="mul" nodeLatency="2" m_display="0" m_delay="2.93" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-        <dataInputObjs>sext</dataInputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="trunc_ln818_18" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_18_reg_340" coreId="741487420" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="7" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-        <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sext_ln818" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln818_fu_261_p1" coreId="1885415456" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="sext_ln1273_17" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln1273_17_fu_253_p1" coreId="1952804462" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="14" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sub_ln1273" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sub_ln1273_fu_257_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="14" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.67" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="shl_ln1273_s" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="shl_ln1273_s_fu_263_p3" coreId="1948265521" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="11" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="sext_ln1273" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln1273_fu_270_p1" coreId="28" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="14" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="r_V_19" lineNumber="1273" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="r_V_19_fu_274_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="14" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.81" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln818_22" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_22_reg_396" coreId="1902080097" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="5" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="sext_ln818" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln818_fu_320_p1" coreId="1597256050" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="r_V_18" lineNumber="1273" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_9s_17_3_0_U38" coreName="Mul_DSP" implIndex="dsp" control="no" opType="mul" coreId="5" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLatency="2" m_display="0" m_delay="2.95" m_topoIndex="10" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="mul_ln1270_1" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_10ns_17_3_0_U21" coreName="Mul_DSP" implIndex="dsp" control="no" opType="mul" coreId="5" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLabel="1.0" nodeLatency="2" m_display="0" m_delay="2.97" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="trunc_ln818_19" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_19_reg_345" coreId="1948265521" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="trunc_ln818_23" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_23_reg_416" coreId="1210187897" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="3.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="add_ln813" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_fu_264_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.91" m_topoIndex="19" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-        <dataInputObjs>partselect</dataInputObjs>
-        <dataInputObjs>partselect</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="sext_ln1273_18" lineNumber="1273" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="sext_ln1273_18_fu_226_p1" coreId="543649385" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1273" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="add_ln813_19" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_19_fu_268_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.87" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="mul_ln1270_2" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_10ns_17_3_0_U18" coreName="Mul_DSP" implIndex="dsp" control="no" opType="mul" coreId="5" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLatency="2" m_display="0" m_delay="2.97" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="trunc_ln818_24" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_24_reg_406" coreId="1" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="mul_ln1270_3" lineNumber="1270" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_10s_17_3_0_U20" coreName="Mul_DSP" implIndex="dsp" control="no" opType="mul" coreId="5" contextFuncName="operator_mul_16_7_true_AP_TRN_AP_WRAP_0" bitwidth="17" opcode="mul" nodeLatency="2" m_display="0" m_delay="2.97" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1270" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator*&amp;lt;16, 7, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="trunc_ln818_25" lineNumber="818" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln818_25_reg_411" coreId="1563505457" contextFuncName="operator_assign_24_11_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="818" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;24, 11, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="add_ln813" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_fu_333_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.91" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
-        <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="add_ln813_20" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_20_fu_279_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.91" m_topoIndex="22" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataInputObjs>add</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="add_ln813_21" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_21_fu_274_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.91" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="add_ln813_23" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_23_fu_338_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.91" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="add_ln813_22" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_22_fu_283_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.91" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="add_ln813_24" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_24_fu_347_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.91" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="add_ln813_25" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_25_fu_343_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.91" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="add_ln813_26" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="add_ln813_26_fu_351_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_assign_9_5_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.91" m_topoIndex="29" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="mrv" lineNumber="68" fileName="firmware/nnet_utils/nnet_dense_latency.h" fileDirectory=".." coreId="741487420" contextFuncName="dense_latency_ap_fixed_8_4_AP_TRN_AP_WRAP_0_ap_fixed_8_4_AP_TRN_AP_WRAP_0_config17_s" bitwidth="16" opcode="insertvalue" nodeLabel="4.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="mrv" lineNumber="68" fileName="firmware/nnet_utils/nnet_dense_latency.h" fileDirectory=".." coreId="675164192" contextFuncName="dense_latency_ap_fixed_8_4_AP_TRN_AP_WRAP_0_ap_fixed_8_4_AP_TRN_AP_WRAP_0_config17_s" bitwidth="16" opcode="insertvalue" nodeLabel="4.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_latency.h" linenumber="68" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="dense_latency&amp;lt;ap_fixed&amp;lt;8, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;8, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config17&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="mrv_1" lineNumber="68" fileName="firmware/nnet_utils/nnet_dense_latency.h" fileDirectory=".." coreId="1948265526" contextFuncName="dense_latency_ap_fixed_8_4_AP_TRN_AP_WRAP_0_ap_fixed_8_4_AP_TRN_AP_WRAP_0_config17_s" bitwidth="16" opcode="insertvalue" nodeLabel="4.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="mrv_1" lineNumber="68" fileName="firmware/nnet_utils/nnet_dense_latency.h" fileDirectory=".." coreId="171847424" contextFuncName="dense_latency_ap_fixed_8_4_AP_TRN_AP_WRAP_0_ap_fixed_8_4_AP_TRN_AP_WRAP_0_config17_s" bitwidth="16" opcode="insertvalue" nodeLabel="4.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_latency.h" linenumber="68" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="dense_latency&amp;lt;ap_fixed&amp;lt;8, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;8, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config17&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>ret</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln68" lineNumber="68" fileName="firmware/nnet_utils/nnet_dense_latency.h" fileDirectory=".." coreId="1948265526" contextFuncName="dense_latency_ap_fixed_8_4_AP_TRN_AP_WRAP_0_ap_fixed_8_4_AP_TRN_AP_WRAP_0_config17_s" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln68" lineNumber="68" fileName="firmware/nnet_utils/nnet_dense_latency.h" fileDirectory=".." coreId="959589684" contextFuncName="dense_latency_ap_fixed_8_4_AP_TRN_AP_WRAP_0_ap_fixed_8_4_AP_TRN_AP_WRAP_0_config17_s" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_latency.h" linenumber="68" fileDirectory="C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj" functionName="dense_latency&amp;lt;ap_fixed&amp;lt;8, 4, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;8, 4, AP_TRN, AP_WRAP, 0&amp;gt;, config17&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataOutputObjs>ap_return_0</dataOutputObjs>
@@ -201,9 +246,12 @@
       </node_objs>
       <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h">
         <validLinenumbers>1270</validLinenumbers>
-        <validLinenumbers>818</validLinenumbers>
         <validLinenumbers>1273</validLinenumbers>
+        <validLinenumbers>818</validLinenumbers>
         <validLinenumbers>813</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_mult.h">
+        <validLinenumbers>70</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_dense_latency.h">
         <validLinenumbers>68</validLinenumbers>
@@ -215,119 +263,137 @@
   <ScheduleInfo time="2"/>
   <ScheduleInfo time="3"/>
   <ScheduleInfo time="4"/>
-  <regnodes realName="trunc_ln818_17_reg_325">
-    <nodeIds>16</nodeIds>
+  <regnodes realName="p_read14_reg_367">
+    <nodeIds>7</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln_reg_330">
-    <nodeIds>11</nodeIds>
+  <regnodes realName="trunc_ln818_25_reg_411">
+    <nodeIds>29</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln818_18_reg_340">
-    <nodeIds>20</nodeIds>
+  <regnodes realName="add_ln813_23_reg_426">
+    <nodeIds>31</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln818_19_reg_345">
-    <nodeIds>23</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln813_reg_350">
-    <nodeIds>24</nodeIds>
-  </regnodes>
-  <regnodes realName="sext_ln1273_15_reg_310">
-    <nodeIds>17</nodeIds>
-  </regnodes>
-  <regnodes realName="sext_ln1273_reg_315">
-    <nodeIds>18</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln813_21_reg_360">
+  <regnodes realName="trunc_ln818_24_reg_406">
     <nodeIds>27</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln813_19_reg_355">
+  <regnodes realName="sext_ln1273_18_reg_380">
     <nodeIds>25</nodeIds>
   </regnodes>
-  <regnodes realName="p_read_16_reg_299">
-    <nodeIds>8</nodeIds>
+  <regnodes realName="add_ln813_25_reg_431">
+    <nodeIds>33</nodeIds>
   </regnodes>
-  <regnodes realName="sext_ln1270_1_reg_304">
-    <nodeIds>12</nodeIds>
+  <regnodes realName="trunc_ln818_22_reg_396">
+    <nodeIds>21</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln818_s_reg_335">
+  <regnodes realName="trunc_ln818_s_reg_386">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_401">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln813_reg_421">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1270_1_reg_391">
     <nodeIds>14</nodeIds>
   </regnodes>
-  <regnodes realName="sext_ln1270_reg_320">
+  <regnodes realName="sext_ln1270_reg_374">
     <nodeIds>9</nodeIds>
   </regnodes>
-  <expressionNodes realName="add_ln813_19_fu_268">
-    <nodeIds>25</nodeIds>
+  <regnodes realName="trunc_ln818_23_reg_416">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln813_26_fu_351">
+    <nodeIds>34</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln818_fu_261">
+  <expressionNodes realName="sext_ln818_fu_320">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1273_fu_270">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_246">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln818_22_fu_280">
     <nodeIds>21</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln818_17_fu_211">
-    <nodeIds>16</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln818_18_fu_241">
-    <nodeIds>20</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln813_22_fu_283">
-    <nodeIds>28</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln818_19_fu_251">
-    <nodeIds>23</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln818_s_fu_231">
-    <nodeIds>14</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln813_21_fu_274">
-    <nodeIds>27</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_fu_287">
-    <nodeIds>29</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln813_20_fu_279">
-    <nodeIds>26</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sext_ln1273_15_fu_197">
-    <nodeIds>17</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln813_fu_264">
+  <expressionNodes realName="trunc_ln818_23_fu_323">
     <nodeIds>24</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln1270_fu_207">
-    <nodeIds>9</nodeIds>
+  <expressionNodes realName="trunc_ln818_s_fu_232">
+    <nodeIds>13</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln1270_1_fu_191">
-    <nodeIds>12</nodeIds>
+  <expressionNodes realName="add_ln813_24_fu_347">
+    <nodeIds>32</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="mrv_1_fu_293">
-    <nodeIds>30</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sext_ln1273_fu_202">
+  <expressionNodes realName="shl_ln1273_s_fu_263">
     <nodeIds>18</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln_fu_221">
+  <expressionNodes realName="sext_ln1270_1_fu_242">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln818_24_fu_300">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln818_25_fu_310">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln813_25_fu_343">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1273_fu_257">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_19_fu_274">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1273_18_fu_226">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_1_fu_361">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln813_23_fu_338">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_fu_355">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1273_17_fu_253">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_290">
     <nodeIds>11</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_fu_68">
-    <nodeIds>15</nodeIds>
+  <expressionNodes realName="sext_ln1270_fu_220">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln813_fu_333">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_74">
+    <nodeIds>26</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_fu_69">
-    <nodeIds>19</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_fu_70">
-    <nodeIds>13</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_fu_66">
+  <moduleNodes realName="grp_fu_75">
     <nodeIds>10</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_fu_67">
-    <nodeIds>22</nodeIds>
+  <moduleNodes realName="grp_fu_76">
+    <nodeIds>28</nodeIds>
   </moduleNodes>
-  <ioNodes realName="p_read25_read_fu_48">
+  <moduleNodes realName="grp_fu_77">
+    <nodeIds>23</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_78">
+    <nodeIds>12</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="p_read14_read_fu_62">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_read25_read_fu_56">
     <nodeIds>6</nodeIds>
   </ioNodes>
-  <ioNodes realName="p_read_16_read_fu_60">
+  <ioNodes realName="p_read_11_read_fu_68">
     <nodeIds>8</nodeIds>
-  </ioNodes>
-  <ioNodes realName="p_read14_read_fu_54">
-    <nodeIds>7</nodeIds>
   </ioNodes>
   <ioPorts name="p_read">
     <contents name="read">
@@ -346,12 +412,12 @@
   </ioPorts>
   <ioPorts name="ap_return_0">
     <contents name="ret">
-      <nodeIds>31</nodeIds>
+      <nodeIds>37</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_1">
     <contents name="ret">
-      <nodeIds>31</nodeIds>
+      <nodeIds>37</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
@@ -359,47 +425,54 @@
       <operations id="6" stage="1" latency="1"/>
       <operations id="7" stage="1" latency="1"/>
       <operations id="8" stage="1" latency="1"/>
-      <operations id="12" stage="1" latency="1"/>
-      <operations id="13" stage="3" latency="3"/>
-      <operations id="15" stage="2" latency="2"/>
-      <operations id="17" stage="1" latency="1"/>
-      <operations id="18" stage="1" latency="1"/>
-      <operations id="19" stage="3" latency="3"/>
-      <operations id="22" stage="3" latency="3"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="3" latency="3"/>
+      <operations id="12" stage="2" latency="2"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="3" latency="3"/>
+      <operations id="28" stage="3" latency="3"/>
     </states>
     <states id="2">
-      <operations id="9" stage="1" latency="1"/>
-      <operations id="10" stage="2" latency="2"/>
-      <operations id="13" stage="2" latency="3"/>
-      <operations id="15" stage="1" latency="2"/>
+      <operations id="10" stage="2" latency="3"/>
+      <operations id="12" stage="1" latency="2"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
       <operations id="16" stage="1" latency="1"/>
-      <operations id="19" stage="2" latency="3"/>
-      <operations id="22" stage="2" latency="3"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="3" latency="3"/>
+      <operations id="26" stage="2" latency="3"/>
+      <operations id="28" stage="2" latency="3"/>
     </states>
     <states id="3">
-      <operations id="10" stage="1" latency="2"/>
+      <operations id="10" stage="1" latency="3"/>
       <operations id="11" stage="1" latency="1"/>
-      <operations id="13" stage="1" latency="3"/>
-      <operations id="14" stage="1" latency="1"/>
-      <operations id="19" stage="1" latency="3"/>
-      <operations id="20" stage="1" latency="1"/>
-      <operations id="22" stage="1" latency="3"/>
-      <operations id="23" stage="1" latency="1"/>
+      <operations id="23" stage="2" latency="3"/>
+      <operations id="26" stage="1" latency="3"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="3"/>
+      <operations id="29" stage="1" latency="1"/>
     </states>
     <states id="4">
-      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="3"/>
       <operations id="24" stage="1" latency="1"/>
-      <operations id="25" stage="1" latency="1"/>
-      <operations id="27" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
     </states>
     <states id="5">
       <operations id="4" stage="1" latency="1"/>
       <operations id="5" stage="1" latency="1"/>
-      <operations id="26" stage="1" latency="1"/>
-      <operations id="28" stage="1" latency="1"/>
-      <operations id="29" stage="1" latency="1"/>
-      <operations id="30" stage="1" latency="1"/>
-      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
@@ -416,7 +489,7 @@
   </fsm>
   <CFGRegionsRoot>
     <cfgRegions mId="1" mTag="dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s" mII="1" mDepth="5" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
-      <basicBlocks>32</basicBlocks>
+      <basicBlocks>38</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

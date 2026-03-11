@@ -76801,43 +76801,33 @@ template <typename T, unsigned N, T (*func)(T)> class lookup_table {
        
 # 40 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cstdio" 3
 # 9 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/defines.h" 2
-# 27 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/defines.h"
+# 22 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/defines.h"
 typedef ap_fixed<16,6> input_t;
 typedef ap_fixed<8,4> fc1_accum_t;
 typedef ap_fixed<8,4> layer2_t;
 typedef ap_fixed<8,5> weight2_t;
 typedef ap_fixed<8,5> bias2_t;
 typedef ap_uint<1> layer2_index;
-typedef ap_fixed<8,4> layer4_t;
-typedef ap_fixed<18,8> relu0_table_t;
 typedef ap_fixed<8,4> fc2_accum_t;
 typedef ap_fixed<8,4> layer5_t;
 typedef ap_fixed<8,5> weight5_t;
 typedef ap_fixed<8,5> bias5_t;
 typedef ap_uint<1> layer5_index;
-typedef ap_fixed<8,4> layer7_t;
-typedef ap_fixed<18,8> relu1_table_t;
 typedef ap_fixed<8,4> fc3_accum_t;
 typedef ap_fixed<8,4> layer8_t;
 typedef ap_fixed<8,5> weight8_t;
 typedef ap_fixed<8,5> bias8_t;
 typedef ap_uint<1> layer8_index;
-typedef ap_fixed<8,4> layer10_t;
-typedef ap_fixed<18,8> relu2_table_t;
 typedef ap_fixed<8,4> fc4_accum_t;
 typedef ap_fixed<8,4> layer11_t;
 typedef ap_fixed<8,5> weight11_t;
 typedef ap_fixed<8,5> bias11_t;
 typedef ap_uint<1> layer11_index;
-typedef ap_fixed<8,4> layer13_t;
-typedef ap_fixed<18,8> relu3_table_t;
 typedef ap_fixed<8,4> fc5_accum_t;
 typedef ap_fixed<8,4> layer14_t;
 typedef ap_fixed<8,5> weight14_t;
 typedef ap_fixed<8,5> bias14_t;
 typedef ap_uint<1> layer14_index;
-typedef ap_fixed<8,4> layer16_t;
-typedef ap_fixed<18,8> relu4_table_t;
 typedef ap_fixed<8,4> output_accum_t;
 typedef ap_fixed<8,4> layer17_t;
 typedef ap_fixed<16,7> weight17_t;
@@ -76845,8 +76835,6 @@ typedef ap_fixed<16,7> bias17_t;
 typedef ap_uint<1> layer17_index;
 typedef ap_fixed<8,4> result_t;
 typedef ap_fixed<18,8> outputActivation_table_t;
-typedef ap_fixed<18,8,AP_RND,AP_SAT,0> outputActivation_exp_table_t;
-typedef ap_fixed<18,8,AP_RND,AP_SAT,0> outputActivation_inv_table_t;
 # 9 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/myproject.h" 2
 
 
@@ -90067,8 +90055,8 @@ struct config2 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 410;
-    static const unsigned n_nonzeros = 556;
+    static const unsigned n_zeros = 415;
+    static const unsigned n_nonzeros = 551;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc1_accum_t accum_t;
@@ -90082,23 +90070,14 @@ struct config2 : nnet::dense_config {
 };
 
 
-struct relu_config4 : nnet::activ_config {
-    static const unsigned n_in = 6;
-    static const unsigned table_size = 1024;
-    static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
-    typedef relu0_table_t table_t;
-};
-
-
 struct config5 : nnet::dense_config {
     static const unsigned n_in = 6;
     static const unsigned n_out = 4;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 5;
-    static const unsigned n_nonzeros = 19;
+    static const unsigned n_zeros = 1;
+    static const unsigned n_nonzeros = 23;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc2_accum_t accum_t;
@@ -90109,15 +90088,6 @@ struct config5 : nnet::dense_config {
     using kernel = nnet::DenseLatency<data_T, res_T, CONFIG_T>;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
-};
-
-
-struct relu_config7 : nnet::activ_config {
-    static const unsigned n_in = 4;
-    static const unsigned table_size = 1024;
-    static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
-    typedef relu1_table_t table_t;
 };
 
 
@@ -90142,23 +90112,14 @@ struct config8 : nnet::dense_config {
 };
 
 
-struct relu_config10 : nnet::activ_config {
-    static const unsigned n_in = 2;
-    static const unsigned table_size = 1024;
-    static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
-    typedef relu2_table_t table_t;
-};
-
-
 struct config11 : nnet::dense_config {
     static const unsigned n_in = 2;
     static const unsigned n_out = 4;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 1;
-    static const unsigned n_nonzeros = 7;
+    static const unsigned n_zeros = 0;
+    static const unsigned n_nonzeros = 8;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc4_accum_t accum_t;
@@ -90169,15 +90130,6 @@ struct config11 : nnet::dense_config {
     using kernel = nnet::DenseLatency<data_T, res_T, CONFIG_T>;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
-};
-
-
-struct relu_config13 : nnet::activ_config {
-    static const unsigned n_in = 4;
-    static const unsigned table_size = 1024;
-    static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
-    typedef relu3_table_t table_t;
 };
 
 
@@ -90202,23 +90154,14 @@ struct config14 : nnet::dense_config {
 };
 
 
-struct relu_config16 : nnet::activ_config {
-    static const unsigned n_in = 3;
-    static const unsigned table_size = 1024;
-    static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
-    typedef relu4_table_t table_t;
-};
-
-
 struct config17 : nnet::dense_config {
     static const unsigned n_in = 3;
     static const unsigned n_out = 2;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 1;
-    static const unsigned n_nonzeros = 5;
+    static const unsigned n_zeros = 0;
+    static const unsigned n_nonzeros = 6;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef output_accum_t accum_t;
@@ -90232,15 +90175,12 @@ struct config17 : nnet::dense_config {
 };
 
 
-struct softmax_config19 : nnet::activ_config {
+struct sigmoid_config19 : nnet::activ_config {
     static const unsigned n_in = 2;
-    static const unsigned table_size = 256;
+    static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
-    static const unsigned axis = -1;
-    static const nnet::softmax_implementation implementation = nnet::softmax_implementation::stable;
-    typedef outputActivation_exp_table_t exp_table_t;
-    typedef outputActivation_inv_table_t inv_table_t;
+    typedef outputActivation_table_t table_t;
 };
 # 5 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/myproject.cpp" 2
 
@@ -90284,46 +90224,26 @@ void myproject(
 #pragma HLS ARRAY_PARTITION variable=layer2_out complete dim=0
     nnet::dense<input_t, layer2_t, config2>(inputLayer, layer2_out, w2, b2);
 
-    layer4_t layer4_out[6];
-#pragma HLS ARRAY_PARTITION variable=layer4_out complete dim=0
-    nnet::relu<layer2_t, layer4_t, relu_config4>(layer2_out, layer4_out);
-
     layer5_t layer5_out[4];
 #pragma HLS ARRAY_PARTITION variable=layer5_out complete dim=0
-    nnet::dense<layer4_t, layer5_t, config5>(layer4_out, layer5_out, w5, b5);
-
-    layer7_t layer7_out[4];
-#pragma HLS ARRAY_PARTITION variable=layer7_out complete dim=0
-    nnet::relu<layer5_t, layer7_t, relu_config7>(layer5_out, layer7_out);
+    nnet::dense<layer2_t, layer5_t, config5>(layer2_out, layer5_out, w5, b5);
 
     layer8_t layer8_out[2];
 #pragma HLS ARRAY_PARTITION variable=layer8_out complete dim=0
-    nnet::dense<layer7_t, layer8_t, config8>(layer7_out, layer8_out, w8, b8);
-
-    layer10_t layer10_out[2];
-#pragma HLS ARRAY_PARTITION variable=layer10_out complete dim=0
-    nnet::relu<layer8_t, layer10_t, relu_config10>(layer8_out, layer10_out);
+    nnet::dense<layer5_t, layer8_t, config8>(layer5_out, layer8_out, w8, b8);
 
     layer11_t layer11_out[4];
 #pragma HLS ARRAY_PARTITION variable=layer11_out complete dim=0
-    nnet::dense<layer10_t, layer11_t, config11>(layer10_out, layer11_out, w11, b11);
-
-    layer13_t layer13_out[4];
-#pragma HLS ARRAY_PARTITION variable=layer13_out complete dim=0
-    nnet::relu<layer11_t, layer13_t, relu_config13>(layer11_out, layer13_out);
+    nnet::dense<layer8_t, layer11_t, config11>(layer8_out, layer11_out, w11, b11);
 
     layer14_t layer14_out[3];
 #pragma HLS ARRAY_PARTITION variable=layer14_out complete dim=0
-    nnet::dense<layer13_t, layer14_t, config14>(layer13_out, layer14_out, w14, b14);
-
-    layer16_t layer16_out[3];
-#pragma HLS ARRAY_PARTITION variable=layer16_out complete dim=0
-    nnet::relu<layer14_t, layer16_t, relu_config16>(layer14_out, layer16_out);
+    nnet::dense<layer11_t, layer14_t, config14>(layer11_out, layer14_out, w14, b14);
 
     layer17_t layer17_out[2];
 #pragma HLS ARRAY_PARTITION variable=layer17_out complete dim=0
-    nnet::dense<layer16_t, layer17_t, config17>(layer16_out, layer17_out, w17, b17);
+    nnet::dense<layer14_t, layer17_t, config17>(layer14_out, layer17_out, w17, b17);
 
-    nnet::softmax<layer17_t, result_t, softmax_config19>(layer17_out, layer19_out);
+    nnet::sigmoid<layer17_t, result_t, sigmoid_config19>(layer17_out, layer19_out);
 
 }

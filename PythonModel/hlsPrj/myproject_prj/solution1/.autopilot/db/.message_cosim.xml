@@ -6,7 +6,7 @@
 	<Message severity="INFO" prefix="[COSIM 212-333]" key="COSIM_TCL_333_1204" tag="" content="Generating C post check test bench ..." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-12]" key="COSIM_TCL_12_1082" tag="" content="Generating RTL test bench ..." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-1]" key="COSIM_TCL_1_1071" tag="" content="*** C/RTL co-simulation file generation completed. ***" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 36.573 seconds; current allocated memory: 11.578 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 31.088 seconds; current allocated memory: 12.055 MB." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-302]" key="COSIM_302_998" tag="" content="Starting C TB testing ..." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-323]" key="COSIM_323_1007" tag="" content="Starting verilog simulation..." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-15]" key="COSIM_15_1011" tag="" content="Starting XSIM ..." resolution=""/>

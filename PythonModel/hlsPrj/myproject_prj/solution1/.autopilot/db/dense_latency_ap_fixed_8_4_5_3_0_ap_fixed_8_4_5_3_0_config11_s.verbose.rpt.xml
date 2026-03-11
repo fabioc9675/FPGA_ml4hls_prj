@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config11_s'" level="0">
-<item name = "Date">Tue Mar 10 18:17:33 2026
+<item name = "Date">Tue Mar 10 19:40:06 2026
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.554 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.646 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -47,12 +47,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 117, -</column>
+<column name="Expression">-, -, 0, 122, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 56, -</column>
-<column name="Register">-, -, 73, -, -</column>
+<column name="Register">-, -, 67, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -77,15 +77,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln813_30_fu_164_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_31_fu_228_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_fu_223_p2">+, 0, 0, 15, 8, 8</column>
-<column name="r_V_30_fu_148_p2">+, 0, 0, 12, 11, 11</column>
-<column name="r_V_27_fu_207_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_28_fu_94_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_29_fu_124_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_fu_191_p2">-, 0, 0, 12, 11, 11</column>
-<column name="sub_ln1273_fu_88_p2">-, 0, 0, 12, 1, 11</column>
+<column name="add_ln813_34_fu_228_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_35_fu_233_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_36_fu_239_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_fu_222_p2">+, 0, 0, 15, 8, 8</column>
+<column name="r_V_25_fu_154_p2">-, 0, 0, 12, 11, 11</column>
+<column name="r_V_26_fu_70_p2">-, 0, 0, 14, 1, 9</column>
+<column name="r_V_27_fu_173_p2">-, 0, 0, 12, 1, 11</column>
+<column name="r_V_28_fu_200_p2">-, 0, 0, 12, 1, 11</column>
+<column name="r_V_fu_127_p2">-, 0, 0, 12, 11, 11</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -98,16 +98,16 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln813_30_reg_277">8, 0, 8, 0</column>
 <column name="ap_ce_reg">1, 0, 1, 0</column>
 <column name="ap_return_0_int_reg">8, 0, 8, 0</column>
 <column name="ap_return_1_int_reg">8, 0, 8, 0</column>
 <column name="ap_return_2_int_reg">8, 0, 8, 0</column>
 <column name="ap_return_3_int_reg">8, 0, 8, 0</column>
-<column name="p_read_18_reg_255">8, 0, 8, 0</column>
-<column name="trunc_ln818_30_reg_262">8, 0, 8, 0</column>
-<column name="trunc_ln818_32_reg_267">8, 0, 8, 0</column>
-<column name="trunc_ln818_33_reg_272">8, 0, 8, 0</column>
+<column name="p_read13_reg_269">8, 0, 8, 0</column>
+<column name="p_read_13_reg_275">8, 0, 8, 0</column>
+<column name="trunc_ln818_34_reg_283">6, 0, 6, 0</column>
+<column name="trunc_ln818_37_reg_288">7, 0, 7, 0</column>
+<column name="trunc_ln818_38_reg_293">5, 0, 5, 0</column>
 </table>
 </item>
 </section>

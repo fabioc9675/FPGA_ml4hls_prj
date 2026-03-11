@@ -109,7 +109,7 @@ KerasModel: !keras_model './hlsPrj//keras_model.keras'
 OutputDir: ./hlsPrj/
 Part: xc7z020clg484-1
 ProjectName: myproject
-Stamp: 23dbd01b
+Stamp: f41656ba
 Version: 1.0.0
 WriterConfig:
   Namespace: null

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config14_s'" level="0">
-<item name = "Date">Tue Mar 10 18:17:33 2026
+<item name = "Date">Tue Mar 10 19:40:07 2026
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.646 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.554 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -47,12 +47,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 245, -</column>
+<column name="Expression">-, -, 0, 227, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 42, -</column>
-<column name="Register">-, -, 148, -, -</column>
+<column name="Register">-, -, 151, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -77,24 +77,23 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln813_23_fu_409_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_24_fu_423_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_25_fu_346_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_26_fu_352_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_27_fu_414_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_28_fu_358_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_29_fu_418_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln813_fu_403_p2">+, 0, 0, 15, 8, 8</column>
-<column name="r_V_19_fu_132_p2">-, 0, 0, 12, 1, 11</column>
-<column name="r_V_20_fu_156_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_21_fu_180_p2">-, 0, 0, 14, 1, 9</column>
-<column name="r_V_22_fu_204_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_23_fu_224_p2">-, 0, 0, 14, 1, 9</column>
-<column name="r_V_24_fu_260_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_25_fu_387_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_26_fu_300_p2">-, 0, 0, 12, 11, 11</column>
-<column name="r_V_fu_104_p2">-, 0, 0, 13, 1, 10</column>
-<column name="sub_ln1270_fu_330_p2">-, 0, 0, 12, 11, 11</column>
+<column name="add_ln813_27_fu_302_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_28_fu_371_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_29_fu_308_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_30_fu_314_p2">+, 0, 0, 14, 6, 6</column>
+<column name="add_ln813_31_fu_362_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_32_fu_367_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_33_fu_375_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln813_fu_354_p2">+, 0, 0, 15, 8, 8</column>
+<column name="r_V_fu_130_p2">+, 0, 0, 12, 11, 11</column>
+<column name="r_V_20_fu_168_p2">-, 0, 0, 12, 11, 11</column>
+<column name="r_V_21_fu_338_p2">-, 0, 0, 12, 11, 11</column>
+<column name="r_V_22_fu_236_p2">-, 0, 0, 12, 11, 11</column>
+<column name="r_V_23_fu_252_p2">-, 0, 0, 12, 11, 11</column>
+<column name="r_V_24_fu_286_p2">-, 0, 0, 12, 11, 11</column>
+<column name="sub_ln1270_fu_102_p2">-, 0, 0, 12, 11, 11</column>
+<column name="sub_ln1273_17_fu_280_p2">-, 0, 0, 12, 1, 11</column>
+<column name="sub_ln1273_fu_162_p2">-, 0, 0, 12, 1, 11</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -106,26 +105,26 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln813_23_reg_489">8, 0, 8, 0</column>
-<column name="add_ln813_25_reg_469">8, 0, 8, 0</column>
-<column name="add_ln813_26_reg_474">8, 0, 8, 0</column>
-<column name="add_ln813_27_reg_494">8, 0, 8, 0</column>
-<column name="add_ln813_28_reg_479">8, 0, 8, 0</column>
-<column name="add_ln813_29_reg_499">8, 0, 8, 0</column>
-<column name="add_ln813_reg_484">8, 0, 8, 0</column>
+<column name="add_ln813_27_reg_417">8, 0, 8, 0</column>
+<column name="add_ln813_27_reg_417_pp0_iter1_reg">8, 0, 8, 0</column>
+<column name="add_ln813_29_reg_422">8, 0, 8, 0</column>
+<column name="add_ln813_30_reg_427">6, 0, 6, 0</column>
+<column name="add_ln813_31_reg_442">8, 0, 8, 0</column>
+<column name="add_ln813_32_reg_447">8, 0, 8, 0</column>
+<column name="add_ln813_reg_437">8, 0, 8, 0</column>
 <column name="ap_ce_reg">1, 0, 1, 0</column>
 <column name="ap_return_0_int_reg">8, 0, 8, 0</column>
 <column name="ap_return_1_int_reg">8, 0, 8, 0</column>
 <column name="ap_return_2_int_reg">8, 0, 8, 0</column>
 <column name="p_read1_int_reg">8, 0, 8, 0</column>
-<column name="p_read26_reg_443">8, 0, 8, 0</column>
+<column name="p_read26_reg_396">8, 0, 8, 0</column>
 <column name="p_read2_int_reg">8, 0, 8, 0</column>
 <column name="p_read3_int_reg">8, 0, 8, 0</column>
 <column name="p_read_int_reg">8, 0, 8, 0</column>
-<column name="trunc_ln818_21_reg_454">6, 0, 6, 0</column>
-<column name="trunc_ln818_23_reg_459">6, 0, 6, 0</column>
-<column name="trunc_ln818_26_reg_464">8, 0, 8, 0</column>
-<column name="trunc_ln_reg_449">7, 0, 7, 0</column>
+<column name="trunc_ln818_27_reg_402">8, 0, 8, 0</column>
+<column name="trunc_ln818_28_reg_407">8, 0, 8, 0</column>
+<column name="trunc_ln818_29_reg_432">8, 0, 8, 0</column>
+<column name="trunc_ln818_33_reg_412">8, 0, 8, 0</column>
 </table>
 </item>
 </section>

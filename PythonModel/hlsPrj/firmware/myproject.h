@@ -20,7 +20,7 @@ typedef ap_axis<32, 2, 5, 6> AXI_VALUE_OUT;
 void GN_inference(
     hls::stream<AXI_VALUE_IN> &input,
     //	hls::stream<AXI_VALUE_OUT> &result
-    int *result1, int *result2
+    int *result1, int *result2, int *result
 
 );
 
