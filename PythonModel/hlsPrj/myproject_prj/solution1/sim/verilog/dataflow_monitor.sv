@@ -35,7 +35,7 @@ input logic finish
     nodf_module_monitor module_monitor_2;
     nodf_module_intf module_intf_3(clock,reset);
     assign module_intf_3.ap_start = 1'b0;
-    assign module_intf_3.ap_ready = 1'b0;
+    assign module_intf_3.ap_ready = AESL_inst_myproject.call_ret2_relu_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_relu_config4_s_fu_82.ap_ready;
     assign module_intf_3.ap_done = 1'b0;
     assign module_intf_3.ap_continue = 1'b0;
     assign module_intf_3.finish = finish;
@@ -51,7 +51,7 @@ input logic finish
     nodf_module_monitor module_monitor_4;
     nodf_module_intf module_intf_5(clock,reset);
     assign module_intf_5.ap_start = 1'b0;
-    assign module_intf_5.ap_ready = 1'b0;
+    assign module_intf_5.ap_ready = AESL_inst_myproject.call_ret4_relu_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_relu_config7_s_fu_102.ap_ready;
     assign module_intf_5.ap_done = 1'b0;
     assign module_intf_5.ap_continue = 1'b0;
     assign module_intf_5.finish = finish;
@@ -67,20 +67,60 @@ input logic finish
     nodf_module_monitor module_monitor_6;
     nodf_module_intf module_intf_7(clock,reset);
     assign module_intf_7.ap_start = 1'b0;
-    assign module_intf_7.ap_ready = 1'b0;
+    assign module_intf_7.ap_ready = AESL_inst_myproject.call_ret6_relu_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_relu_config10_s_fu_118.ap_ready;
     assign module_intf_7.ap_done = 1'b0;
     assign module_intf_7.ap_continue = 1'b0;
     assign module_intf_7.finish = finish;
     csv_file_dump mstatus_csv_dumper_7;
     nodf_module_monitor module_monitor_7;
     nodf_module_intf module_intf_8(clock,reset);
-    assign module_intf_8.ap_start = AESL_inst_myproject.grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110.ap_start;
-    assign module_intf_8.ap_ready = AESL_inst_myproject.grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110.ap_ready;
-    assign module_intf_8.ap_done = AESL_inst_myproject.grp_sigmoid_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_sigmoid_config19_s_fu_110.ap_done;
-    assign module_intf_8.ap_continue = 1'b1;
+    assign module_intf_8.ap_start = 1'b0;
+    assign module_intf_8.ap_ready = 1'b0;
+    assign module_intf_8.ap_done = 1'b0;
+    assign module_intf_8.ap_continue = 1'b0;
     assign module_intf_8.finish = finish;
     csv_file_dump mstatus_csv_dumper_8;
     nodf_module_monitor module_monitor_8;
+    nodf_module_intf module_intf_9(clock,reset);
+    assign module_intf_9.ap_start = 1'b0;
+    assign module_intf_9.ap_ready = AESL_inst_myproject.call_ret8_relu_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_relu_config13_s_fu_130.ap_ready;
+    assign module_intf_9.ap_done = 1'b0;
+    assign module_intf_9.ap_continue = 1'b0;
+    assign module_intf_9.finish = finish;
+    csv_file_dump mstatus_csv_dumper_9;
+    nodf_module_monitor module_monitor_9;
+    nodf_module_intf module_intf_10(clock,reset);
+    assign module_intf_10.ap_start = 1'b0;
+    assign module_intf_10.ap_ready = 1'b0;
+    assign module_intf_10.ap_done = 1'b0;
+    assign module_intf_10.ap_continue = 1'b0;
+    assign module_intf_10.finish = finish;
+    csv_file_dump mstatus_csv_dumper_10;
+    nodf_module_monitor module_monitor_10;
+    nodf_module_intf module_intf_11(clock,reset);
+    assign module_intf_11.ap_start = 1'b0;
+    assign module_intf_11.ap_ready = AESL_inst_myproject.call_ret10_relu_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_relu_config16_s_fu_146.ap_ready;
+    assign module_intf_11.ap_done = 1'b0;
+    assign module_intf_11.ap_continue = 1'b0;
+    assign module_intf_11.finish = finish;
+    csv_file_dump mstatus_csv_dumper_11;
+    nodf_module_monitor module_monitor_11;
+    nodf_module_intf module_intf_12(clock,reset);
+    assign module_intf_12.ap_start = 1'b0;
+    assign module_intf_12.ap_ready = 1'b0;
+    assign module_intf_12.ap_done = 1'b0;
+    assign module_intf_12.ap_continue = 1'b0;
+    assign module_intf_12.finish = finish;
+    csv_file_dump mstatus_csv_dumper_12;
+    nodf_module_monitor module_monitor_12;
+    nodf_module_intf module_intf_13(clock,reset);
+    assign module_intf_13.ap_start = AESL_inst_myproject.grp_softmax_stable_ap_fixed_ap_fixed_8_4_5_3_0_softmax_config19_s_fu_160.ap_start;
+    assign module_intf_13.ap_ready = AESL_inst_myproject.grp_softmax_stable_ap_fixed_ap_fixed_8_4_5_3_0_softmax_config19_s_fu_160.ap_ready;
+    assign module_intf_13.ap_done = AESL_inst_myproject.grp_softmax_stable_ap_fixed_ap_fixed_8_4_5_3_0_softmax_config19_s_fu_160.ap_done;
+    assign module_intf_13.ap_continue = 1'b1;
+    assign module_intf_13.finish = finish;
+    csv_file_dump mstatus_csv_dumper_13;
+    nodf_module_monitor module_monitor_13;
 
 
     sample_manager sample_manager_inst;
@@ -106,6 +146,16 @@ initial begin
     module_monitor_7 = new(module_intf_7,mstatus_csv_dumper_7);
     mstatus_csv_dumper_8 = new("./module_status8.csv");
     module_monitor_8 = new(module_intf_8,mstatus_csv_dumper_8);
+    mstatus_csv_dumper_9 = new("./module_status9.csv");
+    module_monitor_9 = new(module_intf_9,mstatus_csv_dumper_9);
+    mstatus_csv_dumper_10 = new("./module_status10.csv");
+    module_monitor_10 = new(module_intf_10,mstatus_csv_dumper_10);
+    mstatus_csv_dumper_11 = new("./module_status11.csv");
+    module_monitor_11 = new(module_intf_11,mstatus_csv_dumper_11);
+    mstatus_csv_dumper_12 = new("./module_status12.csv");
+    module_monitor_12 = new(module_intf_12,mstatus_csv_dumper_12);
+    mstatus_csv_dumper_13 = new("./module_status13.csv");
+    module_monitor_13 = new(module_intf_13,mstatus_csv_dumper_13);
 
 
 
@@ -119,6 +169,11 @@ initial begin
     sample_manager_inst.add_one_monitor(module_monitor_6);
     sample_manager_inst.add_one_monitor(module_monitor_7);
     sample_manager_inst.add_one_monitor(module_monitor_8);
+    sample_manager_inst.add_one_monitor(module_monitor_9);
+    sample_manager_inst.add_one_monitor(module_monitor_10);
+    sample_manager_inst.add_one_monitor(module_monitor_11);
+    sample_manager_inst.add_one_monitor(module_monitor_12);
+    sample_manager_inst.add_one_monitor(module_monitor_13);
     
     fork
         sample_manager_inst.start_monitor();

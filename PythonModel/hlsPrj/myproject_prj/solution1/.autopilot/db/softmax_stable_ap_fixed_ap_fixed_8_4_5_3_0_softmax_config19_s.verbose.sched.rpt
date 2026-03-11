@@ -1,0 +1,253 @@
+
+
+================================================================
+== Vitis HLS Report for 'softmax_stable_ap_fixed_ap_fixed_8_4_5_3_0_softmax_config19_s'
+================================================================
+* Date:           Tue Mar 10 18:17:14 2026
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.890 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       10|       10|  50.000 ns|  50.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 11
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 11, States = { 1 2 3 4 5 6 7 8 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.79>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read1"   --->   Operation 12 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_read_2 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read"   --->   Operation 13 'read' 'p_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.55ns)   --->   "%icmp_ln1651 = icmp_slt  i8 %p_read_2, i8 %p_read_1"   --->   Operation 14 'icmp' 'icmp_ln1651' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node x_max_V)   --->   "%xor_ln1651 = xor i1 %icmp_ln1651, i1 1"   --->   Operation 15 'xor' 'xor_ln1651' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (1.24ns) (out node of the LUT)   --->   "%x_max_V = select i1 %xor_ln1651, i8 %p_read_2, i8 %p_read_1" [firmware/nnet_utils/nnet_common.h:66]   --->   Operation 16 'select' 'x_max_V' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 3.16>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%sext_ln1348 = sext i8 %p_read_2"   --->   Operation 17 'sext' 'sext_ln1348' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln1348_1 = sext i8 %x_max_V"   --->   Operation 18 'sext' 'sext_ln1348_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (1.91ns)   --->   "%ret_V = sub i9 %sext_ln1348, i9 %sext_ln1348_1"   --->   Operation 19 'sub' 'ret_V' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%p_Result_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %ret_V, i32 8"   --->   Operation 20 'bitselect' 'p_Result_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%p_Val2_1 = trunc i9 %ret_V"   --->   Operation 21 'trunc' 'p_Val2_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%p_Result_9 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %ret_V, i32 7"   --->   Operation 22 'bitselect' 'p_Result_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%xor_ln895 = xor i1 %p_Result_8, i1 1"   --->   Operation 23 'xor' 'xor_ln895' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%overflow = and i1 %p_Result_9, i1 %xor_ln895"   --->   Operation 24 'and' 'overflow' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%xor_ln302 = xor i1 %p_Result_8, i1 %p_Result_9"   --->   Operation 25 'xor' 'xor_ln302' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%select_ln346 = select i1 %overflow, i8 127, i8 128"   --->   Operation 26 'select' 'select_ln346' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%sext_ln1348_2 = sext i8 %p_read_1"   --->   Operation 27 'sext' 'sext_ln1348_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (1.91ns)   --->   "%ret_V_1 = sub i9 %sext_ln1348_2, i9 %sext_ln1348_1"   --->   Operation 28 'sub' 'ret_V_1' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%p_Result_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %ret_V_1, i32 8"   --->   Operation 29 'bitselect' 'p_Result_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node p_Result_5)   --->   "%p_Val2_3 = trunc i9 %ret_V_1"   --->   Operation 30 'trunc' 'p_Val2_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%p_Result_11 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %ret_V_1, i32 7"   --->   Operation 31 'bitselect' 'p_Result_11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node p_Result_5)   --->   "%xor_ln895_1 = xor i1 %p_Result_10, i1 1"   --->   Operation 32 'xor' 'xor_ln895_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node p_Result_5)   --->   "%overflow_1 = and i1 %p_Result_11, i1 %xor_ln895_1"   --->   Operation 33 'and' 'overflow_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node p_Result_5)   --->   "%xor_ln302_1 = xor i1 %p_Result_10, i1 %p_Result_11"   --->   Operation 34 'xor' 'xor_ln302_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node p_Result_5)   --->   "%select_ln346_1 = select i1 %overflow_1, i8 127, i8 128"   --->   Operation 35 'select' 'select_ln346_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (1.24ns) (out node of the LUT)   --->   "%p_Result_s = select i1 %xor_ln302, i8 %select_ln346, i8 %p_Val2_1"   --->   Operation 36 'select' 'p_Result_s' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (1.24ns) (out node of the LUT)   --->   "%p_Result_5 = select i1 %xor_ln302_1, i8 %select_ln346_1, i8 %p_Val2_3"   --->   Operation 37 'select' 'p_Result_5' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln255 = zext i8 %p_Result_s" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 38 'zext' 'zext_ln255' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%exp_table_addr = getelementptr i17 %exp_table, i64 0, i64 %zext_ln255" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 39 'getelementptr' 'exp_table_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [2/2] (3.25ns)   --->   "%r_V = load i8 %exp_table_addr" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 40 'load' 'r_V' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 17> <Depth = 256> <ROM>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln255_1 = zext i8 %p_Result_5" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 41 'zext' 'zext_ln255_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%exp_table_addr_1 = getelementptr i17 %exp_table, i64 0, i64 %zext_ln255_1" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 42 'getelementptr' 'exp_table_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [2/2] (3.25ns)   --->   "%r_V_1 = load i8 %exp_table_addr_1" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 43 'load' 'r_V_1' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 17> <Depth = 256> <ROM>
+
+State 4 <SV = 3> <Delay = 3.25>
+ST_4 : Operation 44 [1/2] (3.25ns)   --->   "%r_V = load i8 %exp_table_addr" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 44 'load' 'r_V' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 17> <Depth = 256> <ROM>
+ST_4 : Operation 45 [1/2] (3.25ns)   --->   "%r_V_1 = load i8 %exp_table_addr_1" [firmware/nnet_utils/nnet_activation.h:255]   --->   Operation 45 'load' 'r_V_1' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 17> <Depth = 256> <ROM>
+
+State 5 <SV = 4> <Delay = 3.35>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln302 = zext i17 %r_V"   --->   Operation 46 'zext' 'zext_ln302' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln813 = zext i17 %r_V_1"   --->   Operation 47 'zext' 'zext_ln813' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (2.10ns)   --->   "%p_Val2_4 = add i18 %zext_ln813, i18 %zext_ln302"   --->   Operation 48 'add' 'p_Val2_4' <Predicate = true> <Delay = 2.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%p_Result_12 = bitselect i1 @_ssdm_op_BitSelect.i1.i18.i32, i18 %p_Val2_4, i32 17"   --->   Operation 49 'bitselect' 'p_Result_12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%tmp = partselect i8 @_ssdm_op_PartSelect.i8.i18.i32.i32, i18 %p_Val2_4, i32 10, i32 17"   --->   Operation 50 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (1.24ns)   --->   "%p_Result_7 = select i1 %p_Result_12, i8 127, i8 %tmp"   --->   Operation 51 'select' 'p_Result_7' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 3.25>
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln265 = zext i8 %p_Result_7" [firmware/nnet_utils/nnet_activation.h:265]   --->   Operation 52 'zext' 'zext_ln265' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%invert_table_addr = getelementptr i18 %invert_table, i64 0, i64 %zext_ln265" [firmware/nnet_utils/nnet_activation.h:265]   --->   Operation 53 'getelementptr' 'invert_table_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [2/2] (3.25ns)   --->   "%inv_exp_sum_V = load i8 %invert_table_addr" [firmware/nnet_utils/nnet_activation.h:265]   --->   Operation 54 'load' 'inv_exp_sum_V' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 18> <Depth = 256> <ROM>
+
+State 7 <SV = 6> <Delay = 3.25>
+ST_7 : Operation 55 [1/2] (3.25ns)   --->   "%inv_exp_sum_V = load i8 %invert_table_addr" [firmware/nnet_utils/nnet_activation.h:265]   --->   Operation 55 'load' 'inv_exp_sum_V' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 18> <Depth = 256> <ROM>
+
+State 8 <SV = 7> <Delay = 3.89>
+ST_8 : Operation 56 [1/1] (0.00ns)   --->   "%sext_ln1273 = sext i18 %inv_exp_sum_V"   --->   Operation 56 'sext' 'sext_ln1273' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln1273 = zext i17 %r_V"   --->   Operation 57 'zext' 'zext_ln1273' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 58 [3/3] (3.89ns) (root node of the DSP)   --->   "%mul_ln1270 = mul i24 %sext_ln1273, i24 %zext_ln1273"   --->   Operation 58 'mul' 'mul_ln1270' <Predicate = true> <Delay = 3.89> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 59 [1/1] (0.00ns)   --->   "%zext_ln1273_1 = zext i17 %r_V_1"   --->   Operation 59 'zext' 'zext_ln1273_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 60 [3/3] (3.89ns) (root node of the DSP)   --->   "%mul_ln1270_1 = mul i24 %sext_ln1273, i24 %zext_ln1273_1"   --->   Operation 60 'mul' 'mul_ln1270_1' <Predicate = true> <Delay = 3.89> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 9 <SV = 8> <Delay = 3.89>
+ST_9 : Operation 61 [2/3] (3.89ns) (root node of the DSP)   --->   "%mul_ln1270 = mul i24 %sext_ln1273, i24 %zext_ln1273"   --->   Operation 61 'mul' 'mul_ln1270' <Predicate = true> <Delay = 3.89> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 62 [2/3] (3.89ns) (root node of the DSP)   --->   "%mul_ln1270_1 = mul i24 %sext_ln1273, i24 %zext_ln1273_1"   --->   Operation 62 'mul' 'mul_ln1270_1' <Predicate = true> <Delay = 3.89> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 63 [1/3] (0.00ns) (root node of the DSP)   --->   "%mul_ln1270 = mul i24 %sext_ln1273, i24 %zext_ln1273"   --->   Operation 63 'mul' 'mul_ln1270' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 64 [1/3] (0.00ns) (root node of the DSP)   --->   "%mul_ln1270_1 = mul i24 %sext_ln1273, i24 %zext_ln1273_1"   --->   Operation 64 'mul' 'mul_ln1270_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 2> <II = 1> <Delay = 3.89> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 65 [1/1] (0.00ns)   --->   "%specpipeline_ln217 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [firmware/nnet_utils/nnet_activation.h:217]   --->   Operation 65 'specpipeline' 'specpipeline_ln217' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %mul_ln1270, i32 16, i32 23"   --->   Operation 66 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln818_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %mul_ln1270_1, i32 16, i32 23"   --->   Operation 67 'partselect' 'trunc_ln818_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 68 [1/1] (0.00ns)   --->   "%mrv = insertvalue i16 <undef>, i8 %trunc_ln" [firmware/nnet_utils/nnet_activation.h:270]   --->   Operation 68 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 69 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i16 %mrv, i8 %trunc_ln818_1" [firmware/nnet_utils/nnet_activation.h:270]   --->   Operation 69 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 70 [1/1] (0.00ns)   --->   "%ret_ln270 = ret i16 %mrv_1" [firmware/nnet_utils/nnet_activation.h:270]   --->   Operation 70 'ret' 'ret_ln270' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 1.35ns.
+
+ <State 1>: 2.8ns
+The critical path consists of the following:
+	wire read operation ('p_read_1') on port 'p_read1' [6]  (0 ns)
+	'icmp' operation ('icmp_ln1651') [8]  (1.55 ns)
+	'xor' operation ('xor_ln1651') [9]  (0 ns)
+	'select' operation ('x_max.V', firmware/nnet_utils/nnet_common.h:66) [10]  (1.25 ns)
+
+ <State 2>: 3.16ns
+The critical path consists of the following:
+	'sub' operation ('ret.V') [13]  (1.92 ns)
+	'xor' operation ('xor_ln302') [19]  (0 ns)
+	'select' operation ('__Result__') [30]  (1.25 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('exp_table_addr', firmware/nnet_utils/nnet_activation.h:255) [32]  (0 ns)
+	'load' operation ('r.V', firmware/nnet_utils/nnet_activation.h:255) on array 'exp_table' [33]  (3.25 ns)
+
+ <State 4>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('r.V', firmware/nnet_utils/nnet_activation.h:255) on array 'exp_table' [33]  (3.25 ns)
+
+ <State 5>: 3.35ns
+The critical path consists of the following:
+	'add' operation ('__Val2__') [40]  (2.11 ns)
+	'select' operation ('__Result__') [43]  (1.25 ns)
+
+ <State 6>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('invert_table_addr', firmware/nnet_utils/nnet_activation.h:265) [45]  (0 ns)
+	'load' operation ('inv_exp_sum.V', firmware/nnet_utils/nnet_activation.h:265) on array 'invert_table' [46]  (3.25 ns)
+
+ <State 7>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('inv_exp_sum.V', firmware/nnet_utils/nnet_activation.h:265) on array 'invert_table' [46]  (3.25 ns)
+
+ <State 8>: 3.89ns
+The critical path consists of the following:
+	'mul' operation of DSP[49] ('mul_ln1270') [49]  (3.89 ns)
+
+ <State 9>: 3.89ns
+The critical path consists of the following:
+	'mul' operation of DSP[49] ('mul_ln1270') [49]  (3.89 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

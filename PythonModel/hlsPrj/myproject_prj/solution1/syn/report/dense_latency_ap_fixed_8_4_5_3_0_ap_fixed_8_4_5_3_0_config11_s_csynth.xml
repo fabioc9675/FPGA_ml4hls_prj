@@ -19,7 +19,7 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.278</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.554</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -38,8 +38,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>57</FF>
-<LUT>129</LUT>
+<FF>73</FF>
+<LUT>173</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -100,6 +100,17 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
+<Object>dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0&gt;, ap_fixed&lt;8, 4, 5, 3, 0&gt;, config11&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_3</name>
 <Object>dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0&gt;, ap_fixed&lt;8, 4, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>

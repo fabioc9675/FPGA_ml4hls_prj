@@ -30422,33 +30422,43 @@ template <typename T, unsigned N, T (*func)(T)> class lookup_table {
 # 1 "C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdio" 1 3
 # 40 "C:/Xilinx/Vitis_HLS/2022.2/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdio" 3
 # 9 "firmware/defines.h" 2
-# 22 "firmware/defines.h"
+# 27 "firmware/defines.h"
 typedef ap_fixed<16,6> input_t;
 typedef ap_fixed<8,4> fc1_accum_t;
 typedef ap_fixed<8,4> layer2_t;
 typedef ap_fixed<8,5> weight2_t;
 typedef ap_fixed<8,5> bias2_t;
 typedef ap_uint<1> layer2_index;
+typedef ap_fixed<8,4> layer4_t;
+typedef ap_fixed<18,8> relu0_table_t;
 typedef ap_fixed<8,4> fc2_accum_t;
 typedef ap_fixed<8,4> layer5_t;
 typedef ap_fixed<8,5> weight5_t;
 typedef ap_fixed<8,5> bias5_t;
 typedef ap_uint<1> layer5_index;
+typedef ap_fixed<8,4> layer7_t;
+typedef ap_fixed<18,8> relu1_table_t;
 typedef ap_fixed<8,4> fc3_accum_t;
 typedef ap_fixed<8,4> layer8_t;
 typedef ap_fixed<8,5> weight8_t;
 typedef ap_fixed<8,5> bias8_t;
 typedef ap_uint<1> layer8_index;
+typedef ap_fixed<8,4> layer10_t;
+typedef ap_fixed<18,8> relu2_table_t;
 typedef ap_fixed<8,4> fc4_accum_t;
 typedef ap_fixed<8,4> layer11_t;
 typedef ap_fixed<8,5> weight11_t;
 typedef ap_fixed<8,5> bias11_t;
 typedef ap_uint<1> layer11_index;
+typedef ap_fixed<8,4> layer13_t;
+typedef ap_fixed<18,8> relu3_table_t;
 typedef ap_fixed<8,4> fc5_accum_t;
 typedef ap_fixed<8,4> layer14_t;
 typedef ap_fixed<8,5> weight14_t;
 typedef ap_fixed<8,5> bias14_t;
 typedef ap_uint<1> layer14_index;
+typedef ap_fixed<8,4> layer16_t;
+typedef ap_fixed<18,8> relu4_table_t;
 typedef ap_fixed<8,4> output_accum_t;
 typedef ap_fixed<8,4> layer17_t;
 typedef ap_fixed<16,7> weight17_t;
@@ -30456,6 +30466,8 @@ typedef ap_fixed<16,7> bias17_t;
 typedef ap_uint<1> layer17_index;
 typedef ap_fixed<8,4> result_t;
 typedef ap_fixed<18,8> outputActivation_table_t;
+typedef ap_fixed<18,8,AP_RND,AP_SAT,0> outputActivation_exp_table_t;
+typedef ap_fixed<18,8,AP_RND,AP_SAT,0> outputActivation_inv_table_t;
 # 9 "firmware/myproject.h" 2
 
 
@@ -54084,23 +54096,23 @@ void dense(hls::stream<data_T> &data_stream, hls::stream<res_T> &res_stream,
 
 # 1 "firmware/weights/w2.h" 1
 # 12 "firmware/weights/w2.h"
-weight2_t w2[966] = {0.000, 0.000, 1.250, 1.125, 0.000, 1.250, 0.000, -1.000, 0.000, 0.000, -1.250, 0.000, -1.125, 0.000, 1.250, 0.000, -1.250, 0.000, 0.000, -0.875, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.875, 0.000, 0.000, -1.000, 0.000, -1.125, 1.750, 0.000, 0.000, 0.000, 2.125, -2.250, 2.375, 2.375, -3.000, 0.000, 2.750, -2.875, 2.750, 2.625, -3.250, 0.000, 3.000, -3.375, 0.000, 3.000, -3.625, -3.375, 3.500, 0.000, 3.250, 3.250, -3.875, -3.625, 3.625, -3.750, 3.250, 0.000, 0.000, -3.875, 3.875, -4.000, 3.250, 0.000, -4.000, -3.875, 3.875, -4.000, 3.500, 0.000, -4.125, -3.625, 3.875, -3.875, 3.250, 3.375, -4.000, -3.750, 0.000, -4.000, 0.000, 3.250, -4.000, -3.750, 3.875, -4.125, 3.125, 3.250, -3.875, 0.000, 3.625, -3.750, 3.000, 3.125, 0.000, -3.500, 3.500, -3.750, 3.000, 2.875, 0.000, -3.375, 3.500, -3.625, 2.750, 2.875, 0.000, -3.125, 3.250, -3.500, 0.000, 0.000, 0.000, -3.250, 0.000, -3.500, 2.750, 2.750, -3.375, -3.125, 3.000, -3.125, 2.500, 2.625, -3.125, -2.875, 2.750, -3.125, 0.000, 2.500, -3.000, -2.750, 2.750, -2.875, 2.250, 2.375, -2.875, 0.000, 2.625, -2.875, 2.000, 0.000, -2.625, -2.625, 2.500, -2.500, 1.875, 0.000, -2.625, -2.250, 2.250, -2.500, 0.000, 2.000, -2.375, -2.250, 2.125, -2.250, 0.000, 1.875, -2.375, 0.000, 2.125, -2.250, 1.625, 0.000, -2.125, 0.000, 2.000, -2.125, 1.500, 1.625, -2.125, -1.750, 1.750, -2.000, 0.000, 0.000, 0.000, -1.750, 0.000, 0.000, 0.000, 1.500, -1.625, -1.750, 1.625, -1.750, 1.250, 0.000, -1.750, -1.375, 1.375, -1.625, 0.000, 0.000, 0.000, 0.000, 1.250, -1.500, 1.000, 0.000, -1.375, -1.375, 0.000, -1.250, 0.000, 1.125, 0.000, -1.375, 0.000, -1.375, 1.000, 1.000, -1.250, 0.000, 1.125, -1.250, 0.875, 0.000, -1.125, -1.000, 1.000, -1.125, 0.000, 0.000, -1.125, -1.000, 0.000, -1.000, 0.000, 0.750, -1.000, -0.875, 0.750, 0.000, 0.625, 0.000, -0.875, -0.875, 0.750, 0.000, 0.000, 0.000, -0.875, -0.875, 0.000, -0.875, 0.375, 0.000, -0.750, 0.000, 0.625, -0.750, 0.500, 0.000, -0.625, -0.750, 0.000, 0.000, 0.375, 0.500, 0.000, 0.000, 0.000, 0.000, 0.250, 0.000, -0.625, 0.000, 0.500, -0.500, 0.000, 0.000, -0.500, -0.500, 0.375, -0.500, 0.250, 0.375, -0.500, -0.500, 0.375, 0.000, 0.000, 0.250, -0.500, -0.375, 0.000, 0.000, 0.250, 0.000, 0.000, 0.000, 0.250, 0.000, 0.125, 0.250, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.250, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, -0.250, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.625, 0.000, 0.000, -0.500, 0.000, 0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.500, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.625, 0.500, -0.750, 0.625, -0.750, -0.500, 0.625, 0.000, 0.000, 0.000, 0.000, -0.625, 0.625, 0.625, 0.000, 0.625, 0.000, -0.500, 0.000, 0.625, 0.000, 0.625, -0.750, -0.500, 0.000, 0.000, 0.000, 0.750, -0.750, 0.000, 0.000, 0.625, 0.000, 0.625, 0.000, -0.625, 0.000, 0.625, -0.750, 0.750, -0.750, 0.000, 0.625, 0.000, 0.000, 0.000, -0.750, 0.000, 0.000, 0.625, -0.875, 0.750, -0.750, 0.000, 0.750, 0.000, 0.000, 0.000, -0.750, -0.625, 0.000, 0.625, 0.000, 0.750, 0.000, 0.000, 0.750, 0.000, 0.000, 0.000, 0.000, -0.625, 0.750, 0.750, 0.000, 0.000, -0.875, 0.000, 0.750, 0.750, 0.000, 0.750, 0.000, -0.625, 0.000, 0.000, 0.000, 0.750, 0.000, -0.750, 0.000, 0.625, -0.750, 0.750, 0.000, -0.625, 0.000, 0.750, 0.000, 0.000, -0.875, 0.000, 0.750, 0.000, 0.000, 0.875, -0.750, 0.000, 0.750, 0.750, -0.875, 0.875, 0.000, -0.750, 0.875, 0.000, 0.000, 0.875, -0.875, 0.000, 0.000, 0.000, -0.875, 0.000, -0.875, -0.625, 0.750, 0.000, -1.000, 0.750, 0.000, -0.750, 0.000, 0.000, 0.000, 0.875, 0.000, -0.750, 0.875, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 0.750, -0.875, 0.875, -1.000, 0.000, 0.875, 0.750, -0.875, 0.000, 0.000, 0.000, 0.875, 0.875, 0.000, 0.875, -1.000, -0.750, 0.875, 0.875, 0.000, 0.000, 0.000, -0.750, 0.875, 0.875, -1.000, 0.875, 0.000, 0.000, 0.000, 0.000, -1.000, 1.000, 0.000, 0.000, 0.875, 0.750, -1.000, 0.875, -1.000, 0.000, 1.000, 0.875, 0.000, 1.000, -0.875, 0.000, 0.875, 0.875, 0.000, 1.000, -1.000, 0.000, 1.000, 0.875, 0.000, 0.000, 0.000, 0.000, 1.000, 0.875, -1.125, 0.000, -1.000, -0.750, 1.000, 0.000, -1.000, 0.000, -0.875, 0.000, 1.000, 0.875, -1.000, 1.000, 0.000, 0.000, 0.000, 0.000, -1.000, 0.000, -1.000, 0.000, 0.875, 0.875, -1.000, 0.875, 0.000, 0.000, 0.000, 0.875, 0.000, 0.000, -1.000, 0.000, 0.000, 1.000, 0.000, 1.000, 0.000, 0.000, 0.000, 0.875, -1.000, 0.000, 0.000, -0.750, 0.000, 0.000, -1.125, 1.125, -1.000, 0.000, 0.000, 0.000, 0.000, 0.000, -1.000, -0.750, 1.000, 1.000, -1.000, 0.000, -1.000, 0.000, 0.000, 0.000, 0.000, 0.000, -1.000, -0.875, 0.000, 0.000, -1.125, 1.000, 0.000, 0.000, 1.125, 0.000, 0.000, 0.000, -1.000, 0.000, 0.000, 0.000, -1.000, 1.125, 0.000, 0.000, 1.000, 1.000, -1.000, 1.125, -1.000, -0.875, 0.000, 0.000, -1.125, 1.125, -1.000, -0.875, 1.000, 1.000, 0.000, 0.000, 0.000, 0.000, 1.125, 1.000, -1.125, 1.000, -1.000, -0.875, 0.000, 0.000, -1.125, 0.000, -1.000, 0.000, 1.125, 1.000, 0.000, 1.125, -1.000, 0.000, 0.000, 0.000, -1.125, 1.125, 0.000, 0.000, 0.000, 1.000, 0.000, 1.125, -1.125, 0.000, 1.000, 1.000, -1.125, 1.000, -1.000, -0.875, 1.125, 0.000, -1.125, 0.000, 0.000, 0.000, 1.125, 1.000, -1.125, 0.000, 0.000, 0.000, 1.125, 0.000, 0.000, 1.125, 0.000, 0.000, 1.125, 1.000, -1.125, 0.000, 0.000, -0.875, 1.125, 1.125, 0.000, 1.000, 0.000, -0.875, 1.125, 1.000, 0.000, 0.000, 0.000, -0.875, 0.000, 0.000, -1.125, 1.000, -1.125, 0.000, 0.000, 1.000, -1.125, 0.000, 0.000, -0.875, 0.000, 1.125, -1.125, 0.000, 0.000, -1.000, 0.000, 0.000, 0.000, 0.000, -1.125, 0.000, 1.125, 1.000, 0.000, 0.000, 0.000, -0.875, 1.125, 1.000, -1.125, 1.125, -1.125, 0.000, 0.000, 1.000, 0.000, 1.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000, -0.875, 1.125, 1.000, -1.125, 0.000, 0.000, 0.000, 1.125, 1.125, -1.125, 1.250, -1.125, -0.875, 1.125, 1.000, 0.000, 0.000, 0.000, 0.000, 0.000, 1.125, 0.000, 1.125, -1.125, 0.000, 0.000, 0.000, -1.125, 1.125, 0.000, -1.000, 0.000, 0.000, 0.000, 0.000, -1.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.875, 1.125, 1.125, 0.000, 1.125, 0.000, 0.000, 0.000, 0.000, 0.000, 1.125, 0.000, 0.000, 1.125, 1.125, -1.250, 1.125, -1.000, -0.875, 0.000, 1.000, -1.250, 0.000};
+weight2_t w2[966] = {0.000, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, -0.250, 0.000, 0.000, -0.125, -0.125, 0.125, -0.125, 0.000, 0.125, -0.125, 0.000, 0.000, 0.125, -0.125, -0.125, -0.125, 0.125, 0.125, 0.125, 0.125, 0.000, -0.125, 0.125, 0.125, 0.250, 0.125, -0.125, 0.125, 0.125, -0.125, 0.375, 0.250, 0.000, -0.125, 0.250, 0.000, 0.375, 0.250, 0.125, 0.000, 0.375, 0.000, 0.375, 0.500, -0.125, -0.125, 0.375, 0.000, 0.375, 0.500, -0.125, 0.125, 0.250, 0.000, 0.250, 0.375, 0.000, 0.125, 0.375, -0.125, 0.250, 0.500, 0.125, 0.000, 0.375, 0.000, 0.250, 0.375, -0.125, 0.125, 0.250, -0.125, 0.250, 0.500, 0.000, 0.125, 0.375, 0.125, 0.500, 0.375, 0.000, 0.125, 0.375, 0.125, 0.375, 0.375, -0.125, 0.000, 0.375, 0.000, 0.375, 0.375, 0.125, 0.000, 0.250, 0.125, 0.375, 0.250, 0.000, 0.000, 0.250, -0.125, 0.250, 0.250, 0.125, -0.125, 0.250, 0.000, 0.250, 0.375, -0.125, 0.000, 0.125, -0.125, 0.250, 0.250, 0.125, 0.125, 0.375, 0.125, 0.375, 0.375, 0.000, 0.000, 0.250, 0.125, 0.375, 0.250, 0.125, 0.000, 0.250, 0.000, 0.250, 0.125, -0.125, -0.125, 0.375, -0.125, 0.250, 0.250, 0.125, 0.000, 0.375, -0.125, 0.125, 0.250, 0.125, 0.000, 0.125, 0.000, 0.250, 0.250, 0.000, -0.125, 0.125, -0.125, 0.250, 0.250, 0.125, 0.000, 0.125, -0.125, 0.250, 0.125, 0.125, -0.125, 0.250, 0.000, 0.375, 0.125, 0.125, 0.125, 0.125, 0.000, 0.250, 0.250, 0.000, 0.125, 0.250, 0.000, 0.000, 0.125, 0.000, 0.125, 0.250, -0.125, 0.125, 0.125, 0.000, 0.000, 0.125, 0.125, 0.250, 0.125, 0.125, 0.000, 0.125, 0.000, 0.000, 0.125, 0.000, 0.125, 0.125, 0.000, 0.000, 0.250, -0.125, 0.000, 0.125, 0.000, 0.250, 0.000, 0.000, -0.125, 0.125, -0.125, 0.125, 0.250, 0.000, 0.000, 0.000, 0.125, 0.000, 0.000, -0.125, 0.000, 0.000, 0.125, 0.000, 0.000, 0.125, -0.125, 0.000, 0.125, 0.125, 0.125, 0.000, 0.125, 0.000, -0.125, 0.250, 0.125, -0.125, -0.125, 0.250, 0.125, 0.125, 0.125, 0.000, -0.125, 0.000, -0.125, 0.125, 0.125, 0.000, 0.000, 0.125, 0.000, 0.000, 0.000, -0.125, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.125, 0.125, 0.125, 0.125, 0.000, 0.000, 0.000, 0.000, 0.125, 0.125, 0.125, -0.125, 0.000, 0.000, 0.125, 0.125, 0.125, 0.000, 0.125, -0.125, 0.000, 0.000, 0.000, -0.125, 0.000, -0.125, 0.125, 0.125, 0.000, 0.125, 0.125, 0.125, 0.000, 0.125, 0.000, 0.000, 0.000, 0.125, -0.125, 0.000, 0.125, 0.000, -0.125, -0.125, 0.000, 0.125, 0.000, 0.125, -0.125, -0.125, 0.000, 0.000, 0.125, 0.000, 0.125, 0.000, 0.125, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, 0.000, -0.125, -0.125, -0.125, 0.125, -0.125, 0.000, -0.125, 0.125, 0.000, -0.125, 0.000, 0.000, -0.125, 0.125, 0.125, 0.125, -0.125, -0.125, 0.000, 0.125, -0.125, 0.000, 0.000, -0.125, -0.125, 0.125, 0.125, -0.125, 0.000, 0.125, 0.000, -0.125, 0.125, 0.000, 0.000, 0.000, -0.125, 0.000, -0.125, 0.125, 0.000, -0.125, 0.000, 0.000, 0.125, 0.000, -0.125, 0.000, 0.000, 0.125, -0.125, -0.125, -0.125, 0.125, 0.125, -0.125, -0.125, 0.000, 0.000, 0.125, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, 0.125, 0.125, 0.000, -0.125, 0.125, -0.125, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, 0.125, 0.000, -0.125, -0.125, 0.000, -0.125, 0.000, 0.125, -0.125, -0.125, -0.125, -0.125, 0.000, 0.000, -0.125, 0.000, 0.125, 0.125, -0.125, 0.000, 0.125, -0.125, 0.000, 0.125, 0.000, 0.000, 0.000, 0.125, -0.125, 0.000, -0.125, 0.000, 0.000, 0.000, 0.125, 0.000, 0.000, -0.125, 0.000, -0.125, 0.000, 0.000, 0.125, 0.000, 0.000, 0.125, -0.125, 0.000, 0.000, -0.125, 0.125, 0.125, 0.000, 0.000, -0.125, -0.125, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, -0.125, -0.125, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, 0.000, -0.125, -0.125, -0.125, 0.000, 0.125, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, -0.125, 0.000, -0.125, -0.125, -0.125, 0.000, -0.125, -0.125, -0.125, -0.125, -0.125, 0.000, -0.125, 0.000, 0.125, 0.000, 0.125, 0.000, 0.125, -0.125, 0.000, -0.125, -0.125, 0.000, -0.125, 0.000, 0.000, -0.125, 0.000, -0.125, -0.125, -0.250, -0.125, -0.125, -0.125, 0.000, 0.125, -0.125, 0.000, -0.125, -0.125, -0.125, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, 0.125, 0.125, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, 0.125, 0.000, -0.125, 0.125, 0.125, 0.125, 0.000, -0.125, 0.000, -0.125, -0.125, -0.125, -0.125, 0.000, -0.125, 0.000, 0.125, -0.125, 0.000, 0.000, -0.125, -0.125, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, 0.000, 0.125, 0.000, 0.125, -0.125, 0.125, 0.000, -0.125, -0.125, 0.000, 0.125, -0.125, 0.000, -0.125, 0.000, 0.125, 0.125, -0.125, -0.125, 0.000, 0.000, 0.000, 0.125, -0.125, 0.000, 0.000, -0.125, 0.125, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, -0.125, -0.250, 0.000, 0.000, -0.125, -0.125, -0.125, -0.125, 0.000, 0.000, -0.125, 0.000, 0.125, 0.000, -0.125, 0.000, -0.125, -0.125, 0.000, -0.125, 0.125, 0.000, 0.000, 0.125, -0.125, -0.125, -0.125, -0.250, -0.125, -0.125, 0.125, -0.125, -0.125, 0.000, 0.000, 0.000, 0.125, 0.000, 0.125, -0.125, -0.125, 0.000, 0.125, 0.000, 0.000, 0.000, -0.125, 0.125, -0.125, -0.125, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, -0.125, 0.000, -0.125, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, 0.125, 0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, -0.125, -0.125, -0.125, 0.125, 0.000, 0.000, 0.000, -0.125, -0.250, 0.000, 0.000, 0.000, 0.125, 0.000, -0.125, 0.000, 0.000, -0.125, -0.125, -0.125, -0.125, 0.000, 0.000, 0.000, 0.000, -0.250, -0.125, 0.000, 0.125, 0.000, 0.125, -0.250, 0.000, 0.000, 0.000, 0.000, 0.125, -0.125, -0.125, 0.125, 0.125, -0.125, 0.000, 0.000, -0.250, -0.125, -0.125, -0.125, 0.000, 0.000, 0.000, 0.000, 0.125, -0.125, 0.000, -0.125, -0.125, 0.000, -0.125, 0.000, 0.125, -0.250, -0.125, -0.125, 0.125, 0.000, -0.125, 0.000, -0.125, 0.000, 0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.125, -0.125, 0.000, -0.125, 0.000, -0.125, 0.125, 0.000, -0.125, -0.125, -0.125, 0.000, 0.000, -0.125, 0.000, 0.125, 0.125, -0.250, -0.125, 0.000, 0.000, 0.125, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, 0.125, 0.000, -0.125, 0.125, -0.125, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, 0.125, -0.125, -0.125, -0.125, -0.125, -0.125, -0.125, 0.000, -0.250, 0.000, 0.000, -0.125, 0.000, -0.250, 0.000, 0.000, -0.125, -0.125, 0.000, -0.125, -0.125, 0.125, 0.125, 0.000, -0.125, -0.125, 0.000, 0.000, 0.000, 0.000, 0.125, -0.125, -0.250, -0.125, 0.000, -0.125, 0.000, -0.125, -0.125, 0.125, 0.000, -0.125, 0.125, 0.000, -0.125, 0.125, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, -0.125, -0.125, 0.000, -0.125, 0.000, 0.125, -0.125, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, 0.000, 0.000, -0.125, 0.000, 0.125, 0.000, 0.000, -0.125, 0.000, -0.125, 0.125, -0.125, 0.000, 0.000, 0.000, 0.000, -0.125, -0.125, 0.000, -0.125, -0.250, 0.125, 0.000, 0.000, -0.125, 0.000, 0.000, 0.000, 0.000, -0.125, 0.000, 0.000, -0.250, -0.125, 0.000, 0.000, 0.000, 0.000, -0.250, 0.125, 0.000, 0.000};
 # 18 "firmware/parameters.h" 2
 # 1 "firmware/weights/b2.h" 1
 # 12 "firmware/weights/b2.h"
-bias2_t b2[6] = {-1.000, -0.750, 1.000, 0.875, -1.000, 1.000};
+bias2_t b2[6] = {0.000, 0.125, 0.000, 0.000, 0.000, 0.000};
 # 19 "firmware/parameters.h" 2
 # 1 "firmware/weights/w5.h" 1
 # 12 "firmware/weights/w5.h"
-weight5_t w5[24] = {0.000, 0.000, -4.625, 0.000, 0.000, 0.000, 0.000, 3.250, 5.000, 0.000, 3.875, 0.000, 4.750, 0.000, 3.625, -3.375, -5.125, 0.000, -3.625, 3.875, 5.750, 0.000, 5.000, 0.000};
+weight5_t w5[24] = {-0.500, -0.625, 0.000, 0.625, 0.500, 0.750, 0.625, -0.125, 0.500, 0.250, 0.750, 0.000, -0.125, -0.375, -0.125, 0.250, 0.250, 0.125, 0.000, 0.000, 0.500, -0.375, 0.625, 0.000};
 # 20 "firmware/parameters.h" 2
 # 1 "firmware/weights/b5.h" 1
 # 12 "firmware/weights/b5.h"
-bias5_t b5[4] = {0.625, 0.000, 1.000, -0.875};
+bias5_t b5[4] = {0.000, 0.000, 0.000, 0.000};
 # 21 "firmware/parameters.h" 2
 # 1 "firmware/weights/w8.h" 1
 # 12 "firmware/weights/w8.h"
-weight8_t w8[8] = {0.000, 4.750, 0.625, 0.000, 3.000, 0.000, -3.125, 0.000};
+weight8_t w8[8] = {-0.125, 0.875, 0.000, 0.500, 0.875, 0.375, -0.125, -0.500};
 # 22 "firmware/parameters.h" 2
 # 1 "firmware/weights/b8.h" 1
 # 12 "firmware/weights/b8.h"
@@ -54108,7 +54120,7 @@ bias8_t b8[2] = {0.000, 0.000};
 # 23 "firmware/parameters.h" 2
 # 1 "firmware/weights/w11.h" 1
 # 12 "firmware/weights/w11.h"
-weight11_t w11[8] = {0.000, -2.500, -1.875, 4.250, 0.000, -4.500, 0.000, 0.000};
+weight11_t w11[8] = {-0.750, 0.500, 0.000, 0.875, -0.625, 0.500, -0.375, 1.125};
 # 24 "firmware/parameters.h" 2
 # 1 "firmware/weights/b11.h" 1
 # 12 "firmware/weights/b11.h"
@@ -54116,7 +54128,7 @@ bias11_t b11[4] = {0.000, 0.000, 0.000, 0.000};
 # 25 "firmware/parameters.h" 2
 # 1 "firmware/weights/w14.h" 1
 # 12 "firmware/weights/w14.h"
-weight14_t w14[12] = {0.750, 0.000, 0.000, 0.000, 3.625, 0.000, 1.375, 0.500, 1.375, -3.000, 0.000, 0.000};
+weight14_t w14[12] = {-0.250, -0.500, 0.750, -0.125, 0.875, 0.000, -0.125, -0.750, -0.375, 0.750, 0.250, -0.875};
 # 26 "firmware/parameters.h" 2
 # 1 "firmware/weights/b14.h" 1
 # 12 "firmware/weights/b14.h"
@@ -54124,11 +54136,11 @@ bias14_t b14[3] = {0.000, 0.000, 0.000};
 # 27 "firmware/parameters.h" 2
 # 1 "firmware/weights/w17.h" 1
 # 12 "firmware/weights/w17.h"
-weight17_t w17[6] = {0.000000000, -1.986328125, 0.000000000, -2.472656250, 0.000000000, -1.509765625};
+weight17_t w17[6] = {1.121093750, 0.000000000, 0.386718750, -1.162109375, -0.185546875, -0.275390625};
 # 28 "firmware/parameters.h" 2
 # 1 "firmware/weights/b17.h" 1
 # 12 "firmware/weights/b17.h"
-bias17_t b17[2] = {0.025390625, -0.021484375};
+bias17_t b17[2] = {-0.941406250, 0.941406250};
 # 29 "firmware/parameters.h" 2
 
 
@@ -54140,8 +54152,8 @@ struct config2 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 490;
-    static const unsigned n_nonzeros = 476;
+    static const unsigned n_zeros = 410;
+    static const unsigned n_nonzeros = 556;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc1_accum_t accum_t;
@@ -54155,14 +54167,23 @@ struct config2 : nnet::dense_config {
 };
 
 
+struct relu_config4 : nnet::activ_config {
+    static const unsigned n_in = 6;
+    static const unsigned table_size = 1024;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    typedef relu0_table_t table_t;
+};
+
+
 struct config5 : nnet::dense_config {
     static const unsigned n_in = 6;
     static const unsigned n_out = 4;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 12;
-    static const unsigned n_nonzeros = 12;
+    static const unsigned n_zeros = 5;
+    static const unsigned n_nonzeros = 19;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc2_accum_t accum_t;
@@ -54176,14 +54197,23 @@ struct config5 : nnet::dense_config {
 };
 
 
+struct relu_config7 : nnet::activ_config {
+    static const unsigned n_in = 4;
+    static const unsigned table_size = 1024;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    typedef relu1_table_t table_t;
+};
+
+
 struct config8 : nnet::dense_config {
     static const unsigned n_in = 4;
     static const unsigned n_out = 2;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 4;
-    static const unsigned n_nonzeros = 4;
+    static const unsigned n_zeros = 1;
+    static const unsigned n_nonzeros = 7;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc3_accum_t accum_t;
@@ -54197,14 +54227,23 @@ struct config8 : nnet::dense_config {
 };
 
 
+struct relu_config10 : nnet::activ_config {
+    static const unsigned n_in = 2;
+    static const unsigned table_size = 1024;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    typedef relu2_table_t table_t;
+};
+
+
 struct config11 : nnet::dense_config {
     static const unsigned n_in = 2;
     static const unsigned n_out = 4;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 4;
-    static const unsigned n_nonzeros = 4;
+    static const unsigned n_zeros = 1;
+    static const unsigned n_nonzeros = 7;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc4_accum_t accum_t;
@@ -54218,14 +54257,23 @@ struct config11 : nnet::dense_config {
 };
 
 
+struct relu_config13 : nnet::activ_config {
+    static const unsigned n_in = 4;
+    static const unsigned table_size = 1024;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    typedef relu3_table_t table_t;
+};
+
+
 struct config14 : nnet::dense_config {
     static const unsigned n_in = 4;
     static const unsigned n_out = 3;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 6;
-    static const unsigned n_nonzeros = 6;
+    static const unsigned n_zeros = 1;
+    static const unsigned n_nonzeros = 11;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc5_accum_t accum_t;
@@ -54239,14 +54287,23 @@ struct config14 : nnet::dense_config {
 };
 
 
+struct relu_config16 : nnet::activ_config {
+    static const unsigned n_in = 3;
+    static const unsigned table_size = 1024;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    typedef relu4_table_t table_t;
+};
+
+
 struct config17 : nnet::dense_config {
     static const unsigned n_in = 3;
     static const unsigned n_out = 2;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 3;
-    static const unsigned n_nonzeros = 3;
+    static const unsigned n_zeros = 1;
+    static const unsigned n_nonzeros = 5;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef output_accum_t accum_t;
@@ -54260,12 +54317,15 @@ struct config17 : nnet::dense_config {
 };
 
 
-struct sigmoid_config19 : nnet::activ_config {
+struct softmax_config19 : nnet::activ_config {
     static const unsigned n_in = 2;
-    static const unsigned table_size = 1024;
+    static const unsigned table_size = 256;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
-    typedef outputActivation_table_t table_t;
+    static const unsigned axis = -1;
+    static const nnet::softmax_implementation implementation = nnet::softmax_implementation::stable;
+    typedef outputActivation_exp_table_t exp_table_t;
+    typedef outputActivation_inv_table_t inv_table_t;
 };
 # 5 "firmware/myproject.cpp" 2
 
@@ -54289,26 +54349,46 @@ __attribute__((sdx_kernel("myproject", 0))) void myproject(
 #pragma HLS ARRAY_PARTITION variable=layer2_out complete dim=0
  nnet::dense<input_t, layer2_t, config2>(inputLayer, layer2_out, w2, b2);
 
+    layer4_t layer4_out[6];
+#pragma HLS ARRAY_PARTITION variable=layer4_out complete dim=0
+ nnet::relu<layer2_t, layer4_t, relu_config4>(layer2_out, layer4_out);
+
     layer5_t layer5_out[4];
 #pragma HLS ARRAY_PARTITION variable=layer5_out complete dim=0
- nnet::dense<layer2_t, layer5_t, config5>(layer2_out, layer5_out, w5, b5);
+ nnet::dense<layer4_t, layer5_t, config5>(layer4_out, layer5_out, w5, b5);
+
+    layer7_t layer7_out[4];
+#pragma HLS ARRAY_PARTITION variable=layer7_out complete dim=0
+ nnet::relu<layer5_t, layer7_t, relu_config7>(layer5_out, layer7_out);
 
     layer8_t layer8_out[2];
 #pragma HLS ARRAY_PARTITION variable=layer8_out complete dim=0
- nnet::dense<layer5_t, layer8_t, config8>(layer5_out, layer8_out, w8, b8);
+ nnet::dense<layer7_t, layer8_t, config8>(layer7_out, layer8_out, w8, b8);
+
+    layer10_t layer10_out[2];
+#pragma HLS ARRAY_PARTITION variable=layer10_out complete dim=0
+ nnet::relu<layer8_t, layer10_t, relu_config10>(layer8_out, layer10_out);
 
     layer11_t layer11_out[4];
 #pragma HLS ARRAY_PARTITION variable=layer11_out complete dim=0
- nnet::dense<layer8_t, layer11_t, config11>(layer8_out, layer11_out, w11, b11);
+ nnet::dense<layer10_t, layer11_t, config11>(layer10_out, layer11_out, w11, b11);
+
+    layer13_t layer13_out[4];
+#pragma HLS ARRAY_PARTITION variable=layer13_out complete dim=0
+ nnet::relu<layer11_t, layer13_t, relu_config13>(layer11_out, layer13_out);
 
     layer14_t layer14_out[3];
 #pragma HLS ARRAY_PARTITION variable=layer14_out complete dim=0
- nnet::dense<layer11_t, layer14_t, config14>(layer11_out, layer14_out, w14, b14);
+ nnet::dense<layer13_t, layer14_t, config14>(layer13_out, layer14_out, w14, b14);
+
+    layer16_t layer16_out[3];
+#pragma HLS ARRAY_PARTITION variable=layer16_out complete dim=0
+ nnet::relu<layer14_t, layer16_t, relu_config16>(layer14_out, layer16_out);
 
     layer17_t layer17_out[2];
 #pragma HLS ARRAY_PARTITION variable=layer17_out complete dim=0
- nnet::dense<layer14_t, layer17_t, config17>(layer14_out, layer17_out, w17, b17);
+ nnet::dense<layer16_t, layer17_t, config17>(layer16_out, layer17_out, w17, b17);
 
-    nnet::sigmoid<layer17_t, result_t, sigmoid_config19>(layer17_out, layer19_out);
+    nnet::softmax<layer17_t, result_t, softmax_config19>(layer17_out, layer19_out);
 
 }

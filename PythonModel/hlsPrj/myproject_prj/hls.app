@@ -2,7 +2,7 @@
     <includePaths/>
     <libraryPaths/>
     <Simulation argv="">
-        <SimFlow name="csim" ldflags="" mflags="" csimMode="0" lastCsimMode="0"/>
+        <SimFlow name="csim" ldflags="" mflags="" csimMode="2" lastCsimMode="2"/>
     </Simulation>
     <files xmlns="">
         <file name="../../firmware/weights" sc="0" tb="1" cflags=" -Wno-unknown-pragmas -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>

@@ -13,7 +13,8 @@ module myproject_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s 
         p_read,
         p_read1,
         p_read2,
-        ap_return,
+        ap_return_0,
+        ap_return_1,
         ap_ce
 );
 
@@ -23,83 +24,135 @@ input   ap_rst;
 input  [7:0] p_read;
 input  [7:0] p_read1;
 input  [7:0] p_read2;
-output  [7:0] ap_return;
+output  [7:0] ap_return_0;
+output  [7:0] ap_return_1;
 input   ap_ce;
 
-reg[7:0] ap_return;
+reg[7:0] ap_return_0;
+reg[7:0] ap_return_1;
 
+reg  signed [7:0] p_read_16_reg_299;
 wire    ap_block_state1_pp0_stage0_iter0;
 wire    ap_block_state2_pp0_stage0_iter1;
 wire    ap_block_state3_pp0_stage0_iter2;
 wire    ap_block_state4_pp0_stage0_iter3;
+wire    ap_block_state5_pp0_stage0_iter4;
 wire    ap_block_pp0_stage0_11001;
-reg   [7:0] trunc_ln_reg_188;
-reg   [7:0] trunc_ln818_s_reg_193;
-reg   [7:0] trunc_ln818_11_reg_198;
-wire   [7:0] add_ln813_fu_160_p2;
-reg   [7:0] add_ln813_reg_203;
-wire   [7:0] add_ln813_12_fu_164_p2;
-reg   [7:0] add_ln813_12_reg_208;
-wire  signed [11:0] grp_fu_54_p1;
+wire  signed [16:0] sext_ln1270_1_fu_191_p1;
+reg   [7:0] trunc_ln818_17_reg_325;
+reg   [7:0] trunc_ln818_17_reg_325_pp0_iter2_reg;
+reg   [7:0] trunc_ln818_17_reg_325_pp0_iter3_reg;
+reg   [7:0] trunc_ln_reg_330;
+reg   [7:0] trunc_ln818_s_reg_335;
+reg   [6:0] trunc_ln818_18_reg_340;
+reg   [7:0] trunc_ln818_19_reg_345;
+wire   [7:0] add_ln813_fu_264_p2;
+reg   [7:0] add_ln813_reg_350;
+wire   [7:0] add_ln813_19_fu_268_p2;
+reg   [7:0] add_ln813_19_reg_355;
+wire   [7:0] add_ln813_21_fu_274_p2;
+reg   [7:0] add_ln813_21_reg_360;
+wire   [10:0] grp_fu_66_p1;
 wire    ap_block_pp0_stage0;
-wire  signed [10:0] grp_fu_55_p1;
-wire  signed [10:0] grp_fu_56_p1;
-wire   [16:0] grp_fu_55_p2;
-wire   [16:0] grp_fu_54_p2;
-wire   [16:0] grp_fu_56_p2;
-reg    grp_fu_54_ce;
-reg    grp_fu_55_ce;
-reg    grp_fu_56_ce;
-wire   [7:0] add_ln813_13_fu_169_p2;
+wire  signed [8:0] grp_fu_67_p1;
+wire  signed [7:0] grp_fu_68_p0;
+wire  signed [10:0] grp_fu_68_p1;
+wire  signed [7:0] grp_fu_69_p1;
+wire  signed [7:0] grp_fu_70_p0;
+wire   [8:0] grp_fu_70_p1;
+wire   [16:0] grp_fu_68_p2;
+wire   [16:0] grp_fu_66_p2;
+wire   [16:0] grp_fu_70_p2;
+wire   [15:0] grp_fu_69_p2;
+wire   [16:0] grp_fu_67_p2;
+wire  signed [7:0] sext_ln818_fu_261_p1;
+wire   [7:0] add_ln813_20_fu_279_p2;
+wire   [7:0] add_ln813_22_fu_283_p2;
+reg    grp_fu_66_ce;
+reg    grp_fu_67_ce;
+reg    grp_fu_68_ce;
+reg    grp_fu_69_ce;
+reg    grp_fu_70_ce;
 reg    ap_ce_reg;
-reg  signed [7:0] p_read_int_reg;
-reg  signed [7:0] p_read1_int_reg;
+reg   [7:0] p_read_int_reg;
+reg   [7:0] p_read1_int_reg;
 reg  signed [7:0] p_read2_int_reg;
-reg   [7:0] ap_return_int_reg;
+reg   [7:0] ap_return_0_int_reg;
+reg   [7:0] ap_return_1_int_reg;
 
-myproject_mul_8s_12s_17_2_0 #(
-    .ID( 1 ),
-    .NUM_STAGE( 2 ),
-    .din0_WIDTH( 8 ),
-    .din1_WIDTH( 12 ),
-    .dout_WIDTH( 17 ))
-mul_8s_12s_17_2_0_U93(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(p_read1_int_reg),
-    .din1(grp_fu_54_p1),
-    .ce(grp_fu_54_ce),
-    .dout(grp_fu_54_p2)
-);
-
-myproject_mul_8s_11s_17_2_0 #(
+myproject_mul_8s_11ns_17_2_0 #(
     .ID( 1 ),
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 8 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 17 ))
-mul_8s_11s_17_2_0_U94(
+mul_8s_11ns_17_2_0_U37(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(p_read_int_reg),
-    .din1(grp_fu_55_p1),
-    .ce(grp_fu_55_ce),
-    .dout(grp_fu_55_p2)
+    .din0(p_read_16_reg_299),
+    .din1(grp_fu_66_p1),
+    .ce(grp_fu_66_ce),
+    .dout(grp_fu_66_p2)
 );
 
-myproject_mul_8s_11s_17_2_0 #(
+myproject_mul_8s_9s_17_3_0 #(
     .ID( 1 ),
-    .NUM_STAGE( 2 ),
+    .NUM_STAGE( 3 ),
     .din0_WIDTH( 8 ),
-    .din1_WIDTH( 11 ),
+    .din1_WIDTH( 9 ),
     .dout_WIDTH( 17 ))
-mul_8s_11s_17_2_0_U95(
+mul_8s_9s_17_3_0_U38(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read2_int_reg),
-    .din1(grp_fu_56_p1),
-    .ce(grp_fu_56_ce),
-    .dout(grp_fu_56_p2)
+    .din1(grp_fu_67_p1),
+    .ce(grp_fu_67_ce),
+    .dout(grp_fu_67_p2)
+);
+
+myproject_mul_8s_11s_17_2_0 #(
+    .ID( 1 ),
+    .NUM_STAGE( 2 ),
+    .din0_WIDTH( 8 ),
+    .din1_WIDTH( 11 ),
+    .dout_WIDTH( 17 ))
+mul_8s_11s_17_2_0_U39(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_68_p0),
+    .din1(grp_fu_68_p1),
+    .ce(grp_fu_68_ce),
+    .dout(grp_fu_68_p2)
+);
+
+myproject_mul_8s_8s_16_3_0 #(
+    .ID( 1 ),
+    .NUM_STAGE( 3 ),
+    .din0_WIDTH( 8 ),
+    .din1_WIDTH( 8 ),
+    .dout_WIDTH( 16 ))
+mul_8s_8s_16_3_0_U40(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(p_read2_int_reg),
+    .din1(grp_fu_69_p1),
+    .ce(grp_fu_69_ce),
+    .dout(grp_fu_69_p2)
+);
+
+myproject_mul_8s_9ns_17_3_0 #(
+    .ID( 1 ),
+    .NUM_STAGE( 3 ),
+    .din0_WIDTH( 8 ),
+    .din1_WIDTH( 9 ),
+    .dout_WIDTH( 17 ))
+mul_8s_9ns_17_3_0_U41(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(grp_fu_70_p0),
+    .din1(grp_fu_70_p1),
+    .ce(grp_fu_70_ce),
+    .dout(grp_fu_70_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -108,17 +161,24 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))) begin
-        add_ln813_12_reg_208 <= add_ln813_12_fu_164_p2;
-        add_ln813_reg_203 <= add_ln813_fu_160_p2;
-        trunc_ln818_11_reg_198 <= {{grp_fu_56_p2[16:9]}};
-        trunc_ln818_s_reg_193 <= {{grp_fu_54_p2[16:9]}};
-        trunc_ln_reg_188 <= {{grp_fu_55_p2[16:9]}};
+        add_ln813_19_reg_355 <= add_ln813_19_fu_268_p2;
+        add_ln813_21_reg_360 <= add_ln813_21_fu_274_p2;
+        add_ln813_reg_350 <= add_ln813_fu_264_p2;
+        p_read_16_reg_299 <= p_read_int_reg;
+        trunc_ln818_17_reg_325 <= {{grp_fu_68_p2[16:9]}};
+        trunc_ln818_17_reg_325_pp0_iter2_reg <= trunc_ln818_17_reg_325;
+        trunc_ln818_17_reg_325_pp0_iter3_reg <= trunc_ln818_17_reg_325_pp0_iter2_reg;
+        trunc_ln818_18_reg_340 <= {{grp_fu_69_p2[15:9]}};
+        trunc_ln818_19_reg_345 <= {{grp_fu_67_p2[16:9]}};
+        trunc_ln818_s_reg_335 <= {{grp_fu_70_p2[16:9]}};
+        trunc_ln_reg_330 <= {{grp_fu_66_p2[16:9]}};
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_ce_reg)) begin
-        ap_return_int_reg <= add_ln813_13_fu_169_p2;
+        ap_return_0_int_reg <= add_ln813_20_fu_279_p2;
+        ap_return_1_int_reg <= add_ln813_22_fu_283_p2;
     end
 end
 
@@ -132,43 +192,73 @@ end
 
 always @ (*) begin
     if ((1'b0 == ap_ce_reg)) begin
-        ap_return = ap_return_int_reg;
+        ap_return_0 = ap_return_0_int_reg;
     end else if ((1'b1 == ap_ce_reg)) begin
-        ap_return = add_ln813_13_fu_169_p2;
+        ap_return_0 = add_ln813_20_fu_279_p2;
     end else begin
-        ap_return = 'bx;
+        ap_return_0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b0 == ap_ce_reg)) begin
+        ap_return_1 = ap_return_1_int_reg;
+    end else if ((1'b1 == ap_ce_reg)) begin
+        ap_return_1 = add_ln813_22_fu_283_p2;
+    end else begin
+        ap_return_1 = 'bx;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))) begin
-        grp_fu_54_ce = 1'b1;
+        grp_fu_66_ce = 1'b1;
     end else begin
-        grp_fu_54_ce = 1'b0;
+        grp_fu_66_ce = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))) begin
-        grp_fu_55_ce = 1'b1;
+        grp_fu_67_ce = 1'b1;
     end else begin
-        grp_fu_55_ce = 1'b0;
+        grp_fu_67_ce = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))) begin
-        grp_fu_56_ce = 1'b1;
+        grp_fu_68_ce = 1'b1;
     end else begin
-        grp_fu_56_ce = 1'b0;
+        grp_fu_68_ce = 1'b0;
     end
 end
 
-assign add_ln813_12_fu_164_p2 = ($signed(trunc_ln818_11_reg_198) + $signed(8'd255));
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))) begin
+        grp_fu_69_ce = 1'b1;
+    end else begin
+        grp_fu_69_ce = 1'b0;
+    end
+end
 
-assign add_ln813_13_fu_169_p2 = (add_ln813_12_reg_208 + add_ln813_reg_203);
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))) begin
+        grp_fu_70_ce = 1'b1;
+    end else begin
+        grp_fu_70_ce = 1'b0;
+    end
+end
 
-assign add_ln813_fu_160_p2 = (trunc_ln_reg_188 + trunc_ln818_s_reg_193);
+assign add_ln813_19_fu_268_p2 = ($signed(sext_ln818_fu_261_p1) + $signed(8'd240));
+
+assign add_ln813_20_fu_279_p2 = (add_ln813_19_reg_355 + add_ln813_reg_350);
+
+assign add_ln813_21_fu_274_p2 = (trunc_ln818_19_reg_345 + 8'd15);
+
+assign add_ln813_22_fu_283_p2 = (add_ln813_21_reg_360 + trunc_ln818_17_reg_325_pp0_iter3_reg);
+
+assign add_ln813_fu_264_p2 = (trunc_ln_reg_330 + trunc_ln818_s_reg_335);
 
 assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
@@ -182,10 +272,24 @@ assign ap_block_state3_pp0_stage0_iter2 = ~(1'b1 == 1'b1);
 
 assign ap_block_state4_pp0_stage0_iter3 = ~(1'b1 == 1'b1);
 
-assign grp_fu_54_p1 = 17'd129806;
+assign ap_block_state5_pp0_stage0_iter4 = ~(1'b1 == 1'b1);
 
-assign grp_fu_55_p1 = 17'd130055;
+assign grp_fu_66_p1 = 17'd574;
 
-assign grp_fu_56_p1 = 17'd130299;
+assign grp_fu_67_p1 = 17'd130931;
+
+assign grp_fu_68_p0 = sext_ln1270_1_fu_191_p1;
+
+assign grp_fu_68_p1 = 17'd130477;
+
+assign grp_fu_69_p1 = 16'd65441;
+
+assign grp_fu_70_p0 = sext_ln1270_1_fu_191_p1;
+
+assign grp_fu_70_p1 = 17'd198;
+
+assign sext_ln1270_1_fu_191_p1 = $signed(p_read1_int_reg);
+
+assign sext_ln818_fu_261_p1 = $signed(trunc_ln818_18_reg_340);
 
 endmodule //myproject_dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config17_s

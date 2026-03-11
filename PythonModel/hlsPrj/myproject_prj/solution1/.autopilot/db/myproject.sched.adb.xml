@@ -3,211 +3,271 @@
 
 <trans_list>
 
-<trans id="140" from="1" to="2">
+<trans id="193" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="141" from="2" to="3">
+<trans id="194" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="142" from="3" to="4">
+<trans id="195" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="143" from="4" to="5">
+<trans id="196" from="4" to="5">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="144" from="5" to="6">
+<trans id="197" from="5" to="6">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="145" from="6" to="7">
+<trans id="198" from="6" to="7">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="146" from="7" to="8">
+<trans id="199" from="7" to="8">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="147" from="8" to="9">
+<trans id="200" from="8" to="9">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="148" from="9" to="10">
+<trans id="201" from="9" to="10">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="149" from="10" to="11">
+<trans id="202" from="10" to="11">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="150" from="11" to="12">
+<trans id="203" from="11" to="12">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="151" from="12" to="13">
+<trans id="204" from="12" to="13">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="152" from="13" to="14">
+<trans id="205" from="13" to="14">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="153" from="14" to="15">
+<trans id="206" from="14" to="15">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="154" from="15" to="16">
+<trans id="207" from="15" to="16">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="155" from="16" to="17">
+<trans id="208" from="16" to="17">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="156" from="17" to="18">
+<trans id="209" from="17" to="18">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="157" from="18" to="19">
+<trans id="210" from="18" to="19">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="158" from="19" to="20">
+<trans id="211" from="19" to="20">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="159" from="20" to="21">
+<trans id="212" from="20" to="21">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="160" from="21" to="22">
+<trans id="213" from="21" to="22">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="161" from="22" to="23">
+<trans id="214" from="22" to="23">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="162" from="23" to="24">
+<trans id="215" from="23" to="24">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="163" from="24" to="25">
+<trans id="216" from="24" to="25">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="164" from="25" to="26">
+<trans id="217" from="25" to="26">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="165" from="26" to="27">
+<trans id="218" from="26" to="27">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="166" from="27" to="28">
+<trans id="219" from="27" to="28">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="167" from="28" to="29">
+<trans id="220" from="28" to="29">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="168" from="29" to="30">
+<trans id="221" from="29" to="30">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="169" from="30" to="31">
+<trans id="222" from="30" to="31">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="170" from="31" to="32">
+<trans id="223" from="31" to="32">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="171" from="32" to="33">
+<trans id="224" from="32" to="33">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="172" from="33" to="34">
+<trans id="225" from="33" to="34">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="173" from="34" to="35">
+<trans id="226" from="34" to="35">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="174" from="35" to="36">
+<trans id="227" from="35" to="36">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="228" from="36" to="37">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="229" from="37" to="38">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="230" from="38" to="39">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="231" from="39" to="40">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="232" from="40" to="41">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="233" from="41" to="42">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="234" from="42" to="43">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="235" from="43" to="44">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="236" from="44" to="45">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="237" from="45" to="46">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -220,14 +280,14 @@
 
 <state id="1" st_id="1">
 
-<operation id="37" st_id="1" stage="1" lat="1">
+<operation id="47" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="2576" op_0_bw="2576" op_1_bw="2576">
+<Node id="14" bw="2576" op_0_bw="2576" op_1_bw="2576">
 <![CDATA[
 entry:8 %inputLayer_read = read i2576 @_ssdm_op_Read.ap_vld.i2576P0A, i2576 %inputLayer
 
@@ -235,14 +295,14 @@ entry:8 %inputLayer_read = read i2576 @_ssdm_op_Read.ap_vld.i2576P0A, i2576 %inp
 <StgValue><ssdm name="inputLayer_read"/></StgValue>
 </operation>
 
-<operation id="38" st_id="1" stage="10" lat="10">
+<operation id="48" st_id="1" stage="9" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -253,14 +313,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="2" st_id="2">
 
-<operation id="39" st_id="2" stage="9" lat="10">
+<operation id="49" st_id="2" stage="8" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -271,14 +331,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="3" st_id="3">
 
-<operation id="40" st_id="3" stage="8" lat="10">
+<operation id="50" st_id="3" stage="7" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -289,14 +349,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="4" st_id="4">
 
-<operation id="41" st_id="4" stage="7" lat="10">
+<operation id="51" st_id="4" stage="6" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -307,14 +367,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="5" st_id="5">
 
-<operation id="42" st_id="5" stage="6" lat="10">
+<operation id="52" st_id="5" stage="5" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -325,14 +385,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="6" st_id="6">
 
-<operation id="43" st_id="6" stage="5" lat="10">
+<operation id="53" st_id="6" stage="4" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -343,14 +403,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="7" st_id="7">
 
-<operation id="44" st_id="7" stage="4" lat="10">
+<operation id="54" st_id="7" stage="3" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -361,14 +421,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="8" st_id="8">
 
-<operation id="45" st_id="8" stage="3" lat="10">
+<operation id="55" st_id="8" stage="2" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -379,32 +439,14 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 
 <state id="9" st_id="9">
 
-<operation id="46" st_id="9" stage="2" lat="10">
+<operation id="56" st_id="9" stage="1" lat="9">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
-<![CDATA[
-entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
-
-]]></Node>
-<StgValue><ssdm name="call_ret1"/></StgValue>
-</operation>
-</state>
-
-<state id="10" st_id="10">
-
-<operation id="47" st_id="10" stage="1" lat="10">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="14" bw="48" op_0_bw="48" op_1_bw="2576">
+<Node id="15" bw="48" op_0_bw="48" op_1_bw="2576">
 <![CDATA[
 entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config2>, i2576 %inputLayer_read
 
@@ -412,22 +454,7 @@ entry:9 %call_ret1 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<
 <StgValue><ssdm name="call_ret1"/></StgValue>
 </operation>
 
-<operation id="48" st_id="10" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="15" bw="8" op_0_bw="48">
-<![CDATA[
-entry:10 %layer2_out_V = extractvalue i48 %call_ret1
-
-]]></Node>
-<StgValue><ssdm name="layer2_out_V"/></StgValue>
-</operation>
-
-<operation id="49" st_id="10" stage="1" lat="1">
+<operation id="57" st_id="9" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -436,13 +463,13 @@ entry:10 %layer2_out_V = extractvalue i48 %call_ret1
 
 <Node id="16" bw="8" op_0_bw="48">
 <![CDATA[
-entry:11 %layer2_out_V_1 = extractvalue i48 %call_ret1
+entry:10 %layer2_out_V = extractvalue i48 %call_ret1
 
 ]]></Node>
-<StgValue><ssdm name="layer2_out_V_1"/></StgValue>
+<StgValue><ssdm name="layer2_out_V"/></StgValue>
 </operation>
 
-<operation id="50" st_id="10" stage="1" lat="1">
+<operation id="58" st_id="9" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -451,13 +478,13 @@ entry:11 %layer2_out_V_1 = extractvalue i48 %call_ret1
 
 <Node id="17" bw="8" op_0_bw="48">
 <![CDATA[
-entry:12 %layer2_out_V_2 = extractvalue i48 %call_ret1
+entry:11 %layer2_out_V_1 = extractvalue i48 %call_ret1
 
 ]]></Node>
-<StgValue><ssdm name="layer2_out_V_2"/></StgValue>
+<StgValue><ssdm name="layer2_out_V_1"/></StgValue>
 </operation>
 
-<operation id="51" st_id="10" stage="1" lat="1">
+<operation id="59" st_id="9" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -466,13 +493,13 @@ entry:12 %layer2_out_V_2 = extractvalue i48 %call_ret1
 
 <Node id="18" bw="8" op_0_bw="48">
 <![CDATA[
-entry:13 %layer2_out_V_3 = extractvalue i48 %call_ret1
+entry:12 %layer2_out_V_2 = extractvalue i48 %call_ret1
 
 ]]></Node>
-<StgValue><ssdm name="layer2_out_V_3"/></StgValue>
+<StgValue><ssdm name="layer2_out_V_2"/></StgValue>
 </operation>
 
-<operation id="52" st_id="10" stage="1" lat="1">
+<operation id="60" st_id="9" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -481,13 +508,13 @@ entry:13 %layer2_out_V_3 = extractvalue i48 %call_ret1
 
 <Node id="19" bw="8" op_0_bw="48">
 <![CDATA[
-entry:14 %layer2_out_V_4 = extractvalue i48 %call_ret1
+entry:13 %layer2_out_V_3 = extractvalue i48 %call_ret1
 
 ]]></Node>
-<StgValue><ssdm name="layer2_out_V_4"/></StgValue>
+<StgValue><ssdm name="layer2_out_V_3"/></StgValue>
 </operation>
 
-<operation id="53" st_id="10" stage="1" lat="1">
+<operation id="61" st_id="9" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -496,6 +523,21 @@ entry:14 %layer2_out_V_4 = extractvalue i48 %call_ret1
 
 <Node id="20" bw="8" op_0_bw="48">
 <![CDATA[
+entry:14 %layer2_out_V_4 = extractvalue i48 %call_ret1
+
+]]></Node>
+<StgValue><ssdm name="layer2_out_V_4"/></StgValue>
+</operation>
+
+<operation id="62" st_id="9" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="8" op_0_bw="48">
+<![CDATA[
 entry:15 %layer2_out_V_5 = extractvalue i48 %call_ret1
 
 ]]></Node>
@@ -503,646 +545,1174 @@ entry:15 %layer2_out_V_5 = extractvalue i48 %call_ret1
 </operation>
 </state>
 
-<state id="11" st_id="11">
+<state id="10" st_id="10">
 
-<operation id="54" st_id="11" stage="7" lat="7">
+<operation id="63" st_id="10" stage="1" lat="1">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<Node id="22" bw="48" op_0_bw="48" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-entry:16 %call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
+entry:16 %call_ret2 = call i48 @relu<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, relu_config4>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
 
 ]]></Node>
 <StgValue><ssdm name="call_ret2"/></StgValue>
+</operation>
+
+<operation id="64" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="23" bw="8" op_0_bw="48">
+<![CDATA[
+entry:17 %layer4_out_V = extractvalue i48 %call_ret2
+
+]]></Node>
+<StgValue><ssdm name="layer4_out_V"/></StgValue>
+</operation>
+
+<operation id="65" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="8" op_0_bw="48">
+<![CDATA[
+entry:18 %layer4_out_V_1 = extractvalue i48 %call_ret2
+
+]]></Node>
+<StgValue><ssdm name="layer4_out_V_1"/></StgValue>
+</operation>
+
+<operation id="66" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="8" op_0_bw="48">
+<![CDATA[
+entry:19 %layer4_out_V_2 = extractvalue i48 %call_ret2
+
+]]></Node>
+<StgValue><ssdm name="layer4_out_V_2"/></StgValue>
+</operation>
+
+<operation id="67" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="8" op_0_bw="48">
+<![CDATA[
+entry:20 %layer4_out_V_3 = extractvalue i48 %call_ret2
+
+]]></Node>
+<StgValue><ssdm name="layer4_out_V_3"/></StgValue>
+</operation>
+
+<operation id="68" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="8" op_0_bw="48">
+<![CDATA[
+entry:21 %layer4_out_V_4 = extractvalue i48 %call_ret2
+
+]]></Node>
+<StgValue><ssdm name="layer4_out_V_4"/></StgValue>
+</operation>
+
+<operation id="69" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="28" bw="8" op_0_bw="48">
+<![CDATA[
+entry:22 %layer4_out_V_5 = extractvalue i48 %call_ret2
+
+]]></Node>
+<StgValue><ssdm name="layer4_out_V_5"/></StgValue>
+</operation>
+</state>
+
+<state id="11" st_id="11">
+
+<operation id="70" st_id="11" stage="5" lat="5">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<![CDATA[
+entry:23 %call_ret3 = call i32 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer4_out_V, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_4, i8 %layer4_out_V_5
+
+]]></Node>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 </state>
 
 <state id="12" st_id="12">
 
-<operation id="55" st_id="12" stage="6" lat="7">
+<operation id="71" st_id="12" stage="4" lat="5">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-entry:16 %call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
+entry:23 %call_ret3 = call i32 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer4_out_V, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_4, i8 %layer4_out_V_5
 
 ]]></Node>
-<StgValue><ssdm name="call_ret2"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 </state>
 
 <state id="13" st_id="13">
 
-<operation id="56" st_id="13" stage="5" lat="7">
+<operation id="72" st_id="13" stage="3" lat="5">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-entry:16 %call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
+entry:23 %call_ret3 = call i32 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer4_out_V, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_4, i8 %layer4_out_V_5
 
 ]]></Node>
-<StgValue><ssdm name="call_ret2"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 </state>
 
 <state id="14" st_id="14">
 
-<operation id="57" st_id="14" stage="4" lat="7">
+<operation id="73" st_id="14" stage="2" lat="5">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-entry:16 %call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
+entry:23 %call_ret3 = call i32 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer4_out_V, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_4, i8 %layer4_out_V_5
 
 ]]></Node>
-<StgValue><ssdm name="call_ret2"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 </state>
 
 <state id="15" st_id="15">
 
-<operation id="58" st_id="15" stage="3" lat="7">
+<operation id="74" st_id="15" stage="1" lat="5">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-entry:16 %call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
+entry:23 %call_ret3 = call i32 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer4_out_V, i8 %layer4_out_V_1, i8 %layer4_out_V_2, i8 %layer4_out_V_3, i8 %layer4_out_V_4, i8 %layer4_out_V_5
 
 ]]></Node>
-<StgValue><ssdm name="call_ret2"/></StgValue>
-</operation>
-</state>
-
-<state id="16" st_id="16">
-
-<operation id="59" st_id="16" stage="2" lat="7">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="21" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
-<![CDATA[
-entry:16 %call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
-
-]]></Node>
-<StgValue><ssdm name="call_ret2"/></StgValue>
-</operation>
-</state>
-
-<state id="17" st_id="17">
-
-<operation id="60" st_id="17" stage="1" lat="7">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="21" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8">
-<![CDATA[
-entry:16 %call_ret2 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config5>, i8 %layer2_out_V, i8 %layer2_out_V_1, i8 %layer2_out_V_2, i8 %layer2_out_V_3, i8 %layer2_out_V_4, i8 %layer2_out_V_5
-
-]]></Node>
-<StgValue><ssdm name="call_ret2"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 
-<operation id="61" st_id="17" stage="1" lat="1">
+<operation id="75" st_id="15" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="8" op_0_bw="24">
+<Node id="30" bw="8" op_0_bw="32">
 <![CDATA[
-entry:17 %layer5_out_V = extractvalue i24 %call_ret2
+entry:24 %layer5_out_V = extractvalue i32 %call_ret3
 
 ]]></Node>
 <StgValue><ssdm name="layer5_out_V"/></StgValue>
 </operation>
 
-<operation id="62" st_id="17" stage="1" lat="1">
+<operation id="76" st_id="15" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="8" op_0_bw="24">
+<Node id="31" bw="8" op_0_bw="32">
 <![CDATA[
-entry:18 %layer5_out_V_1 = extractvalue i24 %call_ret2
+entry:25 %layer5_out_V_1 = extractvalue i32 %call_ret3
 
 ]]></Node>
 <StgValue><ssdm name="layer5_out_V_1"/></StgValue>
 </operation>
 
-<operation id="63" st_id="17" stage="1" lat="1">
+<operation id="77" st_id="15" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="8" op_0_bw="24">
+<Node id="32" bw="8" op_0_bw="32">
 <![CDATA[
-entry:19 %layer5_out_V_2 = extractvalue i24 %call_ret2
+entry:26 %layer5_out_V_2 = extractvalue i32 %call_ret3
 
 ]]></Node>
 <StgValue><ssdm name="layer5_out_V_2"/></StgValue>
+</operation>
+
+<operation id="78" st_id="15" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="33" bw="8" op_0_bw="32">
+<![CDATA[
+entry:27 %layer5_out_V_3 = extractvalue i32 %call_ret3
+
+]]></Node>
+<StgValue><ssdm name="layer5_out_V_3"/></StgValue>
+</operation>
+</state>
+
+<state id="16" st_id="16">
+
+<operation id="79" st_id="16" stage="1" lat="1">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="34" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
+<![CDATA[
+entry:28 %call_ret4 = call i32 @relu<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, relu_config7>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2, i8 %layer5_out_V_3
+
+]]></Node>
+<StgValue><ssdm name="call_ret4"/></StgValue>
+</operation>
+
+<operation id="80" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="35" bw="8" op_0_bw="32">
+<![CDATA[
+entry:29 %layer7_out_V = extractvalue i32 %call_ret4
+
+]]></Node>
+<StgValue><ssdm name="layer7_out_V"/></StgValue>
+</operation>
+
+<operation id="81" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="36" bw="8" op_0_bw="32">
+<![CDATA[
+entry:30 %layer7_out_V_1 = extractvalue i32 %call_ret4
+
+]]></Node>
+<StgValue><ssdm name="layer7_out_V_1"/></StgValue>
+</operation>
+
+<operation id="82" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="37" bw="8" op_0_bw="32">
+<![CDATA[
+entry:31 %layer7_out_V_2 = extractvalue i32 %call_ret4
+
+]]></Node>
+<StgValue><ssdm name="layer7_out_V_2"/></StgValue>
+</operation>
+
+<operation id="83" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="38" bw="8" op_0_bw="32">
+<![CDATA[
+entry:32 %layer7_out_V_3 = extractvalue i32 %call_ret4
+
+]]></Node>
+<StgValue><ssdm name="layer7_out_V_3"/></StgValue>
+</operation>
+</state>
+
+<state id="17" st_id="17">
+
+<operation id="84" st_id="17" stage="4" lat="4">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="39" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
+<![CDATA[
+entry:33 %call_ret5 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer7_out_V, i8 %layer7_out_V_1, i8 %layer7_out_V_2, i8 %layer7_out_V_3
+
+]]></Node>
+<StgValue><ssdm name="call_ret5"/></StgValue>
 </operation>
 </state>
 
 <state id="18" st_id="18">
 
-<operation id="64" st_id="18" stage="5" lat="5">
+<operation id="85" st_id="18" stage="3" lat="4">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="39" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
 <![CDATA[
-entry:20 %call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2
+entry:33 %call_ret5 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer7_out_V, i8 %layer7_out_V_1, i8 %layer7_out_V_2, i8 %layer7_out_V_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ret3"/></StgValue>
+<StgValue><ssdm name="call_ret5"/></StgValue>
 </operation>
 </state>
 
 <state id="19" st_id="19">
 
-<operation id="65" st_id="19" stage="4" lat="5">
+<operation id="86" st_id="19" stage="2" lat="4">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="39" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
 <![CDATA[
-entry:20 %call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2
+entry:33 %call_ret5 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer7_out_V, i8 %layer7_out_V_1, i8 %layer7_out_V_2, i8 %layer7_out_V_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ret3"/></StgValue>
+<StgValue><ssdm name="call_ret5"/></StgValue>
 </operation>
 </state>
 
 <state id="20" st_id="20">
 
-<operation id="66" st_id="20" stage="3" lat="5">
+<operation id="87" st_id="20" stage="1" lat="4">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="39" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
 <![CDATA[
-entry:20 %call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2
+entry:33 %call_ret5 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer7_out_V, i8 %layer7_out_V_1, i8 %layer7_out_V_2, i8 %layer7_out_V_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ret3"/></StgValue>
-</operation>
-</state>
-
-<state id="21" st_id="21">
-
-<operation id="67" st_id="21" stage="2" lat="5">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="25" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
-<![CDATA[
-entry:20 %call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2
-
-]]></Node>
-<StgValue><ssdm name="call_ret3"/></StgValue>
-</operation>
-</state>
-
-<state id="22" st_id="22">
-
-<operation id="68" st_id="22" stage="1" lat="5">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="25" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
-<![CDATA[
-entry:20 %call_ret3 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config8>, i8 %layer5_out_V, i8 %layer5_out_V_1, i8 %layer5_out_V_2
-
-]]></Node>
-<StgValue><ssdm name="call_ret3"/></StgValue>
+<StgValue><ssdm name="call_ret5"/></StgValue>
 </operation>
 
-<operation id="69" st_id="22" stage="1" lat="1">
+<operation id="88" st_id="20" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="8" op_0_bw="16">
+<Node id="40" bw="8" op_0_bw="16">
 <![CDATA[
-entry:21 %layer8_out_V = extractvalue i16 %call_ret3
+entry:34 %layer8_out_V = extractvalue i16 %call_ret5
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V"/></StgValue>
 </operation>
 
-<operation id="70" st_id="22" stage="1" lat="1">
+<operation id="89" st_id="20" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="8" op_0_bw="16">
+<Node id="41" bw="8" op_0_bw="16">
 <![CDATA[
-entry:22 %layer8_out_V_1 = extractvalue i16 %call_ret3
+entry:35 %layer8_out_V_1 = extractvalue i16 %call_ret5
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_1"/></StgValue>
 </operation>
 </state>
 
-<state id="23" st_id="23">
+<state id="21" st_id="21">
 
-<operation id="71" st_id="23" stage="2" lat="2">
+<operation id="90" st_id="21" stage="1" lat="1">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8">
+<Node id="42" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-entry:23 %call_ret4 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config11>, i8 %layer8_out_V, i8 %layer8_out_V_1
+entry:36 %call_ret6 = call i16 @relu<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, relu_config10>, i8 %layer8_out_V, i8 %layer8_out_V_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ret4"/></StgValue>
-</operation>
-</state>
-
-<state id="24" st_id="24">
-
-<operation id="72" st_id="24" stage="1" lat="2">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="28" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8">
-<![CDATA[
-entry:23 %call_ret4 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config11>, i8 %layer8_out_V, i8 %layer8_out_V_1
-
-]]></Node>
-<StgValue><ssdm name="call_ret4"/></StgValue>
+<StgValue><ssdm name="call_ret6"/></StgValue>
 </operation>
 
-<operation id="73" st_id="24" stage="1" lat="1">
+<operation id="91" st_id="21" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="8" op_0_bw="24">
+<Node id="43" bw="8" op_0_bw="16">
 <![CDATA[
-entry:24 %layer11_out_V = extractvalue i24 %call_ret4
+entry:37 %layer10_out_V = extractvalue i16 %call_ret6
+
+]]></Node>
+<StgValue><ssdm name="layer10_out_V"/></StgValue>
+</operation>
+
+<operation id="92" st_id="21" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="44" bw="8" op_0_bw="16">
+<![CDATA[
+entry:38 %layer10_out_V_1 = extractvalue i16 %call_ret6
+
+]]></Node>
+<StgValue><ssdm name="layer10_out_V_1"/></StgValue>
+</operation>
+</state>
+
+<state id="22" st_id="22">
+
+<operation id="93" st_id="22" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="45" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+entry:39 %call_ret7 = call i32 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config11>, i8 %layer10_out_V, i8 %layer10_out_V_1
+
+]]></Node>
+<StgValue><ssdm name="call_ret7"/></StgValue>
+</operation>
+</state>
+
+<state id="23" st_id="23">
+
+<operation id="94" st_id="23" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="45" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+entry:39 %call_ret7 = call i32 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config11>, i8 %layer10_out_V, i8 %layer10_out_V_1
+
+]]></Node>
+<StgValue><ssdm name="call_ret7"/></StgValue>
+</operation>
+
+<operation id="95" st_id="23" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="46" bw="8" op_0_bw="32">
+<![CDATA[
+entry:40 %layer11_out_V = extractvalue i32 %call_ret7
 
 ]]></Node>
 <StgValue><ssdm name="layer11_out_V"/></StgValue>
 </operation>
 
-<operation id="74" st_id="24" stage="1" lat="1">
+<operation id="96" st_id="23" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="8" op_0_bw="24">
+<Node id="47" bw="8" op_0_bw="32">
 <![CDATA[
-entry:25 %layer11_out_V_1 = extractvalue i24 %call_ret4
+entry:41 %layer11_out_V_1 = extractvalue i32 %call_ret7
 
 ]]></Node>
 <StgValue><ssdm name="layer11_out_V_1"/></StgValue>
 </operation>
 
-<operation id="75" st_id="24" stage="1" lat="1">
+<operation id="97" st_id="23" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="8" op_0_bw="24">
+<Node id="48" bw="8" op_0_bw="32">
 <![CDATA[
-entry:26 %layer11_out_V_2 = extractvalue i24 %call_ret4
+entry:42 %layer11_out_V_2 = extractvalue i32 %call_ret7
 
 ]]></Node>
 <StgValue><ssdm name="layer11_out_V_2"/></StgValue>
+</operation>
+
+<operation id="98" st_id="23" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="49" bw="8" op_0_bw="32">
+<![CDATA[
+entry:43 %layer11_out_V_3 = extractvalue i32 %call_ret7
+
+]]></Node>
+<StgValue><ssdm name="layer11_out_V_3"/></StgValue>
+</operation>
+</state>
+
+<state id="24" st_id="24">
+
+<operation id="99" st_id="24" stage="1" lat="1">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="50" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
+<![CDATA[
+entry:44 %call_ret8 = call i32 @relu<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, relu_config13>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2, i8 %layer11_out_V_3
+
+]]></Node>
+<StgValue><ssdm name="call_ret8"/></StgValue>
+</operation>
+
+<operation id="100" st_id="24" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="51" bw="8" op_0_bw="32">
+<![CDATA[
+entry:45 %layer13_out_V = extractvalue i32 %call_ret8
+
+]]></Node>
+<StgValue><ssdm name="layer13_out_V"/></StgValue>
+</operation>
+
+<operation id="101" st_id="24" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="52" bw="8" op_0_bw="32">
+<![CDATA[
+entry:46 %layer13_out_V_1 = extractvalue i32 %call_ret8
+
+]]></Node>
+<StgValue><ssdm name="layer13_out_V_1"/></StgValue>
+</operation>
+
+<operation id="102" st_id="24" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="53" bw="8" op_0_bw="32">
+<![CDATA[
+entry:47 %layer13_out_V_2 = extractvalue i32 %call_ret8
+
+]]></Node>
+<StgValue><ssdm name="layer13_out_V_2"/></StgValue>
+</operation>
+
+<operation id="103" st_id="24" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="54" bw="8" op_0_bw="32">
+<![CDATA[
+entry:48 %layer13_out_V_3 = extractvalue i32 %call_ret8
+
+]]></Node>
+<StgValue><ssdm name="layer13_out_V_3"/></StgValue>
 </operation>
 </state>
 
 <state id="25" st_id="25">
 
-<operation id="76" st_id="25" stage="5" lat="5">
+<operation id="104" st_id="25" stage="4" lat="4">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="55" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
 <![CDATA[
-entry:27 %call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2
+entry:49 %call_ret9 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer13_out_V, i8 %layer13_out_V_1, i8 %layer13_out_V_2, i8 %layer13_out_V_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ret5"/></StgValue>
+<StgValue><ssdm name="call_ret9"/></StgValue>
 </operation>
 </state>
 
 <state id="26" st_id="26">
 
-<operation id="77" st_id="26" stage="4" lat="5">
+<operation id="105" st_id="26" stage="3" lat="4">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="55" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
 <![CDATA[
-entry:27 %call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2
+entry:49 %call_ret9 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer13_out_V, i8 %layer13_out_V_1, i8 %layer13_out_V_2, i8 %layer13_out_V_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ret5"/></StgValue>
+<StgValue><ssdm name="call_ret9"/></StgValue>
 </operation>
 </state>
 
 <state id="27" st_id="27">
 
-<operation id="78" st_id="27" stage="3" lat="5">
+<operation id="106" st_id="27" stage="2" lat="4">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="55" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
 <![CDATA[
-entry:27 %call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2
+entry:49 %call_ret9 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer13_out_V, i8 %layer13_out_V_1, i8 %layer13_out_V_2, i8 %layer13_out_V_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ret5"/></StgValue>
+<StgValue><ssdm name="call_ret9"/></StgValue>
 </operation>
 </state>
 
 <state id="28" st_id="28">
 
-<operation id="79" st_id="28" stage="2" lat="5">
+<operation id="107" st_id="28" stage="1" lat="4">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="55" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8">
 <![CDATA[
-entry:27 %call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2
+entry:49 %call_ret9 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer13_out_V, i8 %layer13_out_V_1, i8 %layer13_out_V_2, i8 %layer13_out_V_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ret5"/></StgValue>
-</operation>
-</state>
-
-<state id="29" st_id="29">
-
-<operation id="80" st_id="29" stage="1" lat="5">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="32" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8">
-<![CDATA[
-entry:27 %call_ret5 = call i24 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config14>, i8 %layer11_out_V, i8 %layer11_out_V_1, i8 %layer11_out_V_2
-
-]]></Node>
-<StgValue><ssdm name="call_ret5"/></StgValue>
+<StgValue><ssdm name="call_ret9"/></StgValue>
 </operation>
 
-<operation id="81" st_id="29" stage="1" lat="1">
+<operation id="108" st_id="28" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="8" op_0_bw="24">
+<Node id="56" bw="8" op_0_bw="24">
 <![CDATA[
-entry:28 %layer14_out_V = extractvalue i24 %call_ret5
+entry:50 %layer14_out_V = extractvalue i24 %call_ret9
 
 ]]></Node>
 <StgValue><ssdm name="layer14_out_V"/></StgValue>
 </operation>
 
-<operation id="82" st_id="29" stage="1" lat="1">
+<operation id="109" st_id="28" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="8" op_0_bw="24">
+<Node id="57" bw="8" op_0_bw="24">
 <![CDATA[
-entry:29 %layer14_out_V_1 = extractvalue i24 %call_ret5
+entry:51 %layer14_out_V_1 = extractvalue i24 %call_ret9
 
 ]]></Node>
 <StgValue><ssdm name="layer14_out_V_1"/></StgValue>
 </operation>
 
-<operation id="83" st_id="29" stage="1" lat="1">
+<operation id="110" st_id="28" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="8" op_0_bw="24">
+<Node id="58" bw="8" op_0_bw="24">
 <![CDATA[
-entry:30 %layer14_out_V_2 = extractvalue i24 %call_ret5
+entry:52 %layer14_out_V_2 = extractvalue i24 %call_ret9
 
 ]]></Node>
 <StgValue><ssdm name="layer14_out_V_2"/></StgValue>
 </operation>
 </state>
 
-<state id="30" st_id="30">
+<state id="29" st_id="29">
 
-<operation id="84" st_id="30" stage="5" lat="5">
+<operation id="111" st_id="29" stage="1" lat="1">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="8" op_0_bw="8" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<Node id="59" bw="24" op_0_bw="24" op_1_bw="8" op_2_bw="8" op_3_bw="8">
 <![CDATA[
-entry:31 %layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2
+entry:53 %call_ret10 = call i24 @relu<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, relu_config16>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2
 
 ]]></Node>
-<StgValue><ssdm name="layer17_out_V"/></StgValue>
-</operation>
-</state>
-
-<state id="31" st_id="31">
-
-<operation id="85" st_id="31" stage="4" lat="5">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="36" bw="8" op_0_bw="8" op_1_bw="8" op_2_bw="8" op_3_bw="8">
-<![CDATA[
-entry:31 %layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2
-
-]]></Node>
-<StgValue><ssdm name="layer17_out_V"/></StgValue>
-</operation>
-</state>
-
-<state id="32" st_id="32">
-
-<operation id="86" st_id="32" stage="3" lat="5">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="36" bw="8" op_0_bw="8" op_1_bw="8" op_2_bw="8" op_3_bw="8">
-<![CDATA[
-entry:31 %layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2
-
-]]></Node>
-<StgValue><ssdm name="layer17_out_V"/></StgValue>
-</operation>
-</state>
-
-<state id="33" st_id="33">
-
-<operation id="87" st_id="33" stage="2" lat="5">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="36" bw="8" op_0_bw="8" op_1_bw="8" op_2_bw="8" op_3_bw="8">
-<![CDATA[
-entry:31 %layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2
-
-]]></Node>
-<StgValue><ssdm name="layer17_out_V"/></StgValue>
-</operation>
-</state>
-
-<state id="34" st_id="34">
-
-<operation id="88" st_id="34" stage="1" lat="5">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="36" bw="8" op_0_bw="8" op_1_bw="8" op_2_bw="8" op_3_bw="8">
-<![CDATA[
-entry:31 %layer17_out_V = call i8 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer14_out_V, i8 %layer14_out_V_1, i8 %layer14_out_V_2
-
-]]></Node>
-<StgValue><ssdm name="layer17_out_V"/></StgValue>
+<StgValue><ssdm name="call_ret10"/></StgValue>
 </operation>
 
-<operation id="89" st_id="34" stage="3" lat="3">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="37" bw="4" op_0_bw="4" op_1_bw="8" op_2_bw="10">
-<![CDATA[
-entry:32 %call_ret = call i4 @sigmoid<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, sigmoid_config19>, i8 %layer17_out_V, i10 %sigmoid_table
-
-]]></Node>
-<StgValue><ssdm name="call_ret"/></StgValue>
-</operation>
-</state>
-
-<state id="35" st_id="35">
-
-<operation id="90" st_id="35" stage="2" lat="3">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="37" bw="4" op_0_bw="4" op_1_bw="8" op_2_bw="10">
-<![CDATA[
-entry:32 %call_ret = call i4 @sigmoid<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, sigmoid_config19>, i8 %layer17_out_V, i10 %sigmoid_table
-
-]]></Node>
-<StgValue><ssdm name="call_ret"/></StgValue>
-</operation>
-</state>
-
-<state id="36" st_id="36">
-
-<operation id="91" st_id="36" stage="1" lat="1">
+<operation id="112" st_id="29" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="60" bw="8" op_0_bw="24">
+<![CDATA[
+entry:54 %layer16_out_V = extractvalue i24 %call_ret10
+
+]]></Node>
+<StgValue><ssdm name="layer16_out_V"/></StgValue>
+</operation>
+
+<operation id="113" st_id="29" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="61" bw="8" op_0_bw="24">
+<![CDATA[
+entry:55 %layer16_out_V_1 = extractvalue i24 %call_ret10
+
+]]></Node>
+<StgValue><ssdm name="layer16_out_V_1"/></StgValue>
+</operation>
+
+<operation id="114" st_id="29" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="62" bw="8" op_0_bw="24">
+<![CDATA[
+entry:56 %layer16_out_V_2 = extractvalue i24 %call_ret10
+
+]]></Node>
+<StgValue><ssdm name="layer16_out_V_2"/></StgValue>
+</operation>
+</state>
+
+<state id="30" st_id="30">
+
+<operation id="115" st_id="30" stage="6" lat="6">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<![CDATA[
+entry:57 %call_ret11 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer16_out_V, i8 %layer16_out_V_1, i8 %layer16_out_V_2
+
+]]></Node>
+<StgValue><ssdm name="call_ret11"/></StgValue>
+</operation>
+</state>
+
+<state id="31" st_id="31">
+
+<operation id="116" st_id="31" stage="5" lat="6">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<![CDATA[
+entry:57 %call_ret11 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer16_out_V, i8 %layer16_out_V_1, i8 %layer16_out_V_2
+
+]]></Node>
+<StgValue><ssdm name="call_ret11"/></StgValue>
+</operation>
+</state>
+
+<state id="32" st_id="32">
+
+<operation id="117" st_id="32" stage="4" lat="6">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<![CDATA[
+entry:57 %call_ret11 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer16_out_V, i8 %layer16_out_V_1, i8 %layer16_out_V_2
+
+]]></Node>
+<StgValue><ssdm name="call_ret11"/></StgValue>
+</operation>
+</state>
+
+<state id="33" st_id="33">
+
+<operation id="118" st_id="33" stage="3" lat="6">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<![CDATA[
+entry:57 %call_ret11 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer16_out_V, i8 %layer16_out_V_1, i8 %layer16_out_V_2
+
+]]></Node>
+<StgValue><ssdm name="call_ret11"/></StgValue>
+</operation>
+</state>
+
+<state id="34" st_id="34">
+
+<operation id="119" st_id="34" stage="2" lat="6">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<![CDATA[
+entry:57 %call_ret11 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer16_out_V, i8 %layer16_out_V_1, i8 %layer16_out_V_2
+
+]]></Node>
+<StgValue><ssdm name="call_ret11"/></StgValue>
+</operation>
+</state>
+
+<state id="35" st_id="35">
+
+<operation id="120" st_id="35" stage="1" lat="6">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="8">
+<![CDATA[
+entry:57 %call_ret11 = call i16 @dense_latency<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, config17>, i8 %layer16_out_V, i8 %layer16_out_V_1, i8 %layer16_out_V_2
+
+]]></Node>
+<StgValue><ssdm name="call_ret11"/></StgValue>
+</operation>
+
+<operation id="121" st_id="35" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="64" bw="8" op_0_bw="16">
+<![CDATA[
+entry:58 %layer17_out_V = extractvalue i16 %call_ret11
+
+]]></Node>
+<StgValue><ssdm name="layer17_out_V"/></StgValue>
+</operation>
+
+<operation id="122" st_id="35" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="65" bw="8" op_0_bw="16">
+<![CDATA[
+entry:59 %layer17_out_V_1 = extractvalue i16 %call_ret11
+
+]]></Node>
+<StgValue><ssdm name="layer17_out_V_1"/></StgValue>
+</operation>
+</state>
+
+<state id="36" st_id="36">
+
+<operation id="123" st_id="36" stage="11" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="37" st_id="37">
+
+<operation id="124" st_id="37" stage="10" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="38" st_id="38">
+
+<operation id="125" st_id="38" stage="9" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="39" st_id="39">
+
+<operation id="126" st_id="39" stage="8" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="40" st_id="40">
+
+<operation id="127" st_id="40" stage="7" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="41" st_id="41">
+
+<operation id="128" st_id="41" stage="6" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="42" st_id="42">
+
+<operation id="129" st_id="42" stage="5" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="43" st_id="43">
+
+<operation id="130" st_id="43" stage="4" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="44" st_id="44">
+
+<operation id="131" st_id="44" stage="3" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="45" st_id="45">
+
+<operation id="132" st_id="45" stage="2" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
+<![CDATA[
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
+
+]]></Node>
+<StgValue><ssdm name="call_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="46" st_id="46">
+
+<operation id="133" st_id="46" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
 entry:0 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0
 
@@ -1150,14 +1720,14 @@ entry:0 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 429496
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
 </operation>
 
-<operation id="92" st_id="36" stage="1" lat="1">
+<operation id="134" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
 entry:1 %spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2
 
@@ -1165,14 +1735,14 @@ entry:1 %spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @e
 <StgValue><ssdm name="spectopmodule_ln0"/></StgValue>
 </operation>
 
-<operation id="93" st_id="36" stage="1" lat="1">
+<operation id="135" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="0" op_0_bw="0" op_1_bw="2576">
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="2576">
 <![CDATA[
 entry:2 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2576 %inputLayer
 
@@ -1180,14 +1750,14 @@ entry:2 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2576 %inputL
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
-<operation id="94" st_id="36" stage="1" lat="1">
+<operation id="136" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="0" op_0_bw="0" op_1_bw="2576" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="9" bw="0" op_0_bw="0" op_1_bw="2576" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
 entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2576 %inputLayer, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
 
@@ -1195,14 +1765,14 @@ entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2576 %
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="95" st_id="36" stage="1" lat="1">
+<operation id="137" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="0" op_0_bw="0" op_1_bw="8">
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="8">
 <![CDATA[
 entry:4 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %layer19_out_0
 
@@ -1210,14 +1780,14 @@ entry:4 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %layer19_o
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
-<operation id="96" st_id="36" stage="1" lat="1">
+<operation id="138" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="11" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
 entry:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %layer19_out_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
 
@@ -1225,14 +1795,14 @@ entry:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %lay
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="97" st_id="36" stage="1" lat="1">
+<operation id="139" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="0" op_0_bw="0" op_1_bw="8">
+<Node id="12" bw="0" op_0_bw="0" op_1_bw="8">
 <![CDATA[
 entry:6 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %layer19_out_1
 
@@ -1240,14 +1810,14 @@ entry:6 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %layer19_o
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
-<operation id="98" st_id="36" stage="1" lat="1">
+<operation id="140" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
 entry:7 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %layer19_out_1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
 
@@ -1255,79 +1825,94 @@ entry:7 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %lay
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="99" st_id="36" stage="1" lat="3">
+<operation id="141" st_id="46" stage="1" lat="11">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="4" op_0_bw="4" op_1_bw="8" op_2_bw="10">
+<Node id="66" bw="16" op_0_bw="16" op_1_bw="8" op_2_bw="8" op_3_bw="17" op_4_bw="18">
 <![CDATA[
-entry:32 %call_ret = call i4 @sigmoid<ap_fixed<8, 4, 5, 3, 0>, ap_fixed<8, 4, 5, 3, 0>, sigmoid_config19>, i8 %layer17_out_V, i10 %sigmoid_table
+entry:60 %call_ret = call i16 @softmax_stable<ap_fixed,ap_fixed<8,4,5,3,0>,softmax_config19>, i8 %layer17_out_V, i8 %layer17_out_V_1, i17 %exp_table, i18 %invert_table
 
 ]]></Node>
 <StgValue><ssdm name="call_ret"/></StgValue>
 </operation>
 
-<operation id="100" st_id="36" stage="1" lat="1">
+<operation id="142" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="8" op_0_bw="4">
+<Node id="67" bw="8" op_0_bw="16">
 <![CDATA[
-entry:33 %zext_ln66 = zext i4 %call_ret
+entry:61 %layer19_out_0_ret = extractvalue i16 %call_ret
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln66"/></StgValue>
+<StgValue><ssdm name="layer19_out_0_ret"/></StgValue>
 </operation>
 
-<operation id="101" st_id="36" stage="1" lat="1">
+<operation id="143" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
+<Node id="68" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-entry:34 %write_ln66 = write void @_ssdm_op_Write.ap_vld.i8P0A, i8 %layer19_out_0, i8 8
+entry:62 %write_ln386 = write void @_ssdm_op_Write.ap_vld.i8P0A, i8 %layer19_out_0, i8 %layer19_out_0_ret
 
 ]]></Node>
-<StgValue><ssdm name="write_ln66"/></StgValue>
+<StgValue><ssdm name="write_ln386"/></StgValue>
 </operation>
 
-<operation id="102" st_id="36" stage="1" lat="1">
+<operation id="144" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
+<Node id="69" bw="8" op_0_bw="16">
 <![CDATA[
-entry:35 %write_ln66 = write void @_ssdm_op_Write.ap_vld.i8P0A, i8 %layer19_out_1, i8 %zext_ln66
+entry:63 %layer19_out_1_ret = extractvalue i16 %call_ret
 
 ]]></Node>
-<StgValue><ssdm name="write_ln66"/></StgValue>
+<StgValue><ssdm name="layer19_out_1_ret"/></StgValue>
 </operation>
 
-<operation id="103" st_id="36" stage="1" lat="1">
+<operation id="145" st_id="46" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0">
+<Node id="70" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-entry:36 %ret_ln68 = ret
+entry:64 %write_ln386 = write void @_ssdm_op_Write.ap_vld.i8P0A, i8 %layer19_out_1, i8 %layer19_out_1_ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln68"/></StgValue>
+<StgValue><ssdm name="write_ln386"/></StgValue>
+</operation>
+
+<operation id="146" st_id="46" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="71" bw="0">
+<![CDATA[
+entry:65 %ret_ln88 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln88"/></StgValue>
 </operation>
 </state>
 </state_list>

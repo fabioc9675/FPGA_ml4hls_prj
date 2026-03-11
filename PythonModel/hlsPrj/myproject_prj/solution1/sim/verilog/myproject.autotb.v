@@ -28,7 +28,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 5;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 35;
+parameter LATENCY_ESTIMATION = 45;
 parameter LENGTH_inputLayer = 1;
 parameter LENGTH_layer19_out_0 = 1;
 parameter LENGTH_layer19_out_1 = 1;

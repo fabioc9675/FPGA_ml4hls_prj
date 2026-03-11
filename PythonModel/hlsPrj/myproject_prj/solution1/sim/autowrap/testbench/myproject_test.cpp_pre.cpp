@@ -86545,33 +86545,43 @@ template <typename T, unsigned N, T (*func)(T)> class lookup_table {
        
 # 40 "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cstdio" 3
 # 9 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/defines.h" 2
-# 22 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/defines.h"
+# 27 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/defines.h"
 typedef ap_fixed<16,6> input_t;
 typedef ap_fixed<8,4> fc1_accum_t;
 typedef ap_fixed<8,4> layer2_t;
 typedef ap_fixed<8,5> weight2_t;
 typedef ap_fixed<8,5> bias2_t;
 typedef ap_uint<1> layer2_index;
+typedef ap_fixed<8,4> layer4_t;
+typedef ap_fixed<18,8> relu0_table_t;
 typedef ap_fixed<8,4> fc2_accum_t;
 typedef ap_fixed<8,4> layer5_t;
 typedef ap_fixed<8,5> weight5_t;
 typedef ap_fixed<8,5> bias5_t;
 typedef ap_uint<1> layer5_index;
+typedef ap_fixed<8,4> layer7_t;
+typedef ap_fixed<18,8> relu1_table_t;
 typedef ap_fixed<8,4> fc3_accum_t;
 typedef ap_fixed<8,4> layer8_t;
 typedef ap_fixed<8,5> weight8_t;
 typedef ap_fixed<8,5> bias8_t;
 typedef ap_uint<1> layer8_index;
+typedef ap_fixed<8,4> layer10_t;
+typedef ap_fixed<18,8> relu2_table_t;
 typedef ap_fixed<8,4> fc4_accum_t;
 typedef ap_fixed<8,4> layer11_t;
 typedef ap_fixed<8,5> weight11_t;
 typedef ap_fixed<8,5> bias11_t;
 typedef ap_uint<1> layer11_index;
+typedef ap_fixed<8,4> layer13_t;
+typedef ap_fixed<18,8> relu3_table_t;
 typedef ap_fixed<8,4> fc5_accum_t;
 typedef ap_fixed<8,4> layer14_t;
 typedef ap_fixed<8,5> weight14_t;
 typedef ap_fixed<8,5> bias14_t;
 typedef ap_uint<1> layer14_index;
+typedef ap_fixed<8,4> layer16_t;
+typedef ap_fixed<18,8> relu4_table_t;
 typedef ap_fixed<8,4> output_accum_t;
 typedef ap_fixed<8,4> layer17_t;
 typedef ap_fixed<16,7> weight17_t;
@@ -86579,6 +86589,8 @@ typedef ap_fixed<16,7> bias17_t;
 typedef ap_uint<1> layer17_index;
 typedef ap_fixed<8,4> result_t;
 typedef ap_fixed<18,8> outputActivation_table_t;
+typedef ap_fixed<18,8,AP_RND,AP_SAT,0> outputActivation_exp_table_t;
+typedef ap_fixed<18,8,AP_RND,AP_SAT,0> outputActivation_inv_table_t;
 # 9 "C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/firmware/myproject.h" 2
 
 

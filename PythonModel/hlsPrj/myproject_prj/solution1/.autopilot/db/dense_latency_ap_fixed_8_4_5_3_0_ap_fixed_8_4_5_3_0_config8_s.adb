@@ -9,7 +9,7 @@
       <module_structure>Pipeline</module_structure>
       <ret_bitwidth>16</ret_bitwidth>
       <ports class_id="2" tracking_level="0" version="0">
-        <count>3</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item class_id="3" tracking_level="1" version="0" object_id="_1">
           <Value class_id="4" tracking_level="0" version="0">
@@ -34,7 +34,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1969317477</coreId>
+              <coreId>1601200424</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -52,6 +52,42 @@
             <Obj>
               <type>1</type>
               <id>2</id>
+              <name>p_read1</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName>a.V</originalName>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1852142702</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <direction>0</direction>
+          <if_type>0</if_type>
+          <array_size>0</array_size>
+          <bit_vecs>
+            <count>0</count>
+            <item_version>0</item_version>
+          </bit_vecs>
+        </item>
+        <item class_id_reference="3" object_id="_3">
+          <Value>
+            <Obj>
+              <type>1</type>
+              <id>3</id>
               <name>p_read2</name>
               <fileName/>
               <fileDirectory/>
@@ -70,7 +106,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1969317477</coreId>
+              <coreId>1852142702</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -83,11 +119,11 @@
             <item_version>0</item_version>
           </bit_vecs>
         </item>
-        <item class_id_reference="3" object_id="_3">
+        <item class_id_reference="3" object_id="_4">
           <Value>
             <Obj>
               <type>1</type>
-              <id>3</id>
+              <id>4</id>
               <name>p_read3</name>
               <fileName/>
               <fileDirectory/>
@@ -106,7 +142,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1059637136</coreId>
+              <coreId>1601200424</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -121,19 +157,19 @@
         </item>
       </ports>
       <nodes class_id="8" tracking_level="0" version="0">
-        <count>18</count>
+        <count>39</count>
         <item_version>0</item_version>
-        <item class_id="9" tracking_level="1" version="0" object_id="_4">
+        <item class_id="9" tracking_level="1" version="0" object_id="_5">
           <Value>
             <Obj>
               <type>0</type>
-              <id>6</id>
-              <name>p_read_1</name>
-              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <id>7</id>
+              <name>p_read37</name>
+              <fileName>firmware/nnet_utils/nnet_mult.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1270</lineNumber>
-              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
-              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <lineNumber>70</lineNumber>
+              <contextFuncName>product</contextFuncName>
+              <contextNormFuncName>product</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -144,10 +180,10 @@
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
-                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
-                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                        <first>firmware/nnet_utils/nnet_mult.h</first>
+                        <second>product</second>
                       </first>
-                      <second>1270</second>
+                      <second>70</second>
                     </item>
                   </second>
                 </item>
@@ -160,7 +196,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>741487420</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -168,8 +204,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>26</item>
-            <item>27</item>
+            <item>48</item>
+            <item>49</item>
           </oprand_edges>
           <opcode>read</opcode>
           <m_Display>0</m_Display>
@@ -180,17 +216,17 @@
           <m_topoIndex>1</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_5">
+        <item class_id_reference="9" object_id="_6">
           <Value>
             <Obj>
               <type>0</type>
-              <id>7</id>
-              <name>p_read_2</name>
-              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <id>8</id>
+              <name>p_read26</name>
+              <fileName>firmware/nnet_utils/nnet_mult.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1270</lineNumber>
-              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
-              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <lineNumber>70</lineNumber>
+              <contextFuncName>product</contextFuncName>
+              <contextNormFuncName>product</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -201,10 +237,10 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
-                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                        <first>firmware/nnet_utils/nnet_mult.h</first>
+                        <second>product</second>
                       </first>
-                      <second>1270</second>
+                      <second>70</second>
                     </item>
                   </second>
                 </item>
@@ -217,7 +253,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>741487420</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -225,8 +261,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>28</item>
-            <item>29</item>
+            <item>50</item>
+            <item>51</item>
           </oprand_edges>
           <opcode>read</opcode>
           <m_Display>0</m_Display>
@@ -237,17 +273,17 @@
           <m_topoIndex>2</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_6">
+        <item class_id_reference="9" object_id="_7">
           <Value>
             <Obj>
               <type>0</type>
-              <id>8</id>
-              <name>p_read_3</name>
-              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <id>9</id>
+              <name>p_read15</name>
+              <fileName>firmware/nnet_utils/nnet_mult.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1270</lineNumber>
-              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
-              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <lineNumber>70</lineNumber>
+              <contextFuncName>product</contextFuncName>
+              <contextNormFuncName>product</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -258,10 +294,10 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
-                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                        <first>firmware/nnet_utils/nnet_mult.h</first>
+                        <second>product</second>
                       </first>
-                      <second>1270</second>
+                      <second>70</second>
                     </item>
                   </second>
                 </item>
@@ -274,7 +310,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1110572992</coreId>
+              <coreId>1885415456</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -282,8 +318,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>30</item>
-            <item>31</item>
+            <item>52</item>
+            <item>53</item>
           </oprand_edges>
           <opcode>read</opcode>
           <m_Display>0</m_Display>
@@ -294,17 +330,17 @@
           <m_topoIndex>3</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_7">
+        <item class_id_reference="9" object_id="_8">
           <Value>
             <Obj>
               <type>0</type>
-              <id>9</id>
-              <name>sext_ln1270</name>
-              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <id>10</id>
+              <name>p_read_14</name>
+              <fileName>firmware/nnet_utils/nnet_mult.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1270</lineNumber>
-              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
-              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <lineNumber>70</lineNumber>
+              <contextFuncName>product</contextFuncName>
+              <contextNormFuncName>product</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -315,10 +351,10 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
-                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                        <first>firmware/nnet_utils/nnet_mult.h</first>
+                        <second>product</second>
                       </first>
-                      <second>1270</second>
+                      <second>70</second>
                     </item>
                   </second>
                 </item>
@@ -331,189 +367,18 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>11</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>32</item>
-          </oprand_edges>
-          <opcode>sext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>11</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_8">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>10</id>
-              <name>mul_ln1270</name>
-              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>1270</lineNumber>
-              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
-              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
-                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
-                      </first>
-                      <second>1270</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>mul_8s_7ns_11_3_0_U80</rtlName>
-              <control>auto</control>
-              <opType>mul</opType>
-              <implIndex>dsp</implIndex>
-              <coreName>Mul_DSP</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>5</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>11</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>33</item>
-            <item>35</item>
-          </oprand_edges>
-          <opcode>mul</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.93</m_delay>
-          <m_topoIndex>12</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_9">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>11</id>
-              <name>trunc_ln</name>
-              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>818</lineNumber>
-              <contextFuncName>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
-              <contextNormFuncName>operator_assign_16_9_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
-                        <second>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
-                      </first>
-                      <second>818</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>ap_return_1_int_reg</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>1066035008</coreId>
+              <coreId>1885415456</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
           <oprand_edges>
-            <count>4</count>
+            <count>2</count>
             <item_version>0</item_version>
-            <item>37</item>
-            <item>38</item>
-            <item>40</item>
-            <item>42</item>
+            <item>54</item>
+            <item>55</item>
           </oprand_edges>
-          <opcode>partselect</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>14</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_10">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>12</id>
-              <name>trunc_ln1273</name>
-              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>1273</lineNumber>
-              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
-              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
-                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
-                      </first>
-                      <second>1273</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>trunc_ln1273_fu_107_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>1066012608</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>6</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>43</item>
-          </oprand_edges>
-          <opcode>trunc</opcode>
+          <opcode>read</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
@@ -522,12 +387,12 @@
           <m_topoIndex>4</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_11">
+        <item class_id_reference="9" object_id="_9">
           <Value>
             <Obj>
               <type>0</type>
-              <id>13</id>
-              <name>shl_ln</name>
+              <id>11</id>
+              <name>sext_ln1273</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>1273</lineNumber>
@@ -552,26 +417,24 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>shl_ln_fu_111_p3</rtlName>
+              <rtlName>sext_ln1273_fu_76_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1110488848</coreId>
+              <coreId>1948265521</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
           <oprand_edges>
-            <count>3</count>
+            <count>1</count>
             <item_version>0</item_version>
-            <item>45</item>
-            <item>46</item>
-            <item>48</item>
+            <item>56</item>
           </oprand_edges>
-          <opcode>bitconcatenate</opcode>
+          <opcode>sext</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
@@ -580,12 +443,12 @@
           <m_topoIndex>5</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_12">
+        <item class_id_reference="9" object_id="_10">
           <Value>
             <Obj>
               <type>0</type>
-              <id>14</id>
-              <name>shl_ln1273_1</name>
+              <id>12</id>
+              <name>sext_ln1273_1</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>1273</lineNumber>
@@ -610,26 +473,24 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>shl_ln1273_1_fu_119_p3</rtlName>
+              <rtlName>sext_ln1273_1_fu_80_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>6775040</coreId>
+              <coreId>741487420</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>11</bitwidth>
+            <bitwidth>9</bitwidth>
           </Value>
           <oprand_edges>
-            <count>3</count>
+            <count>1</count>
             <item_version>0</item_version>
-            <item>50</item>
-            <item>51</item>
-            <item>53</item>
+            <item>57</item>
           </oprand_edges>
-          <opcode>bitconcatenate</opcode>
+          <opcode>sext</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
@@ -638,11 +499,11 @@
           <m_topoIndex>6</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_13">
+        <item class_id_reference="9" object_id="_11">
           <Value>
             <Obj>
               <type>0</type>
-              <id>15</id>
+              <id>13</id>
               <name>r_V</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -668,7 +529,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>r.V</originalName>
-              <rtlName>r_V_fu_127_p2</rtlName>
+              <rtlName>r_V_fu_84_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -678,29 +539,29 @@
               <coreId>1</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>11</bitwidth>
+            <bitwidth>9</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>54</item>
-            <item>55</item>
+            <item>59</item>
+            <item>60</item>
           </oprand_edges>
           <opcode>sub</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.63</m_delay>
+          <m_delay>1.91</m_delay>
           <m_topoIndex>7</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_14">
+        <item class_id_reference="9" object_id="_12">
           <Value>
             <Obj>
               <type>0</type>
-              <id>16</id>
-              <name>trunc_ln818_1</name>
+              <id>14</id>
+              <name>trunc_ln</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>818</lineNumber>
@@ -725,25 +586,25 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln818_1_reg_193</rtlName>
+              <rtlName>trunc_ln_reg_289</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
+              <coreId>741487420</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>6</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
             <item_version>0</item_version>
-            <item>56</item>
-            <item>57</item>
-            <item>58</item>
-            <item>59</item>
+            <item>62</item>
+            <item>63</item>
+            <item>65</item>
+            <item>67</item>
           </oprand_edges>
           <opcode>partselect</opcode>
           <m_Display>0</m_Display>
@@ -754,15 +615,15 @@
           <m_topoIndex>8</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_15">
+        <item class_id_reference="9" object_id="_13">
           <Value>
             <Obj>
               <type>0</type>
-              <id>17</id>
-              <name>sext_ln1270_1</name>
+              <id>15</id>
+              <name>sext_ln1273_6</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1270</lineNumber>
+              <lineNumber>1273</lineNumber>
               <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -778,30 +639,88 @@
                         <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
                         <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1270</second>
+                      <second>1273</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName/>
+              <rtlName>sext_ln1273_6_fu_254_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>7</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>68</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>31</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_14">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>16</id>
+              <name>shl_ln</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>shl_ln_fu_100_p3</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
           <oprand_edges>
-            <count>1</count>
+            <count>3</count>
             <item_version>0</item_version>
-            <item>60</item>
+            <item>70</item>
+            <item>71</item>
+            <item>73</item>
           </oprand_edges>
-          <opcode>sext</opcode>
+          <opcode>bitconcatenate</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
@@ -810,15 +729,15 @@
           <m_topoIndex>9</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_16">
+        <item class_id_reference="9" object_id="_15">
           <Value>
             <Obj>
               <type>0</type>
-              <id>18</id>
-              <name>mul_ln1270_1</name>
+              <id>17</id>
+              <name>r_V_2</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1270</lineNumber>
+              <lineNumber>1273</lineNumber>
               <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -834,20 +753,20 @@
                         <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
                         <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1270</second>
+                      <second>1273</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>mul_8s_6s_11_3_0_U81</rtlName>
+              <originalName>r.V</originalName>
+              <rtlName>r_V_2_fu_108_p2</rtlName>
               <control>auto</control>
-              <opType>mul</opType>
-              <implIndex>dsp</implIndex>
-              <coreName>Mul_DSP</coreName>
+              <opType>sub</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>5</coreId>
+              <coreId>1</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
@@ -855,23 +774,23 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>61</item>
-            <item>63</item>
+            <item>74</item>
+            <item>75</item>
           </oprand_edges>
-          <opcode>mul</opcode>
+          <opcode>sub</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>2.93</m_delay>
+          <m_delay>1.63</m_delay>
           <m_topoIndex>10</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_17">
+        <item class_id_reference="9" object_id="_16">
           <Value>
             <Obj>
               <type>0</type>
-              <id>19</id>
+              <id>18</id>
               <name>trunc_ln818_2</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -897,7 +816,869 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln818_2_reg_208</rtlName>
+              <rtlName>trunc_ln818_2_fu_114_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>77</item>
+            <item>78</item>
+            <item>79</item>
+            <item>81</item>
+          </oprand_edges>
+          <opcode>partselect</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>11</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_17">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>19</id>
+              <name>trunc_ln818_3</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>818</lineNumber>
+              <contextFuncName>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_16_9_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>818</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>trunc_ln818_3_fu_124_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>7</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>83</item>
+            <item>84</item>
+            <item>86</item>
+            <item>88</item>
+          </oprand_edges>
+          <opcode>partselect</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>12</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_18">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>20</id>
+              <name>sext_ln818</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>818</lineNumber>
+              <contextFuncName>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_16_9_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>818</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>sext_ln818_fu_134_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>741487420</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>89</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>13</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_19">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>21</id>
+              <name>sext_ln1273_2</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>sext_ln1273_2_fu_138_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>741487420</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>11</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>90</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>14</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_20">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>22</id>
+              <name>shl_ln1273_1</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>shl_ln1273_1_fu_142_p3</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>11</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>91</item>
+            <item>92</item>
+            <item>93</item>
+          </oprand_edges>
+          <opcode>bitconcatenate</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>15</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_21">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>23</id>
+              <name>r_V_3</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName>r.V</originalName>
+              <rtlName>r_V_3_fu_150_p2</rtlName>
+              <control>auto</control>
+              <opType>sub</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>11</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>94</item>
+            <item>95</item>
+          </oprand_edges>
+          <opcode>sub</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.63</m_delay>
+          <m_topoIndex>16</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_22">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>24</id>
+              <name>trunc_ln818_4</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>818</lineNumber>
+              <contextFuncName>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_16_9_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>818</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>trunc_ln818_4_reg_294</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>741487420</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>96</item>
+            <item>97</item>
+            <item>98</item>
+            <item>99</item>
+          </oprand_edges>
+          <opcode>partselect</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>17</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_23">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>25</id>
+              <name>shl_ln1273_2</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>shl_ln1273_2_fu_166_p3</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>10</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>101</item>
+            <item>102</item>
+            <item>104</item>
+          </oprand_edges>
+          <opcode>bitconcatenate</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>18</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_24">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>26</id>
+              <name>sext_ln1273_3</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>sext_ln1273_3_fu_174_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>11</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>105</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>19</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_25">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>27</id>
+              <name>r_V_4</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName>r.V</originalName>
+              <rtlName>r_V_4_fu_178_p2</rtlName>
+              <control>auto</control>
+              <opType>sub</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>11</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>106</item>
+            <item>107</item>
+          </oprand_edges>
+          <opcode>sub</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.73</m_delay>
+          <m_topoIndex>20</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_26">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>28</id>
+              <name>trunc_ln818_5</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>818</lineNumber>
+              <contextFuncName>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_16_9_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>818</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>trunc_ln818_5_fu_184_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>108</item>
+            <item>109</item>
+            <item>110</item>
+            <item>111</item>
+          </oprand_edges>
+          <opcode>partselect</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>21</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_27">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>29</id>
+              <name>sext_ln1273_4</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>sext_ln1273_4_fu_194_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>9</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>112</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>22</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_28">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>30</id>
+              <name>r_V_5</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName>r.V</originalName>
+              <rtlName>r_V_5_fu_198_p2</rtlName>
+              <control>auto</control>
+              <opType>sub</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>9</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>113</item>
+            <item>114</item>
+          </oprand_edges>
+          <opcode>sub</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.91</m_delay>
+          <m_topoIndex>23</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_29">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>31</id>
+              <name>trunc_ln818_6</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>818</lineNumber>
+              <contextFuncName>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_16_9_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>818</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>trunc_ln818_6_reg_299</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>6</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>115</item>
+            <item>116</item>
+            <item>117</item>
+            <item>118</item>
+          </oprand_edges>
+          <opcode>partselect</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>24</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_30">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>32</id>
+              <name>sext_ln1273_7</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>sext_ln1273_7_fu_257_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>7</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>119</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>32</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_31">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>33</id>
+              <name>shl_ln1273_3</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>shl_ln1273_3_fu_214_p3</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -907,15 +1688,186 @@
               <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
+            <bitwidth>10</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>120</item>
+            <item>121</item>
+            <item>122</item>
+          </oprand_edges>
+          <opcode>bitconcatenate</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>25</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_32">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>34</id>
+              <name>sext_ln1273_5</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>sext_ln1273_5_fu_222_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>2121761040</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>11</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>123</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>26</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_33">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>35</id>
+              <name>r_V_6</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>1273</lineNumber>
+              <contextFuncName>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_mul_8_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator*&amp;lt;8, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>1273</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName>r.V</originalName>
+              <rtlName>r_V_6_fu_226_p2</rtlName>
+              <control>auto</control>
+              <opType>sub</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>11</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>125</item>
+            <item>126</item>
+          </oprand_edges>
+          <opcode>sub</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.73</m_delay>
+          <m_topoIndex>27</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_34">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>36</id>
+              <name>trunc_ln818_7</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>818</lineNumber>
+              <contextFuncName>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_16_9_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;16, 9, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>818</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>trunc_ln818_7_fu_232_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1885415456</coreId>
+              <rtlModuleName/>
+            </Obj>
             <bitwidth>8</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
             <item_version>0</item_version>
-            <item>64</item>
-            <item>65</item>
-            <item>66</item>
-            <item>67</item>
+            <item>127</item>
+            <item>128</item>
+            <item>129</item>
+            <item>130</item>
           </oprand_edges>
           <opcode>partselect</opcode>
           <m_Display>0</m_Display>
@@ -923,14 +1875,14 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>13</m_topoIndex>
+          <m_topoIndex>28</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_18">
+        <item class_id_reference="9" object_id="_35">
           <Value>
             <Obj>
               <type>0</type>
-              <id>20</id>
+              <id>37</id>
               <name>add_ln813</name>
               <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -956,7 +1908,120 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln813_fu_172_p2</rtlName>
+              <rtlName>add_ln813_fu_260_p2</rtlName>
+              <control>auto</control>
+              <opType>add</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>7</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>131</item>
+            <item>132</item>
+          </oprand_edges>
+          <opcode>add</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.82</m_delay>
+          <m_topoIndex>33</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_36">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>38</id>
+              <name>sext_ln813</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>813</lineNumber>
+              <contextFuncName>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_9_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>813</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>sext_ln813_fu_270_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>741487420</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>133</item>
+          </oprand_edges>
+          <opcode>sext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>35</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_37">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>39</id>
+              <name>add_ln813_1</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>813</lineNumber>
+              <contextFuncName>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_9_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>813</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>add_ln813_1_fu_273_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -971,8 +2036,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>68</item>
-            <item>69</item>
+            <item>134</item>
+            <item>135</item>
           </oprand_edges>
           <opcode>add</opcode>
           <m_Display>0</m_Display>
@@ -980,14 +2045,185 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>1.91</m_delay>
-          <m_topoIndex>15</m_topoIndex>
+          <m_topoIndex>36</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_19">
+        <item class_id_reference="9" object_id="_38">
           <Value>
             <Obj>
               <type>0</type>
-              <id>21</id>
+              <id>40</id>
+              <name>add_ln813_2</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>813</lineNumber>
+              <contextFuncName>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_9_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>813</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>add_ln813_2_fu_242_p2</rtlName>
+              <control>auto</control>
+              <opType>add</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>136</item>
+            <item>137</item>
+          </oprand_edges>
+          <opcode>add</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.91</m_delay>
+          <m_topoIndex>29</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_39">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>41</id>
+              <name>add_ln813_3</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>813</lineNumber>
+              <contextFuncName>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_9_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>813</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>add_ln813_3_fu_248_p2</rtlName>
+              <control>auto</control>
+              <opType>add</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>138</item>
+            <item>139</item>
+          </oprand_edges>
+          <opcode>add</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.91</m_delay>
+          <m_topoIndex>30</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_40">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>42</id>
+              <name>add_ln813_4</name>
+              <fileName>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>813</lineNumber>
+              <contextFuncName>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
+              <contextNormFuncName>operator_assign_9_5_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\GitHub\FPGA_ml4hls_prj\PythonModel\hlsPrj</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h</first>
+                        <second>operator=&amp;lt;9, 5, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
+                      </first>
+                      <second>813</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>add_ln813_4_fu_266_p2</rtlName>
+              <control>auto</control>
+              <opType>add</opType>
+              <implIndex>fabric</implIndex>
+              <coreName>Adder</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>8</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>140</item>
+            <item>141</item>
+          </oprand_edges>
+          <opcode>add</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.91</m_delay>
+          <m_topoIndex>34</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_41">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>43</id>
               <name>mrv</name>
               <fileName>firmware/nnet_utils/nnet_dense_latency.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -1020,7 +2256,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1330007552</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -1028,8 +2264,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>71</item>
-            <item>72</item>
+            <item>143</item>
+            <item>144</item>
           </oprand_edges>
           <opcode>insertvalue</opcode>
           <m_Display>0</m_Display>
@@ -1037,14 +2273,14 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>16</m_topoIndex>
+          <m_topoIndex>37</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_20">
+        <item class_id_reference="9" object_id="_42">
           <Value>
             <Obj>
               <type>0</type>
-              <id>22</id>
+              <id>44</id>
               <name>mrv_1</name>
               <fileName>firmware/nnet_utils/nnet_dense_latency.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -1085,8 +2321,8 @@
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>73</item>
-            <item>74</item>
+            <item>145</item>
+            <item>146</item>
           </oprand_edges>
           <opcode>insertvalue</opcode>
           <m_Display>0</m_Display>
@@ -1094,14 +2330,14 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>17</m_topoIndex>
+          <m_topoIndex>38</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_21">
+        <item class_id_reference="9" object_id="_43">
           <Value>
             <Obj>
               <type>0</type>
-              <id>23</id>
+              <id>45</id>
               <name>_ln68</name>
               <fileName>firmware/nnet_utils/nnet_dense_latency.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -1134,7 +2370,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1110487648</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1142,7 +2378,7 @@
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>75</item>
+            <item>147</item>
           </oprand_edges>
           <opcode>ret</opcode>
           <m_Display>0</m_Display>
@@ -1150,18 +2386,18 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>18</m_topoIndex>
+          <m_topoIndex>39</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
       </nodes>
       <consts class_id="15" tracking_level="0" version="0">
-        <count>7</count>
+        <count>10</count>
         <item_version>0</item_version>
-        <item class_id="16" tracking_level="1" version="0" object_id="_22">
+        <item class_id="16" tracking_level="1" version="0" object_id="_44">
           <Value>
             <Obj>
               <type>2</type>
-              <id>34</id>
+              <id>58</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1183,16 +2419,16 @@
               <coreId>1852142702</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>11</bitwidth>
+            <bitwidth>9</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>38</content>
+          <content>0</content>
         </item>
-        <item class_id_reference="16" object_id="_23">
+        <item class_id_reference="16" object_id="_45">
           <Value>
             <Obj>
               <type>2</type>
-              <id>39</id>
+              <id>64</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1219,11 +2455,11 @@
           <const_type>0</const_type>
           <content>3</content>
         </item>
-        <item class_id_reference="16" object_id="_24">
+        <item class_id_reference="16" object_id="_46">
           <Value>
             <Obj>
               <type>2</type>
-              <id>41</id>
+              <id>66</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1242,19 +2478,19 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852142702</coreId>
+              <coreId>1601200424</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>10</content>
+          <content>8</content>
         </item>
-        <item class_id_reference="16" object_id="_25">
+        <item class_id_reference="16" object_id="_47">
           <Value>
             <Obj>
               <type>2</type>
-              <id>47</id>
+              <id>72</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1273,38 +2509,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1111279376</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>5</bitwidth>
-          </Value>
-          <const_type>0</const_type>
-          <content>0</content>
-        </item>
-        <item class_id_reference="16" object_id="_26">
-          <Value>
-            <Obj>
-              <type>2</type>
-              <id>52</id>
-              <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
-              <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
-              <inlineStackInfo>
-                <count>0</count>
-                <item_version>0</item_version>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>1111282352</coreId>
+              <coreId>1601200424</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -1312,11 +2517,11 @@
           <const_type>0</const_type>
           <content>0</content>
         </item>
-        <item class_id_reference="16" object_id="_27">
+        <item class_id_reference="16" object_id="_48">
           <Value>
             <Obj>
               <type>2</type>
-              <id>62</id>
+              <id>80</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1335,19 +2540,143 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852142702</coreId>
+              <coreId>1601200424</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <const_type>0</const_type>
+          <content>10</content>
+        </item>
+        <item class_id_reference="16" object_id="_49">
+          <Value>
+            <Obj>
+              <type>2</type>
+              <id>85</id>
+              <name>empty</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1601200424</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <const_type>0</const_type>
+          <content>1</content>
+        </item>
+        <item class_id_reference="16" object_id="_50">
+          <Value>
+            <Obj>
+              <type>2</type>
+              <id>87</id>
+              <name>empty</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1601200424</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <const_type>0</const_type>
+          <content>7</content>
+        </item>
+        <item class_id_reference="16" object_id="_51">
+          <Value>
+            <Obj>
+              <type>2</type>
+              <id>103</id>
+              <name>empty</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1601200424</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>2</bitwidth>
+          </Value>
+          <const_type>0</const_type>
+          <content>0</content>
+        </item>
+        <item class_id_reference="16" object_id="_52">
+          <Value>
+            <Obj>
+              <type>2</type>
+              <id>124</id>
+              <name>empty</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1601200424</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>2023</content>
+          <content>0</content>
         </item>
-        <item class_id_reference="16" object_id="_28">
+        <item class_id_reference="16" object_id="_53">
           <Value>
             <Obj>
               <type>2</type>
-              <id>70</id>
+              <id>142</id>
               <name>empty</name>
               <fileName/>
               <fileDirectory/>
@@ -1366,7 +2695,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852142702</coreId>
+              <coreId>1601200424</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -1378,10 +2707,10 @@
       <blocks class_id="17" tracking_level="0" version="0">
         <count>1</count>
         <item_version>0</item_version>
-        <item class_id="18" tracking_level="1" version="0" object_id="_29">
+        <item class_id="18" tracking_level="1" version="0" object_id="_54">
           <Obj>
             <type>3</type>
-            <id>24</id>
+            <id>46</id>
             <name>dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0&gt;, ap_fixed&lt;8, 4, 5, 3, 0&gt;, config8&gt;</name>
             <fileName/>
             <fileDirectory/>
@@ -1400,13 +2729,12 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1835888483</coreId>
+            <coreId>1601134448</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
-            <count>18</count>
+            <count>39</count>
             <item_version>0</item_version>
-            <item>6</item>
             <item>7</item>
             <item>8</item>
             <item>9</item>
@@ -1424,234 +2752,522 @@
             <item>21</item>
             <item>22</item>
             <item>23</item>
+            <item>24</item>
+            <item>25</item>
+            <item>26</item>
+            <item>27</item>
+            <item>28</item>
+            <item>29</item>
+            <item>30</item>
+            <item>31</item>
+            <item>32</item>
+            <item>33</item>
+            <item>34</item>
+            <item>35</item>
+            <item>36</item>
+            <item>37</item>
+            <item>38</item>
+            <item>39</item>
+            <item>40</item>
+            <item>41</item>
+            <item>42</item>
+            <item>43</item>
+            <item>44</item>
+            <item>45</item>
           </node_objs>
         </item>
       </blocks>
       <edges class_id="19" tracking_level="0" version="0">
-        <count>32</count>
+        <count>70</count>
         <item_version>0</item_version>
-        <item class_id="20" tracking_level="1" version="0" object_id="_30">
-          <id>27</id>
+        <item class_id="20" tracking_level="1" version="0" object_id="_55">
+          <id>49</id>
           <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
-          <sink_obj>6</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_31">
-          <id>29</id>
-          <edge_type>1</edge_type>
-          <source_obj>2</source_obj>
+          <source_obj>4</source_obj>
           <sink_obj>7</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_32">
-          <id>31</id>
+        <item class_id_reference="20" object_id="_56">
+          <id>51</id>
           <edge_type>1</edge_type>
-          <source_obj>1</source_obj>
+          <source_obj>3</source_obj>
           <sink_obj>8</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_33">
-          <id>32</id>
+        <item class_id_reference="20" object_id="_57">
+          <id>53</id>
           <edge_type>1</edge_type>
-          <source_obj>8</source_obj>
+          <source_obj>2</source_obj>
           <sink_obj>9</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_34">
-          <id>33</id>
+        <item class_id_reference="20" object_id="_58">
+          <id>55</id>
           <edge_type>1</edge_type>
-          <source_obj>9</source_obj>
+          <source_obj>1</source_obj>
           <sink_obj>10</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_35">
-          <id>35</id>
-          <edge_type>1</edge_type>
-          <source_obj>34</source_obj>
-          <sink_obj>10</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_36">
-          <id>38</id>
+        <item class_id_reference="20" object_id="_59">
+          <id>56</id>
           <edge_type>1</edge_type>
           <source_obj>10</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_37">
-          <id>40</id>
+        <item class_id_reference="20" object_id="_60">
+          <id>57</id>
           <edge_type>1</edge_type>
-          <source_obj>39</source_obj>
-          <sink_obj>11</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_38">
-          <id>42</id>
-          <edge_type>1</edge_type>
-          <source_obj>41</source_obj>
-          <sink_obj>11</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_39">
-          <id>43</id>
-          <edge_type>1</edge_type>
-          <source_obj>7</source_obj>
+          <source_obj>10</source_obj>
           <sink_obj>12</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_40">
-          <id>46</id>
+        <item class_id_reference="20" object_id="_61">
+          <id>59</id>
+          <edge_type>1</edge_type>
+          <source_obj>58</source_obj>
+          <sink_obj>13</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_62">
+          <id>60</id>
           <edge_type>1</edge_type>
           <source_obj>12</source_obj>
           <sink_obj>13</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_41">
-          <id>48</id>
-          <edge_type>1</edge_type>
-          <source_obj>47</source_obj>
-          <sink_obj>13</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_42">
-          <id>51</id>
-          <edge_type>1</edge_type>
-          <source_obj>7</source_obj>
-          <sink_obj>14</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_43">
-          <id>53</id>
-          <edge_type>1</edge_type>
-          <source_obj>52</source_obj>
-          <sink_obj>14</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_44">
-          <id>54</id>
+        <item class_id_reference="20" object_id="_63">
+          <id>63</id>
           <edge_type>1</edge_type>
           <source_obj>13</source_obj>
-          <sink_obj>15</sink_obj>
+          <sink_obj>14</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_45">
-          <id>55</id>
+        <item class_id_reference="20" object_id="_64">
+          <id>65</id>
+          <edge_type>1</edge_type>
+          <source_obj>64</source_obj>
+          <sink_obj>14</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_65">
+          <id>67</id>
+          <edge_type>1</edge_type>
+          <source_obj>66</source_obj>
+          <sink_obj>14</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_66">
+          <id>68</id>
           <edge_type>1</edge_type>
           <source_obj>14</source_obj>
           <sink_obj>15</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_46">
-          <id>57</id>
+        <item class_id_reference="20" object_id="_67">
+          <id>71</id>
           <edge_type>1</edge_type>
-          <source_obj>15</source_obj>
+          <source_obj>10</source_obj>
           <sink_obj>16</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_47">
-          <id>58</id>
+        <item class_id_reference="20" object_id="_68">
+          <id>73</id>
           <edge_type>1</edge_type>
-          <source_obj>39</source_obj>
+          <source_obj>72</source_obj>
           <sink_obj>16</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_48">
-          <id>59</id>
+        <item class_id_reference="20" object_id="_69">
+          <id>74</id>
           <edge_type>1</edge_type>
-          <source_obj>41</source_obj>
-          <sink_obj>16</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_49">
-          <id>60</id>
-          <edge_type>1</edge_type>
-          <source_obj>6</source_obj>
+          <source_obj>16</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_50">
-          <id>61</id>
+        <item class_id_reference="20" object_id="_70">
+          <id>75</id>
+          <edge_type>1</edge_type>
+          <source_obj>11</source_obj>
+          <sink_obj>17</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_71">
+          <id>78</id>
           <edge_type>1</edge_type>
           <source_obj>17</source_obj>
           <sink_obj>18</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_51">
-          <id>63</id>
+        <item class_id_reference="20" object_id="_72">
+          <id>79</id>
           <edge_type>1</edge_type>
-          <source_obj>62</source_obj>
+          <source_obj>64</source_obj>
           <sink_obj>18</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_52">
-          <id>65</id>
+        <item class_id_reference="20" object_id="_73">
+          <id>81</id>
           <edge_type>1</edge_type>
-          <source_obj>18</source_obj>
+          <source_obj>80</source_obj>
+          <sink_obj>18</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_74">
+          <id>84</id>
+          <edge_type>1</edge_type>
+          <source_obj>9</source_obj>
           <sink_obj>19</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_53">
-          <id>66</id>
+        <item class_id_reference="20" object_id="_75">
+          <id>86</id>
           <edge_type>1</edge_type>
-          <source_obj>39</source_obj>
+          <source_obj>85</source_obj>
           <sink_obj>19</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_54">
-          <id>67</id>
+        <item class_id_reference="20" object_id="_76">
+          <id>88</id>
           <edge_type>1</edge_type>
-          <source_obj>41</source_obj>
+          <source_obj>87</source_obj>
           <sink_obj>19</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_55">
-          <id>68</id>
-          <edge_type>1</edge_type>
-          <source_obj>16</source_obj>
-          <sink_obj>20</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_56">
-          <id>69</id>
+        <item class_id_reference="20" object_id="_77">
+          <id>89</id>
           <edge_type>1</edge_type>
           <source_obj>19</source_obj>
           <sink_obj>20</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_57">
-          <id>71</id>
+        <item class_id_reference="20" object_id="_78">
+          <id>90</id>
           <edge_type>1</edge_type>
-          <source_obj>70</source_obj>
+          <source_obj>8</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_58">
-          <id>72</id>
+        <item class_id_reference="20" object_id="_79">
+          <id>92</id>
           <edge_type>1</edge_type>
-          <source_obj>20</source_obj>
-          <sink_obj>21</sink_obj>
-          <is_back_edge>0</is_back_edge>
-        </item>
-        <item class_id_reference="20" object_id="_59">
-          <id>73</id>
-          <edge_type>1</edge_type>
-          <source_obj>21</source_obj>
+          <source_obj>8</source_obj>
           <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_60">
-          <id>74</id>
+        <item class_id_reference="20" object_id="_80">
+          <id>93</id>
           <edge_type>1</edge_type>
-          <source_obj>11</source_obj>
+          <source_obj>72</source_obj>
           <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
-        <item class_id_reference="20" object_id="_61">
-          <id>75</id>
+        <item class_id_reference="20" object_id="_81">
+          <id>94</id>
           <edge_type>1</edge_type>
           <source_obj>22</source_obj>
           <sink_obj>23</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_82">
+          <id>95</id>
+          <edge_type>1</edge_type>
+          <source_obj>21</source_obj>
+          <sink_obj>23</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_83">
+          <id>97</id>
+          <edge_type>1</edge_type>
+          <source_obj>23</source_obj>
+          <sink_obj>24</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_84">
+          <id>98</id>
+          <edge_type>1</edge_type>
+          <source_obj>64</source_obj>
+          <sink_obj>24</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_85">
+          <id>99</id>
+          <edge_type>1</edge_type>
+          <source_obj>80</source_obj>
+          <sink_obj>24</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_86">
+          <id>102</id>
+          <edge_type>1</edge_type>
+          <source_obj>8</source_obj>
+          <sink_obj>25</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_87">
+          <id>104</id>
+          <edge_type>1</edge_type>
+          <source_obj>103</source_obj>
+          <sink_obj>25</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_88">
+          <id>105</id>
+          <edge_type>1</edge_type>
+          <source_obj>25</source_obj>
+          <sink_obj>26</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_89">
+          <id>106</id>
+          <edge_type>1</edge_type>
+          <source_obj>26</source_obj>
+          <sink_obj>27</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_90">
+          <id>107</id>
+          <edge_type>1</edge_type>
+          <source_obj>21</source_obj>
+          <sink_obj>27</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_91">
+          <id>109</id>
+          <edge_type>1</edge_type>
+          <source_obj>27</source_obj>
+          <sink_obj>28</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_92">
+          <id>110</id>
+          <edge_type>1</edge_type>
+          <source_obj>64</source_obj>
+          <sink_obj>28</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_93">
+          <id>111</id>
+          <edge_type>1</edge_type>
+          <source_obj>80</source_obj>
+          <sink_obj>28</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_94">
+          <id>112</id>
+          <edge_type>1</edge_type>
+          <source_obj>7</source_obj>
+          <sink_obj>29</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_95">
+          <id>113</id>
+          <edge_type>1</edge_type>
+          <source_obj>58</source_obj>
+          <sink_obj>30</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_96">
+          <id>114</id>
+          <edge_type>1</edge_type>
+          <source_obj>29</source_obj>
+          <sink_obj>30</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_97">
+          <id>116</id>
+          <edge_type>1</edge_type>
+          <source_obj>30</source_obj>
+          <sink_obj>31</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_98">
+          <id>117</id>
+          <edge_type>1</edge_type>
+          <source_obj>64</source_obj>
+          <sink_obj>31</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_99">
+          <id>118</id>
+          <edge_type>1</edge_type>
+          <source_obj>66</source_obj>
+          <sink_obj>31</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_100">
+          <id>119</id>
+          <edge_type>1</edge_type>
+          <source_obj>31</source_obj>
+          <sink_obj>32</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_101">
+          <id>121</id>
+          <edge_type>1</edge_type>
+          <source_obj>7</source_obj>
+          <sink_obj>33</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_102">
+          <id>122</id>
+          <edge_type>1</edge_type>
+          <source_obj>103</source_obj>
+          <sink_obj>33</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_103">
+          <id>123</id>
+          <edge_type>1</edge_type>
+          <source_obj>33</source_obj>
+          <sink_obj>34</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_104">
+          <id>125</id>
+          <edge_type>1</edge_type>
+          <source_obj>124</source_obj>
+          <sink_obj>35</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_105">
+          <id>126</id>
+          <edge_type>1</edge_type>
+          <source_obj>34</source_obj>
+          <sink_obj>35</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_106">
+          <id>128</id>
+          <edge_type>1</edge_type>
+          <source_obj>35</source_obj>
+          <sink_obj>36</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_107">
+          <id>129</id>
+          <edge_type>1</edge_type>
+          <source_obj>64</source_obj>
+          <sink_obj>36</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_108">
+          <id>130</id>
+          <edge_type>1</edge_type>
+          <source_obj>80</source_obj>
+          <sink_obj>36</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_109">
+          <id>131</id>
+          <edge_type>1</edge_type>
+          <source_obj>15</source_obj>
+          <sink_obj>37</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_110">
+          <id>132</id>
+          <edge_type>1</edge_type>
+          <source_obj>32</source_obj>
+          <sink_obj>37</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_111">
+          <id>133</id>
+          <edge_type>1</edge_type>
+          <source_obj>37</source_obj>
+          <sink_obj>38</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_112">
+          <id>134</id>
+          <edge_type>1</edge_type>
+          <source_obj>38</source_obj>
+          <sink_obj>39</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_113">
+          <id>135</id>
+          <edge_type>1</edge_type>
+          <source_obj>24</source_obj>
+          <sink_obj>39</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_114">
+          <id>136</id>
+          <edge_type>1</edge_type>
+          <source_obj>18</source_obj>
+          <sink_obj>40</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_115">
+          <id>137</id>
+          <edge_type>1</edge_type>
+          <source_obj>28</source_obj>
+          <sink_obj>40</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_116">
+          <id>138</id>
+          <edge_type>1</edge_type>
+          <source_obj>36</source_obj>
+          <sink_obj>41</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_117">
+          <id>139</id>
+          <edge_type>1</edge_type>
+          <source_obj>20</source_obj>
+          <sink_obj>41</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_118">
+          <id>140</id>
+          <edge_type>1</edge_type>
+          <source_obj>41</source_obj>
+          <sink_obj>42</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_119">
+          <id>141</id>
+          <edge_type>1</edge_type>
+          <source_obj>40</source_obj>
+          <sink_obj>42</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_120">
+          <id>143</id>
+          <edge_type>1</edge_type>
+          <source_obj>142</source_obj>
+          <sink_obj>43</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_121">
+          <id>144</id>
+          <edge_type>1</edge_type>
+          <source_obj>39</source_obj>
+          <sink_obj>43</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_122">
+          <id>145</id>
+          <edge_type>1</edge_type>
+          <source_obj>43</source_obj>
+          <sink_obj>44</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_123">
+          <id>146</id>
+          <edge_type>1</edge_type>
+          <source_obj>42</source_obj>
+          <sink_obj>44</sink_obj>
+          <is_back_edge>0</is_back_edge>
+        </item>
+        <item class_id_reference="20" object_id="_124">
+          <id>147</id>
+          <edge_type>1</edge_type>
+          <source_obj>44</source_obj>
+          <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
       </edges>
@@ -1659,7 +3275,7 @@
     <cdfg_regions class_id="21" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="22" tracking_level="1" version="0" object_id="_62">
+      <item class_id="22" tracking_level="1" version="0" object_id="_125">
         <mId>1</mId>
         <mTag>dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0&gt;, ap_fixed&lt;8, 4, 5, 3, 0&gt;, config8&gt;</mTag>
         <mNormTag>dense_latency_ap_fixed_8_4_5_3_0_ap_fixed_8_4_5_3_0_config8_s</mNormTag>
@@ -1671,165 +3287,243 @@
         <basic_blocks>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>46</item>
         </basic_blocks>
         <mII>1</mII>
-        <mDepth>4</mDepth>
+        <mDepth>3</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>3</mMinLatency>
-        <mMaxLatency>3</mMaxLatency>
+        <mMinLatency>2</mMinLatency>
+        <mMaxLatency>2</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
     </cdfg_regions>
-    <fsm class_id="24" tracking_level="1" version="0" object_id="_63">
+    <fsm class_id="24" tracking_level="1" version="0" object_id="_126">
       <states class_id="25" tracking_level="0" version="0">
-        <count>4</count>
+        <count>3</count>
         <item_version>0</item_version>
-        <item class_id="26" tracking_level="1" version="0" object_id="_64">
+        <item class_id="26" tracking_level="1" version="0" object_id="_127">
           <id>1</id>
           <operations class_id="27" tracking_level="0" version="0">
-            <count>10</count>
+            <count>30</count>
             <item_version>0</item_version>
-            <item class_id="28" tracking_level="1" version="0" object_id="_65">
-              <id>6</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_66">
+            <item class_id="28" tracking_level="1" version="0" object_id="_128">
               <id>7</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_67">
+            <item class_id_reference="28" object_id="_129">
               <id>8</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_68">
-              <id>12</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_69">
-              <id>13</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_70">
-              <id>14</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_71">
-              <id>15</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_72">
-              <id>16</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_73">
-              <id>17</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_74">
-              <id>18</id>
-              <stage>3</stage>
-              <latency>3</latency>
-            </item>
-          </operations>
-        </item>
-        <item class_id_reference="26" object_id="_75">
-          <id>2</id>
-          <operations>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_76">
+            <item class_id_reference="28" object_id="_130">
               <id>9</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_77">
+            <item class_id_reference="28" object_id="_131">
               <id>10</id>
-              <stage>3</stage>
-              <latency>3</latency>
-            </item>
-            <item class_id_reference="28" object_id="_78">
-              <id>18</id>
-              <stage>2</stage>
-              <latency>3</latency>
-            </item>
-          </operations>
-        </item>
-        <item class_id_reference="26" object_id="_79">
-          <id>3</id>
-          <operations>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_80">
-              <id>10</id>
-              <stage>2</stage>
-              <latency>3</latency>
-            </item>
-            <item class_id_reference="28" object_id="_81">
-              <id>18</id>
-              <stage>1</stage>
-              <latency>3</latency>
-            </item>
-            <item class_id_reference="28" object_id="_82">
-              <id>19</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-          </operations>
-        </item>
-        <item class_id_reference="26" object_id="_83">
-          <id>4</id>
-          <operations>
-            <count>8</count>
-            <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_84">
-              <id>4</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_85">
-              <id>5</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_86">
-              <id>10</id>
-              <stage>1</stage>
-              <latency>3</latency>
-            </item>
-            <item class_id_reference="28" object_id="_87">
+            <item class_id_reference="28" object_id="_132">
               <id>11</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_88">
+            <item class_id_reference="28" object_id="_133">
+              <id>12</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_134">
+              <id>13</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_135">
+              <id>14</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_136">
+              <id>16</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_137">
+              <id>17</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_138">
+              <id>18</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_139">
+              <id>19</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_140">
               <id>20</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_89">
+            <item class_id_reference="28" object_id="_141">
               <id>21</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_90">
+            <item class_id_reference="28" object_id="_142">
               <id>22</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_91">
+            <item class_id_reference="28" object_id="_143">
               <id>23</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_144">
+              <id>24</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_145">
+              <id>25</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_146">
+              <id>26</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_147">
+              <id>27</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_148">
+              <id>28</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_149">
+              <id>29</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_150">
+              <id>30</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_151">
+              <id>31</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_152">
+              <id>33</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_153">
+              <id>34</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_154">
+              <id>35</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_155">
+              <id>36</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_156">
+              <id>40</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_157">
+              <id>41</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+          </operations>
+        </item>
+        <item class_id_reference="26" object_id="_158">
+          <id>2</id>
+          <operations>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_159">
+              <id>15</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_160">
+              <id>32</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_161">
+              <id>37</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_162">
+              <id>42</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+          </operations>
+        </item>
+        <item class_id_reference="26" object_id="_163">
+          <id>3</id>
+          <operations>
+            <count>7</count>
+            <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_164">
+              <id>5</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_165">
+              <id>6</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_166">
+              <id>38</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_167">
+              <id>39</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_168">
+              <id>43</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_169">
+              <id>44</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_170">
+              <id>45</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -1837,9 +3531,9 @@
         </item>
       </states>
       <transitions class_id="29" tracking_level="0" version="0">
-        <count>3</count>
+        <count>2</count>
         <item_version>0</item_version>
-        <item class_id="30" tracking_level="1" version="0" object_id="_92">
+        <item class_id="30" tracking_level="1" version="0" object_id="_171">
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="31" tracking_level="0" version="0">
@@ -1854,7 +3548,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="30" object_id="_93">
+        <item class_id_reference="30" object_id="_172">
           <inState>2</inState>
           <outState>3</outState>
           <condition>
@@ -1869,71 +3563,41 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="30" object_id="_94">
-          <inState>3</inState>
-          <outState>4</outState>
-          <condition>
-            <id>-1</id>
-            <sop>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>
-                <count>0</count>
-                <item_version>0</item_version>
-              </item>
-            </sop>
-          </condition>
-        </item>
       </transitions>
     </fsm>
-    <res class_id="34" tracking_level="1" version="0" object_id="_95">
+    <res class_id="34" tracking_level="1" version="0" object_id="_173">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
-        <count>2</count>
+        <count>0</count>
         <item_version>0</item_version>
-        <item class_id="36" tracking_level="0" version="0">
-          <first>mul_8s_6s_11_3_0_U81 (mul_8s_6s_11_3_0)</first>
-          <second class_id="37" tracking_level="0" version="0">
-            <count>3</count>
-            <item_version>0</item_version>
-            <item class_id="38" tracking_level="0" version="0">
-              <first>DSP</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>0</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>mul_8s_7ns_11_3_0_U80 (mul_8s_7ns_11_3_0)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>0</second>
-            </item>
-          </second>
-        </item>
       </dp_component_resource>
       <dp_expression_resource>
-        <count>2</count>
+        <count>11</count>
         <item_version>0</item_version>
+        <item class_id="36" tracking_level="0" version="0">
+          <first>add_ln813_1_fu_273_p2 ( + ) </first>
+          <second class_id="37" tracking_level="0" version="0">
+            <count>4</count>
+            <item_version>0</item_version>
+            <item class_id="38" tracking_level="0" version="0">
+              <first>(0P0)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
         <item>
-          <first>add_ln813_fu_172_p2 ( + ) </first>
+          <first>add_ln813_2_fu_242_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1956,7 +3620,76 @@
           </second>
         </item>
         <item>
-          <first>r_V_fu_127_p2 ( - ) </first>
+          <first>add_ln813_3_fu_248_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_4_fu_266_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_fu_260_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_2_fu_108_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1975,6 +3708,121 @@
             <item>
               <first>LUT</first>
               <second>12</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_3_fu_150_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>11</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>11</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>12</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_4_fu_178_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>11</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>11</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>12</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_5_fu_198_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>9</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_6_fu_226_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>11</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>12</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_fu_84_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>9</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -2038,8 +3886,84 @@
         </item>
       </dp_multiplexer_resource>
       <dp_register_resource>
-        <count>9</count>
+        <count>15</count>
         <item_version>0</item_version>
+        <item>
+          <first>add_ln813_2_reg_304</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>8</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_3_reg_309</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>8</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_4_reg_319</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>8</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_reg_314</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>7</second>
+            </item>
+          </second>
+        </item>
         <item>
           <first>ap_ce_reg</first>
           <second>
@@ -2098,6 +4022,25 @@
           </second>
         </item>
         <item>
+          <first>p_read1_int_reg</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>8</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_read2_int_reg</first>
           <second>
             <count>3</count>
@@ -2136,25 +4079,6 @@
           </second>
         </item>
         <item>
-          <first>p_read_3_reg_188</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>8</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>8</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>p_read_int_reg</first>
           <second>
             <count>3</count>
@@ -2174,7 +4098,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln818_1_reg_193</first>
+          <first>trunc_ln818_4_reg_294</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2193,7 +4117,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln818_2_reg_208</first>
+          <first>trunc_ln818_4_reg_294_pp0_iter1_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2208,65 +4132,145 @@
             <item>
               <first>FF</first>
               <second>8</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>trunc_ln818_6_reg_299</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>6</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>6</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>trunc_ln_reg_289</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>6</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>6</second>
             </item>
           </second>
         </item>
       </dp_register_resource>
       <dp_dsp_resource>
-        <count>2</count>
+        <count>0</count>
         <item_version>0</item_version>
-        <item>
-          <first>mul_8s_6s_11_3_0_U81</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>mul_8s_7ns_11_3_0_U80</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
       </dp_dsp_resource>
       <dp_component_map class_id="39" tracking_level="0" version="0">
-        <count>2</count>
+        <count>0</count>
         <item_version>0</item_version>
-        <item class_id="40" tracking_level="0" version="0">
-          <first>mul_8s_6s_11_3_0_U81 (mul_8s_6s_11_3_0)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>18</item>
-          </second>
-        </item>
-        <item>
-          <first>mul_8s_7ns_11_3_0_U80 (mul_8s_7ns_11_3_0)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>10</item>
-          </second>
-        </item>
       </dp_component_map>
       <dp_expression_map>
-        <count>2</count>
+        <count>11</count>
         <item_version>0</item_version>
-        <item>
-          <first>add_ln813_fu_172_p2 ( + ) </first>
+        <item class_id="40" tracking_level="0" version="0">
+          <first>add_ln813_1_fu_273_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>20</item>
+            <item>39</item>
           </second>
         </item>
         <item>
-          <first>r_V_fu_127_p2 ( - ) </first>
+          <first>add_ln813_2_fu_242_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>15</item>
+            <item>40</item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_3_fu_248_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>41</item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_4_fu_266_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>42</item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln813_fu_260_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>37</item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_2_fu_108_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>17</item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_3_fu_150_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>23</item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_4_fu_178_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>27</item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_5_fu_198_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>30</item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_6_fu_226_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>35</item>
+          </second>
+        </item>
+        <item>
+          <first>r_V_fu_84_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>13</item>
           </second>
         </item>
       </dp_expression_map>
@@ -2280,18 +4284,11 @@
       </dp_memory_map>
     </res>
     <node_label_latency class_id="41" tracking_level="0" version="0">
-      <count>18</count>
+      <count>39</count>
       <item_version>0</item_version>
       <item class_id="42" tracking_level="0" version="0">
-        <first>6</first>
-        <second class_id="43" tracking_level="0" version="0">
-          <first>0</first>
-          <second>0</second>
-        </second>
-      </item>
-      <item>
         <first>7</first>
-        <second>
+        <second class_id="43" tracking_level="0" version="0">
           <first>0</first>
           <second>0</second>
         </second>
@@ -2306,21 +4303,21 @@
       <item>
         <first>9</first>
         <second>
-          <first>1</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>10</first>
         <second>
-          <first>1</first>
-          <second>2</second>
+          <first>0</first>
+          <second>0</second>
         </second>
       </item>
       <item>
         <first>11</first>
         <second>
-          <first>3</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
@@ -2348,7 +4345,7 @@
       <item>
         <first>15</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>0</second>
         </second>
       </item>
@@ -2370,41 +4367,195 @@
         <first>18</first>
         <second>
           <first>0</first>
-          <second>2</second>
+          <second>0</second>
         </second>
       </item>
       <item>
         <first>19</first>
         <second>
-          <first>2</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>20</first>
         <second>
-          <first>3</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>21</first>
         <second>
-          <first>3</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>22</first>
         <second>
-          <first>3</first>
+          <first>0</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>23</first>
         <second>
-          <first>3</first>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>24</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>25</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>26</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>27</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>28</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>29</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>30</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>31</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>32</first>
+        <second>
+          <first>1</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>33</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>34</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>35</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>36</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>37</first>
+        <second>
+          <first>1</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>38</first>
+        <second>
+          <first>2</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>39</first>
+        <second>
+          <first>2</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>40</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>41</first>
+        <second>
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>42</first>
+        <second>
+          <first>1</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>43</first>
+        <second>
+          <first>2</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>44</first>
+        <second>
+          <first>2</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>45</first>
+        <second>
+          <first>2</first>
           <second>0</second>
         </second>
       </item>
@@ -2413,22 +4564,22 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="45" tracking_level="0" version="0">
-        <first>24</first>
+        <first>46</first>
         <second class_id="46" tracking_level="0" version="0">
           <first>0</first>
-          <second>3</second>
+          <second>2</second>
         </second>
       </item>
     </bblk_ent_exit>
     <regions class_id="47" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="48" tracking_level="1" version="0" object_id="_96">
+      <item class_id="48" tracking_level="1" version="0" object_id="_174">
         <region_name>dense_latency&lt;ap_fixed&lt;8, 4, 5, 3, 0&gt;, ap_fixed&lt;8, 4, 5, 3, 0&gt;, config8&gt;</region_name>
         <basic_blocks>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>46</item>
         </basic_blocks>
         <nodes>
           <count>0</count>
@@ -2437,7 +4588,7 @@
         <anchor_node>-1</anchor_node>
         <region_type>8</region_type>
         <interval>1</interval>
-        <pipe_depth>4</pipe_depth>
+        <pipe_depth>3</pipe_depth>
         <mDBIIViolationVec class_id="49" tracking_level="0" version="0">
           <count>0</count>
           <item_version>0</item_version>
@@ -2445,18 +4596,10 @@
       </item>
     </regions>
     <dp_fu_nodes class_id="50" tracking_level="0" version="0">
-      <count>17</count>
+      <count>38</count>
       <item_version>0</item_version>
       <item class_id="51" tracking_level="0" version="0">
-        <first>42</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>6</item>
-        </second>
-      </item>
-      <item>
-        <first>48</first>
+        <first>52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2464,7 +4607,7 @@
         </second>
       </item>
       <item>
-        <first>54</first>
+        <first>58</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2472,75 +4615,7 @@
         </second>
       </item>
       <item>
-        <first>60</first>
-        <second>
-          <count>3</count>
-          <item_version>0</item_version>
-          <item>10</item>
-          <item>10</item>
-          <item>10</item>
-        </second>
-      </item>
-      <item>
-        <first>61</first>
-        <second>
-          <count>3</count>
-          <item_version>0</item_version>
-          <item>18</item>
-          <item>18</item>
-          <item>18</item>
-        </second>
-      </item>
-      <item>
-        <first>107</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>12</item>
-        </second>
-      </item>
-      <item>
-        <first>111</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>13</item>
-        </second>
-      </item>
-      <item>
-        <first>119</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>14</item>
-        </second>
-      </item>
-      <item>
-        <first>127</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>15</item>
-        </second>
-      </item>
-      <item>
-        <first>133</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>16</item>
-        </second>
-      </item>
-      <item>
-        <first>143</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>17</item>
-        </second>
-      </item>
-      <item>
-        <first>148</first>
+        <first>64</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2548,15 +4623,15 @@
         </second>
       </item>
       <item>
-        <first>152</first>
+        <first>70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>10</item>
         </second>
       </item>
       <item>
-        <first>162</first>
+        <first>76</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2564,7 +4639,63 @@
         </second>
       </item>
       <item>
-        <first>172</first>
+        <first>80</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>12</item>
+        </second>
+      </item>
+      <item>
+        <first>84</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>13</item>
+        </second>
+      </item>
+      <item>
+        <first>90</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>14</item>
+        </second>
+      </item>
+      <item>
+        <first>100</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>16</item>
+        </second>
+      </item>
+      <item>
+        <first>108</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>17</item>
+        </second>
+      </item>
+      <item>
+        <first>114</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
+        </second>
+      </item>
+      <item>
+        <first>124</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>19</item>
+        </second>
+      </item>
+      <item>
+        <first>134</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2572,7 +4703,7 @@
         </second>
       </item>
       <item>
-        <first>176</first>
+        <first>138</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2580,51 +4711,259 @@
         </second>
       </item>
       <item>
-        <first>182</first>
+        <first>142</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>22</item>
+        </second>
+      </item>
+      <item>
+        <first>150</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>23</item>
+        </second>
+      </item>
+      <item>
+        <first>156</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>24</item>
+        </second>
+      </item>
+      <item>
+        <first>166</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>25</item>
+        </second>
+      </item>
+      <item>
+        <first>174</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>26</item>
+        </second>
+      </item>
+      <item>
+        <first>178</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>27</item>
+        </second>
+      </item>
+      <item>
+        <first>184</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>28</item>
+        </second>
+      </item>
+      <item>
+        <first>194</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>29</item>
+        </second>
+      </item>
+      <item>
+        <first>198</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>30</item>
+        </second>
+      </item>
+      <item>
+        <first>204</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>31</item>
+        </second>
+      </item>
+      <item>
+        <first>214</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>222</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>34</item>
+        </second>
+      </item>
+      <item>
+        <first>226</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>35</item>
+        </second>
+      </item>
+      <item>
+        <first>232</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>36</item>
+        </second>
+      </item>
+      <item>
+        <first>242</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>40</item>
+        </second>
+      </item>
+      <item>
+        <first>248</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>41</item>
+        </second>
+      </item>
+      <item>
+        <first>254</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>15</item>
+        </second>
+      </item>
+      <item>
+        <first>257</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>32</item>
+        </second>
+      </item>
+      <item>
+        <first>260</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
+        </second>
+      </item>
+      <item>
+        <first>266</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>42</item>
+        </second>
+      </item>
+      <item>
+        <first>270</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>38</item>
+        </second>
+      </item>
+      <item>
+        <first>273</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>39</item>
+        </second>
+      </item>
+      <item>
+        <first>278</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>43</item>
+        </second>
+      </item>
+      <item>
+        <first>284</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>44</item>
         </second>
       </item>
     </dp_fu_nodes>
     <dp_fu_nodes_expression class_id="53" tracking_level="0" version="0">
-      <count>12</count>
+      <count>34</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>add_ln813_fu_172</first>
+        <first>add_ln813_1_fu_273</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>20</item>
+          <item>39</item>
         </second>
       </item>
       <item>
-        <first>mrv_1_fu_182</first>
+        <first>add_ln813_2_fu_242</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>22</item>
+          <item>40</item>
         </second>
       </item>
       <item>
-        <first>mrv_fu_176</first>
+        <first>add_ln813_3_fu_248</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>21</item>
+          <item>41</item>
         </second>
       </item>
       <item>
-        <first>r_V_fu_127</first>
+        <first>add_ln813_4_fu_266</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>15</item>
+          <item>42</item>
         </second>
       </item>
       <item>
-        <first>sext_ln1270_1_fu_143</first>
+        <first>add_ln813_fu_260</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_1_fu_284</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>44</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_fu_278</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>43</item>
+        </second>
+      </item>
+      <item>
+        <first>r_V_2_fu_108</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2632,23 +4971,39 @@
         </second>
       </item>
       <item>
-        <first>sext_ln1270_fu_148</first>
+        <first>r_V_3_fu_150</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>9</item>
+          <item>23</item>
         </second>
       </item>
       <item>
-        <first>shl_ln1273_1_fu_119</first>
+        <first>r_V_4_fu_178</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>14</item>
+          <item>27</item>
         </second>
       </item>
       <item>
-        <first>shl_ln_fu_111</first>
+        <first>r_V_5_fu_198</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>30</item>
+        </second>
+      </item>
+      <item>
+        <first>r_V_6_fu_226</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>35</item>
+        </second>
+      </item>
+      <item>
+        <first>r_V_fu_84</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2656,7 +5011,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln1273_fu_107</first>
+        <first>sext_ln1273_1_fu_80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2664,7 +5019,103 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln818_1_fu_133</first>
+        <first>sext_ln1273_2_fu_138</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>21</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln1273_3_fu_174</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>26</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln1273_4_fu_194</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>29</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln1273_5_fu_222</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>34</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln1273_6_fu_254</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>15</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln1273_7_fu_257</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>32</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln1273_fu_76</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>11</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln813_fu_270</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>38</item>
+        </second>
+      </item>
+      <item>
+        <first>sext_ln818_fu_134</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>20</item>
+        </second>
+      </item>
+      <item>
+        <first>shl_ln1273_1_fu_142</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>22</item>
+        </second>
+      </item>
+      <item>
+        <first>shl_ln1273_2_fu_166</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>25</item>
+        </second>
+      </item>
+      <item>
+        <first>shl_ln1273_3_fu_214</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>shl_ln_fu_100</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2672,7 +5123,15 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln818_2_fu_152</first>
+        <first>trunc_ln818_2_fu_114</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln818_3_fu_124</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2680,51 +5139,71 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln_fu_162</first>
+        <first>trunc_ln818_4_fu_156</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>11</item>
+          <item>24</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln818_5_fu_184</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>28</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln818_6_fu_204</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>31</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln818_7_fu_232</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>36</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln_fu_90</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>14</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
     <dp_fu_nodes_module>
-      <count>2</count>
+      <count>0</count>
       <item_version>0</item_version>
-      <item>
-        <first>grp_fu_60</first>
-        <second>
-          <count>3</count>
-          <item_version>0</item_version>
-          <item>10</item>
-          <item>10</item>
-          <item>10</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_fu_61</first>
-        <second>
-          <count>3</count>
-          <item_version>0</item_version>
-          <item>18</item>
-          <item>18</item>
-          <item>18</item>
-        </second>
-      </item>
     </dp_fu_nodes_module>
     <dp_fu_nodes_io>
-      <count>3</count>
+      <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read_1_read_fu_42</first>
+        <first>p_read15_read_fu_64</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>6</item>
+          <item>9</item>
         </second>
       </item>
       <item>
-        <first>p_read_2_read_fu_48</first>
+        <first>p_read26_read_fu_58</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>8</item>
+        </second>
+      </item>
+      <item>
+        <first>p_read37_read_fu_52</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2732,11 +5211,11 @@
         </second>
       </item>
       <item>
-        <first>p_read_3_read_fu_54</first>
+        <first>p_read_14_read_fu_70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>8</item>
+          <item>10</item>
         </second>
       </item>
     </dp_fu_nodes_io>
@@ -2748,7 +5227,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
+          <item>45</item>
         </second>
       </item>
       <item>
@@ -2756,7 +5235,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
+          <item>45</item>
         </second>
       </item>
     </return_ports>
@@ -2765,90 +5244,122 @@
       <item_version>0</item_version>
     </dp_mem_port_nodes>
     <dp_reg_nodes>
-      <count>5</count>
+      <count>7</count>
       <item_version>0</item_version>
       <item>
-        <first>188</first>
+        <first>289</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>8</item>
+          <item>14</item>
         </second>
       </item>
       <item>
-        <first>193</first>
+        <first>294</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>16</item>
+          <item>24</item>
         </second>
       </item>
       <item>
-        <first>198</first>
+        <first>299</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>17</item>
+          <item>31</item>
         </second>
       </item>
       <item>
-        <first>203</first>
+        <first>304</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>9</item>
+          <item>40</item>
         </second>
       </item>
       <item>
-        <first>208</first>
+        <first>309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>41</item>
+        </second>
+      </item>
+      <item>
+        <first>314</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
+        </second>
+      </item>
+      <item>
+        <first>319</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>42</item>
         </second>
       </item>
     </dp_reg_nodes>
     <dp_regname_nodes>
-      <count>5</count>
+      <count>7</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read_3_reg_188</first>
+        <first>add_ln813_2_reg_304</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>8</item>
+          <item>40</item>
         </second>
       </item>
       <item>
-        <first>sext_ln1270_1_reg_198</first>
+        <first>add_ln813_3_reg_309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>17</item>
+          <item>41</item>
         </second>
       </item>
       <item>
-        <first>sext_ln1270_reg_203</first>
+        <first>add_ln813_4_reg_319</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>9</item>
+          <item>42</item>
         </second>
       </item>
       <item>
-        <first>trunc_ln818_1_reg_193</first>
+        <first>add_ln813_reg_314</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>16</item>
+          <item>37</item>
         </second>
       </item>
       <item>
-        <first>trunc_ln818_2_reg_208</first>
+        <first>trunc_ln818_4_reg_294</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>19</item>
+          <item>24</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln818_6_reg_299</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>31</item>
+        </second>
+      </item>
+      <item>
+        <first>trunc_ln_reg_289</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>14</item>
         </second>
       </item>
     </dp_regname_nodes>
@@ -2861,7 +5372,7 @@
       <item_version>0</item_version>
     </dp_regname_phi>
     <dp_port_io_nodes class_id="56" tracking_level="0" version="0">
-      <count>3</count>
+      <count>4</count>
       <item_version>0</item_version>
       <item class_id="57" tracking_level="0" version="0">
         <first>p_read</first>
@@ -2873,7 +5384,22 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>8</item>
+              <item>10</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>p_read1</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>9</item>
             </second>
           </item>
         </second>
@@ -2888,7 +5414,7 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>7</item>
+              <item>8</item>
             </second>
           </item>
         </second>
@@ -2903,7 +5429,7 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>6</item>
+              <item>7</item>
             </second>
           </item>
         </second>
@@ -2914,31 +5440,80 @@
       <item_version>0</item_version>
     </port2core>
     <node2core>
-      <count>4</count>
+      <count>11</count>
       <item_version>0</item_version>
       <item>
-        <first>10</first>
-        <second>
-          <first>12</first>
-          <second>3</second>
-        </second>
-      </item>
-      <item>
-        <first>15</first>
+        <first>13</first>
         <second>
           <first>10</first>
           <second>4</second>
         </second>
       </item>
       <item>
-        <first>18</first>
+        <first>17</first>
         <second>
-          <first>12</first>
-          <second>3</second>
+          <first>10</first>
+          <second>4</second>
         </second>
       </item>
       <item>
-        <first>20</first>
+        <first>23</first>
+        <second>
+          <first>10</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>27</first>
+        <second>
+          <first>10</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>30</first>
+        <second>
+          <first>10</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>35</first>
+        <second>
+          <first>10</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>37</first>
+        <second>
+          <first>8</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>39</first>
+        <second>
+          <first>8</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>40</first>
+        <second>
+          <first>8</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>41</first>
+        <second>
+          <first>8</first>
+          <second>4</second>
+        </second>
+      </item>
+      <item>
+        <first>42</first>
         <second>
           <first>8</first>
           <second>4</second>
