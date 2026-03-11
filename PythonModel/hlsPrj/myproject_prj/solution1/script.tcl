@@ -13,9 +13,10 @@ open_solution "solution1" -flow_target vivado
 set_part {xc7z020-clg484-1}
 create_clock -period 10 -name default
 config_schedule -enable_dsp_full_reg=0
+config_export -display_name GN_inference -vendor Fabian -version 1.1
 set_clock_uncertainty 12.5%
 #source "./myproject_prj/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design -setup -trace_level all
-export_design -format ip_catalog
+export_design -rtl verilog -format ip_catalog
