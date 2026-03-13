@@ -97,7 +97,7 @@ tqdm==4.67.1
 traitlets==5.14.3
 typing_extensions==4.14.0
 tzdata==2025.2
-udma @ file:///C:/GitHub/FPGA_ml4hls_prj/submodules/udma
+udma @ file:../submodules/udma
 urllib3==2.5.0
 wcwidth==0.2.13
 Werkzeug==3.1.3
