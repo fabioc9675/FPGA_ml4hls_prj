@@ -1,7 +1,7 @@
 //Numpy array shape [2, 4]
-//Min -0.500000000000
-//Max 1.000000000000
-//Number of zeros 0
+//Min -1.375000000000
+//Max 0.875000000000
+//Number of zeros 1
 
 #ifndef W11_H_
 #define W11_H_
@@ -9,7 +9,7 @@
 #ifndef __SYNTHESIS__
 weight11_t w11[8];
 #else
-weight11_t w11[8] = {0.750, 0.375, -0.125, -0.500, -0.500, 1.000, 0.500, 0.125};
+weight11_t w11[8] = {0.500, -1.375, -0.750, 0.875, 0.625, -1.125, 0.000, -1.000};
 
 #endif
 

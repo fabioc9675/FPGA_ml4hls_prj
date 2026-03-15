@@ -36,8 +36,8 @@ struct config2 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 415;
-    static const unsigned n_nonzeros = 551;
+    static const unsigned n_zeros = 430;
+    static const unsigned n_nonzeros = 536;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc1_accum_t accum_t;
@@ -99,8 +99,8 @@ struct config11 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 0;
-    static const unsigned n_nonzeros = 8;
+    static const unsigned n_zeros = 1;
+    static const unsigned n_nonzeros = 7;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc4_accum_t accum_t;
@@ -120,8 +120,8 @@ struct config14 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 1;
-    static const unsigned n_nonzeros = 11;
+    static const unsigned n_zeros = 0;
+    static const unsigned n_nonzeros = 12;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef fc5_accum_t accum_t;

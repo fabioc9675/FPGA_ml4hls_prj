@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>C:/GitHub/FPGA_ml4hls_prj/PythonModel/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp</string>
+  <string>/home/fcastano/FPGA_ml4hls_prj/PythonModel/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>

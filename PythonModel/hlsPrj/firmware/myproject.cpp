@@ -63,7 +63,7 @@ void GN_inference(
     // hls-fpga-machine-learning insert layers
 
     layer2_t layer2_out[N_LAYER_2];
-#pragma HLS ARRAY_PARTITION variable = layer2_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer2_out complete dim=0
     nnet::dense<input_t, layer2_t, config2>(inputLayer, layer2_out, w2, b2); // fc1
     float layer2_deb[N_LAYER_2];
     for (int i = 0; i < N_LAYER_2; i++)
@@ -72,7 +72,7 @@ void GN_inference(
     }
 
     layer5_t layer5_out[N_LAYER_5];
-#pragma HLS ARRAY_PARTITION variable = layer5_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer5_out complete dim=0
     nnet::dense<layer2_t, layer5_t, config5>(layer2_out, layer5_out, w5, b5); // fc2
     float layer5_deb[N_LAYER_5];
     for (int i = 0; i < N_LAYER_5; i++)
@@ -81,7 +81,7 @@ void GN_inference(
     }
 
     layer8_t layer8_out[N_LAYER_8];
-#pragma HLS ARRAY_PARTITION variable = layer8_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer8_out complete dim=0
     nnet::dense<layer5_t, layer8_t, config8>(layer5_out, layer8_out, w8, b8); // fc3
     float layer8_deb[N_LAYER_8];
     for (int i = 0; i < N_LAYER_8; i++)
@@ -90,7 +90,7 @@ void GN_inference(
     }
 
     layer11_t layer11_out[N_LAYER_11];
-#pragma HLS ARRAY_PARTITION variable = layer11_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer11_out complete dim=0
     nnet::dense<layer8_t, layer11_t, config11>(layer8_out, layer11_out, w11, b11); // fc4
     float layer11_deb[N_LAYER_11];
     for (int i = 0; i < N_LAYER_11; i++)
@@ -99,7 +99,7 @@ void GN_inference(
     }
 
     layer14_t layer14_out[N_LAYER_14];
-#pragma HLS ARRAY_PARTITION variable = layer14_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer14_out complete dim=0
     nnet::dense<layer11_t, layer14_t, config14>(layer11_out, layer14_out, w14, b14); // fc5
     float layer14_deb[N_LAYER_14];
     for (int i = 0; i < N_LAYER_14; i++)
@@ -108,7 +108,7 @@ void GN_inference(
     }
 
     layer17_t layer17_out[N_LAYER_17];
-#pragma HLS ARRAY_PARTITION variable = layer17_out complete dim = 0
+#pragma HLS ARRAY_PARTITION variable=layer17_out complete dim=0
     nnet::dense<layer14_t, layer17_t, config17>(layer14_out, layer17_out, w17, b17); // output
     float layer17_deb[N_LAYER_17];
     for (int i = 0; i < N_LAYER_17; i++)
@@ -123,21 +123,24 @@ void GN_inference(
     float layer19_deb[N_LAYER_17];
     layer19_deb[0] = float(layer19_out[0]);
     layer19_deb[1] = float(layer19_out[1]);
-    if (layer17_out[1] > 1.0)
+    //if (layer17_out[1] > 1.0)
+    if (layer19_out[1] < layer19_out[0])
     {
 
         // Value 2 corresponds to class 0 gamma
         tmpVal = 5;
-        *result1 = layer17_out[0] * 1000;
-        *result2 = layer17_out[1] * 1000;
+        *result1 = layer19_out[0] * 1000;
+        *result2 = layer19_out[1] * 1000;
         *result = tmpVal;
     }
     else
     {
         // Value 3 corresponds to class 1 neutron
         tmpVal = 3;
-        *result1 = layer17_out[0] * 1000;
-        *result2 = layer17_out[1] * 1000;
+        *result1 = layer19_out[0] * 1000;
+        *result2 = layer19_out[1] * 1000;
         *result = tmpVal;
     }
+
 }
+
