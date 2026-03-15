@@ -1,3 +1,11 @@
+# Uso de pyenv
+
+Pyenv es un paquete que sirve para gestionar la version de python usada en el proyecto, para este caso la 3.10.11
+
+Usar el siguiente comando
+
+pyenv local 3.10.11
+
 # Creacion de proyecto para entrenar una red neuronal con TF
 
 lo primero es crear el entorno virtual e instalar las librerias, esto se hace con el paquete `virtualenv`
