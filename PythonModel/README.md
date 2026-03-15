@@ -6,6 +6,22 @@ Usar el siguiente comando
 
 pyenv local 3.10.11
 
+### Flujo típico para otro desarrollador
+
+Después de clonar el repo:
+
+pyenv install
+
+(si la versión no está instalada)
+
+Luego al entrar al directorio:
+
+cd PythonModel
+
+python --version
+
+pyenv detecta .python-version y activa 3.10.11.
+
 # Creacion de proyecto para entrenar una red neuronal con TF
 
 lo primero es crear el entorno virtual e instalar las librerias, esto se hace con el paquete `virtualenv`
